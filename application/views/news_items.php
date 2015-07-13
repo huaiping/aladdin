@@ -18,21 +18,21 @@
                 <!--新闻 end-->
             </div>
 
-			<form method="post" id="comments" name="comments" action="#" class="form-horizontal">
-				<!--评论 begin-->
-				<div class="col-xs-12 col-md-12 panel panel-info" style="margin:0; padding:0;">
-					<div class="panel-heading">评论</div>
-					<div class="panel-body" style="margin:0; padding:0;">
-						<textarea id="content" name="content" class="form-control" rows="5" style="resize:none;"></textarea>
-					</div>
-	            </div>
-				<div class="form-group">
-					<div class="text-center">
-						<button type="submit" class="btn btn-success">提交评论</button>
-					</div>
-				</div>
+            <form method="post" id="comments" name="comments" action="#" class="form-horizontal">
+                <!--评论 begin-->
+                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:0; padding:0;">
+                    <div class="panel-heading">评论</div>
+                    <div class="panel-body" style="margin:0; padding:0;">
+                        <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">提交评论</button>
+                    </div>
+                </div>
                 <!--评论 end-->
-			</form>
+            </form>
         </div>
 
         <div class="col-md-3 hidden-xs">

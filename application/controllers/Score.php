@@ -2,28 +2,28 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Score extends CI_Controller {
-	public function __construct()
+    public function __construct()
     {
         parent::__construct();
-		$this->load->library('session');
-		$this->load->helper(array('form', 'url'));
+        $this->load->library('session');
+        $this->load->helper(array('form', 'url'));
     }
 
-	public function index()
-	{
-		$this->load->view('header');
-		$this->load->view('score');
-		$this->load->view('footer');
-	}
-
-	public function view($category = FALSE, $name = FALSE, $number = FALSE)
+    public function index()
     {
-		$this->load->model('score_model');
+        $this->load->view('header');
+        $this->load->view('score');
+        $this->load->view('footer');
+    }
+
+    public function view($category = FALSE, $name = FALSE, $number = FALSE)
+    {
+        $this->load->model('score_model');
         $data['item'] = $this->score_model->get_items();
         $data['scores'] = $this->score_model->get_scores();
-		$this->load->view('header');
-		$this->load->view('score_detail', $data);
-		$this->load->view('footer');
+        $this->load->view('header');
+        $this->load->view('score_detail', $data);
+        $this->load->view('footer');
     }
 
 }
