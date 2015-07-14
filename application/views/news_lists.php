@@ -1,4 +1,4 @@
-<div style="padding-top:70px;">
+<section class="container">
     <div class="banner row">
         <!--顶部通栏 begin-->
         <div class="col-md-12">
@@ -273,7 +273,7 @@
             <!--友情链接 end-->
         </div>
     </div>
-</div>
+</section>
 
 <script>
     //$(function () { $("[data-toggle='tooltip']").tooltip(); });

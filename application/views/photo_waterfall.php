@@ -1,4 +1,4 @@
-<div style="padding-top:70px;">
+<section class="container">
     <div class="banner row">
         <!--顶部通栏 begin-->
         <div class="col-md-12 col-lg-12">
@@ -10,35 +10,24 @@
     </div>
 
     <div class="photos row">
-
-<style type="text/css">
-html, body {_height:100%; _overflow:hidden;}
-body {_overflow:auto; font-family:Arial, sans-serif; font-size:14px; background:#f3f2f3;}
-p {padding:5px 0px;}
-.item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
-.item img {width:100%; height:auto; border-top-left-radius:0.2em;}
-.item p {height:40px; padding-top:10px;  text-align:center;}
-</style>
-
         <div class="content container">
             <div id="device" class="gridalicious row">
                 <div class="galcolumn">
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" /><p>瀑布流特效1</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" /><p>瀑布流特效2</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" /><p>瀑布流特效3</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" /><p>瀑布流特效4</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" /><p>瀑布流特效1</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" /><p>瀑布流特效2</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" /><p>瀑布流特效3</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" /><p>瀑布流特效4</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" /><p>瀑布流特效1</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" /><p>瀑布流特效2</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt="" /><p>瀑布流特效1</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt="" /><p>瀑布流特效2</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" alt="" /><p>瀑布流特效3</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" alt="" /><p>瀑布流特效4</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt="" /><p>瀑布流特效1</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt="" /><p>瀑布流特效2</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" alt="" /><p>瀑布流特效3</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" alt="" /><p>瀑布流特效4</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt="" /><p>瀑布流特效1</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt="" /><p>瀑布流特效2</p></div>
                 </div>
             </div>
         </div>
-
     </div>
-</div>
+</section>
 
 <script>
     //滚动条滚动时添加内容

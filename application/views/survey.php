@@ -1,4 +1,4 @@
-<div style="padding-top:70px;">
+<section class="container">
     <form method="post" id="survey" name="survey" action="#" class="form-horizontal">
 
         <div class="panel panel-info">
@@ -805,7 +805,7 @@
         </div>
 
     </form>
-</div>
+</section>
 
 <script>
 window.onload=function(){

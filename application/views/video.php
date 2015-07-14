@@ -1,4 +1,4 @@
-<div style="padding-top:70px;">
+<section class="container">
     <div class="banner row">
         <!--顶部通栏 begin-->
         <div class="col-md-12">
@@ -48,7 +48,7 @@
         </div>
         <!--顶部通栏 end-->
     </div>
-</div>
+</section>
 
 <script>
 var videoPlayer = document.getElementById("videoPlayer");

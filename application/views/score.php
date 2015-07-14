@@ -1,4 +1,4 @@
-<div style="padding-top:70px;">
+<section class="container">
     <div class="banner row">
         <!--顶部通栏 begin-->
         <div class="col-md-12">
@@ -124,7 +124,7 @@
             <!--成绩查询 end-->
         </div>
     </div>
-</div>
+</section>
 
 <script>
 window.onload=function(){

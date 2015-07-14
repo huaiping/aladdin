@@ -17,7 +17,7 @@ class Score extends CI_Controller {
         $this->load->view('footer');
     }
 
-    public function view($category = FALSE, $name = FALSE, $number = FALSE)
+    public function view()
     {
         $data['item'] = $this->score_model->get_items();
         $data['scores'] = $this->score_model->get_scores();

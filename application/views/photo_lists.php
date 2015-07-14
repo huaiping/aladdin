@@ -1,4 +1,4 @@
-<div style="padding-top:70px;">
+<section class="container">
     <div class="banner row">
         <!--顶部通栏 begin-->
         <div class="col-md-12">
@@ -85,4 +85,4 @@
     <?php
         }
     ?>
-</div>
+</section>

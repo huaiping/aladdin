@@ -11,6 +11,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.7.3/css/bootstrap-select.min.css" rel="stylesheet">
 <style type="text/css">
+body {padding-top:70px;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
 .navbar-default .navbar-brand {color:#fff;}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color:#fff;}
@@ -50,7 +51,11 @@
 .col-xs-2ths, .col-sm-2ths, .col-md-2ths, .col-lg-2ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px; } @media ( min-width : 768px) { .col-sm-2ths { width: 25%; float: left; } } @media ( min-width : 992px) { .col-md-2ths { width: 25%; float: left; } } @media ( min-width : 1200px) { .col-lg-2ths { width: 25%; float: left; } }
 .col-xs-3ths, .col-sm-3ths, .col-md-3ths, .col-lg-3ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px; } @media ( min-width : 768px) { .col-sm-3ths { width: 37.5%; float: left; } } @media ( min-width : 992px) { .col-md-3ths { width: 37.5%; float: left; } } @media ( min-width : 1200px) { .col-lg-3ths { width: 37.5%; float: left; } }
 .col-xs-9ths, .col-sm-9ths, .col-md-9ths, .col-lg-9ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px; } @media ( min-width : 768px) { .col-sm-9ths { width: 10%; float: left; } } @media ( min-width : 992px) { .col-md-9ths { width: 10%; float: left; } } @media ( min-width : 1200px) { .col-lg-9ths { width: 10%; float: left; } }
-
+/* waterfall */
+.galcolumn p {padding:5px 0px;}
+.galcolumn .item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
+.galcolumn .item img {width:100%; height:auto; border-top-left-radius:0.2em; border-top-right-radius:0.2em;}
+.galcolumn .item p {height:40px; padding-top:10px;  text-align:center;}
 //html {-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray;}
 </style>
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
@@ -66,34 +71,33 @@
 <![endif]-->
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container bg-primary">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="<?php echo base_url(); ?>">阿拉丁CMS</a>
-            </div>
-
-            <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav bg-primary">
-                    <li><a href="<?php echo site_url('news'); ?>">新闻中心<span class="sr-only">(current)</span></a></li>
-                    <li><a href="<?php echo site_url('photo'); ?>">图片中心</a></li>
-                    <li><a href="<?php echo site_url('download'); ?>">资源下载</a></li>
-                    <li><a href="<?php echo site_url('guestbook'); ?>">公众互动</a></li>
-                    <li><a href="<?php echo site_url('video'); ?>">视频</a></li>
-                    <li><a href="<?php echo site_url('membership'); ?>">用户中心</a></li>
-                    <li><a href="<?php echo site_url('score'); ?>">成绩查询</a></li>
-                    <li class="hidden-sm hidden-md"><a href="<?php echo site_url('survey'); ?>">问卷调查</a></li>
-                    <li class="hidden-sm hidden-md"><a href="<?php echo site_url('exam'); ?>">在线考试</a></li>
-                    <li class="hidden-sm"><a href="<?php echo site_url('salary'); ?>">工资查询</a></li>
-                    <li class="hidden-sm"><a href="<?php echo site_url('repairs'); ?>">网上报修</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container bg-primary">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>">阿拉丁CMS</a>
         </div>
-    </nav>
 
-    <section class="container">
+        <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav bg-primary">
+                <li><a href="<?php echo site_url('news'); ?>">新闻中心<span class="sr-only">(current)</span></a></li>
+                <li><a href="<?php echo site_url('photo'); ?>">图片中心</a></li>
+                <li><a href="<?php echo site_url('download'); ?>">资源下载</a></li>
+                <li><a href="<?php echo site_url('guestbook'); ?>">公众互动</a></li>
+                <li><a href="<?php echo site_url('video'); ?>">视频</a></li>
+                <li><a href="<?php echo site_url('membership'); ?>">用户中心</a></li>
+                <li><a href="<?php echo site_url('score'); ?>">成绩查询</a></li>
+                <li class="hidden-sm hidden-md"><a href="<?php echo site_url('survey'); ?>">问卷调查</a></li>
+                <li class="hidden-sm hidden-md"><a href="<?php echo site_url('exam'); ?>">在线考试</a></li>
+                <li class="hidden-sm"><a href="<?php echo site_url('salary'); ?>">工资查询</a></li>
+                <li class="hidden-sm"><a href="<?php echo site_url('repairs'); ?>">网上报修</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+

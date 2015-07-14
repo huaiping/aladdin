@@ -44,8 +44,17 @@ class Membership extends CI_Controller {
             $data = $this->membership_model->userLogin($username, $password);
             if (!empty($data['username']))
             {
+                $goto = $this->session->userdata('goto');
+                $this->session->unset_userdata('goto');
                 $this->session->set_userdata($data);
-                redirect('membership/plaza');
+                if (!empty($goto))
+                {
+                    redirect($goto);
+                }
+                else
+                {
+                    redirect('membership/plaza');
+                }
             }
             else
             {
@@ -182,7 +191,7 @@ class Membership extends CI_Controller {
 
     public function logout()
     {
-        $this->session->unset_userdata('username');
+        //$this->session->unset_userdata('username');
         $this->session->sess_destroy();
         redirect('news', 'Location');
     }

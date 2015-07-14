@@ -1,4 +1,4 @@
-<div style="padding-top:70px;">
+<section class="container">
     <div class="banner row">
         <!--顶部通栏 begin-->
         <div class="col-md-12">
@@ -84,7 +84,7 @@
             <!--历次成绩 end-->
         </div>
     </div>
-</div>
+</section>
 
 <script>
 $(function () { 
