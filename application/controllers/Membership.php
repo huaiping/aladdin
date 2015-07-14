@@ -7,6 +7,7 @@ class Membership extends CI_Controller {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form', 'url'));
+        $this->load->model('membership_model');
     }
 
     public function index()
@@ -25,7 +26,6 @@ class Membership extends CI_Controller {
 
     public function login()
     {
-        $this->load->model('membership_model');
         $username = $this->input->post('username', TRUE);
         $password = $this->input->post('password', TRUE);
         $this->load->library('form_validation');
@@ -82,7 +82,6 @@ class Membership extends CI_Controller {
 
     public function articlePost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
     {
-        $this->load->model('membership_model');
         $this->membership_model->articlePost($title, $category, $content, $username);
         redirect('membership/plaza');
     }
@@ -135,7 +134,6 @@ class Membership extends CI_Controller {
         {
             $data = array('upload_data' => $this->upload->data());
             $url = $this->upload->data('file_name');
-            $this->load->model('membership_model');
             $this->membership_model->filesPost($title, $category, $url, $username);
             $this->load->view('plaza_files', $data);
             $this->load->view('footer');
@@ -151,7 +149,6 @@ class Membership extends CI_Controller {
 
     public function messagePost($title = FALSE, $content = FALSE, $username = FALSE)
     {
-        $this->load->model('membership_model');
         $this->membership_model->messagePost($title, $content, $username);
         redirect('membership/plaza');
     }

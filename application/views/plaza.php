@@ -57,37 +57,37 @@ body {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsof
             <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right bg-primary">
                     <li><a href="<?php echo site_url('membership/article'); ?>">投稿</a></li>
-					<li><a href="<?php echo site_url('membership/album'); ?>">相册</a></li>
-					<li><a href="<?php echo site_url('membership/files'); ?>">文件</a></li>
-					<li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
-					<li><a href="<?php echo site_url('membership/video'); ?>">视频</a></li>
-					<li><a href="<?php echo site_url('membership/profile'); ?>">个人资料</a></li>
-					<li><a href="<?php echo site_url('membership/logout'); ?>">退出</a></li>
-					</ul>
+                    <li><a href="<?php echo site_url('membership/album'); ?>">相册</a></li>
+                    <li><a href="<?php echo site_url('membership/files'); ?>">文件</a></li>
+                    <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
+                    <li><a href="<?php echo site_url('membership/video'); ?>">视频</a></li>
+                    <li><a href="<?php echo site_url('membership/profile'); ?>">个人资料</a></li>
+                    <li><a href="<?php echo site_url('membership/logout'); ?>">退出</a></li>
+                    </ul>
                 </ul>
             </div>
         </div>
     </nav>
 
     <section class="container">
-		<div style="padding-top:70px;">
-		    <div class="membership row">
-		        <div class="col-md-3 hidden-xs">
-					<ul class="nav nav-pills nav-stacked">
-						<li class="active"><a href="#">用户中心</a></li>
-						<li class="text-center"><a href="#"><img src="<?php echo base_url('avatar/avatar.php?char='.$this->session->userdata('name')); ?>" alt=""></a></li>
-						<li><a href="#">用户名：<?php echo $this->session->userdata('username'); ?></a></li>
-						<li><a href="#">用户组：教师</a></li>
-						<li><a href="#">注册时间：2015-6-10</a></li>
-						<li><a href="#">当前IP：<?php echo $this->input->ip_address(); ?></a></li>
-					</ul>
-				</div>
+        <div style="padding-top:70px;">
+            <div class="membership row">
+                <div class="col-md-3 hidden-xs">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#">用户中心</a></li>
+                        <li class="text-center"><a href="#"><img src="<?php echo base_url('avatar/avatar.php?char='.$this->session->userdata('name')); ?>" alt=""></a></li>
+                        <li><a href="#">用户名：<?php echo $this->session->userdata('username'); ?></a></li>
+                        <li><a href="#">用户组：教师</a></li>
+                        <li><a href="#">注册时间：2015-6-10</a></li>
+                        <li><a href="#">当前IP：<?php echo $this->input->ip_address(); ?></a></li>
+                    </ul>
+                </div>
 
-		        <div class="col-md-9">
-				<?php
-					echo $this->session->userdata('username');
-					echo $this->input->user_agent();
-				?>
-				</div>
-			</div>
-		</div>
+                <div class="col-md-9">
+                <?php
+                    echo $this->session->userdata('username');
+                    echo $this->input->user_agent();
+                ?>
+                </div>
+            </div>
+        </div>

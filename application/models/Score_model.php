@@ -38,22 +38,19 @@ class Score_model extends CI_Model {
         $category = $this->input->post('category');
         $name = $this->input->post('name');
         $number = $this->input->post('number');
-        if ($category === FALSE || $name === FALSE || $number === FALSE)
-        {
-            //$query = $this->db->get('swan_video');
-            //return $query->result_array();
-        }
         if (strlen($number) == 18)
         {
             $this->db->where(array('xm' => $name, 'sfzh' => $number));
+            $query = $this->db->get('swan_score');
+            return $query->row_array();
         }
         else
         {
 
         }
         //$this->db->where(array('xm' => $name, 'xh' => $number));
-        $query = $this->db->get('swan_score');
-        return $query->row_array();
+        //$query = $this->db->get('swan_score');
+        //return $query->row_array();
     }
 
 }

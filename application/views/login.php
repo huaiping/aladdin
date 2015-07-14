@@ -21,18 +21,18 @@
                     <h2 class="text-center" style="margin-bottom:20px;">用户登录</h2>
                     <?php
                         $attributes = array('class' => 'form-horizontal');
-                         echo form_open('membership/login', $attributes);
+                        echo form_open('membership/login', $attributes);
                     ?>
                         <div class="form-group">
                             <label for="username" class="col-xs-3 col-sm-3 col-md-3 control-label">用户名</label>
                             <div class="col-xs-8 col-sm-8 col-md-8">
-                                <input type="text" class="form-control" id="username" name="username" placeholder="用户名" value="test01">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="用户名" value="test01" required="required">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="password" class="col-xs-3 col-sm-3 col-md-3 control-label">密码</label>
                             <div class="col-xs-8 col-sm-8 col-md-8">
-                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" value="test01">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" value="test01" required="required">
                             </div>
                         </div>
                         <div class="form-group">

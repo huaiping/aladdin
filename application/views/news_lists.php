@@ -273,25 +273,24 @@
             <!--友情链接 end-->
         </div>
     </div>
-
-    <script>
-        //$(function () { $("[data-toggle='tooltip']").tooltip(); });
-        function AutoScroll(){
-            var _scroll = $("#slide>ul");
-            _scroll.animate({marginLeft:"-150px"},1000,function(){//ul往左边移动150px
-                _scroll.css({marginLeft:0}).find("li:first").appendTo(_scroll);
-            });
-        }
-        $(function(){
-            $("[data-toggle='tooltip']").tooltip();
-
-            var _scrolling=setInterval("AutoScroll()",3000);
-            $("#slide>ul").hover(function(){
-                clearInterval(_scrolling);
-            },function(){
-                _scrolling=setInterval("AutoScroll()",3000);
-            });
-        });
-    </script>
-
 </div>
+
+<script>
+    //$(function () { $("[data-toggle='tooltip']").tooltip(); });
+    function AutoScroll(){
+        var _scroll = $("#slide>ul");
+        _scroll.animate({marginLeft:"-150px"},1000,function(){//ul往左边移动150px
+            _scroll.css({marginLeft:0}).find("li:first").appendTo(_scroll);
+        });
+    }
+    $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+
+        var _scrolling=setInterval("AutoScroll()",3000);
+        $("#slide>ul").hover(function(){
+            clearInterval(_scrolling);
+        },function(){
+            _scrolling=setInterval("AutoScroll()",3000);
+        });
+    });
+</script>

@@ -7,6 +7,7 @@ class Score extends CI_Controller {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form', 'url'));
+        $this->load->model('score_model');
     }
 
     public function index()
@@ -18,12 +19,10 @@ class Score extends CI_Controller {
 
     public function view($category = FALSE, $name = FALSE, $number = FALSE)
     {
-        $this->load->model('score_model');
         $data['item'] = $this->score_model->get_items();
         $data['scores'] = $this->score_model->get_scores();
         $this->load->view('header');
         $this->load->view('score_detail', $data);
         $this->load->view('footer');
     }
-
 }

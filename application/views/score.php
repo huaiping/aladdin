@@ -106,12 +106,12 @@
                     </div>
                     <div class="form-group">
                         <div class="col-xs-11 col-sm-10 col-md-10 col-xs-offset-1 col-md-offset-1">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="姓名" value="张三">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="姓名" value="张三" required="required">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-11 col-sm-10 col-md-10 col-xs-offset-1 col-md-offset-1">
-                            <input type="text" class="form-control" id="number" name="number" placeholder="身份证号 学号 班级号" value="150101">
+                            <input type="text" class="form-control" id="number" name="number" placeholder="身份证号 学号 班级号" value="150101" required="required">
                         </div>
                     </div>
                     <div class="form-group">

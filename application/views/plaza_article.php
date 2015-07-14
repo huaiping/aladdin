@@ -116,7 +116,7 @@ $(function() {
                     <!--<form class="form-horizontal" name="example" method="post" action="#" autocomplete="off">-->
                         <div class="form-group">
                             <label for="title" class="col-xs-3 col-sm-1 col-md-1 control-label">标题</label>
-                            <div class="col-xs-9 col-sm-11 col-md-7"><input type="text" class="form-control" id="title" name="title"></div>
+                            <div class="col-xs-9 col-sm-11 col-md-7"><input type="text" class="form-control" id="title" name="title" required="required"></div>
                             <label for="category" class="col-xs-3 col-sm-1 col-md-1 control-label">类别</label>
                             <div class="col-xs-9 col-sm-11 col-md-2">
                                 <select class="selectpicker form-control" id="category" name="category">

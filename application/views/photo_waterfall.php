@@ -16,7 +16,7 @@ html, body {_height:100%; _overflow:hidden;}
 body {_overflow:auto; font-family:Arial, sans-serif; font-size:14px; background:#f3f2f3;}
 p {padding:5px 0px;}
 .item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
-.item img {width:100%; height:auto;}
+.item img {width:100%; height:auto; border-top-left-radius:0.2em;}
 .item p {height:40px; padding-top:10px;  text-align:center;}
 </style>
 
@@ -37,6 +37,9 @@ p {padding:5px 0px;}
             </div>
         </div>
 
+    </div>
+</div>
+
 <script>
     //滚动条滚动时添加内容
     makeboxes = function() {
@@ -44,7 +47,7 @@ p {padding:5px 0px;}
         var jsonLength = 0;
         $.ajax({
             type: 'POST',
-			async : false,
+            async : false,
             url : '<?php echo site_url('photo/loading'); ?>',
             //data: {'page':page},
             dataType : 'json',
@@ -86,7 +89,3 @@ p {padding:5px 0px;}
     });
 });
 </script>
-
-
-    </div>
-</div>
