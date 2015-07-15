@@ -78,9 +78,6 @@
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>二维码</h4></div>
                 <div id="qrcode" class="text-center"></div>
             </div>
-            <script>
-                jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo current_url(); ?>"});
-            </script>
         </div>
     </div>
 
@@ -94,3 +91,7 @@
         <!--底部通栏 end-->
     </div>
 </section>
+
+<script>
+    jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo current_url(); ?>"});
+</script>

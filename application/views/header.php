@@ -72,6 +72,7 @@ body {padding-top:70px;}
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
+    <!--顶部导航栏 begin-->
     <div class="container bg-primary">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -99,5 +100,6 @@ body {padding-top:70px;}
             </ul>
         </div>
     </div>
+    <!--顶部导航栏 end-->
 </nav>
 

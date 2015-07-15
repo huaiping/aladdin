@@ -276,7 +276,6 @@
 </section>
 
 <script>
-    //$(function () { $("[data-toggle='tooltip']").tooltip(); });
     function AutoScroll(){
         var _scroll = $("#slide>ul");
         _scroll.animate({marginLeft:"-150px"},1000,function(){//ul往左边移动150px
@@ -284,9 +283,8 @@
         });
     }
     $(function(){
-        $("[data-toggle='tooltip']").tooltip();
-
-        var _scrolling=setInterval("AutoScroll()",3000);
+        $("[data-toggle='tooltip']").tooltip();//友情链接鼠标悬停提示
+        var _scrolling=setInterval("AutoScroll()",3000);//精彩图片展轮播
         $("#slide>ul").hover(function(){
             clearInterval(_scrolling);
         },function(){

@@ -38,7 +38,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6">
             <!-- 右侧图片缩略图 begin -->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $category[$m+1]['category']; ?><span class="pull-right glyphicon glyphicon-camera" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $category[$m+1]['category']; ?><a href="<?php echo site_url('photo/waterfall'); ?>"><span class="pull-right glyphicon glyphicon-camera" style="padding-right:10px;"></span></a></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php
                     for($i=0; $i<count($subcategory); $i++) {
@@ -67,7 +67,7 @@
     <div class="photos row">
         <div class="col-xs-12 col-sm-12 col-md-6">
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $category[$remainder]['category']; ?><span class="pull-right glyphicon glyphicon-camera" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $category[$remainder]['category']; ?><a href="<?php echo site_url('photo/waterfall'); ?>"><span class="pull-right glyphicon glyphicon-camera" style="padding-right:10px;"></span></a></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php
                     for($i=0; $i<count($subcategory); $i++) {

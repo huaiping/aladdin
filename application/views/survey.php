@@ -1,6 +1,9 @@
 <section class="container">
-    <form method="post" id="survey" name="survey" action="#" class="form-horizontal">
-
+    <?php
+        $attributes = array('class' => 'form-horizontal');
+        echo form_open('survey/post', $attributes);
+    ?>
+    <!--<form method="post" id="survey" name="survey" action="#" class="form-horizontal">-->
         <div class="panel panel-info">
             <div class="panel-heading">01. 你对科任老师的教学责任感的评价</div>
             <div class="panel-body">A. 很负责　　　　B. 负责　　　　　C. 不够负责</div>

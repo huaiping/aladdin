@@ -1,5 +1,6 @@
 
 <footer class="footer">
+    <!--页脚 begin-->
     <div class="container bg-primary">
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-md-10">
@@ -11,6 +12,7 @@
             </div>
         </div>
     </div>
+    <!--页脚 end-->
 </footer>
 </body>
 </html>

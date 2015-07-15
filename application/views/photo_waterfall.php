@@ -30,8 +30,7 @@
 </section>
 
 <script>
-    //滚动条滚动时添加内容
-    makeboxes = function() {
+    makeboxes = function() {//滚动条滚动时添加内容
         var boxes = new Array;
         var jsonLength = 0;
         $.ajax({
@@ -51,29 +50,26 @@
                         div.append(content);
                         boxes.push(div);
                     }
-                    //console.log(boxes);
                 }
             }
         });
-                    return boxes;
+        return boxes;
     }
-    //滚动条事件
-    $(document).ready(function () {
+    $(document).ready(function () {//滚动条事件
         $(window).scroll(function () {
             if(($(window).scrollTop() + $(window).height()) == $(document).height()) {
                 $("#device").gridalicious('append', makeboxes());
             }
     });
-    //主要部分
-    $("#device").gridalicious({
+    $("#device").gridalicious({//主要部分
         gutter: 15,
         width: 300,
         animate: true,
         animationOptions: {
-                speed: 150,
-                duration: 400,
-                complete:function(data){
-                }
+            speed: 150,
+            duration: 400,
+            complete:function(data){
+            }
         },
     });
 });

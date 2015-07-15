@@ -12,40 +12,58 @@
     <div class="score row">
         <div class="col-xs-12 col-md-9">
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-primary circle">语文：<?php echo $item['yw'];?><br /><br />名次：<?php echo $item['ywmc']; ?></button>
+                <button type="button" class="btn btn-primary circle">语文：<?php echo round($item['yw'],1); ?><br /><br />名次：<?php echo $item['ywmc']; ?></button>
             </div>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-warning circle">数学：<?php echo $item['sx'];?><br /><br />名次：<?php echo $item['sxmc']; ?></button>
+                <button type="button" class="btn btn-warning circle">数学：<?php echo round($item['sx'],1); ?><br /><br />名次：<?php echo $item['sxmc']; ?></button>
             </div>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-info circle">英语：<?php echo $item['yy'];?><br /><br />名次：<?php echo $item['yymc']; ?></button>
+                <button type="button" class="btn btn-info circle">英语：<?php echo round($item['yy'],1); ?><br /><br />名次：<?php echo $item['yymc']; ?></button>
             </div>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-danger circle">物理：<?php echo $item['wl'];?><br /><br />名次：<?php echo $item['wlmc']; ?></button>
+                <button type="button" class="btn btn-danger circle">物理：<?php echo round($item['wl'],1); ?><br /><br />名次：<?php echo $item['wlmc']; ?></button>
             </div>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-success circle">化学：<?php echo $item['hx'];?><br /><br />名次：<?php echo $item['hxmc']; ?></button>
+                <button type="button" class="btn btn-success circle">化学：<?php echo round($item['hx'],1); ?><br /><br />名次：<?php echo $item['hxmc']; ?></button>
             </div>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-primary circle">生物：<?php echo $item['sw'];?><br /><br />名次：<?php echo $item['swmc']; ?></button>
+                <button type="button" class="btn btn-primary circle">生物：<?php echo round($item['sw'],1); ?><br /><br />名次：<?php echo $item['swmc']; ?></button>
             </div>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-warning circle">理综：<?php echo $item['lz'];?><br /><br />名次：<?php echo $item['lzmc']; ?></button>
+                <button type="button" class="btn btn-warning circle">理综：<?php echo round($item['lz'],1); ?><br /><br />名次：<?php echo $item['lzmc']; ?></button>
             </div>
+			<?php
+			if ($item['zzmc'] != 0) {
+			?>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-info circle">政治：<?php echo $item['zz'];?><br /><br />名次：<?php echo $item['zzmc']; ?></button>
+                <button type="button" class="btn btn-info circle">政治：<?php echo round($item['zz'],1); ?><br /><br />名次：<?php echo $item['zzmc']; ?></button>
             </div>
+			<?php
+			}
+			if ($item['lsmc'] != 0) {
+			?>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-danger circle">历史：<?php echo $item['ls'];?><br /><br />名次：<?php echo $item['lsmc']; ?></button>
+                <button type="button" class="btn btn-danger circle">历史：<?php echo round($item['ls'],1); ?><br /><br />名次：<?php echo $item['lsmc']; ?></button>
             </div>
+			<?php
+			}
+			if ($item['dlmc'] != 0) {
+			?>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-success circle">地理：<?php echo $item['dl'];?><br /><br />名次：<?php echo $item['dlmc']; ?></button>
+                <button type="button" class="btn btn-success circle">地理：<?php echo round($item['dl'],1); ?><br /><br />名次：<?php echo $item['dlmc']; ?></button>
             </div>
+			<?php
+			}
+			if ($item['wzmc'] != 0) {
+			?>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-primary circle">文综：<?php echo $item['wz'];?><br /><br />名次：<?php echo $item['wzmc']; ?></button>
+                <button type="button" class="btn btn-primary circle">文综：<?php echo round($item['wz'],1); ?><br /><br />名次：<?php echo $item['wzmc']; ?></button>
             </div>
+			<?php
+			}
+			?>
             <div class="col-xs-6 col-md-3 col-lg-2">
-                <button type="button" class="btn btn-warning circle">总分：<?php echo $item['zf'];?><br /><br />名次：<?php echo $item['jm']; ?></button>
+                <button type="button" class="btn btn-warning circle">总分：<?php echo round($item['zf'],1); ?><br /><br />名次：<?php echo $item['jm']; ?></button>
             </div>
         </div>
 
@@ -67,7 +85,7 @@
 
         <div class="col-md-12 hidden-xs">
             <!--历次成绩 begin-->
-            <table class="table table-bordered">
+            <table class="table table-bordered text-center">
                 <tr>
                     <td>语文</td><td>名次</td><td>数学</td><td>名次</td><td>英语</td><td>名次</td>
                     <td>物理</td><td>名次</td><td>化学</td><td>名次</td><td>生物</td><td>名次</td>
@@ -75,10 +93,16 @@
                     <td>总分</td><td>名次</td>
                 </tr>
                 <tr>
-                    <td><?php echo $scores['yw']; ?></td><td><?php echo $scores['ywmc']; ?></td><td><?php echo $scores['sx']; ?></td><td><?php echo $scores['sxmc']; ?></td><td><?php echo $scores['yy']; ?></td><td><?php echo $scores['yymc']; ?></td>
-                    <td>物理</td><td>名次</td><td>化学</td><td>名次</td><td>生物</td><td>名次</td>
-                    <td>政治</td><td>名次</td><td>历史</td><td>名次</td><td>地理</td><td>名次</td>
-                    <td><?php echo $scores['zf']; ?></td><td><?php echo $scores['jm']; ?></td>
+                    <td><?php echo round($scores['yw'],1); ?></td><td><?php echo $scores['ywmc']; ?></td>
+                    <td><?php echo round($scores['sx'],1); ?></td><td><?php echo $scores['sxmc']; ?></td>
+                    <td><?php echo round($scores['yy'],1); ?></td><td><?php echo $scores['yymc']; ?></td>
+                    <td><?php echo round($scores['wl'],1); ?></td><td><?php echo $scores['wlmc']; ?></td>
+                    <td><?php echo round($scores['hx'],1); ?></td><td><?php echo $scores['hxmc']; ?></td>
+                    <td><?php echo round($scores['sw'],1); ?></td><td><?php echo $scores['swmc']; ?></td>
+                    <td><?php echo round($scores['zz'],1); ?></td><td><?php echo $scores['zzmc']; ?></td>
+                    <td><?php echo round($scores['ls'],1); ?></td><td><?php echo $scores['lsmc']; ?></td>
+                    <td><?php echo round($scores['dl'],1); ?></td><td><?php echo $scores['dlmc']; ?></td>
+                    <td><?php echo round($scores['zf'],1); ?></td><td><?php echo $scores['jm']; ?></td>
                 </tr>
             </table>
             <!--历次成绩 end-->
