@@ -6,7 +6,7 @@ class News extends CI_Controller {
     {
         parent::__construct();
         $this->load->library('session');
-        $this->load->helper('url');
+        $this->load->helper(array('form', 'url'));
         $this->load->model('news_model');
     }
 
@@ -29,6 +29,15 @@ class News extends CI_Controller {
         }
         //$this->session->set_userdata('goto', $this->uri->uri_string());
         $data['news_item'] = $this->news_model->get_news($id);
+        $this->load->view('header');
+        $this->load->view('news_items', $data);
+        $this->load->view('footer');
+    }
+
+    public function comment()
+    {
+        $data['news_comment'] = $this->news_model->commentPost();
+        $data['test'] = 'this is a test';
         $this->load->view('header');
         $this->load->view('news_items', $data);
         $this->load->view('footer');

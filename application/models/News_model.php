@@ -24,6 +24,7 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
+	/*新闻中心 - 视频点播*/
     public function get_video($id = FALSE)
     {
         if ($id === FALSE)
@@ -37,6 +38,7 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
+	/*新闻中心 - 最新资源*/
     public function get_download($id = FALSE)
     {
         if ($id === FALSE)
@@ -50,6 +52,7 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
+	/*新闻中心 - 友情链接*/
     public function get_friendsites($id = FALSE)
     {
         if ($id === FALSE)
@@ -59,6 +62,24 @@ class News_model extends CI_Model {
         }
         $query = $this->db->get_where('swan_links', array('id' => $id));
         return $query->row_array();
+    }
+
+	/*新闻中心 - 文章评论*/
+    public function commentPost($content = FALSE, $username = FALSE)
+    {
+        $now = date("Y-m-d H:i:s");
+        if ($content === FALSE || $username === FALSE)
+        {
+            //$query = $this->db->get('swan_news');
+            //return $query->result_array();
+        }
+        $data = array(
+            'content' => $this->input->post('content'),
+            //'author' => $this->input->post('username'),
+            'pubtime' => $now,
+            'status' => 'draft'
+        );
+        $this->db->insert('swan_comment', $data);
     }
 
 }

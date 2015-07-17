@@ -21,8 +21,13 @@
             <?php
                 $username = $this->session->userdata('username');
                 if (!empty($username)) {
+                }
             ?>
-            <form method="post" id="comments" name="comments" action="#" class="form-horizontal">
+            <?php
+                $attributes = array('class' => 'form-horizontal');
+                echo form_open('news/comment', $attributes);
+            ?>
+            <!--<form method="post" id="comments" name="comments" action="#" class="form-horizontal">-->
                 <!--评论 begin-->
                 <div class="col-xs-12 col-md-12 panel panel-info" style="margin:0 0 20px 0; padding:0;">
                     <div class="panel-heading">评论</div>
@@ -37,21 +42,6 @@
                 </div>
                 <!--评论 end-->
             </form>
-            <?php
-                } else {
-            ?>
-                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:0 0 20px 0; padding:0;">
-                    <div class="panel-heading">评论</div>
-                    <div class="panel-body" style="margin:0; padding:0;">
-                        <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;" disabled="disabled"></textarea>
-                    </div>
-                </div>
-                <div class="text-center" style="margin-bottom:20px;">
-                    <a class="btn btn-success" href="<?php echo site_url('membership'); ?>" role="button">登录后发表评论</a>
-                </div>
-            <?php
-                }
-            ?>
         </div>
 
         <div class="col-md-3 hidden-xs">
