@@ -34,13 +34,9 @@ class News extends CI_Controller {
         $this->load->view('footer');
     }
 
-    public function comment()
+    public function comment($id)
     {
-        $data['news_comment'] = $this->news_model->commentPost();
-        $data['test'] = 'this is a test';
-        $this->load->view('header');
-        $this->load->view('news_items', $data);
-        $this->load->view('footer');
+        $data['news_comment'] = $this->news_model->commentPost($id);
     }
 
 }
