@@ -74,6 +74,7 @@ class News_model extends CI_Model {
             //return $query->result_array();
         }
         $data = array(
+			'title' => $this->session->userdata('news_id'),
             'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,

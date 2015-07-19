@@ -23,11 +23,9 @@ class News extends CI_Controller {
 
     public function view($id = FALSE)
     {
-        if ($id === FALSE)
-        {
-            $id = 1;
-        }
         //$this->session->set_userdata('goto', $this->uri->uri_string());
+        $id = ($id === FALSE) ? 1 : $id;
+        $this->session->set_userdata('news_id', $this->uri->segment(3, 1));
         $data['news_item'] = $this->news_model->get_news($id);
         $this->load->view('header');
         $this->load->view('news_items', $data);

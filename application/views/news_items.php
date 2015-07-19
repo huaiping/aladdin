@@ -100,12 +100,11 @@
 <script>
     jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo current_url(); ?>"});
 </script>
-<script src="//cdn.bootcss.com/jquery.form/3.51/jquery.form.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#comment').ajaxForm(function() {
-            alert("Thank you for your comment!");
-			$('#comment').clearForm();
+            alert("评论发表成功，谢谢参与！");
+            $('#comment').clearForm();
         });
     });
 </script>
