@@ -26,6 +26,12 @@ class Survey extends CI_Controller {
         }
     }
 
+
+    public function post()
+    {
+        $data['results'] = $this->survey_model->surveyPost();
+    }
+
     public function is_login()
     {
         $status = $this->session->userdata('username');
