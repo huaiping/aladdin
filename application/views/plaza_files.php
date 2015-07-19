@@ -132,7 +132,11 @@ $(function() {
                         <label for="title" class="col-xs-3 col-sm-1 col-md-1 control-label">文件</label>
                         <div class="col-xs-9 col-sm-11 col-md-11"><input type="file" class="form-control" name="userfile" required="required"></div>
                     </div>
-                    <textarea id="content" name="content" class="form-control col-md-11" rows="10" style="visibility:hidden;">描述</textarea>
+					<div class="form-group">
+						<label for="content" class="col-md-1 control-label">描述</label>
+	                    <div class="col-xs-9 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="10" style="visibility:hidden;"></textarea></div>
+					</div>
+
                     <div class="form-group">
                         <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
                             <button type="submit" class="btn btn-success">提交资源</button>

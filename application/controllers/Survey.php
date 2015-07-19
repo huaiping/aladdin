@@ -26,7 +26,6 @@ class Survey extends CI_Controller {
         }
     }
 
-
     public function post()
     {
         $data['results'] = $this->survey_model->surveyPost();
