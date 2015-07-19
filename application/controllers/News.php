@@ -34,7 +34,29 @@ class News extends CI_Controller {
 
     public function comment()
     {
-        $data['news_comment'] = $this->news_model->commentPost();
+		if ($this->is_login())
+        {
+			$data['news_comment'] = $this->news_model->commentPost();
+        }
+        else
+        {
+            $this->session->set_userdata('goto', 'news/view/'.$this->uri->segment(3,1));
+            $this->load->view('header');
+            $this->load->view('login');
+            $this->load->view('footer');
+        }
     }
 
+	public function is_login()
+    {
+        $status = $this->session->userdata('username');
+        if ($status)
+        {
+            return TRUE;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
 }

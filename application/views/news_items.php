@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="text-center" style="margin-bottom:20px;">
-                    <a class="btn btn-success" href="<?php echo site_url('membership'); ?>" role="button">登录后发表评论</a>
+                    <a class="btn btn-success" href="<?php echo site_url('news/comment'); ?>" role="button">登录后发表评论</a>
                 </div>
             <?php
                 }
@@ -101,8 +101,12 @@
     jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo current_url(); ?>"});
 </script>
 <script>
-    $(document).ready(function() {
+    $(function(){
         $('#comment').ajaxForm(function() {
+            if ($("#content").val().length < 2) {
+                alert("评论不能为空");
+                return false;
+            }
             alert("评论发表成功，谢谢参与！");
             $('#comment').clearForm();
         });
