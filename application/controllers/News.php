@@ -34,9 +34,9 @@ class News extends CI_Controller {
 
     public function comment()
     {
-		if ($this->is_login())
+        if ($this->is_login())
         {
-			$data['news_comment'] = $this->news_model->commentPost();
+            $data['news_comment'] = $this->news_model->commentPost();
         }
         else
         {
@@ -47,7 +47,7 @@ class News extends CI_Controller {
         }
     }
 
-	public function is_login()
+    public function is_login()
     {
         $status = $this->session->userdata('username');
         if ($status)

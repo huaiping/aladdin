@@ -43,6 +43,7 @@ body {padding-top:70px;}
 .widget-links_item small {display:inline-block; font-size:13px;}
 
 .news .widget-links_item, .download .widget-links_item {white-space: nowrap;text-overflow:ellipsis; overflow:hidden;}
+blockquote p {font-size:16px;}
 #slide {overflow:hidden;}
 #slide ul {list-style:none; width:2999px;}
 #article img {max-width:100%;}
