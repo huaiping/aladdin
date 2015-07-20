@@ -1,6 +1,6 @@
 <section class="container">
     <?php
-        $attributes = array('class' => 'form-horizontal');
+        $attributes = array('class' => 'form-horizontal', 'id' => 'survey');
         echo form_open('survey/post', $attributes);
     ?>
     <!--<form method="post" id="survey" name="survey" action="#" class="form-horizontal">-->
@@ -10,74 +10,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -89,74 +62,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -168,74 +114,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -247,74 +166,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -326,74 +218,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -405,74 +270,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -484,74 +322,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -563,74 +374,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -642,74 +426,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -721,74 +478,47 @@
             <div class="panel-body row">
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">语文</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">语文</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">数学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">数学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">英语</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">英语</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">物理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">物理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">化学</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">化学</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">生物</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">生物</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">政治</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">政治</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">历史</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">历史</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
                 <div class="col-md-9ths form-group" style="margin:0 5px 0 0;">
                     <select class="selectpicker form-control">
-                        <option value="0">地理</option>
-                        <option value="3">A</option>
-                        <option value="2">B</option>
-                        <option value="1">C</option>
+                        <option value="0">地理</option><option value="3">A</option><option value="2">B</option><option value="1">C</option>
                     </select>
                 </div>
             </div>
@@ -806,7 +536,6 @@
                 <button type="submit" class="btn btn-success">提交答卷</button>
             </div>
         </div>
-
     </form>
 </section>
 
@@ -814,4 +543,16 @@
 window.onload=function(){
     $('.selectpicker').selectpicker();
 };
+</script>
+<script>
+    $(function(){
+        $('#survey').ajaxForm(function() {
+            //if ($("#content").val().length < 2) {
+            //    alert("评论不能为空");
+            //    return false;
+            //}
+            alert("问卷调查成功提交，谢谢参与！");
+            //$('#comment').clearForm();
+        });
+    });
 </script>
