@@ -27,7 +27,7 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $down_item['title']; ?></h4></div>
             </div>
-            <!--右侧资源信息 begin-->
+            <!--右侧资源详情 begin-->
             <table class="table table-bordered">
                 <tr>
                     <td class="col-md-5">运行环境：Windows 7+ / Office 2007+</td>
@@ -44,7 +44,6 @@
                     <td>下载次数：<?php echo $down_item['hits']; ?></td><td>添加时间：<?php echo $down_item['pubtime']; ?></td>
                 </tr>
             </table>
-            <!--右侧资源信息列表 end-->
 
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>资源简介</h4></div>
@@ -67,7 +66,7 @@
                     <li class="widget-links_item">未经本站许可，不得非法盗链及抄袭本站资源；如引用页面，请注明出处，谢谢您的支持！</li>
                 </ul>
             </div>
-
+            <!--右侧资源详情 end-->
         </div>
     </div>
 </section>

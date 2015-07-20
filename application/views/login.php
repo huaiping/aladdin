@@ -42,7 +42,6 @@
                         </div>
                     </form>
                 </div>
-                <!--用户登录 end-->
                 <?php
                     if (!empty(validation_errors())) {
                 ?>
@@ -56,6 +55,7 @@
                 <div class="alert alert-warning text-center" role="alert">
                     <strong>还没有账号？赶紧注册吧！</strong>
                 </div>
+                <!--用户登录 end-->
             </div>
         </div>
     </div>

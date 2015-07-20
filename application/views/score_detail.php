@@ -32,36 +32,36 @@
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-warning circle">理综：<?php echo round($item['lz'],1); ?><br /><br />名次：<?php echo $item['lzmc']; ?></button>
             </div>
-			<?php
-			if ($item['zzmc'] != 0) {
-			?>
+            <?php
+            if ($item['zzmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-info circle">政治：<?php echo round($item['zz'],1); ?><br /><br />名次：<?php echo $item['zzmc']; ?></button>
             </div>
-			<?php
-			}
-			if ($item['lsmc'] != 0) {
-			?>
+            <?php
+            }
+            if ($item['lsmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-danger circle">历史：<?php echo round($item['ls'],1); ?><br /><br />名次：<?php echo $item['lsmc']; ?></button>
             </div>
-			<?php
-			}
-			if ($item['dlmc'] != 0) {
-			?>
+            <?php
+            }
+            if ($item['dlmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-success circle">地理：<?php echo round($item['dl'],1); ?><br /><br />名次：<?php echo $item['dlmc']; ?></button>
             </div>
-			<?php
-			}
-			if ($item['wzmc'] != 0) {
-			?>
+            <?php
+            }
+            if ($item['wzmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-primary circle">文综：<?php echo round($item['wz'],1); ?><br /><br />名次：<?php echo $item['wzmc']; ?></button>
             </div>
-			<?php
-			}
-			?>
+            <?php
+            }
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-warning circle">总分：<?php echo round($item['zf'],1); ?><br /><br />名次：<?php echo $item['jm']; ?></button>
             </div>
