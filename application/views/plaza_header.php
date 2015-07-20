@@ -10,6 +10,7 @@
 <link href="//cdn.bootcss.com/bootstrap-select/1.7.3/css/bootstrap-select.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" />
 <style type="text/css">
+body {padding-top:70px;}
 .membership {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
 .navbar-default .navbar-brand {color:#fff;}
@@ -63,7 +64,6 @@
                 <li><a href="<?php echo site_url('membership/video'); ?>">视频</a></li>
                 <li><a href="<?php echo site_url('membership/profile'); ?>">个人资料</a></li>
                 <li><a href="<?php echo site_url('membership/logout'); ?>">退出</a></li>
-                </ul>
             </ul>
         </div>
     </div>

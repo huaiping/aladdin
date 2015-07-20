@@ -78,7 +78,7 @@ class Membership extends CI_Controller {
         if ($this->is_login())
         {
             //redirect('membership/plaza');
-			$this->load->view('plaza_header');
+            $this->load->view('plaza_header');
             $this->load->view('plaza_article');
             $this->load->view('footer');
         }
@@ -101,7 +101,7 @@ class Membership extends CI_Controller {
         if ($this->is_login())
         {
             //redirect('membership/plaza');
-			$this->load->view('plaza_header');
+            $this->load->view('plaza_header');
             $this->load->view('plaza');
             $this->load->view('footer');
         }
@@ -118,7 +118,7 @@ class Membership extends CI_Controller {
         if ($this->is_login())
         {
             //redirect('membership/plaza');
-			$this->load->view('plaza_header');
+            $this->load->view('plaza_header');
             $this->load->view('plaza_files');
             $this->load->view('footer');
         }
@@ -147,7 +147,7 @@ class Membership extends CI_Controller {
             $data = array('upload_data' => $this->upload->data());
             $url = $this->upload->data('file_name');
             $this->membership_model->filesPost($title, $category, $url, $username);
-			$this->load->view('plaza_header');
+            $this->load->view('plaza_header');
             $this->load->view('plaza_files', $data);
             $this->load->view('footer');
         }
