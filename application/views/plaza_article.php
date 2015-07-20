@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="content" class="col-md-1 control-label">描述</label>
+                    <label for="content" class="col-md-1 control-label">正文</label>
                     <div class="col-xs-9 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="20" style="visibility:hidden;"></textarea></div>
                 </div>
                 <div class="form-group">
