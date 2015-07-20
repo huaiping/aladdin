@@ -30,7 +30,7 @@
             <!--右侧资源信息 begin-->
             <table class="table table-bordered">
                 <tr>
-                    <td class="col-md-5">运行环境：Windows 7+ / Office 2003+</td>
+                    <td class="col-md-5">运行环境：Windows 7+ / Office 2007+</td>
                     <td class="col-md-3 hidden-xs text-center" rowspan="4" style="vertical-align:middle;"><img src="<?php echo base_url('webroot/image/image1.gif'); ?>" alt=""></td>
                     <td class="col-md-4">文件大小：1314 KB</td>
                 </tr>
@@ -47,7 +47,7 @@
             <!--右侧资源信息列表 end-->
 
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>资源简介</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>资源简介</h4></div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><?php echo $down_item['description']; ?></li>
                 </ul>
@@ -61,7 +61,7 @@
             </div>
 
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-warning"><h4>下载说明</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>下载说明</h4></div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item">如果您发现该资源不能下载，请及时给我们留言，谢谢！</li>
                     <li class="widget-links_item">未经本站许可，不得非法盗链及抄袭本站资源；如引用页面，请注明出处，谢谢您的支持！</li>

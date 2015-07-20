@@ -77,13 +77,12 @@
         </div>
     </div>
 
-
     <div class="score row">
-        <div id="charts" class="col-xs-12 col-md-12">
+        <div id="charts" class="col-xs-12 col-md-12" style="margin-top:30px;">
             <!--成绩曲线-->
         </div>
 
-        <div class="col-md-12 hidden-xs">
+        <div class="col-md-12 hidden-xs" style="margin-top:30px;">
             <!--历次成绩 begin-->
             <table class="table table-bordered text-center">
                 <tr>
