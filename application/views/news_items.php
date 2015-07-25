@@ -29,7 +29,7 @@
             ?>
             <!--<form method="post" id="comments" name="comments" action="#" class="form-horizontal">-->
                 <!--评论 begin-->
-                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:0 0 20px 0; padding:0;">
+                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:30px 0 20px 0; padding:0;">
                     <div class="panel-heading">评论</div>
                     <div class="panel-body" style="margin:0; padding:0;">
                         <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;"></textarea>
@@ -45,7 +45,7 @@
             <?php
                 } else {
             ?>
-                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:0 0 20px 0; padding:0;">
+                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:30px 0 20px 0; padding:0;">
                     <div class="panel-heading">评论</div>
                     <div class="panel-body" style="margin:0; padding:0;">
                         <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;" disabled="disabled"></textarea>
@@ -57,6 +57,16 @@
             <?php
                 }
             ?>
+
+			<div class="media">
+				<div class="media-left">
+					<a href="#"><img class="media-object" src="http://huaiping.net/v2/avatar/avatar.php?char=<?php echo $news_comment['author']; ?>" alt=""></a>
+				</div>
+				<div class="media-body">
+					<h4 class="media-heading"><?php echo $news_comment['pubtime']; ?></h4>
+					<?php echo $news_comment['content']; ?>
+				</div>
+			</div>
         </div>
 
         <div class="col-md-3 hidden-xs">

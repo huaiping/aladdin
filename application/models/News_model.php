@@ -64,6 +64,18 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
+    /*新闻中心 - 评论*/
+    public function get_comment($id = FALSE)
+    {
+        if ($id === FALSE)
+        {
+            $query = $this->db->get('swan_comment');
+            return $query->result_array();
+        }
+        $query = $this->db->get_where('swan_comment', array('title' => $id));
+        return $query->row_array();
+    }
+
     /*新闻中心 - 文章评论*/
     public function commentPost($content = FALSE, $username = FALSE)
     {
@@ -74,7 +86,7 @@ class News_model extends CI_Model {
             //return $query->result_array();
         }
         $data = array(
-			'title' => $this->session->userdata('news_id'),
+            'title' => $this->session->userdata('news_id'),
             'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
