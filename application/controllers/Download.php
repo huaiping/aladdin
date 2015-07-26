@@ -76,10 +76,7 @@ class Download extends CI_Controller {
 
     public function view($id = FALSE)
     {
-        if ($id === FALSE)
-        {
-            $id = 1;
-        }
+        $id = ($id === FALSE) ? 1 : $id;
         $data['down_hot'] = $this->download_model->get_hots();
         $data['down_item'] = $this->download_model->get_item($id);
         $this->load->view('header');

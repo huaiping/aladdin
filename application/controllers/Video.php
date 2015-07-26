@@ -12,10 +12,7 @@ class Video extends CI_Controller {
 
     public function index($id = FALSE)
     {
-        if ($id === FALSE)
-        {
-            $id = 1;
-        }
+        $id = ($id === FALSE) ? 1 : $id;
         $data['hot'] = $this->video_model->get_hots();
         $data['item'] = $this->video_model->get_items($id);
         $this->load->view('header');
@@ -25,10 +22,7 @@ class Video extends CI_Controller {
 
     public function view($id = FALSE)
     {
-        if ($id === FALSE)
-        {
-            $id = 1;
-        }
+        $id = ($id === FALSE) ? 1 : $id;
         $data['hot'] = $this->video_model->get_hots();
         $data['item'] = $this->video_model->get_items($id);
         $this->load->view('header');
