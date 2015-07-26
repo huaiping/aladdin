@@ -73,7 +73,7 @@ class News_model extends CI_Model {
             return $query->result_array();
         }
         $query = $this->db->get_where('swan_comment', array('title' => $id));
-        return $query->row_array();
+        return $query->result_array();
     }
 
     /*新闻中心 - 文章评论*/

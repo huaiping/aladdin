@@ -58,15 +58,17 @@
                 }
             ?>
 
-			<div class="media">
-				<div class="media-left">
-					<a href="#"><img class="media-object" src="http://huaiping.net/v2/avatar/avatar.php?char=<?php echo $news_comment['author']; ?>" alt=""></a>
-				</div>
-				<div class="media-body">
-					<h4 class="media-heading"><?php echo $news_comment['pubtime']; ?></h4>
-					<?php echo $news_comment['content']; ?>
-				</div>
-			</div>
+            <?php foreach ($news_comment as $comments): ?>
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object" src="http://huaiping.net/v2/avatar/avatar.php?char=<?php echo $comments['author']; ?>" alt="" style="width:60px; height:60px;">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><?php echo $comments['content']; ?></h4>
+                    <?php echo $comments['pubtime']; ?>
+                </div>
+            </div>
+            <?php endforeach; ?>
         </div>
 
         <div class="col-md-3 hidden-xs">
