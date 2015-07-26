@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="cmn-hans">
 <head>
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">

@@ -23,7 +23,7 @@ class News extends CI_Controller {
 
     public function view($id = FALSE)
     {
-        //$this->session->set_userdata('goto', $this->uri->uri_string());
+        $this->session->set_userdata('goto', $this->uri->uri_string());
         $id = ($id === FALSE) ? 1 : $id;
         $this->session->set_userdata('news_id', $this->uri->segment(3, 1));
         $data['news_item'] = $this->news_model->get_news($id);
@@ -41,7 +41,7 @@ class News extends CI_Controller {
         }
         else
         {
-            $this->session->set_userdata('goto', 'news/view/'.$this->uri->segment(3,1));
+            //$this->session->set_userdata('goto', 'news/view/'.$this->uri->segment(3,1));
             $this->load->view('header');
             $this->load->view('login');
             $this->load->view('footer');
