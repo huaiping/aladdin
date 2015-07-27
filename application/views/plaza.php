@@ -13,7 +13,6 @@
 
         <div class="col-md-9">
         <?php
-            echo $this->session->userdata('username');
             echo $this->input->user_agent();
         ?>
         </div>

@@ -45,6 +45,7 @@ body {padding-top:70px;}
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
+    <!--顶部导航栏 begin-->
     <div class="container bg-primary">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -63,10 +64,10 @@ body {padding-top:70px;}
                 <li><a href="<?php echo site_url('membership/files'); ?>">文件</a></li>
                 <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
                 <li><a href="<?php echo site_url('membership/video'); ?>">视频</a></li>
-                <li><a href="<?php echo site_url('membership/profile'); ?>">个人资料</a></li>
                 <li><a href="<?php echo site_url('membership/logout'); ?>">退出</a></li>
             </ul>
         </div>
     </div>
+    <!--顶部导航栏 end-->
 </nav>
 
