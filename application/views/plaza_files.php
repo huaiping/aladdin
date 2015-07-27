@@ -45,8 +45,8 @@
                     <div class="col-xs-9 col-sm-11 col-md-11"><input type="file" class="file" id="userfile" name="userfile" required="required"></div>
                 </div>
                 <div class="form-group">
-                    <label for="content" class="col-md-1 control-label">描述</label>
-                    <div class="col-xs-9 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="10" style="visibility:hidden;"></textarea></div>
+                    <label for="content" class="col-xs-12 col-md-1 control-label">描述</label>
+                    <div class="col-xs-12 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="10" style="visibility:hidden;"></textarea></div>
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">

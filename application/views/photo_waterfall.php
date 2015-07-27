@@ -31,7 +31,7 @@
 
 <script>
     makeboxes = function() {//滚动条滚动时添加内容
-        var boxes = new Array;
+        var boxes = [];
         var jsonLength = 0;
         $.ajax({
             type: 'POST',

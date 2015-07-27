@@ -13,11 +13,6 @@
 
         <div class="col-md-9">
             <?php
-                //echo $this->session->userdata('username');
-                //echo $this->input->user_agent();
-                //echo $this->input->ip_address();
-            ?>
-            <?php
                 $attributes = array('class' => 'form-horizontal', 'autocomplete' => 'off');
                 $hidden = array('username' => $this->session->userdata('username'), 'ip' => $this->input->ip_address());
                 echo form_open('membership/messagePost', $attributes, $hidden);
@@ -28,8 +23,8 @@
                     <div class="col-xs-9 col-sm-11 col-md-11"><input type="text" class="form-control" id="title" name="title" required="required"></div>
                 </div>
                 <div class="form-group">
-                    <label for="content" class="col-md-1 control-label">留言</label>
-                    <div class="col-xs-9 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="15" style="visibility:hidden;"></textarea></div>
+                    <label for="content" class="col-xs-12 col-md-1 control-label">留言</label>
+                    <div class="col-xs-12 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="15" style="visibility:hidden;"></textarea></div>
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
