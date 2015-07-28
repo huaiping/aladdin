@@ -81,4 +81,29 @@ class Guestbook extends CI_Controller {
         $this->load->view('footer');
     }
 
+    public function message()
+    {
+        if ($this->is_login())
+        {
+            redirect('membership/message');
+        }
+        else
+        {
+            $this->session->set_userdata('goto', $this->uri->uri_string());
+            redirect('membership');
+        }
+    }
+
+    public function is_login()
+    {
+        $status = $this->session->userdata('username');
+        if ($status)
+        {
+            return TRUE;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
 }

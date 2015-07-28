@@ -11,7 +11,7 @@
 
     <div class="guestbook row">
         <div class="col-md-12" style="margin-bottom:20px;">
-            <a href="<?php echo site_url('membership/message'); ?>" class="btn btn-success" role="button">签写新的留言</a>
+            <a href="<?php echo site_url('guestbook/message'); ?>" class="btn btn-success" role="button">签写新的留言</a>
         </div>
     </div>
 
