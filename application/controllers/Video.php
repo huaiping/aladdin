@@ -29,5 +29,4 @@ class Video extends CI_Controller {
         $this->load->view('video', $data);
         $this->load->view('footer');
     }
-
 }

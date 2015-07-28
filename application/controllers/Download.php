@@ -83,5 +83,4 @@ class Download extends CI_Controller {
         $this->load->view('down_items', $data);
         $this->load->view('footer');
     }
-
 }
