@@ -1,5 +1,4 @@
-## 阿拉丁CMS
-A modern CMS for Chinese middle schools. Just for Practice.
+### 阿拉丁CMS
 
 ### Requirements
 PHP 5.4+ [http://www.php.net](http://php.net)  
