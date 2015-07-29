@@ -13,7 +13,7 @@
         <div class="col-md-9 hidden-xs">
             <div class="col-md-6">
                 <!--左侧使用指南 begin-->
-                <div class="media">
+                <div class="media" style="margin-top:20px;">
                     <div class="media-left">
                         <i class="fa fa-cube fa-4x media-object"></i>
                     </div>
@@ -29,7 +29,7 @@
 
             <div class="col-md-6">
                 <!--左侧更新公告 begin-->
-                <div class="media">
+                <div class="media" style="margin-top:20px;">
                     <div class="media-left">
                         <i class="fa fa-life-ring fa-4x media-object"></i>
                     </div>
@@ -45,7 +45,7 @@
 
             <div class="col-md-6">
                 <!--左侧历次成绩 begin-->
-                <div class="media" style="margin-top:50px; margin-bottom:50px;">
+                <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
                         <i class="fa fa-empire fa-4x media-object"></i>
                     </div>
@@ -60,7 +60,7 @@
 
             <div class="col-md-6">
                 <!--左侧成绩曲线 begin-->
-                <div class="media" style="margin-top:50px; margin-bottom:50px;">
+                <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
                         <i class="fa fa-rebel fa-4x media-object"></i>
                     </div>
@@ -75,7 +75,7 @@
 
             <div class="col-md-12">
                 <!--左侧温馨提示 begin-->
-                <div class="media" style="margin-bottom:20px;">
+                <div class="media" style="margin-bottom:30px;">
                     <div class="media-left">
                         <i class="fa fa-bell fa-4x media-object"></i>
                     </div>

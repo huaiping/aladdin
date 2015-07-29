@@ -17,11 +17,11 @@ body {padding-top:70px;}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color:#fff;}
 .navbar-default .navbar-nav > li > a {color:#fff;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color:#337ab7; background-color:#fff;}
-//.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {color:#00a2ca; background-color:#fff;}
+/*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {color:#00a2ca; background-color:#fff;}*/
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color:#00a2ca; background-color:#fff;}
-//.navbar-default .navbar-nav > .dropdown > a .caret {border-top-color:#777; border-bottom-color:#777; color:#fff;}
-//.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {border-top-color:#333; border-bottom-color:#333;}
-//.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {border-top-color:#555; border-bottom-color:#555;}
+/*.navbar-default .navbar-nav > .dropdown > a .caret {border-top-color:#777; border-bottom-color:#777; color:#fff;}*/
+/*.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {border-top-color:#333; border-bottom-color:#333;}*/
+/*.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {border-top-color:#555; border-bottom-color:#555;}*/
 .footer {background:#337ab7; border-color:#e7e7e7; color:#fff;}
 .banner, .news, .photos, .download, .guestbook, .video, .membership, .score, .survey, .salary {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .bs-callout {padding:5px; margin:5px 0; border:1px solid #eee; border-left-width:5px; border-radius:3px;}
@@ -39,9 +39,8 @@ body {padding-top:70px;}
 .widget-links a:hover, .widget-links a:focus {color:#004229; text-decoration:none;}
 .widget-links a:focus {outline:thin dotted; outline:5px auto -webkit-focus-ring-color; outline-offset:-2px;}
 .widget-links_item {margin-bottom:8px;}
-.widget-links_item a {margin-right:6px; word-break:break-word;}
+.widget-links_item a {margin-right:6px; word-break:break-all;}
 .widget-links_item small {display:inline-block; font-size:13px;}
-
 .news .widget-links_item, .download .widget-links_item {white-space: nowrap;text-overflow:ellipsis; overflow:hidden;}
 blockquote p {font-size:16px;}
 #slide {overflow:hidden;}
@@ -57,7 +56,7 @@ blockquote p {font-size:16px;}
 .galcolumn .item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
 .galcolumn .item img {width:100%; height:auto; border-top-left-radius:0.2em; border-top-right-radius:0.2em;}
 .galcolumn .item p {height:40px; padding-top:10px;  text-align:center;}
-//html {-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -ms-filter:grayscale(100%); -o-filter:grayscale(100%); filter:grayscale(100%); filter:gray;}
+/*html {-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -ms-filter:grayscale(100%); -o-filter:grayscale(100%); filter:grayscale(100%); filter:gray;}*/
 </style>
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

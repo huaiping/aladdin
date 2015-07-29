@@ -19,6 +19,8 @@ class Score extends CI_Controller {
 
     public function view()
     {
+        $data['category'] = $this->input->post('category', TRUE);
+        $data['number'] = $this->input->post('number', TRUE);
         $data['item'] = $this->score_model->get_items();
         $data['scores'] = $this->score_model->get_scores();
         $this->load->view('header');

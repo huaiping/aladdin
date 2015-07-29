@@ -20,19 +20,35 @@
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-info circle">英语：<?php echo round($item['yy'],1); ?><br /><br />名次：<?php echo $item['yymc']; ?></button>
             </div>
+            <?php
+            if ($item['wlmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-danger circle">物理：<?php echo round($item['wl'],1); ?><br /><br />名次：<?php echo $item['wlmc']; ?></button>
             </div>
+            <?php
+            }
+            if ($item['hxmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-success circle">化学：<?php echo round($item['hx'],1); ?><br /><br />名次：<?php echo $item['hxmc']; ?></button>
             </div>
+            <?php
+            }
+            if ($item['swmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-primary circle">生物：<?php echo round($item['sw'],1); ?><br /><br />名次：<?php echo $item['swmc']; ?></button>
             </div>
+            <?php
+            }
+            if ($item['lzmc'] != 0) {
+            ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
                 <button type="button" class="btn btn-warning circle">理综：<?php echo round($item['lz'],1); ?><br /><br />名次：<?php echo $item['lzmc']; ?></button>
             </div>
             <?php
+            }
             if ($item['zzmc'] != 0) {
             ?>
             <div class="col-xs-6 col-md-3 col-lg-2">
@@ -71,13 +87,20 @@
         <div class="col-md-3 hidden-xs">
             <!--成绩查询 begin-->
             <div class="searchBox row">
-                <?php echo $item['xm']; ?>
+                考试名称<br />
+                <?php echo $item['xm']; ?><br />
+                二维码<br />
+                <?php print_r($category); ?><br />
+                <?php print_r($number); ?>
             </div>
             <!--成绩查询 end-->
         </div>
     </div>
 
     <div class="score row">
+        <?php
+            if (strlen($number) == 18) {
+        ?>
         <div id="charts" class="col-xs-12 col-md-12" style="margin-top:30px;">
             <!--成绩曲线-->
         </div>
@@ -106,6 +129,9 @@
             </table>
             <!--历次成绩 end-->
         </div>
+        <?php
+            }
+        ?>
     </div>
 </section>
 
