@@ -64,7 +64,7 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
-    /*新闻中心 - 评论*/
+    /*新闻中心 - 评论列表*/
     public function get_comment($id = FALSE)
     {
         if ($id === FALSE)
