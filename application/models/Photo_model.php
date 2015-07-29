@@ -59,4 +59,5 @@ class Photo_model extends CI_Model {
         $query = $this->db->get('swan_photo');
         return $query->result_array();
     }
+
 }

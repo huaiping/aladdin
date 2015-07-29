@@ -37,14 +37,14 @@ class Download_model extends CI_Model {
         //return $this->pagination->create_links();
     }
 
-    public function get_item($slug = FALSE)
+    public function get_item($id = FALSE)
     {
-        if ($slug === FALSE)
+        if ($id === FALSE)
         {
             $query = $this->db->get('swan_download');
             return $query->result_array();
         }
-        $query = $this->db->get_where('swan_download', array('id' => $slug));
+        $query = $this->db->get_where('swan_download', array('id' => $id));
         return $query->row_array();
     }
 
