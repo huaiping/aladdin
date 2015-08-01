@@ -11,6 +11,11 @@
 
     <div class="score row">
         <div class="col-md-9 hidden-xs">
+             <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong><span class="glyphicon glyphicon-eye-open"></span> 温馨提示：即将更新各年级10月月考成绩，敬请关注！</strong>
+            </div>
+
             <div class="col-md-6">
                 <!--左侧使用指南 begin-->
                 <div class="media" style="margin-top:20px;">
@@ -19,9 +24,7 @@
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading" style="margin-bottom:10px;">使用指南</h4>
-                        <p>选择查询项目，例如：2015年秋高一期中考试；</p>
-                        <p>姓名栏输入姓名，该姓名需与学籍姓名一致；</p>
-                        <p>学号栏输入对应的学号、班级号或身份证号。</p>
+                        <p>选择查询项目，例如：2015年秋高一期中考试；姓名栏输入姓名，该姓名需与学籍姓名一致；学号栏输入对应的学号、班级号或身份证号。</p>
                     </div>
                 </div>
                 <!--左侧使用指南 end-->
@@ -31,13 +34,11 @@
                 <!--左侧更新公告 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
-                        <i class="fa fa-life-ring fa-4x media-object"></i>
+                        <i class="fa fa-bell fa-4x media-object"></i>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading" style="margin-bottom:10px;">更新公告</h4>
-                        <p>7月1日已更新：2015年春高一期末考试成绩！</p>
-                        <p>7月1日已更新：2015年春高二期末考试成绩！</p>
-                        <p>7月1日已更新：2015年春高一期末考试成绩！</p>
+                        <h4 class="media-heading" style="margin-bottom:10px;">温馨提示</h4>
+                        <p>建议使用360浏览器、谷歌浏览器、猎豹浏览器、QQ浏览器、UC浏览器、搜狗浏览器、百度浏览器、Internet Explorer的最新版，以获得最佳体验。</p>
                     </div>
                 </div>
                 <!--左侧更新公告 end-->
@@ -70,21 +71,6 @@
                     </div>
                 </div>
                 <!--左侧成绩曲线 end-->
-            </div>
-
-
-            <div class="col-md-12">
-                <!--左侧温馨提示 begin-->
-                <div class="media" style="margin-bottom:30px;">
-                    <div class="media-left">
-                        <i class="fa fa-bell fa-4x media-object"></i>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading" style="margin-bottom:10px;">温馨提示</h4>
-                        <p>建议使用360浏览器、谷歌浏览器、猎豹浏览器、QQ浏览器、UC浏览器、搜狗浏览器、百度浏览器、Internet Explorer的最新版，以获得最佳体验。</p>
-                    </div>
-                </div>
-                <!--左侧温馨提示 end-->
             </div>
         </div>
 
