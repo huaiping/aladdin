@@ -15,7 +15,7 @@
             <div class="col-md-8 hidden-xs hidden-sm" style="background:url(<?php echo base_url('webroot/image/background.jpg'); ?>); background-size:cover; height:400px;"></div>
             <!--左侧图片 end-->
 
-            <div class="col-xs-12 col-md-4" style="padding-top:40px; height:400px; border:2px solid #eee;">
+            <div class="col-xs-12 col-md-4" style="padding-top:40px; border:2px solid #eee;">
                 <!--用户登录 begin-->
                 <div class="loginBox row">
                     <h2 class="text-center" style="margin-bottom:20px;">用户登录</h2>
@@ -24,19 +24,27 @@
                         echo form_open('membership/login', $attributes);
                     ?>
                         <div class="form-group">
-                            <label for="username" class="col-xs-3 col-sm-3 col-md-3 control-label">用户名</label>
-                            <div class="col-xs-8 col-sm-8 col-md-8">
-                                <input type="text" class="form-control" id="username" name="username" placeholder="用户名" value="test01" required="required">
+                            <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
+                                <span class="input-group-addon" id="basic-addon1">账号</span>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="账号" aria-describedby="basic-addon1" value="test01" required="required">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
+                                <span class="input-group-addon" id="basic-addon1">密码</span>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" aria-describedby="basic-addon1" value="test01" required="required">
+                            </div>
+                        </div>
+                        <!--
                         <div class="form-group">
                             <label for="password" class="col-xs-3 col-sm-3 col-md-3 control-label">密码</label>
                             <div class="col-xs-8 col-sm-8 col-md-8">
                                 <input type="password" class="form-control" id="password" name="password" placeholder="密码" value="test01" required="required">
                             </div>
                         </div>
+                        -->
                         <div class="form-group">
-                            <div class="col-xs-8 col-sm-8 col-xs-offset-4 col-sm-offset-4 col-md-8">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-xs-offset-4 col-sm-offset-4">
                                 <button class="btn btn-info" name="login" type="submit">登录</button>
                             </div>
                         </div>

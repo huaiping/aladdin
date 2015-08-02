@@ -11,7 +11,7 @@
             </ul>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-xs-12 col-md-9">
             <?php
                 $attributes = array('class' => 'form-horizontal', 'autocomplete' => 'off');
                 $hidden = array('username' => $this->session->userdata('username'), 'ip' => $this->input->ip_address());
@@ -42,7 +42,7 @@
                 </div>
                 <div class="form-group">
                     <label for="userfile" class="col-xs-3 col-sm-1 col-md-1 control-label">文件</label>
-                    <div class="col-xs-9 col-sm-11 col-md-11"><input type="file" class="file" id="userfile" name="userfile" required="required"></div>
+                    <div class="col-xs-9 col-sm-11 col-md-11"><input type="file" class="file col-xs-12" id="userfile" name="userfile" required="required"></div>
                 </div>
                 <div class="form-group">
                     <label for="content" class="col-xs-12 col-md-1 control-label">描述</label>
