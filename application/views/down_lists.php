@@ -17,7 +17,7 @@
                     <ul class="widget-links list-unstyled">
                         <?php foreach ($down_hot as $hot):?>
                             <li class="widget-links_item"><a href="<?php echo site_url('download/view/'.$hot['id']); ?>"><?php echo $hot['title']; ?></a></li>
-                        <?php endforeach;?>
+                        <?php endforeach; ?>
                     </ul>
             </div>
             <!--左侧热门资源 end-->
@@ -44,7 +44,7 @@
                         <td class="col-md-2 col-lg-1 widget-links_item hidden-xs hidden-sm"><?php echo $down_list[$i]['license']; ?></td>
                         <td class="col-sm-1 col-md-1 widget-links_item hidden-xs">★★★★★</td>
                     </tr>
-                    <?php endfor;?>
+                    <?php endfor; ?>
                 </tbody>
             </table>
             <!--右侧资源下载列表 end-->

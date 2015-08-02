@@ -100,7 +100,7 @@
                 <div id="qrcode" class="text-center"></div>
                 <div class="text-center">手机扫一扫，成绩早知道</div>
             </div>
-            <!--二维码 begin-->
+            <!--二维码 end-->
 
             <!--成绩查询 begin-->
             <div class="searchBox row">
