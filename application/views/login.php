@@ -31,18 +31,10 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
-                                <span class="input-group-addon" id="basic-addon1">密码</span>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" aria-describedby="basic-addon1" value="test01" required="required">
+                                <span class="input-group-addon" id="basic-addon2">密码</span>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" aria-describedby="basic-addon2" value="test01" required="required">
                             </div>
                         </div>
-                        <!--
-                        <div class="form-group">
-                            <label for="password" class="col-xs-3 col-sm-3 col-md-3 control-label">密码</label>
-                            <div class="col-xs-8 col-sm-8 col-md-8">
-                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" value="test01" required="required">
-                            </div>
-                        </div>
-                        -->
                         <div class="form-group">
                             <div class="col-xs-8 col-sm-8 col-md-8 col-xs-offset-4 col-sm-offset-4">
                                 <button class="btn btn-info" name="login" type="submit">登录</button>
