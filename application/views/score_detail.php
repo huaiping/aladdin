@@ -11,6 +11,7 @@
 
     <div class="score row">
         <div class="col-xs-12 col-md-9">
+            <!--单次成绩 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>考试名称：<?php echo $item['xm']; ?></h4></div>
                 <div class="col-xs-6 col-md-3 col-lg-2">
@@ -85,18 +86,21 @@
                 </div>
                 <div class="col-md-12">
                     <div class="alert alert-warning alert-dismissible" role="alert">
-                        <strong><span class="glyphicon glyphicon-fire"></span> 亲，本次考试中，你成功打败了xx位同学，继续加油哦！</strong>
+                        <strong><span class="glyphicon glyphicon-thumbs-up"></span> 亲，本次考试中，你成功打败了xx位同学，继续加油哦！</strong>
                     </div>
                 </div>
             </div>
+            <!--单次成绩 end-->
         </div>
 
         <div class="col-md-3 hidden-xs">
+            <!--二维码 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>二维码</h4></div>
                 <div id="qrcode" class="text-center"></div>
                 <div class="text-center">手机扫一扫，成绩早知道</div>
             </div>
+            <!--二维码 begin-->
 
             <!--成绩查询 begin-->
             <div class="searchBox row">

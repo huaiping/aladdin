@@ -11,13 +11,15 @@
 
     <div class="score row">
         <div class="col-md-9 hidden-xs">
-             <div class="alert alert-warning alert-dismissible" role="alert">
+            <!--网站通知 begin-->
+            <div class="alert alert-warning alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <strong><span class="glyphicon glyphicon-eye-open"></span> 温馨提示：即将更新各年级10月月考成绩，敬请关注！</strong>
             </div>
+            <!--网站通知 end-->
 
             <div class="col-md-6">
-                <!--左侧使用指南 begin-->
+                <!--使用指南 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
                         <i class="fa fa-cube fa-4x media-object"></i>
@@ -27,11 +29,11 @@
                         <p>选择查询项目，例如：2015年秋高一期中考试；姓名栏输入姓名，该姓名需与学籍姓名一致；学号栏输入对应的学号、班级号或身份证号。</p>
                     </div>
                 </div>
-                <!--左侧使用指南 end-->
+                <!--使用指南 end-->
             </div>
 
             <div class="col-md-6">
-                <!--左侧更新公告 begin-->
+                <!--温馨提示 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
                         <i class="fa fa-bell fa-4x media-object"></i>
@@ -41,11 +43,11 @@
                         <p>建议使用360浏览器、谷歌浏览器、猎豹浏览器、QQ浏览器、UC浏览器、搜狗浏览器、百度浏览器、Internet Explorer的最新版，以获得最佳体验。</p>
                     </div>
                 </div>
-                <!--左侧更新公告 end-->
+                <!--温馨提示 end-->
             </div>
 
             <div class="col-md-6">
-                <!--左侧历次成绩 begin-->
+                <!--历次成绩 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
                         <i class="fa fa-empire fa-4x media-object"></i>
@@ -56,11 +58,11 @@
                         <p>高校自主招生和地方专项计划需要每学期期末考试成绩和年级排名</p>
                     </div>
                 </div>
-                <!--左侧历次成绩 end-->
+                <!--历次成绩 end-->
             </div>
 
             <div class="col-md-6">
-                <!--左侧成绩曲线 begin-->
+                <!--成绩曲线 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
                         <i class="fa fa-rebel fa-4x media-object"></i>
@@ -70,7 +72,7 @@
                         <p>用身份证号代替学号和班级号，可查询高中阶段历次考试的成绩曲线图</p>
                     </div>
                 </div>
-                <!--左侧成绩曲线 end-->
+                <!--成绩曲线 end-->
             </div>
         </div>
 
@@ -86,7 +88,7 @@
                         <div class="col-xs-11 col-sm-10 col-md-10 col-xs-offset-1 col-md-offset-1">
                             <select class="selectpicker form-control" id="category" name="category">
                                 <option value="1">2015年春高一期末考试</option>
-                                <option value="1">2015年春高二期末考试</option>
+                                <option value="1|2">2015年春高二期末考试</option>
                             </select>
                         </div>
                     </div>
