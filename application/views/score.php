@@ -10,7 +10,7 @@
     </div>
 
     <div class="score row">
-        <div class="col-md-9 hidden-xs">
+        <div class="col-xs-12 col-md-9">
             <!--网站通知 begin-->
             <div class="alert alert-warning alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -18,7 +18,7 @@
             </div>
             <!--网站通知 end-->
 
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <!--使用指南 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
@@ -32,7 +32,7 @@
                 <!--使用指南 end-->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <!--温馨提示 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
@@ -46,7 +46,7 @@
                 <!--温馨提示 end-->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <!--历次成绩 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
@@ -61,7 +61,7 @@
                 <!--历次成绩 end-->
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <!--成绩曲线 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">

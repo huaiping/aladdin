@@ -84,7 +84,7 @@
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">总分：<?php echo round($item['zf'],1); ?><br /><br />名次：<?php echo $item['jm']; ?></button>
                 </div>
-                <div class="col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="alert alert-warning alert-dismissible" role="alert">
                         <strong><span class="glyphicon glyphicon-thumbs-up"></span> 亲，本次考试中，你成功打败了xx位同学，继续加油哦！</strong>
                     </div>
