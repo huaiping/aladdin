@@ -23,7 +23,7 @@
                     <div class="col-xs-9 col-sm-11 col-md-11"><input type="text" class="form-control" id="title" name="title" required="required"></div>
                 </div>
                 <div class="form-group">
-                    <label for="content" class="col-xs-12 col-md-1 control-label">留言</label>
+                    <label for="content" class="col-xs-12 col-sm-1 col-md-1 control-label">留言</label>
                     <div class="col-xs-12 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="15" style="visibility:hidden;"></textarea></div>
                 </div>
                 <div class="form-group">
