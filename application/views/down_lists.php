@@ -15,7 +15,7 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>热门资源</h4></div>
                     <ul class="widget-links list-unstyled">
-                        <?php foreach ($down_hot as $hot):?>
+                        <?php foreach ($down_hot as $hot): ?>
                             <li class="widget-links_item"><a href="<?php echo site_url('download/view/'.$hot['id']); ?>"><?php echo $hot['title']; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
