@@ -8,6 +8,7 @@
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
 <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.7.3/css/bootstrap-select.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" />
 <style type="text/css">

@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-9">
             <div class="col-xs-12 col-md-12">
                 <!--新闻 begin-->
-                <h3 class="text-center"><?php echo $news_item['title']; ?></h3>
+                <h4 class="text-center"><?php echo $news_item['title']; ?></h4>
                 <div id="article" style="line-height:30px;"><?php echo $news_item['content']; ?></div>
                 <!--新闻 end-->
             </div>

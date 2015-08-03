@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
-                        <button type="submit" class="btn btn-success">发表留言</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-commenting"></i> 发表留言</button>
                     </div>
                 </div>
             </form>
