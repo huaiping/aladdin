@@ -72,10 +72,10 @@ body {padding-top:70px;}
                 } elseif ($this->session->userdata('levels') == '2') {
             ?>
                 <li><a href="<?php echo site_url('membership/article'); ?>"><i class="fa fa-file-text"></i> 投稿</a></li>
-                <li><a href="<?php echo site_url('membership/files'); ?>"><i class="fa fa-share-alt"></i> 文件</a></li>
                 <li><a href="<?php echo site_url('membership/album'); ?>"><i class="fa fa-file-image-o"></i> 相册</a></li>
-                <li><a href="<?php echo site_url('membership/video'); ?>"><i class="fa fa-video-camera"></i> 视频</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>"><i class="fa fa-share-alt"></i> 文件</a></li>
                 <li><a href="<?php echo site_url('membership/message'); ?>"><i class="fa fa-commenting"></i> 留言</a></li>
+                <li><a href="<?php echo site_url('membership/video'); ?>"><i class="fa fa-video-camera"></i> 视频</a></li>
             <?php
                 } elseif ($this->session->userdata('levels') == '3') {
             ?>
