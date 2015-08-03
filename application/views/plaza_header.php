@@ -64,30 +64,31 @@ body {padding-top:70px;}
                 /*用户权限：1管理员 2教师 3学生 4贵宾*/
                 if ($this->session->userdata('levels') == '1') {
             ?>
-                <li><a href="<?php echo site_url('membership/files'); ?>">系统设置</a></li>
-                <li><a href="<?php echo site_url('membership/files'); ?>">用户管理</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-cog"></span> 系统设置</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-list-alt"></span> 文章管理</a></li>
             <?php
 
                 } elseif ($this->session->userdata('levels') == '2') {
             ?>
-                <li><a href="<?php echo site_url('membership/article'); ?>">投稿</a></li>
-                <li><a href="<?php echo site_url('membership/files'); ?>">文件</a></li>
-                <li><a href="<?php echo site_url('membership/album'); ?>">相册</a></li>
-                <li><a href="<?php echo site_url('membership/video'); ?>">视频</a></li>
-                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
+                <li><a href="<?php echo site_url('membership/article'); ?>"><i class="fa fa-file-text"></i> 投稿</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>"><i class="fa fa-share-alt"></i> 文件</a></li>
+                <li><a href="<?php echo site_url('membership/album'); ?>"><i class="fa fa-file-image-o"></i> 相册</a></li>
+                <li><a href="<?php echo site_url('membership/video'); ?>"><i class="fa fa-video-camera"></i> 视频</a></li>
+                <li><a href="<?php echo site_url('membership/message'); ?>"><i class="fa fa-commenting"></i> 留言</a></li>
             <?php
                 } elseif ($this->session->userdata('levels') == '3') {
             ?>
                 <li><a href="<?php echo site_url('membership/files'); ?>">test</a></li>
-                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
+                <li><a href="<?php echo site_url('membership/message'); ?>"><i class="fa fa-commenting"></i> 留言</a></li>
             <?php
                 } else {
             ?>
-                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
+                <li><a href="<?php echo site_url('membership/message'); ?>"><i class="fa fa-commenting"></i> 留言</a></li>
             <?php
                 }
             ?>
-                <li><a href="<?php echo site_url('membership/logout'); ?>">退出</a></li>
+                <li><a href="<?php echo site_url('membership/logout'); ?>"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
             </ul>
         </div>
     </div>
