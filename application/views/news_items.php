@@ -37,7 +37,7 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center">
-                        <button type="submit" class="btn btn-success">提交评论</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-commenting"></i> 提交评论</button>
                     </div>
                 </div>
                 <!--评论 end-->
@@ -64,7 +64,7 @@
                     <img class="media-object" src="http://huaiping.net/v2/avatar/avatar.php?char=<?php echo $comments['author']; ?>" alt="" style="width:60px; height:60px;">
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading"><?php echo $comments['content']; ?></h4>
+                    <h5 class="media-heading"><?php echo $comments['content']; ?></h5>
                     <?php echo $comments['pubtime']; ?>
                 </div>
             </div>
