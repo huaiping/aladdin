@@ -50,7 +50,7 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
-                        <button type="submit" class="btn btn-success">提交资源</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-share-alt"></i> 提交资源</button>
                     </div>
                 </div>
             </form>
