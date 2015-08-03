@@ -60,11 +60,17 @@ body {padding-top:70px;}
 
         <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right bg-primary">
+			<?php
+				if ($this->session->userdata('groups') == '教师') {
+			?>
                 <li><a href="<?php echo site_url('membership/article'); ?>">投稿</a></li>
-                <li><a href="<?php echo site_url('membership/album'); ?>">相册</a></li>
                 <li><a href="<?php echo site_url('membership/files'); ?>">文件</a></li>
-                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
+                <li><a href="<?php echo site_url('membership/album'); ?>">相册</a></li>
                 <li><a href="<?php echo site_url('membership/video'); ?>">视频</a></li>
+			<?php
+				}
+			?>
+                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
                 <li><a href="<?php echo site_url('membership/logout'); ?>">退出</a></li>
             </ul>
         </div>
