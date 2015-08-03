@@ -61,21 +61,32 @@ body {padding-top:70px;}
         <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right bg-primary">
             <?php
-                /*用户权限：1管理员 2教师 3学生 4其他*/
-                if ($this->session->userdata('levels') == '2') {
+                /*用户权限：1管理员 2教师 3学生 4贵宾*/
+                if ($this->session->userdata('levels') == '1') {
+            ?>
+                <li><a href="<?php echo site_url('membership/files'); ?>">系统设置</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>">用户管理</a></li>
+            <?php
+
+                } elseif ($this->session->userdata('levels') == '2') {
             ?>
                 <li><a href="<?php echo site_url('membership/article'); ?>">投稿</a></li>
                 <li><a href="<?php echo site_url('membership/files'); ?>">文件</a></li>
                 <li><a href="<?php echo site_url('membership/album'); ?>">相册</a></li>
                 <li><a href="<?php echo site_url('membership/video'); ?>">视频</a></li>
+                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
             <?php
                 } elseif ($this->session->userdata('levels') == '3') {
             ?>
                 <li><a href="<?php echo site_url('membership/files'); ?>">test</a></li>
+                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
+            <?php
+                } else {
+            ?>
+                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
             <?php
                 }
             ?>
-                <li><a href="<?php echo site_url('membership/message'); ?>">留言</a></li>
                 <li><a href="<?php echo site_url('membership/logout'); ?>">退出</a></li>
             </ul>
         </div>
