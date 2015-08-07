@@ -17,7 +17,7 @@
                     <ul class="widget-links list-unstyled">
                         <?php foreach ($down_hot as $hot): ?>
                             <li class="widget-links_item"><a href="<?php echo site_url('download/view/'.$hot['id']); ?>"><?php echo $hot['title']; ?></a></li>
-                        <?php endforeach; ?>
+                        <?php endforeach ?>
                     </ul>
             </div>
             <!--左侧热门资源 end-->

@@ -68,7 +68,7 @@
                     <?php echo $comments['pubtime']; ?>
                 </div>
             </div>
-            <?php endforeach; ?>
+            <?php endforeach ?>
         </div>
 
         <div class="col-md-3 hidden-xs">

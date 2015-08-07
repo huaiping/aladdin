@@ -42,7 +42,7 @@
             </div>
             <!--留言 end-->
         </div>
-        <?php endfor; ?>
+        <?php endfor ?>
     </div>
 
     <div class="guestbook row">

@@ -72,7 +72,7 @@
                         <ul class="tab-links list-unstyled">
                         <?php foreach ($latests as $news): ?>
                             <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$news['id']); ?>"><?php echo $news['title']; ?></a><span class="pull-right text-danger hidden-xs">2015-06-11</span></li>
-                        <?php endforeach; ?>
+                        <?php endforeach ?>
                             <li class="widget-links_item"><a href="#">[校园快讯]麻城市档案局领导来我校调研“档案创优”工作</a><span class="pull-right hidden-xs">2015-06-02</span></li>
                             <li class="widget-links_item visible-lg"><a href="#">[校园快讯]麻城市档案局领导来我校调研“档案创优”工作</a><span class="pull-right hidden-xs">2015-06-01</span></li>
                         </ul>
@@ -162,7 +162,7 @@
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($videos as $video): ?>
                     <li class="widget-links_item"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
-                <?php endforeach; ?>
+                <?php endforeach ?>
                     <li class="widget-links_item"><a href="#">[视频一中][推荐]“畅想2013”麻城一中元旦联欢晚会（视频）</a></li>
                 </ul>
             </div>
@@ -220,7 +220,7 @@
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($downloads as $download): ?>
                     <li class="widget-links_item">[<?php echo $download['category']; ?>]<a href="<?php echo site_url('download/view/'.$download['id'])?>"><?php echo $download['title']; ?></a></li>
-                <?php endforeach; ?>
+                <?php endforeach ?>
                 </ul>
             </div>
             <!--最新资源 end-->
@@ -266,7 +266,7 @@
                 <ul class="widget-links list-unstyled" style="line-height:40px;">
                 <?php foreach ($friendsites as $links): ?>
                     <li class="col-md-2 pull-left"><a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a></li>
-                <?php endforeach; ?>
+                <?php endforeach ?>
                 </ul>
             </div>
             <!--友情链接 end-->
