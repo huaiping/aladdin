@@ -32,7 +32,7 @@
                 <ul class="widget-links list-unstyled">
                     <?php for($i=0; $i<count($hot); $i++): ?>
                     <li class="widget-links_item"><a href="<?php echo site_url('video/view/'.$hot[$i]['id']); ?>"><?php echo $hot[$i]['title']; ?></a><span class="badge"><?php echo $hot[$i]['hits']; ?></span></li>
-                    <?php endfor; ?>
+                    <?php endfor ?>
                 </ul>
             </div>
             <!--右侧相关推荐 end-->
