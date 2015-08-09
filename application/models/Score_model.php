@@ -12,7 +12,7 @@ class Score_model extends CI_Model {
         $name = $this->input->post('name');
         $number = $this->input->post('number');
         if (strstr($category,"|")) {
-            $categories = explode("|",$category);
+            $categories = explode("|", $category);
             $this->db->where_in('item', $categories);
         }
         else
