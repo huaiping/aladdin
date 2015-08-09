@@ -12,4 +12,4 @@ HTML 5 + CodeIgniter 3.0.1 + Bootstrap 3.3.5
 [http://www.huaiping.net](http://huaiping.net/v2/)
 
 ### License
-Licensed under the [MIT License](http://opensource.org/licenses/mit-license.php).
+Licensed under the [MIT License](https://github.com/huaiping/aladdin/blob/master/LICENSE).
