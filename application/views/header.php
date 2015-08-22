@@ -65,7 +65,7 @@ blockquote p {font-size:16px;}
 <script src="//cdn.bootcss.com/bootstrap-select/1.7.3/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/3.51/jquery.form.min.js"></script>
-<script src="//cdn.bootcss.com/highcharts/4.1.7/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/4.1.8/highcharts.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>
 <body>
