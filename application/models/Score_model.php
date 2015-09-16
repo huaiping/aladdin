@@ -42,6 +42,13 @@ class Score_model extends CI_Model {
         return $query->row_array();
     }
 
+    public function get_total($number)
+    {
+        $this->db->where(array('item' => $number));
+        $query = $this->db->get('swan_score');
+        return $query->num_rows();
+    }
+
     public function get_scores()
     {
         $category = $this->input->post('category');

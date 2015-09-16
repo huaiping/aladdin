@@ -23,6 +23,7 @@ class Score extends CI_Controller {
         $data['number'] = $this->input->post('number', TRUE);
         $data['item'] = $this->score_model->get_items();
         $data['scores'] = $this->score_model->get_scores();
+        $data['total'] = $this->score_model->get_total($data['item']['item']);
         $this->load->view('header');
         $this->load->view('score_detail', $data);
         $this->load->view('footer');
