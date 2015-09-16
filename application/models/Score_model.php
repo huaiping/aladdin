@@ -58,7 +58,7 @@ class Score_model extends CI_Model {
         {
             $this->db->where(array('xm' => $name, 'sfzh' => $number));
             $query = $this->db->get('swan_score');
-            return $query->row_array();
+            return $query->result_array();
         }
         else
         {

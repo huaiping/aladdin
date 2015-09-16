@@ -121,6 +121,7 @@
 
         <div class="col-md-12 hidden-xs" style="margin-top:30px;">
             <!--历次成绩 begin-->
+    <?php foreach ($scores as $score): ?>
             <table class="table table-bordered text-center">
                 <tr>
                     <td>语文</td><td>名次</td><td>数学</td><td>名次</td><td>英语</td><td>名次</td>
@@ -129,18 +130,19 @@
                     <td>总分</td><td>名次</td>
                 </tr>
                 <tr>
-                    <td><?php echo round($scores['yw'],1); ?></td><td><?php echo $scores['ywmc']; ?></td>
-                    <td><?php echo round($scores['sx'],1); ?></td><td><?php echo $scores['sxmc']; ?></td>
-                    <td><?php echo round($scores['yy'],1); ?></td><td><?php echo $scores['yymc']; ?></td>
-                    <td><?php echo round($scores['wl'],1); ?></td><td><?php echo $scores['wlmc']; ?></td>
-                    <td><?php echo round($scores['hx'],1); ?></td><td><?php echo $scores['hxmc']; ?></td>
-                    <td><?php echo round($scores['sw'],1); ?></td><td><?php echo $scores['swmc']; ?></td>
-                    <td><?php echo round($scores['zz'],1); ?></td><td><?php echo $scores['zzmc']; ?></td>
-                    <td><?php echo round($scores['ls'],1); ?></td><td><?php echo $scores['lsmc']; ?></td>
-                    <td><?php echo round($scores['dl'],1); ?></td><td><?php echo $scores['dlmc']; ?></td>
-                    <td><?php echo round($scores['zf'],1); ?></td><td><?php echo $scores['jm']; ?></td>
+                    <td><?php echo round($score['yw'],1); ?></td><td><?php echo $score['ywmc']; ?></td>
+                    <td><?php echo round($score['sx'],1); ?></td><td><?php echo $score['sxmc']; ?></td>
+                    <td><?php echo round($score['yy'],1); ?></td><td><?php echo $score['yymc']; ?></td>
+                    <td><?php echo round($score['wl'],1); ?></td><td><?php echo $score['wlmc']; ?></td>
+                    <td><?php echo round($score['hx'],1); ?></td><td><?php echo $score['hxmc']; ?></td>
+                    <td><?php echo round($score['sw'],1); ?></td><td><?php echo $score['swmc']; ?></td>
+                    <td><?php echo round($score['zz'],1); ?></td><td><?php echo $score['zzmc']; ?></td>
+                    <td><?php echo round($score['ls'],1); ?></td><td><?php echo $score['lsmc']; ?></td>
+                    <td><?php echo round($score['dl'],1); ?></td><td><?php echo $score['dlmc']; ?></td>
+                    <td><?php echo round($score['zf'],1); ?></td><td><?php echo $score['jm']; ?></td>
                 </tr>
             </table>
+    <?php endforeach ?>
             <!--历次成绩 end-->
         </div>
         <?php
