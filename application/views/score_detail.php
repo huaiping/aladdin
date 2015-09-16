@@ -121,7 +121,7 @@
 
         <div class="col-md-12 hidden-xs" style="margin-top:30px;">
             <!--历次成绩 begin-->
-    <?php foreach ($scores as $score): ?>
+            <?php foreach ($scores as $score): ?>
             <table class="table table-bordered text-center">
                 <tr>
                     <td>语文</td><td>名次</td><td>数学</td><td>名次</td><td>英语</td><td>名次</td>
@@ -142,7 +142,7 @@
                     <td><?php echo round($score['zf'],1); ?></td><td><?php echo $score['jm']; ?></td>
                 </tr>
             </table>
-    <?php endforeach ?>
+            <?php endforeach ?>
             <!--历次成绩 end-->
         </div>
         <?php
