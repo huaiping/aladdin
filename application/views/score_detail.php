@@ -101,13 +101,6 @@
                 <div class="text-center">手机扫一扫，成绩早知道</div>
             </div>
             <!--二维码 end-->
-
-            <!--成绩查询 begin-->
-            <div class="searchBox row">
-                <?php //print_r($category); ?><br />
-                <?php //print_r($number); ?>
-            </div>
-            <!--成绩查询 end-->
         </div>
     </div>
 
@@ -154,6 +147,9 @@
 <script>
     jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo site_url(); ?>/score"});
 </script>
+<?php
+    if (strlen($number) == 18) {
+?>
 <script>
 $(function () { 
     $('#charts').highcharts({
@@ -167,7 +163,14 @@ $(function () {
             text: '高中阶段个人成绩曲线图'
         },
         xAxis: {
-            categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30']
+            categories: [
+<?php
+for($i=1; $i<count($scores); $i++):
+echo "'第$i"."次考试',";
+endfor
+?>
+
+'28xx', '29yy', '30']
         },
         yAxis: {
             reversed: true,
@@ -177,8 +180,18 @@ $(function () {
         },
         series: [{
             name: '年级名次',
-            data: [5, 7, 63, 11, 33, 27, 39, 28, 85, 73, 990, 65, 128, 639, 926, 10, 250, 39, 28, 85, 73, 990, 65, 128, 639, 926, 10, 250]
+            data: [
+<?php
+for($i=0; $i<count($scores); $i++):
+echo $scores[$i]['jm'].',';
+endfor
+?>
+
+10, 250]
         }]
     });
 });
 </script>
+<?php
+    }
+?>
