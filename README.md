@@ -1,5 +1,5 @@
-### 阿拉丁CMS
-A modern CMS for Chinese middle schools. Just for Practice.
+### Aladdin CMS
+Open Source CMS. Just for Practice.
 
 ### Requirements
 PHP 5.4+ [http://www.php.net](http://php.net)  
