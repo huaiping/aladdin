@@ -1,9 +1,0 @@
-{
-    "description": "Aladdin CMS",
-    "name": "huaiping/aladdin",
-    "homepage": "http://huaiping.net/v2/",
-    "license": "MIT",
-    "require": {
-        "php": ">=5.4.0"
-    }
-}
