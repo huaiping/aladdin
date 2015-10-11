@@ -9,10 +9,8 @@ mysql:
   username: root
   encoding: utf8
 
-before_install:
-  - composer self-update
-
 before_script:
+  - composer self-update
   - mysql -e 'create database travis_ci_test'
 
 script: phpunit
