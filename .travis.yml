@@ -4,7 +4,12 @@ php:
   - 5.5
   - 5.6
 
-env:
-  - DB=mysql
+mysql:
+  database: travis_ci_test
+  username: root
+  encoding: utf8
+
+before_script:
+  - mysql -e 'create database travis_ci_test'
 
 script: phpunit -v
