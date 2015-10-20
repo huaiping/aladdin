@@ -1,4 +1,4 @@
-### Aladdin CMS [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://github.com/huaiping/aladdin/blob/master/LICENSE)
+### Aladdin CMS [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://github.com/huaiping/aladdin/blob/master/LICENSE)  [![Code Climate](https://codeclimate.com/github/huaiping/aladdin/badges/gpa.svg)](https://codeclimate.com/github/huaiping/aladdin)
 Open Source CMS. Just for Practice.
 
 ### Requirements
