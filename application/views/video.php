@@ -40,13 +40,13 @@
     </div>
 
     <div class="banner row" style="margin-top:20px;">
-        <!--顶部通栏 begin-->
+        <!--底部通栏 begin-->
         <div class="col-md-12">
             <div class="widget-box no-border">
                 <a href="#"><img src="<?php echo base_url('webroot/image/banner2.jpg'); ?>" alt="" style="width:100%;"></a>
             </div>
         </div>
-        <!--顶部通栏 end-->
+        <!--底部通栏 end-->
     </div>
 </section>
 
