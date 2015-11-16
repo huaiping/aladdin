@@ -9,7 +9,7 @@
 <title>阿拉丁CMS</title>
 <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/bootstrap-select/1.7.4/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/bootstrap-select/1.7.5/css/bootstrap-select.min.css" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
@@ -62,7 +62,7 @@ blockquote p {font-size:16px;}
 </style>
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap-select/1.7.4/js/bootstrap-select.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/3.51/jquery.form.min.js"></script>
 <script src="//cdn.bootcss.com/highcharts/4.1.9/highcharts.js"></script>
