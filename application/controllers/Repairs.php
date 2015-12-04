@@ -10,10 +10,10 @@ class Repairs extends CI_Controller {
         $this->load->helper(array('form', 'url'));
     }
 
-	public function index()
-	{
-		$this->load->view('header');
-		$this->load->view('login');
-		$this->load->view('footer');
-	}
+    public function index()
+    {
+        $this->load->view('header');
+        $this->load->view('login');
+        $this->load->view('footer');
+    }
 }
