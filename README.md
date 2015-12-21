@@ -2,8 +2,8 @@
 Open Source CMS. Just for Practice.
 
 ### Requirements
-PHP 5.4+ [http://www.php.net](http://php.net)  
-MySQL 5.5+ [http://www.mysql.com](http://www.mysql.com)
+PHP 5.4+ [http://www.php.net](https://secure.php.net)  
+MySQL 5.5+ [https://www.mysql.com](https://www.mysql.com)
 
 ### Features
 HTML 5 + CodeIgniter 3.0.3 + Bootstrap 3.3.6
