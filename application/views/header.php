@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
 <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.7.5/css/bootstrap-select.min.css" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
@@ -65,7 +65,7 @@ blockquote p {font-size:16px;}
 <script src="//cdn.bootcss.com/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/3.51/jquery.form.min.js"></script>
-<script src="//cdn.bootcss.com/highcharts/4.1.9/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/4.2.0/highcharts.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>
 <body>
