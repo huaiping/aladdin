@@ -9,7 +9,7 @@
 <title>阿拉丁CMS</title>
 <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/bootstrap-select/1.7.5/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/bootstrap-select/1.9.3/css/bootstrap-select.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" />
 <style type="text/css">
 body {padding-top:70px;}
@@ -40,7 +40,7 @@ body {padding-top:70px;}
 </style>
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
 <script src="<?php echo base_url('kindeditor/kindeditor-min.js'); ?>"></script>
 <script src="<?php echo base_url('kindeditor/lang/zh_CN.js'); ?>"></script>
 </head>
