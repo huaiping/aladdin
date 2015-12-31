@@ -1,3 +1,3 @@
 RewriteEngine on   
-RewriteCond $1 !^(index\.php|webroot|robots\.txt)   
+RewriteCond $1 !^(index\.php|avatar|kindeditor|webroot|robots\.txt)   
 RewriteRule ^(.*)$ /v2/index.php/$1 [L]
