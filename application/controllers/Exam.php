@@ -12,7 +12,7 @@ class Exam extends CI_Controller {
     public function index()
     {
         $this->load->view('header');
-        $this->load->view('login');
+        $this->load->view('exam');
         $this->load->view('footer');
     }
 }
