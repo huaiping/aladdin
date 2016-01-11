@@ -38,7 +38,7 @@ body {padding-top:70px;}
 .widget-links_item a {margin-right:6px; word-break:break-word;}
 .widget-links_item small {display:inline-block; font-size:13px;}
 </style>
-<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
 <script src="<?php echo base_url('kindeditor/kindeditor-min.js'); ?>"></script>
