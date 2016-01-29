@@ -61,11 +61,11 @@
             <?php foreach ($news_comment as $comments): ?>
             <div class="media">
                 <div class="media-left">
-                    <img class="media-object" src="http://huaiping.net/v2/avatar/avatar.php?char=<?php echo $comments['author']; ?>" alt="" style="width:60px; height:60px;">
+                    <img class="media-object img-circle" src="<?php echo base_url('webroot/image/avatar1.jpg'); ?>" alt="" style="width:48px; height:48px;">
                 </div>
                 <div class="media-body">
-                    <h5 class="media-heading"><?php echo $comments['content']; ?></h5>
-                    <?php echo $comments['pubtime']; ?>
+                    <h5 class="media-heading"><?php echo $comments['pubtime']; ?></h5>
+                    <?php echo $comments['content']; ?>
                 </div>
             </div>
             <?php endforeach ?>
