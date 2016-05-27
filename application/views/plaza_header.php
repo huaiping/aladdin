@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
 <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" />
 <style type="text/css">
@@ -38,7 +38,7 @@ body {padding-top:70px;}
 .widget-links_item a {margin-right:6px; word-break:break-word;}
 .widget-links_item small {display:inline-block; font-size:13px;}
 </style>
-<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 <script src="<?php echo base_url('kindeditor/kindeditor-min.js'); ?>"></script>
