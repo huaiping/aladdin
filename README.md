@@ -2,7 +2,7 @@
 Open Source CMS. Just for Practice.
 
 ### Requirements
-PHP 5.4+ [http://www.php.net](https://secure.php.net)  
+PHP 5.6+ [http://www.php.net](https://secure.php.net)  
 MySQL 5.5+ [https://www.mysql.com](https://www.mysql.com)
 
 ### Features
