@@ -6,7 +6,7 @@ PHP 5.4+ [http://www.php.net](https://secure.php.net)
 MySQL 5.5+ [https://www.mysql.com](https://www.mysql.com)
 
 ### Features
-HTML 5 + CodeIgniter 3.0.6 + Bootstrap 3.3.6
+HTML 5 + CodeIgniter 3.1.2 + Bootstrap 3.3.7
 
 ### Demo
 [http://www.huaiping.net](http://huaiping.net/v2/)
