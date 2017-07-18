@@ -26,7 +26,7 @@
                         <div class="form-group">
                             <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
                                 <span class="input-group-addon" id="basic-addon1">账号</span>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="账号" aria-describedby="basic-addon1" value="" required="required">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="用户名/邮箱" aria-describedby="basic-addon1" value="" required="required">
                             </div>
                         </div>
                         <div class="form-group">
