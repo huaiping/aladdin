@@ -1,6 +1,4 @@
-﻿SET FOREIGN_KEY_CHECKS = 0;
-
-DROP TABLE IF EXISTS  `swan_comment`;
+﻿DROP TABLE IF EXISTS  `swan_comment`;
 CREATE TABLE `swan_comment` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
@@ -11,7 +9,7 @@ CREATE TABLE `swan_comment` (
   `modtime` datetime NOT NULL,
   `status` varchar(9) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_download`;
 CREATE TABLE `swan_download` (
@@ -26,7 +24,7 @@ CREATE TABLE `swan_download` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(255) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_guestbook`;
 CREATE TABLE `swan_guestbook` (
@@ -37,11 +35,11 @@ CREATE TABLE `swan_guestbook` (
   `avator` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `reply` varchar(255) NOT NULL DEFAULT '',
-  `modtime` datetime NOT NULL DEFAULT '2015-01-01 10:10:10',
+  `modtime` datetime NOT NULL DEFAULT '2017-01-01 10:10:10',
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(255) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_links`;
 CREATE TABLE `swan_links` (
@@ -52,7 +50,7 @@ CREATE TABLE `swan_links` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(9) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_membership`;
 CREATE TABLE `swan_membership` (
@@ -67,7 +65,7 @@ CREATE TABLE `swan_membership` (
   `groups` varchar(24) NOT NULL DEFAULT '',
   `status` varchar(12) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_news`;
 CREATE TABLE `swan_news` (
@@ -82,7 +80,7 @@ CREATE TABLE `swan_news` (
   `tags` varchar(255) NOT NULL,
   `status` varchar(9) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_photo`;
 CREATE TABLE `swan_photo` (
@@ -98,7 +96,7 @@ CREATE TABLE `swan_photo` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(255) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_score`;
 CREATE TABLE `swan_score` (
@@ -135,7 +133,7 @@ CREATE TABLE `swan_score` (
   `sfzh` varchar(18) NOT NULL DEFAULT '',
   `bz` varchar(45) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1219 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_video`;
 CREATE TABLE `swan_video` (
@@ -149,7 +147,4 @@ CREATE TABLE `swan_video` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(255) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
-
-SET FOREIGN_KEY_CHECKS = 1;
-
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
