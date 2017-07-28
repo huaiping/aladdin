@@ -71,7 +71,7 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="home">
                         <ul class="tab-links list-unstyled">
                         <?php foreach ($latests as $news): ?>
-                            <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$news['id']); ?>"><?php echo $news['title']; ?></a><span class="pull-right text-danger hidden-xs">2015-06-11</span></li>
+                            <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$news['id']); ?>"><?php echo $news['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($news['pubtime'],0,10); ?></span></li>
                         <?php endforeach ?>
                             <li class="widget-links_item"><a href="#">[校园快讯]麻城市档案局领导来我校调研“档案创优”工作</a><span class="pull-right hidden-xs">2015-06-02</span></li>
                             <li class="widget-links_item visible-lg"><a href="#">[校园快讯]麻城市档案局领导来我校调研“档案创优”工作</a><span class="pull-right hidden-xs">2015-06-01</span></li>
