@@ -6,7 +6,7 @@ CREATE TABLE `ci_sessions` (
   `data` blob NOT NULL,
   PRIMARY KEY (id),
   KEY `ci_sessions_timestamp` (`timestamp`)
-);
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS  `swan_comment`;
 CREATE TABLE `swan_comment` (
