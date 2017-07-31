@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-xs-7 col-sm-7 col-md-9 col-xs-offset-5 col-sm-offset-5 col-md-offset-1">
+                        <div class="col-xs-11 col-sm-7 col-md-9 col-xs-offset-1 col-sm-offset-5 col-md-offset-1">
                             <button class="btn btn-block btn-info" name="search" type="submit">查询</button>
                         </div>
                     </div>
