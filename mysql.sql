@@ -17,7 +17,7 @@ CREATE TABLE `swan_comment` (
   `category` varchar(24) NOT NULL,
   `pubtime` datetime NOT NULL,
   `modtime` datetime NOT NULL,
-  `status` varchar(9) NOT NULL,
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -32,7 +32,7 @@ CREATE TABLE `swan_download` (
   `pubtime` datetime NOT NULL,
   `license` varchar(24) NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(255) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -47,7 +47,7 @@ CREATE TABLE `swan_guestbook` (
   `reply` varchar(255) NOT NULL DEFAULT '',
   `modtime` datetime NOT NULL DEFAULT '2017-01-01 10:10:10',
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(255) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -58,7 +58,7 @@ CREATE TABLE `swan_links` (
   `url` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(9) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -73,7 +73,7 @@ CREATE TABLE `swan_membership` (
   `avator` varchar(255) NOT NULL DEFAULT '',
   `levels` varchar(1) NOT NULL DEFAULT '',
   `groups` varchar(24) NOT NULL DEFAULT '',
-  `status` varchar(12) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -88,7 +88,7 @@ CREATE TABLE `swan_news` (
   `modtime` datetime NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
   `tags` varchar(255) NOT NULL,
-  `status` varchar(9) NOT NULL,
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -104,7 +104,7 @@ CREATE TABLE `swan_photo` (
   `subcategory` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(255) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -155,6 +155,6 @@ CREATE TABLE `swan_video` (
   `category` varchar(255) NOT NULL DEFAULT '',
   `pubtime` datetime NOT NULL DEFAULT '2015-01-01 10:10:10',
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(255) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
