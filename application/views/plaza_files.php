@@ -12,6 +12,14 @@
         </div>
 
         <div class="col-xs-12 col-md-9">
+            <!--网站通知 begin-->
+            <div>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <strong><span class="glyphicon glyphicon-fire"></span> 文明上网公约：提倡诚实守信，摒弃弄虚作假，促进网络安全可信；提倡社会关爱，摒弃低俗沉迷，促进少年健康成长。</strong>
+                </div>
+            </div>
+            <!--网站通知 end-->
+
             <?php
                 $attributes = array('class' => 'form-horizontal', 'autocomplete' => 'off');
                 $hidden = array('username' => $this->session->userdata('username'), 'ip' => $this->input->ip_address());
@@ -46,7 +54,7 @@
                 </div>
                 <div class="form-group">
                     <label for="content" class="col-xs-12 col-sm-1 col-md-1 control-label">描述</label>
-                    <div class="col-xs-12 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="10" style="visibility:hidden;"></textarea></div>
+                    <div class="col-xs-12 col-sm-11 col-md-11"><textarea id="content" name="content" class="form-control col-md-12" rows="15" style="visibility:hidden;"></textarea></div>
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">

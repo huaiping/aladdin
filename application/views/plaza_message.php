@@ -12,6 +12,14 @@
         </div>
 
         <div class="col-md-9">
+            <!--网站通知 begin-->
+            <div>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <strong><span class="glyphicon glyphicon-fire"></span> 文明上网公约：提倡公平竞争，摒弃尔虞我诈，促进网络百花齐放；提倡人人受益，消除数字鸿沟，促进信息资源共享。</strong>
+                </div>
+            </div>
+            <!--网站通知 end-->
+
             <?php
                 $attributes = array('class' => 'form-horizontal', 'autocomplete' => 'off');
                 $hidden = array('username' => $this->session->userdata('username'), 'ip' => $this->input->ip_address());

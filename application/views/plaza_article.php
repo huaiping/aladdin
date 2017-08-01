@@ -17,7 +17,7 @@
             <!--网站通知 begin-->
             <div>
                 <div class="alert alert-warning alert-dismissible" role="alert">
-                    <strong><span class="glyphicon glyphicon-fire"></span> 网站通知：本站正在开发和测试中，如果无法正常访问，请稍后再试。</strong>
+                    <strong><span class="glyphicon glyphicon-fire"></span> 文明上网公约：自觉遵纪守法，倡导社会公德，促进绿色网络建设；提倡先进文化，摒弃消极颓废，促进网络文明健康。</strong>
                 </div>
             </div>
             <!--网站通知 end-->
