@@ -36,8 +36,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-xs-8 col-sm-8 col-md-8 col-xs-offset-4 col-sm-offset-4">
-                                <button class="btn btn-info" name="login" type="submit">登录</button>
+                            <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
+                                <button class="btn btn-block btn-info" name="login" type="submit">登录</button>
                             </div>
                         </div>
                     </form>

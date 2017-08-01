@@ -85,7 +85,7 @@
                      echo form_open('score/view', $attributes);
                 ?>
                     <div class="form-group">
-                        <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-md-offset-1">
+                        <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
                             <select class="selectpicker form-control" id="category" name="category">
                                 <option value="1">2015年春高一期末考试</option>
                                 <option value="1|2">2015年春高二期末考试</option>
@@ -93,17 +93,17 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-md-offset-1">
+                        <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
                             <input type="text" class="form-control" id="name" name="name" maxlength="4" placeholder="姓名" value="" required="required">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-md-offset-1">
+                        <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
                             <input type="text" class="form-control" id="number" name="number" maxlength="18" placeholder="学号/班级号/身份证号" value="" required="required">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-xs-11 col-sm-7 col-md-9 col-xs-offset-1 col-sm-offset-5 col-md-offset-1">
+                        <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
                             <button class="btn btn-block btn-info" name="search" type="submit">查询</button>
                         </div>
                     </div>
