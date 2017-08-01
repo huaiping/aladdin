@@ -131,7 +131,7 @@ class Membership extends CI_Controller {
     public function filesPost($title = FALSE, $category = FALSE, $url = FALSE, $username = FALSE)
     {
         $config['upload_path'] = './webroot/download/';
-        $config['allowed_types'] = 'zip|gz|png|gif|jpg';
+        $config['allowed_types'] = 'wps|doc|docx|ppt|pptx|zip|rar';
         $config['max_size'] = 10000000;
         $config['encrypt_name'] = TRUE;
         $this->load->library('upload', $config);
@@ -182,6 +182,31 @@ class Membership extends CI_Controller {
         }
     }
 
+    public function videoPost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
+    {
+        $config['upload_path'] = './webroot/video/';
+        $config['allowed_types'] = 'ogg|mp4|webm';
+        $config['max_size'] = 10000000;
+        $config['encrypt_name'] = TRUE;
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload())
+        {
+            $error = array('error' => $this->upload->display_errors());
+            $this->load->view('plaza_header');
+            $this->load->view('plaza_video', $error);
+            $this->load->view('footer');
+        }
+        else
+        {
+            $data = array('upload_data' => $this->upload->data());
+            $url = $this->upload->data('file_name');
+            $this->membership_model->videoPost($title, $category, $content, $username);
+            $this->load->view('plaza_header');
+            $this->load->view('plaza_video', $data);
+            $this->load->view('footer');
+        }
+    }
+
     public function links()
     {
         if ($this->is_login())
@@ -196,6 +221,12 @@ class Membership extends CI_Controller {
             $this->load->view('login');
             $this->load->view('footer');
         }
+    }
+
+    public function linkPost($title = FALSE, $url = FALSE, $content = FALSE)
+    {
+        $this->membership_model->linkPost($title, $url, $content);
+        redirect('membership/plaza');
     }
 
     public function profile()

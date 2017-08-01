@@ -64,4 +64,29 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_guestbook', $data);
     }
 
+    public function linkPost($title = FALSE, $url = FALSE, $content = FALSE)
+    {
+        $data = array(
+            'title' => $this->input->post('title'),
+            'url' => $this->input->post('url'),
+            'description' => $this->input->post('content'),
+            'status' => 'draft'
+        );
+        $this->db->insert('swan_links', $data);
+    }
+
+    public function videoPost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
+    {
+        $now = date("Y-m-d H:i:s");
+        $data = array(
+            'title' => $this->input->post('title'),
+            'url' => '/webroot/video/'.$this->upload->data('file_name'),
+            'description' => $this->input->post('content'),
+            'author' => $this->input->post('username'),
+            'pubtime' => $now,
+            'status' => 'draft'
+        );
+        $this->db->insert('swan_video', $data);
+    }
+
 }

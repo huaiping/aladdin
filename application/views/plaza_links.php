@@ -27,12 +27,12 @@
             ?>
             <!--<form class="form-horizontal" name="example" method="post" action="#" autocomplete="off">-->
                 <div class="form-group">
-                    <label for="title" class="col-xs-3 col-sm-1 col-md-1 control-label">名称</label>
+                    <label for="title" class="col-xs-3 col-sm-1 col-md-1 control-label">网站</label>
                     <div class="col-xs-9 col-sm-11 col-md-11"><input type="text" class="form-control" id="title" name="title" required="required"></div>
                 </div>
                 <div class="form-group">
-                    <label for="links" class="col-xs-3 col-sm-1 col-md-1 control-label">网址</label>
-                    <div class="col-xs-9 col-sm-11 col-md-11"><input type="text" class="form-control" id="links" name="links" required="required"></div>
+                    <label for="url" class="col-xs-3 col-sm-1 col-md-1 control-label">网址</label>
+                    <div class="col-xs-9 col-sm-11 col-md-11"><input type="text" class="form-control" id="url" name="url" required="required"></div>
                 </div>
                 <div class="form-group">
                     <label for="content" class="col-xs-12 col-sm-1 col-md-1 control-label">简介</label>
