@@ -64,9 +64,8 @@ body {padding-top:70px;}
                 /*用户权限：1管理员 2教师 3学生 4贵宾*/
                 if ($this->session->userdata('levels') == '1') {
             ?>
-                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-cog"></span> 系统设置</a></li>
-                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
-                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-list-alt"></span> 文章管理</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-list-alt"></span> 信息审批</a></li>
+                <li><a href="<?php echo site_url('membership/files'); ?>"><span class="fa fa-users"></span> 用户管理</a></li>
             <?php
 
                 } elseif ($this->session->userdata('levels') == '2') {
@@ -76,6 +75,7 @@ body {padding-top:70px;}
                 <li><a href="<?php echo site_url('membership/files'); ?>"><i class="fa fa-share-alt"></i> 文件</a></li>
                 <li><a href="<?php echo site_url('membership/message'); ?>"><i class="fa fa-commenting"></i> 留言</a></li>
                 <li><a href="<?php echo site_url('membership/video'); ?>"><i class="fa fa-video-camera"></i> 视频</a></li>
+                <li><a href="<?php echo site_url('membership/links'); ?>"><i class="fa fa-link"></i> 链接</a></li>
             <?php
                 } elseif ($this->session->userdata('levels') == '3') {
             ?>
