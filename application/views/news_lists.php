@@ -129,7 +129,7 @@
                     <p class="text-primary">心灵的强大决定潜能的巨大</p>
                     <p class="text-primary">让优秀成为习惯</p>
                 </blockquote>
-                <div class="text-center"><img src="<?php echo base_url('webroot/image/qrcode.png'); ?>" alt="" /></div>
+                <div class="text-center animated infinite bounce"><img src="<?php echo base_url('webroot/image/qrcode.png'); ?>" alt="" /></div>
                 <div class="text-center text-danger">微信二维码</div>
             </div>
             <!--人生寄语 end-->

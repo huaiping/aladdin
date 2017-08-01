@@ -16,6 +16,7 @@ class Membership_model extends CI_Model {
             //$query = $this->db->get('swan_news');
             //return $query->result_array();
         }
+        $password = md5(sha1($password));
         $query = $this->db->get_where('swan_membership', array('username' => $username, 'password' => $password));
         return $query->row_array();
     }
