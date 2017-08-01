@@ -14,7 +14,7 @@
         <div class="col-xs-12 col-md-9">
             <!--网站通知 begin-->
             <div>
-                <div class="alert alert-warning alert-dismissible" role="alert">
+                <div class="alert alert-warning" role="alert">
                     <strong><span class="glyphicon glyphicon-fire"></span> 文明上网自律公约：提倡诚实守信，摒弃弄虚作假，促进网络安全可信；提倡社会关爱，摒弃低俗沉迷，促进少年健康成长。</strong>
                 </div>
             </div>
