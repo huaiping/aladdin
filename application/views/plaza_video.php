@@ -15,7 +15,7 @@
             <!--网站通知 begin-->
             <div>
                 <div class="alert alert-warning alert-dismissible" role="alert">
-                    <strong><span class="glyphicon glyphicon-fire"></span> 文明上网公约：提倡诚实守信，摒弃弄虚作假，促进网络安全可信；提倡社会关爱，摒弃低俗沉迷，促进少年健康成长。</strong>
+                    <strong><span class="glyphicon glyphicon-fire"></span> 文明上网自律公约：自觉遵纪守法，倡导社会公德，促进绿色网络建设；提倡先进文化，摒弃消极颓废，促进网络文明健康。</strong>
                 </div>
             </div>
             <!--网站通知 end-->
