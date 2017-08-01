@@ -171,7 +171,23 @@ class Membership extends CI_Controller {
         if ($this->is_login())
         {
             $this->load->view('plaza_header');
-            $this->load->view('plaza');
+            $this->load->view('plaza_video');
+            $this->load->view('footer');
+        }
+        else
+        {
+            $this->load->view('header');
+            $this->load->view('login');
+            $this->load->view('footer');
+        }
+    }
+
+    public function links()
+    {
+        if ($this->is_login())
+        {
+            $this->load->view('plaza_header');
+            $this->load->view('plaza_links');
             $this->load->view('footer');
         }
         else
