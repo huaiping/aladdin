@@ -101,7 +101,7 @@ class Membership extends CI_Controller {
         if ($this->is_login())
         {
             $this->load->view('plaza_header');
-            $this->load->view('plaza');
+            $this->load->view('plaza_album');
             $this->load->view('footer');
         }
         else
