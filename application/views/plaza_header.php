@@ -23,7 +23,7 @@ body {padding-top:70px;}
 .footer {background:#337ab7; border-color:#e7e7e7; color:#fff;}
 .bs-callout {padding:5px; margin:5px 0; border:1px solid #eee; border-left-width:5px; border-radius:3px;}
 .bs-callout-danger {border-left-color:#ce4844;}
-.bs-callout-danger h4 {color:#ce4844;} 
+.bs-callout-danger h4 {color:#ce4844;}
 .bs-callout-warning {border-left-color:#aa6708;}
 .bs-callout-warning h4 {color:#aa6708;}
 .bs-callout-info {border-left-color:#1b809e;}

@@ -15,6 +15,73 @@
         <?php
             echo $this->input->user_agent();
         ?>
+
+           <div class="col-md-6">
+                <!--投稿 begin-->
+                <div class="widget-box no-border">
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的投稿</h4></div>
+                    <ul class="widget-links list-unstyled">
+                        <li class="widget-links_item"><a href="#">test</a></li>
+                    </ul>
+                </div>
+                <!--投稿 end-->
+            </div>
+
+            <div class="col-md-6">
+                <!--相册 begin-->
+                <div class="widget-box no-border">
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的相册</h4></div>
+                    <ul class="widget-links list-unstyled">
+                        <li class="widget-links_item"><a href="#">test</a></li>
+                    </ul>
+                </div>
+                <!--相册 end-->
+            </div>
+
+            <div class="col-md-6">
+                <!--文件 begin-->
+                <div class="widget-box no-border">
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的文件</h4></div>
+                    <ul class="widget-links list-unstyled">
+                        <li class="widget-links_item"><a href="#">test</a></li>
+                    </ul>
+                </div>
+                <!--文件 end-->
+            </div>
+
+            <div class="col-md-6">
+                <!--留言 begin-->
+                <div class="widget-box no-border">
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的留言</h4></div>
+                    <ul class="widget-links list-unstyled">
+                        <li class="widget-links_item"><a href="#">test</a></li>
+                    </ul>
+                </div>
+                <!--留言 end-->
+            </div>
+
+            <div class="col-md-6">
+                <!--视频 begin-->
+                <div class="widget-box no-border">
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的视频</h4></div>
+                    <ul class="widget-links list-unstyled">
+                        <li class="widget-links_item"><a href="#">test</a></li>
+                    </ul>
+                </div>
+                <!--视频 end-->
+            </div>
+
+            <div class="col-md-6">
+                <!--链接 begin-->
+                <div class="widget-box no-border">
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的链接</h4></div>
+                    <ul class="widget-links list-unstyled">
+                        <li class="widget-links_item"><a href="#">test</a></li>
+                    </ul>
+                </div>
+                <!--链接 end-->
+            </div>
+
         </div>
     </div>
 </section>

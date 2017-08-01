@@ -14,6 +14,14 @@
         </div>
 
         <div class="col-md-9">
+            <!--网站通知 begin-->
+            <div>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <strong><span class="glyphicon glyphicon-fire"></span> 网站通知：本站正在开发和测试中，如果无法正常访问，请稍后再试。</strong>
+                </div>
+            </div>
+            <!--网站通知 end-->
+
             <!--右侧发表文章 begin-->
             <?php
                 $attributes = array('class' => 'form-horizontal', 'autocomplete' => 'off');

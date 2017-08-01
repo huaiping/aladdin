@@ -138,7 +138,9 @@ class Membership extends CI_Controller {
         if ( ! $this->upload->do_upload())
         {
             $error = array('error' => $this->upload->display_errors());
+            $this->load->view('plaza_header');
             $this->load->view('plaza_files', $error);
+            $this->load->view('footer');
         }
         else
         {
