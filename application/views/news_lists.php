@@ -259,13 +259,13 @@
     </div>
 
     <div class="news row">
-        <div class="col-md-12 hidden-xs">
+        <div class="col-md-12 hidden-xs" style="margin-bottom:20px;">
             <!--友情链接 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>友情链接</h4></div>
-                <ul class="widget-links list-unstyled" style="line-height:40px;">
+                <ul class="widget-links list-unstyled">
                 <?php foreach ($friendsites as $links): ?>
-                    <li class="col-md-2 pull-left"><a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a></li>
+                    <li class="col-md-2 pull-left" style="height:30px; line-height:30px;"><a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </div>

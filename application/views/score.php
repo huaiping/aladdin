@@ -12,9 +12,8 @@
     <div class="score row">
         <div class="col-xs-12 col-md-8">
             <!--网站通知 begin-->
-            <div class="alert alert-warning alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong><span class="glyphicon glyphicon-eye-open"></span> 温馨提示：即将更新各年级10月月考成绩，敬请关注！</strong>
+            <div class="alert alert-warning" role="alert">
+                <strong><span class="glyphicon glyphicon-fire"></span> 温馨提示：即将更新各年级10月月考成绩，敬请关注！</strong>
             </div>
             <!--网站通知 end-->
 
@@ -82,7 +81,7 @@
                 <h2 class="text-center" style="margin-bottom:20px;">成绩查询</h2>
                 <?php
                     $attributes = array('class' => 'form-horizontal');
-                     echo form_open('score/view', $attributes);
+                    echo form_open('score/view', $attributes);
                 ?>
                     <div class="form-group">
                         <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
