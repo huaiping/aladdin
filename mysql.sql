@@ -57,6 +57,8 @@ CREATE TABLE `swan_links` (
   `title` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `pubtime` datetime NOT NULL DEFAULT '2017-07-31 10:10:10',
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
@@ -149,9 +151,9 @@ DROP TABLE IF EXISTS  `swan_video`;
 CREATE TABLE `swan_video` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL DEFAULT '',
+  `description` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
-  `author` varchar(255) NOT NULL DEFAULT '',
+  `author` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL DEFAULT '',
   `pubtime` datetime NOT NULL DEFAULT '2017-07-31 10:10:10',
   `hits` int(10) NOT NULL DEFAULT '0',

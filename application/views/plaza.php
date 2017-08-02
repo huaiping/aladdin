@@ -21,7 +21,9 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的投稿</h4></div>
                     <ul class="widget-links list-unstyled">
-                        <li class="widget-links_item"><a href="#">test</a></li>
+                    <?php foreach ($articles as $myarticle): ?>
+                        <li class="widget-links_item"><a href="#"><?php echo $myarticle['title']; ?></a></li>
+                    <?php endforeach ?>
                     </ul>
                 </div>
                 <!--投稿 end-->
@@ -32,7 +34,9 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的相册</h4></div>
                     <ul class="widget-links list-unstyled">
-                        <li class="widget-links_item"><a href="#">test</a></li>
+                    <?php foreach ($albums as $myalbum): ?>
+                        <li class="widget-links_item"><a href="#"><?php echo $myalbum['id']; ?></a></li>
+                    <?php endforeach ?>
                     </ul>
                 </div>
                 <!--相册 end-->
@@ -43,7 +47,9 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的文件</h4></div>
                     <ul class="widget-links list-unstyled">
-                        <li class="widget-links_item"><a href="#">test</a></li>
+                    <?php foreach ($files as $myfile): ?>
+                        <li class="widget-links_item"><a href="#"><?php echo $myfile['title']; ?></a></li>
+                    <?php endforeach ?>
                     </ul>
                 </div>
                 <!--文件 end-->
@@ -54,7 +60,9 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的留言</h4></div>
                     <ul class="widget-links list-unstyled">
-                        <li class="widget-links_item"><a href="#">test</a></li>
+                    <?php foreach ($messages as $mymessage): ?>
+                        <li class="widget-links_item"><a href="#"><?php echo $mymessage['title']; ?></a></li>
+                    <?php endforeach ?>
                     </ul>
                 </div>
                 <!--留言 end-->
@@ -65,7 +73,9 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的视频</h4></div>
                     <ul class="widget-links list-unstyled">
-                        <li class="widget-links_item"><a href="#">test</a></li>
+                    <?php foreach ($videos as $myvideo): ?>
+                        <li class="widget-links_item"><a href="#"><?php echo $myvideo['title']; ?></a></li>
+                    <?php endforeach ?>
                     </ul>
                 </div>
                 <!--视频 end-->
@@ -76,7 +86,9 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的链接</h4></div>
                     <ul class="widget-links list-unstyled">
-                        <li class="widget-links_item"><a href="#">test</a></li>
+                    <?php foreach ($links as $mylink): ?>
+                        <li class="widget-links_item"><a href="#"><?php echo $mylink['title']; ?></a></li>
+                    <?php endforeach ?>
                     </ul>
                 </div>
                 <!--链接 end-->

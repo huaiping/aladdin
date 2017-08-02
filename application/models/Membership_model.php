@@ -89,4 +89,64 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_video', $data);
     }
 
+    /*用户中心 - 我的文章*/
+    public function get_articles($username = FALSE)
+    {
+        $username = $this->session->userdata('username');
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_news', array('author' => $username));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 我的相册*/
+    public function get_albums($username = FALSE)
+    {
+        $username = $this->session->userdata('username');
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_photo', array('author' => $username));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 我的文件*/
+    public function get_files($username = FALSE)
+    {
+        $username = $this->session->userdata('username');
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_download', array('author' => $username));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 我的留言*/
+    public function get_messages($username = FALSE)
+    {
+        $username = $this->session->userdata('username');
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_guestbook', array('author' => $username));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 我的视频*/
+    public function get_videos($username = FALSE)
+    {
+        $username = $this->session->userdata('username');
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_video', array('author' => $username));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 我的链接*/
+    public function get_links($username = FALSE)
+    {
+        $username = $this->session->userdata('username');
+        //$this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_links', array('author' => $username));
+        return $query->result_array();
+    }
+
 }

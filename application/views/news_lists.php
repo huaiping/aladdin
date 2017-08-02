@@ -123,7 +123,7 @@
         <div class="col-md-2ths hidden-xs">
             <!--人生寄语 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>人生寄语</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>人生寄语<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <blockquote>
                     <p class="text-primary">志向决定方向 态度决定高度</p>
                     <p class="text-primary">心灵的强大决定潜能的巨大</p>
@@ -174,7 +174,7 @@
         <div class="col-md-12 hidden-xs">
             <!--滚动图片展示 begin-->
             <div id="slide" class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>精彩图片展</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>精彩图片展<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a></li>
@@ -196,7 +196,7 @@
         <div class="col-md-2ths hidden-xs">
             <!--专题推荐 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>专题推荐</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>专题推荐<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><a href="#">2014年高考成绩</a></li>
                     <li class="widget-links_item"><a href="#">第四届体育科技艺术节</a><li>
@@ -262,7 +262,7 @@
         <div class="col-md-12 hidden-xs" style="margin-bottom:20px;">
             <!--友情链接 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>友情链接</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>友情链接<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($friendsites as $links): ?>
                     <li class="col-md-2 pull-left" style="height:30px; line-height:30px;"><a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a></li>

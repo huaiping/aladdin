@@ -40,7 +40,7 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
-                        <button type="submit" class="btn btn-success"><i class="fa fa-share-alt"></i> 提交视频</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-video-camera"></i> 提交视频</button>
                     </div>
                 </div>
             </form>

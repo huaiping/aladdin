@@ -32,19 +32,22 @@
                     <label for="subject" class="col-xs-3 col-sm-1 col-md-1 control-label">类别</label>
                     <div class="col-xs-9 col-sm-11 col-md-2">
                         <select class="selectpicker form-control" id="subject" name="subject">
-                            <option value="语文">语文</option>
-                            <option value="数学">数学</option>
-                            <option value="英语">英语</option>
-                            <option value="理综">理综</option>
-                            <option value="文综">文综</option>
-                            <option value="技术">技术</option>
+                            <option value="校园风光">校园风光</option>
+                            <option value="领导视察">领导视察</option>
+                            <option value="第二课堂">第二课堂</option>
+                            <option value="大型活动">大型活动</option>
+                            <option value="毕业留影">毕业留影</option>
+                            <option value="教师风采">教师风采</option>
                         </select>
                     </div>
                     <label for="category" class="col-xs-3 col-sm-1 col-md-1 control-label">相册</label>
                     <div class="col-xs-9 col-sm-11 col-md-2">
                         <select class="selectpicker form-control" id="category" name="category">
-                            <option value="教案">教案</option>
-                            <option value="课件">课件</option>
+                            <option value="世纪广场">世纪广场</option>
+                            <option value="文明出行">文明出行</option>
+                            <option value="体育科技艺术节">体育科技艺术节</option>
+                            <option value="2015届毕业照">2015届毕业照</option>
+                            <option value="语文组合影">语文组合影</option>
                         </select>
                     </div>
                 </div>
@@ -58,7 +61,7 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
-                        <button type="submit" class="btn btn-success"><i class="fa fa-share-alt"></i> 提交</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-file-image-o"></i> 提交照片</button>
                     </div>
                 </div>
             </form>

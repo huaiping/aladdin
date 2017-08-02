@@ -86,8 +86,9 @@
                     <div class="form-group">
                         <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
                             <select class="selectpicker form-control" id="category" name="category">
-                                <option value="1">2015年春高一期末考试</option>
-                                <option value="1|2">2015年春高二期末考试</option>
+                                <option value="1">2016年秋高一期末调研考试</option>
+                                <option value="2|3">2016年秋高二期末考试</option>
+                                <option value="4|5">2016年秋高三期末武汉联考</option>
                             </select>
                         </div>
                     </div>

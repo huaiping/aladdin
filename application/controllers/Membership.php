@@ -68,8 +68,14 @@ class Membership extends CI_Controller {
 
     public function plaza()
     {
+        $data['articles'] = $this->membership_model->get_articles();
+        $data['albums'] = $this->membership_model->get_albums();
+        $data['files'] = $this->membership_model->get_files();
+        $data['messages'] = $this->membership_model->get_messages();
+        $data['videos'] = $this->membership_model->get_videos();
+        $data['links'] = $this->membership_model->get_links();
         $this->load->view('plaza_header');
-        $this->load->view('plaza');
+        $this->load->view('plaza', $data);
         $this->load->view('footer');
     }
 
