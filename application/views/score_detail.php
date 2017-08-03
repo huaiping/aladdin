@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-9">
             <!--单次成绩 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>考试名称：<?php echo $item['bz']; ?></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>考试：<?php echo $item['bz']; ?><span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">语文：<?php echo round($item['yw'],1); ?><br /><br />名次：<?php echo $item['ywmc']; ?></button>
                 </div>
@@ -96,7 +96,7 @@
         <div class="col-md-3 hidden-xs">
             <!--二维码 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>二维码</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>二维码<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <div id="qrcode" class="text-center"></div>
                 <div class="text-center">手机扫一扫，成绩早知道</div>
             </div>
@@ -104,22 +104,21 @@
         </div>
     </div>
 
+    <?php
+        if (strlen($number) == 18) {
+    ?>
     <div class="score row">
-        <?php
-            if (strlen($number) == 18) {
-        ?>
         <div id="charts" class="col-xs-12 col-md-12" style="margin-top:30px;">
             <!--成绩曲线-->
         </div>
     </div>
 
     <div class="score row">
-        <div class="col-md-12 hidden-xs" style="margin-bottom:20px;">
-            <!--友情链接 begin-->
+        <div class="col-md-12 hidden-xs">
+            <!--历次成绩 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>历次考试成绩<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>高中阶段历次考试成绩<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <div class="col-md-12 hidden-xs">
-                <!--历次成绩 begin-->
                 <?php foreach ($scores as $score): ?>
                 <table class="table table-bordered text-center">
                     <tr>
@@ -145,15 +144,14 @@
                     </tr>
                 </table>
                 <?php endforeach ?>
-                <!--历次成绩 end-->
                 </div>
-        <?php
-            }
-        ?>
             </div>
-            <!--友情链接 end-->
+            <!--历次成绩 end-->
         </div>
     </div>
+    <?php
+        }
+    ?>
 </section>
 
 <script>
@@ -179,12 +177,11 @@ $(function () {
                 rotation: -45
             },
             categories: [
-<?php
-for($i=0; $i<count($scores); $i++):
-echo "'".$scores[$i]['bz']."',";
-endfor
-?>
-
+                <?php
+                for($i=0; $i<count($scores); $i++):
+                    echo "'".$scores[$i]['bz']."',";
+                endfor
+                ?>
 '29yy', '30']
         },
         yAxis: {
@@ -196,12 +193,11 @@ endfor
         series: [{
             name: '年级名次',
             data: [
-<?php
-for($i=0; $i<count($scores); $i++):
-echo $scores[$i]['jm'].',';
-endfor
-?>
-
+                <?php
+                for($i=0; $i<count($scores); $i++):
+                    echo $scores[$i]['jm'].',';
+                endfor
+                ?>
 10, 50]
         }]
     });
