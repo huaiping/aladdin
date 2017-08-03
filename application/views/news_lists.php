@@ -120,7 +120,7 @@
     </div>
 
     <div class="news row">
-        <div class="col-md-2ths hidden-xs">
+        <div class="col-md-2ths hidden-xs hidden-sm">
             <!--人生寄语 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>人生寄语<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>

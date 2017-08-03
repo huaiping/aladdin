@@ -14,74 +14,74 @@
             <!--单次成绩 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $item['bz']; ?><span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">语文：<?php echo round($item['yw'],1); ?><br /><br />名次：<?php echo $item['ywmc']; ?></button>
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">数学：<?php echo round($item['sx'],1); ?><br /><br />名次：<?php echo $item['sxmc']; ?></button>
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">英语：<?php echo round($item['yy'],1); ?><br /><br />名次：<?php echo $item['yymc']; ?></button>
                 </div>
                 <?php
                     if ($item['wlmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">物理：<?php echo round($item['wl'],1); ?><br /><br />名次：<?php echo $item['wlmc']; ?></button>
                 </div>
                 <?php
                     }
                     if ($item['hxmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">化学：<?php echo round($item['hx'],1); ?><br /><br />名次：<?php echo $item['hxmc']; ?></button>
                 </div>
                 <?php
                     }
                     if ($item['swmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">生物：<?php echo round($item['sw'],1); ?><br /><br />名次：<?php echo $item['swmc']; ?></button>
                 </div>
                 <?php
                     }
                     if ($item['lzmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">理综：<?php echo round($item['lz'],1); ?><br /><br />名次：<?php echo $item['lzmc']; ?></button>
                 </div>
                 <?php
                     }
                     if ($item['zzmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">政治：<?php echo round($item['zz'],1); ?><br /><br />名次：<?php echo $item['zzmc']; ?></button>
                 </div>
                 <?php
                     }
                     if ($item['lsmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">历史：<?php echo round($item['ls'],1); ?><br /><br />名次：<?php echo $item['lsmc']; ?></button>
                 </div>
                 <?php
                     }
                     if ($item['dlmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">地理：<?php echo round($item['dl'],1); ?><br /><br />名次：<?php echo $item['dlmc']; ?></button>
                 </div>
                 <?php
                     }
                     if ($item['wzmc'] != "0") {
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">文综：<?php echo round($item['wz'],1); ?><br /><br />名次：<?php echo $item['wzmc']; ?></button>
                 </div>
                 <?php
                     }
                 ?>
-                <div class="col-xs-6 col-md-3 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">总分：<?php echo round($item['zf'],1); ?><br /><br />名次：<?php echo $item['jm']; ?></button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -93,7 +93,7 @@
             <!--单次成绩 end-->
         </div>
 
-        <div class="col-md-3 hidden-xs">
+        <div class="col-md-3 hidden-xs hidden-sm">
             <!--二维码 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>二维码<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>

@@ -25,7 +25,7 @@
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading" style="margin-bottom:10px;">使用指南</h4>
-                        <p style="min-height:80px;">选择查询项目，例如：2015年秋高一期中考试；姓名栏输入姓名，该姓名需与学籍姓名一致；学号栏输入对应的学号、班级号或身份证号。</p>
+                        <p style="min-height:80px;">选择查询项目，例如：2015年秋高一期中考试；姓名栏输入姓名，需与学籍姓名一致；学号栏输入对应的学号、班级号或身份证号。</p>
                     </div>
                 </div>
                 <!--使用指南 end-->
