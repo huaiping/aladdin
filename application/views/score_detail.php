@@ -166,7 +166,7 @@ $(function () {
             categories: [
 <?php
 for($i=0; $i<count($scores); $i++):
-echo "'第$i"."次考试',";
+echo "'".$scores[$i]['bz']."',";
 endfor
 ?>
 
@@ -187,7 +187,7 @@ echo $scores[$i]['jm'].',';
 endfor
 ?>
 
-10, 250]
+10, 50]
         }]
     });
 });
