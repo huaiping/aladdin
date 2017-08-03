@@ -178,11 +178,12 @@ $(function () {
             },
             categories: [
                 <?php
-                for($i=0; $i<count($scores); $i++):
-                    echo "'".$scores[$i]['bz']."',";
-                endfor
+                    for($i=0; $i<count($scores)-1; $i++):
+                        echo "'".$scores[$i]['bz']."',";
+                    endfor;
+                    echo "'".$scores[$i]['bz']."'";
                 ?>
-            '29yy', '30']
+            ]
         },
         yAxis: {
             reversed: true,
@@ -194,11 +195,12 @@ $(function () {
             name: '年级名次',
             data: [
                 <?php
-                for($i=0; $i<count($scores); $i++):
-                    echo $scores[$i]['jm'].',';
-                endfor
+                    for($i=0; $i<count($scores)-1; $i++):
+                        echo $scores[$i]['jm'].',';
+                    endfor;
+                    echo $scores[$i]['jm'];
                 ?>
-            10, 50]
+            ]
         }]
     });
 });

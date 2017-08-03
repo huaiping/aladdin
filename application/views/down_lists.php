@@ -30,7 +30,7 @@
                     <tr>
                         <th class="col-xs-12 col-sm-7 col-md-6 widget-links_item text-center">资源名称</th>
                         <th class="col-sm-2 col-md-2 widget-links_item text-center hidden-xs">更新日期</th>
-                        <th class="col-sm-2 col-md-2 col-lg-1 widget-links_item text-center hidden-xs">资源大小</th>
+                        <th class="col-sm-2 col-md-2 widget-links_item text-center hidden-xs">资源大小</th>
                         <th class="col-md-1 widget-links_item text-center hidden-xs hidden-sm">授权形式</th>
                         <th class="col-sm-1 col-md-1 widget-links_item text-center hidden-xs">资源等级</th>
                     </tr>
