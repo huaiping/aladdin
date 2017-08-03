@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-9">
             <!--单次成绩 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>考试：<?php echo $item['bz']; ?><span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $item['bz']; ?><span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">语文：<?php echo round($item['yw'],1); ?><br /><br />名次：<?php echo $item['ywmc']; ?></button>
                 </div>
@@ -109,7 +109,7 @@
     ?>
     <div class="score row">
         <!--成绩曲线 begin-->
-        <div id="charts" class="col-xs-12 col-md-12" style="margin-top:20px;"></div>
+        <div id="charts" class="col-xs-12 col-md-12 hidden-xs" style="margin-top:20px;"></div>
         <!--成绩曲线 end-->
     </div>
 

@@ -6,6 +6,7 @@ class Membership_model extends CI_Model {
         $this->load->database();
     }
 
+    /*用户中心 - 登录*/
     public function userLogin($username = FALSE, $password = FALSE)
     {
         $username = $this->input->post('username');
@@ -21,6 +22,7 @@ class Membership_model extends CI_Model {
         return $query->row_array();
     }
 
+    /*用户中心 - 投稿*/
     public function articlePost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
     {
         $now = date("Y-m-d H:i:s");
@@ -35,6 +37,7 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_news', $data);
     }
 
+    /*用户中心 - 文件*/
     public function filesPost($title = FALSE, $category = FALSE, $url = FALSE, $content = FALSE, $license = FALSE, $username = FALSE)
     {
         $now = date("Y-m-d H:i:s");
@@ -51,6 +54,7 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_download', $data);
     }
 
+    /*用户中心 - 留言*/
     public function messagePost($title = FALSE, $content = FALSE, $username = FALSE)
     {
         $now = date("Y-m-d H:i:s");
@@ -64,20 +68,7 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_guestbook', $data);
     }
 
-    public function linkPost($title = FALSE, $url = FALSE, $content = FALSE, $username = FALSE)
-    {
-        $now = date("Y-m-d H:i:s");
-        $data = array(
-            'title' => $this->input->post('title'),
-            'url' => $this->input->post('url'),
-            'description' => $this->input->post('content'),
-            'author' => $this->input->post('username'),
-            'pubtime' => $now,
-            'status' => 'draft'
-        );
-        $this->db->insert('swan_links', $data);
-    }
-
+    /*用户中心 - 视频*/
     public function videoPost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
     {
         $now = date("Y-m-d H:i:s");
@@ -92,7 +83,22 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_video', $data);
     }
 
-    /*用户中心 - 我的文章*/
+    /*用户中心 - 链接*/
+    public function linkPost($title = FALSE, $url = FALSE, $content = FALSE, $username = FALSE)
+    {
+        $now = date("Y-m-d H:i:s");
+        $data = array(
+            'title' => $this->input->post('title'),
+            'url' => $this->input->post('url'),
+            'description' => $this->input->post('content'),
+            'author' => $this->input->post('username'),
+            'pubtime' => $now,
+            'status' => 'draft'
+        );
+        $this->db->insert('swan_links', $data);
+    }
+
+    /*用户中心 - 我的投稿*/
     public function get_articles($username = FALSE)
     {
         $username = $this->session->userdata('username');
@@ -146,7 +152,7 @@ class Membership_model extends CI_Model {
     public function get_links($username = FALSE)
     {
         $username = $this->session->userdata('username');
-        //$this->db->order_by('pubtime', 'DESC');
+        $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(6);
         $query = $this->db->get_where('swan_links', array('author' => $username));
         return $query->result_array();
