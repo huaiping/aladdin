@@ -24,62 +24,62 @@
                     <button type="button" class="btn btn-info circle">英语：<?php echo round($item['yy'],1); ?><br /><br />名次：<?php echo $item['yymc']; ?></button>
                 </div>
                 <?php
-                if ($item['wlmc'] != 0) {
+                    if ($item['wlmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">物理：<?php echo round($item['wl'],1); ?><br /><br />名次：<?php echo $item['wlmc']; ?></button>
                 </div>
                 <?php
-                }
-                if ($item['hxmc'] != 0) {
+                    }
+                    if ($item['hxmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">化学：<?php echo round($item['hx'],1); ?><br /><br />名次：<?php echo $item['hxmc']; ?></button>
                 </div>
                 <?php
-                }
-                if ($item['swmc'] != 0) {
+                    }
+                    if ($item['swmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">生物：<?php echo round($item['sw'],1); ?><br /><br />名次：<?php echo $item['swmc']; ?></button>
                 </div>
                 <?php
-                }
-                if ($item['lzmc'] != 0) {
+                    }
+                    if ($item['lzmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">理综：<?php echo round($item['lz'],1); ?><br /><br />名次：<?php echo $item['lzmc']; ?></button>
                 </div>
                 <?php
-                }
-                if ($item['zzmc'] != 0) {
+                    }
+                    if ($item['zzmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">政治：<?php echo round($item['zz'],1); ?><br /><br />名次：<?php echo $item['zzmc']; ?></button>
                 </div>
                 <?php
-                }
-                if ($item['lsmc'] != 0) {
+                    }
+                    if ($item['lsmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">历史：<?php echo round($item['ls'],1); ?><br /><br />名次：<?php echo $item['lsmc']; ?></button>
                 </div>
                 <?php
-                }
-                if ($item['dlmc'] != 0) {
+                    }
+                    if ($item['dlmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">地理：<?php echo round($item['dl'],1); ?><br /><br />名次：<?php echo $item['dlmc']; ?></button>
                 </div>
                 <?php
-                }
-                if ($item['wzmc'] != 0) {
+                    }
+                    if ($item['wzmc'] != "0") {
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">文综：<?php echo round($item['wz'],1); ?><br /><br />名次：<?php echo $item['wzmc']; ?></button>
                 </div>
                 <?php
-                }
+                    }
                 ?>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">总分：<?php echo round($item['zf'],1); ?><br /><br />名次：<?php echo $item['jm']; ?></button>
@@ -108,9 +108,9 @@
         if (strlen($number) == 18) {
     ?>
     <div class="score row">
-        <div id="charts" class="col-xs-12 col-md-12" style="margin-top:30px;">
-            <!--成绩曲线-->
-        </div>
+        <!--成绩曲线 begin-->
+        <div id="charts" class="col-xs-12 col-md-12" style="margin-top:20px;"></div>
+        <!--成绩曲线 end-->
     </div>
 
     <div class="score row">
@@ -182,7 +182,7 @@ $(function () {
                     echo "'".$scores[$i]['bz']."',";
                 endfor
                 ?>
-'29yy', '30']
+            '29yy', '30']
         },
         yAxis: {
             reversed: true,
@@ -198,7 +198,7 @@ $(function () {
                     echo $scores[$i]['jm'].',';
                 endfor
                 ?>
-10, 50]
+            10, 50]
         }]
     });
 });
