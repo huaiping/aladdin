@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-8">
             <!--视频播放 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>视频：<?php echo $item['title']; ?></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>视频：<?php echo $item['title']; ?><span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><!--仅支持ogg mp4 WebM格式-->
                         <video id="videoPlayer" controls="controls" class="col-xs-12 col-md-12">
@@ -28,7 +28,7 @@
         <div class="col-xs-12 col-md-4">
             <!--右侧相关推荐 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>相关推荐</h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>相关推荐<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     <?php for($i=0; $i<count($hot); $i++): ?>
                     <li class="widget-links_item"><a href="<?php echo site_url('video/view/'.$hot[$i]['id']); ?>"><?php echo $hot[$i]['title']; ?></a><span class="badge"><?php echo $hot[$i]['hits']; ?></span></li>
