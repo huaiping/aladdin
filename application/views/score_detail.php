@@ -111,36 +111,48 @@
         <div id="charts" class="col-xs-12 col-md-12" style="margin-top:30px;">
             <!--成绩曲线-->
         </div>
+    </div>
 
-        <div class="col-md-12 hidden-xs" style="margin-top:30px;">
-            <!--历次成绩 begin-->
-            <?php foreach ($scores as $score): ?>
-            <table class="table table-bordered text-center">
-                <tr>
-                    <td>语文</td><td>名次</td><td>数学</td><td>名次</td><td>英语</td><td>名次</td>
-                    <td>物理</td><td>名次</td><td>化学</td><td>名次</td><td>生物</td><td>名次</td>
-                    <td>政治</td><td>名次</td><td>历史</td><td>名次</td><td>地理</td><td>名次</td>
-                    <td>总分</td><td>名次</td>
-                </tr>
-                <tr>
-                    <td><?php echo round($score['yw'],1); ?></td><td><?php echo $score['ywmc']; ?></td>
-                    <td><?php echo round($score['sx'],1); ?></td><td><?php echo $score['sxmc']; ?></td>
-                    <td><?php echo round($score['yy'],1); ?></td><td><?php echo $score['yymc']; ?></td>
-                    <td><?php echo round($score['wl'],1); ?></td><td><?php echo $score['wlmc']; ?></td>
-                    <td><?php echo round($score['hx'],1); ?></td><td><?php echo $score['hxmc']; ?></td>
-                    <td><?php echo round($score['sw'],1); ?></td><td><?php echo $score['swmc']; ?></td>
-                    <td><?php echo round($score['zz'],1); ?></td><td><?php echo $score['zzmc']; ?></td>
-                    <td><?php echo round($score['ls'],1); ?></td><td><?php echo $score['lsmc']; ?></td>
-                    <td><?php echo round($score['dl'],1); ?></td><td><?php echo $score['dlmc']; ?></td>
-                    <td><?php echo round($score['zf'],1); ?></td><td><?php echo $score['jm']; ?></td>
-                </tr>
-            </table>
-            <?php endforeach ?>
-            <!--历次成绩 end-->
-        </div>
+    <div class="score row">
+        <div class="col-md-12 hidden-xs" style="margin-bottom:20px;">
+            <!--友情链接 begin-->
+            <div class="widget-box no-border">
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>历次考试成绩<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="col-md-12 hidden-xs">
+                <!--历次成绩 begin-->
+                <?php foreach ($scores as $score): ?>
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <td colspan="20"><?php echo $score['bz']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>语文</td><td>名次</td><td>数学</td><td>名次</td><td>英语</td><td>名次</td>
+                        <td>物理</td><td>名次</td><td>化学</td><td>名次</td><td>生物</td><td>名次</td>
+                        <td>政治</td><td>名次</td><td>历史</td><td>名次</td><td>地理</td><td>名次</td>
+                        <td>总分</td><td>名次</td>
+                    </tr>
+                    <tr>
+                        <td><?php echo round($score['yw'],1); ?></td><td><?php echo $score['ywmc']; ?></td>
+                        <td><?php echo round($score['sx'],1); ?></td><td><?php echo $score['sxmc']; ?></td>
+                        <td><?php echo round($score['yy'],1); ?></td><td><?php echo $score['yymc']; ?></td>
+                        <td><?php echo round($score['wl'],1); ?></td><td><?php echo $score['wlmc']; ?></td>
+                        <td><?php echo round($score['hx'],1); ?></td><td><?php echo $score['hxmc']; ?></td>
+                        <td><?php echo round($score['sw'],1); ?></td><td><?php echo $score['swmc']; ?></td>
+                        <td><?php echo round($score['zz'],1); ?></td><td><?php echo $score['zzmc']; ?></td>
+                        <td><?php echo round($score['ls'],1); ?></td><td><?php echo $score['lsmc']; ?></td>
+                        <td><?php echo round($score['dl'],1); ?></td><td><?php echo $score['dlmc']; ?></td>
+                        <td><?php echo round($score['zf'],1); ?></td><td><?php echo $score['jm']; ?></td>
+                    </tr>
+                </table>
+                <?php endforeach ?>
+                <!--历次成绩 end-->
+                </div>
         <?php
             }
         ?>
+            </div>
+            <!--友情链接 end-->
+        </div>
     </div>
 </section>
 
@@ -163,6 +175,9 @@ $(function () {
             text: '高中阶段个人成绩曲线图'
         },
         xAxis: {
+            labels: {
+                rotation: -45
+            },
             categories: [
 <?php
 for($i=0; $i<count($scores); $i++):
