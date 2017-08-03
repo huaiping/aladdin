@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-9">
             <!--单次成绩 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>考试名称：<?php echo $item['xm']; ?></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>考试名称：<?php echo $item['bz']; ?></h4></div>
                 <div class="col-xs-6 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">语文：<?php echo round($item['yw'],1); ?><br /><br />名次：<?php echo $item['ywmc']; ?></button>
                 </div>
@@ -165,12 +165,12 @@ $(function () {
         xAxis: {
             categories: [
 <?php
-for($i=1; $i<count($scores); $i++):
+for($i=0; $i<count($scores); $i++):
 echo "'第$i"."次考试',";
 endfor
 ?>
 
-'28xx', '29yy', '30']
+'29yy', '30']
         },
         yAxis: {
             reversed: true,
