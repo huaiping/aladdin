@@ -17,7 +17,7 @@
             </div>
             <!--网站通知 end-->
 
-            <div class="col-md-6 hidden-xs">
+            <div class="col-md-6 hidden-xs hidden-sm">
                 <!--使用指南 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
@@ -25,13 +25,13 @@
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading" style="margin-bottom:10px;">使用指南</h4>
-                        <p style="min-height:80px;">选择查询项目，例如：2015年秋高一期中考试；姓名栏输入姓名，需与学籍姓名一致；学号栏输入对应的学号、班级号或身份证号。</p>
+                        <p style="min-height:80px;">选择查询项目，例如：2016年秋高一期中考试；姓名栏输入姓名，需与学籍姓名一致；学号栏输入对应的学号、班级号或身份证号。</p>
                     </div>
                 </div>
                 <!--使用指南 end-->
             </div>
 
-            <div class="col-md-6 hidden-xs">
+            <div class="col-md-6 hidden-xs hidden-sm">
                 <!--温馨提示 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
@@ -45,7 +45,7 @@
                 <!--温馨提示 end-->
             </div>
 
-            <div class="col-md-6 hidden-xs">
+            <div class="col-md-6 hidden-xs hidden-sm">
                 <!--历次成绩 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
@@ -60,7 +60,7 @@
                 <!--历次成绩 end-->
             </div>
 
-            <div class="col-md-6 hidden-xs">
+            <div class="col-md-6 hidden-xs hidden-sm">
                 <!--成绩曲线 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
