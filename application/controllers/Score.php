@@ -19,11 +19,16 @@ class Score extends CI_Controller {
 
     public function view()
     {
-        $data['category'] = $this->input->post('category', TRUE);
-        $data['number'] = $this->input->post('number', TRUE);
-        $data['item'] = $this->score_model->get_items();
-        $data['scores'] = $this->score_model->get_scores();
-        $data['total'] = $this->score_model->get_total($data['item']['item']);
+        $data = array(
+            'category' => $this->input->post('category'),
+            'name' => $this->input->post('name'),
+            'number' => $this->input->post('number')
+        );
+        $data = $this->security->xss_clean($data);
+
+        $data['item'] = $this->score_model->get_items($data);
+        $data['scores'] = $this->score_model->get_scores($data);
+        $data['total'] = $this->score_model->get_total($data);
         $this->load->view('header');
         $this->load->view('score_detail', $data);
         $this->load->view('footer');

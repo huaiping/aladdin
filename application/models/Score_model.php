@@ -6,57 +6,47 @@ class Score_model extends CI_Model {
         $this->load->database();
     }
 
-    public function get_items()
+    public function get_items($data)
     {
-        $category = $this->input->post('category');
-        $name = $this->input->post('name');
-        $number = $this->input->post('number');
-        if (strstr($category,"|")) {
-            $categories = explode("|", $category);
+        if (strstr($data['category'],"|")) {
+            $categories = explode("|", $data['category']);
             $this->db->where_in('item', $categories);
         }
         else
         {
-            $this->db->where('item', $category);
+            $this->db->where('item', $data['category']);
         }
 
-        if ($category === FALSE || $name === FALSE || $number === FALSE)
+        if (strlen($data['number']) == 6)
         {
-            //$query = $this->db->get('swan_video');
-            //return $query->result_array();
+            $this->db->where(array('xm' => $data['name'], 'xh' => $data['number']));
         }
-        if (strlen($number) == 6)
+        else if (strlen($data['number']) == 18)
         {
-            $this->db->where(array('xm' => $name, 'xh' => $number));
-        }
-        else if (strlen($number) == 18)
-        {
-            $this->db->where(array('xm' => $name, 'sfzh' => $number));
+            $this->db->where(array('xm' => $data['name'], 'sfzh' => $data['number']));
         }
         else
         {
-            $this->db->where(array('xm' => $name, 'bj' => $number));
+            $this->db->where(array('xm' => $data['name'], 'bj' => $data['number']));
         }
         //$this->db->where(array('item' => $category, 'xm' => $name, 'xh' => $number));
         $query = $this->db->get('swan_score');
         return $query->row_array();
     }
 
-    public function get_total($number)
+    public function get_total($data)
     {
-        $this->db->where(array('item' => $number));
+        $this->db->where(array('item' => $data['number']));
         $query = $this->db->get('swan_score');
         return $query->num_rows();
     }
 
-    public function get_scores()
+    public function get_scores($data)
     {
-        $category = $this->input->post('category');
-        $name = $this->input->post('name');
-        $number = $this->input->post('number');
-        if (strlen($number) == 18)
+
+        if (strlen($data['number']) == 18)
         {
-            $this->db->where(array('xm' => $name, 'sfzh' => $number));
+            $this->db->where(array('xm' => $data['name'], 'sfzh' => $data['number']));
             $query = $this->db->get('swan_score');
             return $query->result_array();
         }
