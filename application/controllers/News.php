@@ -37,7 +37,16 @@ class News extends CI_Controller {
     {
         if ($this->is_login())
         {
-            $data['news_comment'] = $this->news_model->commentPost();
+            $now = date("Y-m-d H:i:s");
+            $data = array(
+                'title' => $this->session->userdata('news_id'),
+                'content' => $this->input->post('content'),
+                'author' => $this->input->post('username'),
+                'pubtime' => $now,
+                'status' => 'queue'
+            );
+            $data = $this->security->xss_clean($data);
+            $data['news_comment'] = $this->news_model->commentPost($data);
         }
         else
         {

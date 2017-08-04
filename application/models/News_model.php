@@ -77,21 +77,8 @@ class News_model extends CI_Model {
     }
 
     /*新闻中心 - 文章评论*/
-    public function commentPost($content = FALSE, $username = FALSE)
+    public function commentPost($data)
     {
-        $now = date("Y-m-d H:i:s");
-        if ($content === FALSE || $username === FALSE)
-        {
-            //$query = $this->db->get('swan_news');
-            //return $query->result_array();
-        }
-        $data = array(
-            'title' => $this->session->userdata('news_id'),
-            'content' => $this->input->post('content'),
-            'author' => $this->input->post('username'),
-            'pubtime' => $now,
-            'status' => 'draft'
-        );
         $this->db->insert('swan_comment', $data);
     }
 
