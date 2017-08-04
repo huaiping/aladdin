@@ -14,35 +14,14 @@ class Membership_model extends CI_Model {
     }
 
     /*用户中心 - 投稿*/
-    public function articlePost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
+    public function articlePost($data)
     {
-        $now = date("Y-m-d H:i:s");
-        $data = array(
-            'title' => $this->input->post('title'),
-            'category' => $this->input->post('category'),
-            'content' => $this->input->post('content'),
-            'author' => $this->input->post('username'),
-            'pubtime' => $now,
-            'status' => 'draft'
-        );
         $this->db->insert('swan_news', $data);
     }
 
     /*用户中心 - 文件*/
-    public function filesPost($title = FALSE, $category = FALSE, $url = FALSE, $content = FALSE, $license = FALSE, $username = FALSE)
+    public function filesPost($data)
     {
-        $now = date("Y-m-d H:i:s");
-        $data = array(
-            'title' => $this->input->post('title'),
-            'category' => $this->input->post('subject').$this->input->post('category'),
-            'url' => $this->upload->data('file_name'),
-            'description' => $this->input->post('content'),
-            'author' => $this->input->post('username'),
-            'pubtime' => $now,
-            'sizes' => ceil($this->upload->data('file_size')),
-            'license' => '共享版',
-            'status' => 'draft'
-        );
         $this->db->insert('swan_download', $data);
     }
 
@@ -68,17 +47,8 @@ class Membership_model extends CI_Model {
     }
 
     /*用户中心 - 链接*/
-    public function linkPost($title = FALSE, $url = FALSE, $content = FALSE, $username = FALSE)
+    public function linkPost($data)
     {
-        $now = date("Y-m-d H:i:s");
-        $data = array(
-            'title' => $this->input->post('title'),
-            'url' => $this->input->post('url'),
-            'description' => $this->input->post('content'),
-            'author' => $this->input->post('username'),
-            'pubtime' => $now,
-            'status' => 'draft'
-        );
         $this->db->insert('swan_links', $data);
     }
 

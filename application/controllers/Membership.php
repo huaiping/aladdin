@@ -98,7 +98,17 @@ class Membership extends CI_Controller {
 
     public function articlePost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
     {
-        $this->membership_model->articlePost($title, $category, $content, $username);
+        $now = date("Y-m-d H:i:s");
+        $data = array(
+            'title' => $this->input->post('title'),
+            'category' => $this->input->post('category'),
+            'content' => $this->input->post('content'),
+            'author' => $this->input->post('username'),
+            'pubtime' => $now,
+            'status' => 'draft'
+        );
+        $data = $this->security->xss_clean($data);
+        $this->membership_model->articlePost($data);
         redirect('membership/plaza');
     }
 
@@ -150,9 +160,21 @@ class Membership extends CI_Controller {
         }
         else
         {
-            $data = array('upload_data' => $this->upload->data());
-            $url = $this->upload->data('file_name');
-            $this->membership_model->filesPost($title, $category, $url, $username);
+            $now = date("Y-m-d H:i:s");
+            $data = array(
+                'title' => $this->input->post('title'),
+                'category' => $this->input->post('subject').$this->input->post('category'),
+                'url' => $this->upload->data('file_name'),
+                'description' => $this->input->post('content'),
+                'author' => $this->input->post('username'),
+                'pubtime' => $now,
+                'sizes' => ceil($this->upload->data('file_size')),
+                'license' => '共享版',
+                'status' => 'draft'
+            );
+            $data = $this->security->xss_clean($data);
+            //$data = array('upload_data' => $this->upload->data());
+            $this->membership_model->filesPost($data);
             redirect('membership/plaza');
         }
     }
@@ -236,7 +258,17 @@ class Membership extends CI_Controller {
 
     public function linkPost($title = FALSE, $url = FALSE, $content = FALSE)
     {
-        $this->membership_model->linkPost($title, $url, $content);
+        $now = date("Y-m-d H:i:s");
+        $data = array(
+            'title' => $this->input->post('title'),
+            'url' => $this->input->post('url'),
+            'description' => $this->input->post('content'),
+            'author' => $this->input->post('username'),
+            'pubtime' => $now,
+            'status' => 'draft'
+        );
+        $data = $this->security->xss_clean($data);
+        $this->membership_model->linkPost($data);
         redirect('membership/plaza');
     }
 
