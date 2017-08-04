@@ -153,9 +153,7 @@ class Membership extends CI_Controller {
             $data = array('upload_data' => $this->upload->data());
             $url = $this->upload->data('file_name');
             $this->membership_model->filesPost($title, $category, $url, $username);
-            $this->load->view('plaza_header');
-            $this->load->view('plaza_files', $data);
-            $this->load->view('footer');
+            redirect('membership/plaza');
         }
     }
 
@@ -207,9 +205,7 @@ class Membership extends CI_Controller {
             $data = array('upload_data' => $this->upload->data());
             $url = $this->upload->data('file_name');
             $this->membership_model->videoPost($title, $category, $content, $username);
-            $this->load->view('plaza_header');
-            $this->load->view('plaza_video', $data);
-            $this->load->view('footer');
+            redirect('membership/plaza');
         }
     }
 
@@ -267,6 +263,6 @@ class Membership extends CI_Controller {
     public function logout()
     {
         $this->session->sess_destroy();
-        redirect('news', 'Location');
+        redirect(base_url(), 'Location');
     }
 }
