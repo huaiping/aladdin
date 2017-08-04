@@ -105,7 +105,7 @@ class Membership extends CI_Controller {
             'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => 'draft'
+            'status' => 'queue'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->articlePost($data);
@@ -170,7 +170,7 @@ class Membership extends CI_Controller {
                 'pubtime' => $now,
                 'sizes' => ceil($this->upload->data('file_size')),
                 'license' => '共享版',
-                'status' => 'draft'
+                'status' => 'queue'
             );
             $data = $this->security->xss_clean($data);
             //$data = array('upload_data' => $this->upload->data());
@@ -194,7 +194,7 @@ class Membership extends CI_Controller {
             'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => 'draft'
+            'status' => 'queue'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->messagePost($data);
@@ -233,9 +233,17 @@ class Membership extends CI_Controller {
         }
         else
         {
-            $data = array('upload_data' => $this->upload->data());
-            $url = $this->upload->data('file_name');
-            $this->membership_model->videoPost($title, $category, $content, $username);
+            $now = date("Y-m-d H:i:s");
+            $data = array(
+                'title' => $this->input->post('title'),
+                'url' => '/webroot/video/'.$this->upload->data('file_name'),
+                'description' => $this->input->post('content'),
+                'author' => $this->input->post('username'),
+                'pubtime' => $now,
+                'status' => 'queue'
+            );
+            $data = $this->security->xss_clean($data);
+            $this->membership_model->videoPost($data);
             redirect('membership/plaza');
         }
     }
@@ -265,7 +273,7 @@ class Membership extends CI_Controller {
             'description' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => 'draft'
+            'status' => 'queue'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->linkPost($data);

@@ -32,17 +32,8 @@ class Membership_model extends CI_Model {
     }
 
     /*用户中心 - 视频*/
-    public function videoPost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
+    public function videoPost($data)
     {
-        $now = date("Y-m-d H:i:s");
-        $data = array(
-            'title' => $this->input->post('title'),
-            'url' => '/webroot/video/'.$this->upload->data('file_name'),
-            'description' => $this->input->post('content'),
-            'author' => $this->input->post('username'),
-            'pubtime' => $now,
-            'status' => 'draft'
-        );
         $this->db->insert('swan_video', $data);
     }
 
