@@ -6,7 +6,7 @@ class Membership extends CI_Controller {
     {
         parent::__construct();
         $this->load->library('session');
-        $this->load->helper(array('form', 'url'));
+        $this->load->helper(array('form', 'url', 'security'));
         $this->load->model('membership_model');
     }
 
@@ -37,7 +37,12 @@ class Membership extends CI_Controller {
         }
         else
         {
-            $data = $this->membership_model->userLogin();
+            $data = array(
+                'username' => $this->input->post('username'),
+                'password' => md5(sha1($this->input->post('password')))
+            );
+            $data = $this->security->xss_clean($data);
+            $data = $this->membership_model->userLogin($data);
             if (!empty($data['username']))
             {
                 $goto = $this->session->userdata('goto');
@@ -161,7 +166,16 @@ class Membership extends CI_Controller {
 
     public function messagePost($title = FALSE, $content = FALSE, $username = FALSE)
     {
-        $this->membership_model->messagePost($title, $content, $username);
+        $now = date("Y-m-d H:i:s");
+        $data = array(
+            'title' => $this->input->post('title'),
+            'content' => $this->input->post('content'),
+            'author' => $this->input->post('username'),
+            'pubtime' => $now,
+            'status' => 'draft'
+        );
+        $data = $this->security->xss_clean($data);
+        $this->membership_model->messagePost($data);
         redirect('membership/plaza');
     }
 

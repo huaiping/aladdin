@@ -73,14 +73,6 @@ class Guestbook extends CI_Controller {
         $this->load->view('footer');
     }
 
-    public function view($id = FALSE)
-    {
-        $data['message'] = $this->guestbook_model->get_messages($id);
-        $this->load->view('header');
-        $this->load->view('guestbook', $data);
-        $this->load->view('footer');
-    }
-
     public function message()
     {
         if ($this->is_login())

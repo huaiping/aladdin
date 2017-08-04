@@ -7,18 +7,9 @@ class Membership_model extends CI_Model {
     }
 
     /*用户中心 - 登录*/
-    public function userLogin($username = FALSE, $password = FALSE)
+    public function userLogin($data)
     {
-        $username = $this->input->post('username');
-        $password = $this->input->post('password');
-
-        if ($username === FALSE || $password === FALSE)
-        {
-            //$query = $this->db->get('swan_news');
-            //return $query->result_array();
-        }
-        $password = md5(sha1($password));
-        $query = $this->db->get_where('swan_membership', array('username' => $username, 'password' => $password));
+        $query = $this->db->get_where('swan_membership', $data);
         return $query->row_array();
     }
 
@@ -56,16 +47,8 @@ class Membership_model extends CI_Model {
     }
 
     /*用户中心 - 留言*/
-    public function messagePost($title = FALSE, $content = FALSE, $username = FALSE)
+    public function messagePost($data)
     {
-        $now = date("Y-m-d H:i:s");
-        $data = array(
-            'title' => $this->input->post('title'),
-            'content' => $this->input->post('content'),
-            'author' => $this->input->post('username'),
-            'pubtime' => $now,
-            'status' => 'draft'
-        );
         $this->db->insert('swan_guestbook', $data);
     }
 
