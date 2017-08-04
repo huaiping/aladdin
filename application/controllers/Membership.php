@@ -26,11 +26,9 @@ class Membership extends CI_Controller {
 
     public function login()
     {
-        $username = $this->input->post('username', TRUE);
-        $password = $this->input->post('password', TRUE);
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('password', 'Password', 'required');
+        $this->form_validation->set_rules('username', 'Username', 'trim|required');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required');
         if ($this->form_validation->run() == FALSE)
         {
             $this->load->view('header');
@@ -39,9 +37,7 @@ class Membership extends CI_Controller {
         }
         else
         {
-            //$this->session->set_userdata($newdata);
-            //$this->db->insert('swan_membership', $data);
-            $data = $this->membership_model->userLogin($username, $password);
+            $data = $this->membership_model->userLogin();
             if (!empty($data['username']))
             {
                 $goto = $this->session->userdata('goto');
@@ -62,7 +58,6 @@ class Membership extends CI_Controller {
                 $this->load->view('login');
                 $this->load->view('footer');
             }
-            //$this->load->view('users', $data);
         }
     }
 
