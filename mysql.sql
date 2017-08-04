@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `swan_download` (
   `author` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
+  `sizes` varchar(10) NOT NULL,
   `license` varchar(24) NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(10) NOT NULL DEFAULT 'queue',

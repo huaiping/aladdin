@@ -48,6 +48,7 @@ class Membership_model extends CI_Model {
             'description' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
+            'sizes' => ceil($this->upload->data('file_size')),
             'license' => '共享版',
             'status' => 'draft'
         );
