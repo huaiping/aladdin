@@ -24,7 +24,7 @@ body {padding-top:70px;}
 /*.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {border-top-color:#333; border-bottom-color:#333;}*/
 /*.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {border-top-color:#555; border-bottom-color:#555;}*/
 .footer {background:#337ab7; border-color:#e7e7e7; color:#fff;}
-.banner, .news, .photos, .download, .guestbook, .video, .membership, .score, .survey, .salary {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
+.banner, .news, .photos, .download, .guestbook, .video, .membership, .score, .survey, .exam, .salary, .repairs {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .bs-callout {padding:5px; margin:5px 0; border:1px solid #eee; border-left-width:5px; border-radius:3px;}
 .bs-callout-danger {border-left-color:#ce4844;}
 .bs-callout-danger h4 {color:#ce4844;} 
@@ -55,10 +55,12 @@ blockquote p {font-size:16px;}
 .col-xs-3ths, .col-sm-3ths, .col-md-3ths, .col-lg-3ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-3ths { width: 37.5%; float: left; } } @media ( min-width : 992px) { .col-md-3ths { width: 37.5%; float: left; } } @media ( min-width : 1200px) { .col-lg-3ths { width: 37.5%; float: left; } }
 .col-xs-9ths, .col-sm-9ths, .col-md-9ths, .col-lg-9ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-9ths { width: 10%; float: left; } } @media ( min-width : 992px) { .col-md-9ths { width: 10%; float: left; } } @media ( min-width : 1200px) { .col-lg-9ths { width: 10%; float: left; } }
 /* waterfall */
-.galcolumn p {padding:5px 0px;}
+.galcolumn p {padding:5px 0;}
 .galcolumn .item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
 .galcolumn .item img {width:100%; height:auto; border-top-left-radius:0.2em; border-top-right-radius:0.2em;}
 .galcolumn .item p {height:40px; padding-top:10px; text-align:center;}
+/* exam */
+.exam-pagination li.disabled a {pointer-events:none; cursor:default;}
 /*html {-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -ms-filter:grayscale(100%); -o-filter:grayscale(100%); filter:grayscale(100%); filter:gray;}*/
 </style>
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
