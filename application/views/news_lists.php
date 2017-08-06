@@ -14,25 +14,25 @@
             <div class="col-xs-12 col-md-12">
                 <!--新闻列表 begin-->
 
-				<div class="article-feed">
-					<!-- .news will be added to .article-feed -->
-					<article class="news"></article>
-					<article class="news"></article>
-				</div>
+                <div class="article-feed">
+                    <!-- .news will be added to .article-feed -->
+                    <article class="news"></article>
+                    <article class="news"></article>
+                </div>
 
-				<!-- status elements -->
-				<div class="scroller-status">
-					<div class="infinite-scroll-request loader-ellips">
-					  ...
-					</div>
-					<p class="infinite-scroll-last">End of content</p>
-					<p class="infinite-scroll-error">No more pages to load</p>
-				</div>
+                <!-- status elements -->
+                <div class="scroller-status">
+                    <div class="infinite-scroll-request loader-ellips">
+                      ...
+                    </div>
+                    <p class="infinite-scroll-last">End of content</p>
+                    <p class="infinite-scroll-error">No more pages to load</p>
+                </div>
 
-				<!-- pagination has path -->
-				<p class="pagination">
-					<a class="pagination__next" href="./news/view/3">Next page</a>
-				</p>
+                <!-- pagination has path -->
+                <p class="pagination">
+                    <a class="pagination__next" href="./news/view/3">Next page</a>
+                </p>
 
                 <!--新闻列表 end-->
             </div>
