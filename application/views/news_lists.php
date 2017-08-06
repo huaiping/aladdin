@@ -18,7 +18,7 @@
             ?>
             <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body">
-                    <div class="media-left">
+                    <div class="media-left hidden-xs">
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
@@ -30,7 +30,7 @@
 
             <div class="col-md-11ths panel panel-default pull-right">
                 <div class="media panel-body">
-                    <div class="media-left">
+                    <div class="media-left hidden-xs">
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
