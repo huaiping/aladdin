@@ -6,6 +6,14 @@ class News_model extends CI_Model {
         $this->load->database();
     }
 
+    public function get_newslist()
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(20);
+        $query = $this->db->get('swan_news');
+        return $query->result_array();
+    }
+
     public function get_news($id = FALSE)
     {
         if ($id === FALSE)

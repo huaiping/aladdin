@@ -12,14 +12,18 @@
     <div class="news row">
         <div class="col-xs-12 col-md-12">
             <!--新闻列表 begin-->
+            <?php
+                $loops = floor(count($news)/2);
+                for($i=0; $i<$loops; $i+=2):
+            ?>
             <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body">
                     <div class="media-left">
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">标题01</h4>
-                        <p style="min-height:100px;">摘要01</p>
+                        <h4 class="media-heading"><?php echo $news[$i]['title']; ?>标题01</h4>
+                        <p style="min-height:100px;"><?php echo $news[$i]['pubtime']; ?>摘要01</p>
                     </div>
                 </div>
             </div>
@@ -30,11 +34,12 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">标题02</h4>
-                        <p style="min-height:100px;">摘要02</p>
+                        <h4 class="media-heading"><?php echo $news[$i+1]['title']; ?>标题02</h4>
+                        <p style="min-height:100px;"><?php echo $news[$i+1]['pubtime']; ?>摘要02</p>
                     </div>
                 </div>
             </div>
+            <?php endfor ?>
 
             <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body">
