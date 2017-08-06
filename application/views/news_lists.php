@@ -14,7 +14,25 @@
             <div class="col-xs-12 col-md-12">
                 <!--新闻列表 begin-->
 
-                test
+				<div class="article-feed">
+					<!-- .news will be added to .article-feed -->
+					<article class="news"></article>
+					<article class="news"></article>
+				</div>
+
+				<!-- status elements -->
+				<div class="scroller-status">
+					<div class="infinite-scroll-request loader-ellips">
+					  ...
+					</div>
+					<p class="infinite-scroll-last">End of content</p>
+					<p class="infinite-scroll-error">No more pages to load</p>
+				</div>
+
+				<!-- pagination has path -->
+				<p class="pagination">
+					<a class="pagination__next" href="./news/view/3">Next page</a>
+				</p>
 
                 <!--新闻列表 end-->
             </div>
@@ -58,3 +76,16 @@
         <!--底部通栏 end-->
     </div>
 </section>
+
+<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.article-feed').infiniteScroll({
+        path: '.pagination__next',
+        append: '.news',
+        status: '.scroller-status',
+        hideNav: '.pagination',
+        //history: false,
+    });
+});
+</script>
