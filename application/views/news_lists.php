@@ -10,59 +10,80 @@
     </div>
 
     <div class="news row">
-        <div class="col-xs-12 col-md-9">
-            <div class="col-xs-12 col-md-12">
-                <!--新闻列表 begin-->
-
-                <div class="article-feed">
-                    <!-- .news will be added to .article-feed -->
-                    <article class="news"></article>
-                    <article class="news"></article>
-                </div>
-
-                <!-- status elements -->
-                <div class="scroller-status">
-                    <div class="infinite-scroll-request loader-ellips">
-                      ...
+        <div class="col-xs-12 col-md-12">
+            <!--新闻列表 begin-->
+<style>
+.col-xs-11ths, .col-sm-11ths, .col-md-11ths, .col-lg-11ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-11ths { width: 49%; float: left; } } @media ( min-width : 992px) { .col-md-11ths { width: 49%; float: left; } } @media ( min-width : 1200px) { .col-lg-11ths { width: 49%; float: left; } }
+</style>
+            <div class="col-md-11ths panel panel-default">
+                <div class="media panel-body">
+                    <div class="media-left">
+			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
-                    <p class="infinite-scroll-last">End of content</p>
-                    <p class="infinite-scroll-error">No more pages to load</p>
+                    <div class="media-body">
+                        <h4 class="media-heading">标题01</h4>
+                        <p style="min-height:100px;">摘要01</p>
+                    </div>
                 </div>
-
-                <!-- pagination has path -->
-                <p class="pagination">
-                    <a class="pagination__next" href="./news/view/3">Next page</a>
-                </p>
-
-                <!--新闻列表 end-->
             </div>
 
-        </div>
-
-        <div class="col-md-3 hidden-xs">
-            <!--推荐新闻 begin-->
-            <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>推荐新闻<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
-                <ul class="widget-links list-unstyled">
-                    <li class="widget-links_item"><a href="#">2014年高考成绩</a></li>
-                    <li class="widget-links_item"><a href="#">第四届体育科技艺术节</a><li>
-                    <li class="widget-links_item"><a href="#">选修课展示</a></li>
-                    <li class="widget-links_item"><a href="#">第一届网络作文大赛</a></li>
-                    <li class="widget-links_item"><a href="#">2012年体育科技艺术节</a></li>
-                    <li class="widget-links_item"><a href="#">2012年高考喜报、录取榜</a></li>
-                    <li class="widget-links_item"><a href="#">2011年高考喜报、录取榜</a></li>
-                    <li class="widget-links_item"><a href="#">2010年高考喜报、录取榜</a></li>
-                    <li class="widget-links_item"><a href="#">2009年高考喜报、录取榜</a></li>
-                    <li class="widget-links_item"><a href="#">“课内比教学、课外访万家”</a></li>
-                    <li class="widget-links_item"><a href="#">研究性学习</a></li>
-                </ul>
+            <div class="col-md-11ths panel panel-default pull-right">
+                <div class="media panel-body">
+                    <div class="media-left">
+			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">标题02</h4>
+                        <p style="min-height:100px;">摘要02</p>
+                    </div>
+                </div>
             </div>
-            <!--推荐新闻 end-->
 
-            <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>二维码<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
-                <div id="qrcode" class="text-center"></div>
+            <div class="col-md-6 panel panel-default">
+                <div class="media panel-body">
+                    <div class="media-left">
+			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">标题03</h4>
+                        <p style="min-height:100px;">摘要03</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-md-6 panel panel-default">
+                <div class="media panel-body">
+                    <div class="media-left">
+			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">标题04</h4>
+                        <p style="min-height:100px;">摘要04</p>
+                    </div>
+                </div>
+            </div>
+<div style="clear:both;"></div>
+
+            <div class="article-feed">
+                <!-- .news will be added to .article-feed -->
+                <article class="news"></article>
+                <article class="news"></article>
+            </div>
+
+            <!-- status elements -->
+            <div class="scroller-status">
+                <div class="infinite-scroll-request loader-ellips">
+                  ...
+                </div>
+                <p class="infinite-scroll-last">End of content</p>
+                <p class="infinite-scroll-error">No more pages to load</p>
+            </div>
+
+            <!-- pagination has path -->
+            <p class="pagination">
+                <a class="pagination__next" href="./news/view/3">Next page</a>
+            </p>
+            <!--新闻列表 end-->
         </div>
     </div>
 
