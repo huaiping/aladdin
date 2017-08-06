@@ -12,13 +12,10 @@
     <div class="news row">
         <div class="col-xs-12 col-md-12">
             <!--新闻列表 begin-->
-<style>
-.col-xs-11ths, .col-sm-11ths, .col-md-11ths, .col-lg-11ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-11ths { width: 49%; float: left; } } @media ( min-width : 992px) { .col-md-11ths { width: 49%; float: left; } } @media ( min-width : 1200px) { .col-lg-11ths { width: 49%; float: left; } }
-</style>
             <div class="col-md-11ths panel panel-default">
                 <div class="media panel-body">
                     <div class="media-left">
-			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题01</h4>
@@ -30,7 +27,7 @@
             <div class="col-md-11ths panel panel-default pull-right">
                 <div class="media panel-body">
                     <div class="media-left">
-			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题02</h4>
@@ -39,10 +36,10 @@
                 </div>
             </div>
 
-            <div class="col-md-6 panel panel-default">
+            <div class="col-md-11ths panel panel-default">
                 <div class="media panel-body">
                     <div class="media-left">
-			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题03</h4>
@@ -51,10 +48,10 @@
                 </div>
             </div>
 
-            <div class="col-md-6 panel panel-default">
+            <div class="col-md-11ths panel panel-default pull-right">
                 <div class="media panel-body">
                     <div class="media-left">
-			<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题04</h4>
@@ -62,7 +59,8 @@
                     </div>
                 </div>
             </div>
-<div style="clear:both;"></div>
+
+			<div style="clear:both;"></div>
 
             <div class="article-feed">
                 <!-- .news will be added to .article-feed -->
