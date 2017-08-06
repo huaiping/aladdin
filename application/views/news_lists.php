@@ -22,8 +22,8 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?php echo $news[$i]['title']; ?>标题01</h4>
-                        <p style="min-height:100px;"><?php echo $news[$i]['pubtime']; ?>摘要01</p>
+                        <h4 class="media-heading"><?php echo $news[$i]['title']; ?></h4>
+                        <p style="min-height:100px;"><?php echo $news[$i]['pubtime']; ?></p>
                     </div>
                 </div>
             </div>
@@ -34,8 +34,8 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?php echo $news[$i+1]['title']; ?>标题02</h4>
-                        <p style="min-height:100px;"><?php echo $news[$i+1]['pubtime']; ?>摘要02</p>
+                        <h4 class="media-heading"><?php echo $news[$i+1]['title']; ?></h4>
+                        <p style="min-height:100px;"><?php echo $news[$i+1]['pubtime']; ?></p>
                     </div>
                 </div>
             </div>
@@ -47,8 +47,8 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">标题03</h4>
-                        <p style="min-height:100px;">摘要03</p>
+                        <h4 class="media-heading">标题</h4>
+                        <p style="min-height:100px;">摘要</p>
                     </div>
                 </div>
             </div>
@@ -59,8 +59,8 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">标题04</h4>
-                        <p style="min-height:100px;">摘要04</p>
+                        <h4 class="media-heading">标题</h4>
+                        <p style="min-height:100px;">摘要</p>
                     </div>
                 </div>
             </div>
