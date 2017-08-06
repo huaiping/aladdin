@@ -12,10 +12,10 @@
     <div class="news row">
         <div class="col-xs-12 col-md-12">
             <!--新闻列表 begin-->
-            <div class="col-md-11ths panel panel-default">
+            <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body">
                     <div class="media-left">
-						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题01</h4>
@@ -27,7 +27,7 @@
             <div class="col-md-11ths panel panel-default pull-right">
                 <div class="media panel-body">
                     <div class="media-left">
-						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题02</h4>
@@ -36,10 +36,10 @@
                 </div>
             </div>
 
-            <div class="col-md-11ths panel panel-default">
+            <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body">
                     <div class="media-left">
-						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题03</h4>
@@ -51,7 +51,7 @@
             <div class="col-md-11ths panel panel-default pull-right">
                 <div class="media panel-body">
                     <div class="media-left">
-						<img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">标题04</h4>
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-			<div style="clear:both;"></div>
+            <div style="clear:both;"></div>
 
             <div class="article-feed">
                 <!-- .news will be added to .article-feed -->
