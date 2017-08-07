@@ -13,8 +13,7 @@
         <div class="col-xs-12 col-md-12">
             <!--新闻列表 begin-->
             <?php
-                $loops = floor(count($news)/2);
-                for($i=0; $i<$loops; $i+=2):
+                for($i=0; $i<count($news); $i+=2):
             ?>
             <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body">
