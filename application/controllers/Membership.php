@@ -105,7 +105,7 @@ class Membership extends CI_Controller {
             'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => 'queue'
+            'status' => '待审'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->articlePost($data);
@@ -170,7 +170,7 @@ class Membership extends CI_Controller {
                 'pubtime' => $now,
                 'sizes' => ceil($this->upload->data('file_size')),
                 'license' => '共享版',
-                'status' => 'queue'
+                'status' => '待审'
             );
             $data = $this->security->xss_clean($data);
             //$data = array('upload_data' => $this->upload->data());
@@ -194,7 +194,7 @@ class Membership extends CI_Controller {
             'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => 'queue'
+            'status' => '待审'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->messagePost($data);
@@ -240,7 +240,7 @@ class Membership extends CI_Controller {
                 'description' => $this->input->post('content'),
                 'author' => $this->input->post('username'),
                 'pubtime' => $now,
-                'status' => 'queue'
+                'status' => '待审'
             );
             $data = $this->security->xss_clean($data);
             $this->membership_model->videoPost($data);
@@ -273,7 +273,7 @@ class Membership extends CI_Controller {
             'description' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => 'queue'
+            'status' => '待审'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->linkPost($data);
