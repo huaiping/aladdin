@@ -6,29 +6,19 @@ class Photo_model extends CI_Model {
         $this->load->database();
     }
 
-    public function get_category($id = FALSE)
+    public function get_category()
     {
-        if ($id === FALSE)
-        {
-            $this->db->select('id, category');
-            $this->db->group_by('category');
-            $query = $this->db->get('swan_photo');
-            return $query->result_array();
-        }
-        $query = $this->db->get_where('swan_photo', array('id' => $id));
-        return $query->row_array();
+        $this->db->select('id, category');
+        $this->db->group_by('category');
+        $query = $this->db->get('swan_photo');
+        return $query->result_array();
     }
 
-    public function get_subcategory($id = FALSE)
+    public function get_subcategory()
     {
-        if ($id === FALSE)
-        {
-            $this->db->group_by('subcategory');
-            $query = $this->db->get('swan_photo');
-            return $query->result_array();
-        }
-        $query = $this->db->get_where('swan_photo', array('id' => $id));
-        return $query->row_array();
+        $this->db->group_by('subcategory');
+        $query = $this->db->get('swan_photo');
+        return $query->result_array();
     }
 
     public function get_photos($id = FALSE)
