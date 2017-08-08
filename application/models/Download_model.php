@@ -26,7 +26,7 @@ class Download_model extends CI_Model {
     public function get_pages()
     {
         $this->load->library('pagination');
-        $config['base_url'] = base_url().'index.php/download/page/';
+        $config['base_url'] = site_url('/download/page/');
         $config['uri_segment'] = 4;
         $config['total_rows'] = $this->db->count_all('swan_download');
         $config['per_page'] = 10;

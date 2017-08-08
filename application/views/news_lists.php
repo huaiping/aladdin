@@ -40,30 +40,6 @@
             </div>
             <?php endfor ?>
 
-            <div class="col-md-11ths panel panel-default pull-left">
-                <div class="media panel-body">
-                    <div class="media-left">
-                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">标题</h4>
-                        <p style="min-height:100px;">摘要</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-11ths panel panel-default pull-right">
-                <div class="media panel-body">
-                    <div class="media-left">
-                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">标题</h4>
-                        <p style="min-height:100px;">摘要</p>
-                    </div>
-                </div>
-            </div>
-
             <div style="clear:both;"></div>
 
             <div class="article-feed">
@@ -100,7 +76,7 @@
     </div>
 </section>
 
-<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+<script src="//unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
 <script>
 $(document).ready(function(){
     $('.article-feed').infiniteScroll({

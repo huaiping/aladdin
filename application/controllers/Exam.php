@@ -15,4 +15,18 @@ class Exam extends CI_Controller {
         $this->load->view('exam');
         $this->load->view('footer');
     }
+
+    public function is_login()
+    {
+        $status = $this->session->userdata('username');
+        if ($status)
+        {
+            return TRUE;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
+
 }
