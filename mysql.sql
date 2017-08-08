@@ -4,7 +4,7 @@ CREATE TABLE `ci_sessions` (
   `ip_address` varchar(45) NOT NULL,
   `timestamp` int(10) unsigned DEFAULT 0 NOT NULL,
   `data` blob NOT NULL,
-  PRIMARY KEY (id),
+  PRIMARY KEY (`id`),
   KEY `ci_sessions_timestamp` (`timestamp`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -78,6 +78,7 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
 CREATE TABLE IF NOT EXISTS `swan_news` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
+  `summary` varchar(300) NOT NULL,
   `content` varchar(9000) NOT NULL,
   `author` varchar(255) NOT NULL,
   `category` varchar(24) NOT NULL,
