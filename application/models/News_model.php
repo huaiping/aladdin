@@ -6,11 +6,13 @@ class News_model extends CI_Model {
         $this->load->database();
     }
 
-    public function get_newslist()
+    /*首页 - 校园新闻*/
+    public function get_reports()
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(20);
+        $this->db->limit(12);
         $query = $this->db->get('swan_news');
+        $query = $this->db->get_where('swan_news', array('category' => '校园新闻'));
         return $query->result_array();
     }
 
@@ -32,7 +34,7 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
-    /*新闻中心 - 视频点播*/
+    /*首页 - 视频点播*/
     public function get_video($id = FALSE)
     {
         if ($id === FALSE)
@@ -46,7 +48,7 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
-    /*新闻中心 - 最新资源*/
+    /*首页 - 最新资源*/
     public function get_download($id = FALSE)
     {
         if ($id === FALSE)
@@ -60,7 +62,7 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
-    /*新闻中心 - 友情链接*/
+    /*首页 - 友情链接*/
     public function get_friendsites($id = FALSE)
     {
         if ($id === FALSE)
@@ -70,6 +72,15 @@ class News_model extends CI_Model {
         }
         $query = $this->db->get_where('swan_links', array('id' => $id));
         return $query->row_array();
+    }
+
+    /*新闻中心 - 新闻列表*/
+    public function get_newslist()
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(20);
+        $query = $this->db->get('swan_news');
+        return $query->result_array();
     }
 
     /*新闻中心 - 评论列表*/

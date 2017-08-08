@@ -139,18 +139,9 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>校园新闻<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
-                    <li class="widget-links_item"><a href="#">我校荣获“湖北省特色学校创建课题研究优秀组织单位”称号</a></li>
+                <?php foreach ($reports as $report): ?>
+                    <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$report['id']); ?>"><?php echo $report['title']; ?></a></li>
+                <?php endforeach ?>
                 </ul>
             </div>
             <!--校园新闻 end-->

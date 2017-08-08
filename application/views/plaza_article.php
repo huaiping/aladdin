@@ -35,13 +35,13 @@
                     <label for="category" class="col-xs-3 col-sm-1 col-md-1 control-label">类别</label>
                     <div class="col-xs-9 col-sm-11 col-md-2">
                         <select class="selectpicker form-control" id="category" name="category">
-                            <option value="1">校园新闻</option>
-                            <option value="2">教学教研</option>
-                            <option value="3">德育视窗</option>
-                            <option value="4">教师专栏</option>
-                            <option value="5">学生专栏</option>
-                            <option value="6">家长专栏</option>
-                            <option value="7">通知公告</option>
+                            <option value="校园新闻">校园新闻</option>
+                            <option value="教学教研">教学教研</option>
+                            <option value="德育视窗">德育视窗</option>
+                            <option value="教师专栏">教师专栏</option>
+                            <option value="学生专栏">学生专栏</option>
+                            <option value="家长专栏">家长专栏</option>
+                            <option value="通知公告">通知公告</option>
                         </select>
                     </div>
                 </div>
