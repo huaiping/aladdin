@@ -70,11 +70,11 @@
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="home">
                         <ul class="tab-links list-unstyled">
-                        <?php foreach ($latests as $news): ?>
-                            <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$news['id']); ?>"><?php echo $news['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($news['pubtime'],0,10); ?></span></li>
-                        <?php endforeach ?>
-                            <li class="widget-links_item"><a href="#">[校园快讯]麻城市档案局领导来我校调研“档案创优”工作</a><span class="pull-right hidden-xs">2015-06-02</span></li>
-                            <li class="widget-links_item visible-lg"><a href="#">[校园快讯]麻城市档案局领导来我校调研“档案创优”工作</a><span class="pull-right hidden-xs">2015-06-01</span></li>
+                        <?php for ($i=0; $i<count($latests); $i++): ?>
+                            <li class="widget-links_item<?php if ($i>8) { echo ' visible-lg'; } ?>">
+                                <a href="<?php echo site_url('news/view/'.$latests[$i]['id']); ?>"><?php echo $latests[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($latests[$i]['pubtime'],0,10); ?></span>
+                            </li>
+                        <?php endfor ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="teacher">
@@ -256,7 +256,9 @@
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>友情链接<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($friendsites as $links): ?>
-                    <li class="col-md-2 pull-left" style="height:30px; line-height:30px;"><a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a></li>
+                    <li class="col-md-2 pull-left" style="height:30px; line-height:30px;">
+                        <a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a>
+                    </li>
                 <?php endforeach ?>
                 </ul>
             </div>
