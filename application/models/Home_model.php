@@ -60,22 +60,4 @@ class Home_model extends CI_Model {
         return $query->result_array();
     }
 
-    /*新闻中心 - 评论列表*/
-    public function get_comment($id = FALSE)
-    {
-        if ($id === FALSE)
-        {
-            $query = $this->db->get('swan_comment');
-            return $query->result_array();
-        }
-        $query = $this->db->get_where('swan_comment', array('title' => $id));
-        return $query->result_array();
-    }
-
-    /*新闻中心 - 文章评论*/
-    public function commentPost($data)
-    {
-        $this->db->insert('swan_comment', $data);
-    }
-
 }
