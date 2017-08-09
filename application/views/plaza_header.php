@@ -65,13 +65,12 @@ body {padding-top:70px;}
         <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right bg-primary">
             <?php
-                /*用户权限：1管理员 2教师 3学生 4贵宾*/
+                /*用户权限：1管理员 2师生 3贵宾*/
                 if ($this->session->userdata('levels') == '1') {
             ?>
                 <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-list-alt"></span> 信息审批</a></li>
                 <li><a href="<?php echo site_url('membership/files'); ?>"><span class="fa fa-users"></span> 用户管理</a></li>
             <?php
-
                 } elseif ($this->session->userdata('levels') == '2') {
             ?>
                 <li><a href="<?php echo site_url('membership/article'); ?>"><i class="fa fa-file-text"></i> 投稿</a></li>
@@ -82,11 +81,6 @@ body {padding-top:70px;}
                 <li><a href="<?php echo site_url('membership/links'); ?>"><i class="fa fa-link"></i> 链接</a></li>
             <?php
                 } elseif ($this->session->userdata('levels') == '3') {
-            ?>
-                <li><a href="<?php echo site_url('membership/files'); ?>">test</a></li>
-                <li><a href="<?php echo site_url('membership/message'); ?>"><i class="fa fa-commenting"></i> 留言</a></li>
-            <?php
-                } else {
             ?>
                 <li><a href="<?php echo site_url('membership/message'); ?>"><i class="fa fa-commenting"></i> 留言</a></li>
             <?php

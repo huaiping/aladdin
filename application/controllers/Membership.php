@@ -66,6 +66,24 @@ class Membership extends CI_Controller {
         }
     }
 
+    public function register($username = FALSE, $password = FALSE, $name = FALSE, $email = FALSE)
+    {
+        $now = date("Y-m-d H:i:s");
+        $data = array(
+            'username' => $this->input->post('username'),
+            'password' => md5(sha1($this->input->post('password'))),
+            'name' => $this->input->post('name'),
+            'email' => $this->input->post('email'),
+            'levels' => '3',
+            'groups' => '贵宾',
+            'pubtime' => $now,
+            'status' => '待审'
+        );
+        $data = $this->security->xss_clean($data);
+        $this->membership_model->register($data);
+        redirect('/membership/login');
+    }
+
     public function plaza()
     {
         $data['articles'] = $this->membership_model->get_articles();

@@ -65,12 +65,13 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
   `password` varchar(64) NOT NULL,
-  `email` varchar(255) NOT NULL DEFAULT '',
   `name` varchar(24) NOT NULL,
+  `email` varchar(255) NOT NULL DEFAULT '',
   `gender` varchar(6) NOT NULL DEFAULT '',
   `avator` varchar(255) NOT NULL DEFAULT '',
   `levels` varchar(1) NOT NULL DEFAULT '',
   `groups` varchar(24) NOT NULL DEFAULT '',
+  `pubtime` datetime NOT NULL,
   `status` varchar(10) NOT NULL DEFAULT 'queue',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;

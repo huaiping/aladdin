@@ -13,6 +13,12 @@ class Membership_model extends CI_Model {
         return $query->row_array();
     }
 
+    /*用户中心 - 注册*/
+    public function register($data)
+    {
+        $this->db->insert('swan_membership', $data);
+    }
+
     /*用户中心 - 投稿*/
     public function articlePost($data)
     {

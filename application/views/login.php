@@ -33,7 +33,7 @@
                                     $attributes = array('class' => 'form-horizontal');
                                     echo form_open('membership/login', $attributes);
                                 ?>
-                                   <div class="form-group">
+                                    <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
                                             <span class="input-group-addon" id="basic-addon1">账号</span>
                                             <input type="text" class="form-control" id="username" name="username" placeholder="用户名/邮箱" aria-describedby="basic-addon1" value="" required="required">
@@ -69,16 +69,16 @@
                         </div>
                         <div role="tabpanel" class="tab-pane" id="register">
                             <!--用户注册 begin-->
-                            <div class="loginBox row">
+                            <div class="registerBox row">
                                 <h2 class="text-center" style="margin-bottom:20px;">用户注册</h2>
                                 <?php
                                     $attributes = array('class' => 'form-horizontal');
                                     echo form_open('membership/register', $attributes);
                                 ?>
-                                   <div class="form-group">
+                                    <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
                                             <span class="input-group-addon" id="basic-addon1">账号</span>
-                                            <input type="text" class="form-control" id="username" name="username" placeholder="用户名/邮箱" aria-describedby="basic-addon1" value="" required="required">
+                                            <input type="text" class="form-control" id="username" name="username" placeholder="用户名" aria-describedby="basic-addon1" value="" required="required">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -89,7 +89,19 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
-                                            <button class="btn btn-block btn-info" name="login" type="submit">注册</button>
+                                            <span class="input-group-addon" id="basic-addon3">昵称</span>
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="昵称" aria-describedby="basic-addon3" value="" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
+                                            <span class="input-group-addon" id="basic-addon4">邮箱</span>
+                                            <input type="text" class="form-control" id="email" name="email" placeholder="邮箱" aria-describedby="basic-addon4" value="" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
+                                            <button class="btn btn-block btn-info" name="register" type="submit">注册</button>
                                         </div>
                                     </div>
                                 </form>
