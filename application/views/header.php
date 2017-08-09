@@ -48,6 +48,7 @@ body {padding-top:70px;}
 blockquote p {font-size:16px;}
 #slide {overflow:hidden;}
 #slide ul {list-style:none; width:2999px;}
+#article {word-wrap:break-word;}
 #article img {max-width:100%;}
 .circle {width:120px; height:120px; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; margin-bottom:20px;}
 .circle, .circle:hover, .circle:focus, .circle:active, .circle:visited {border:none; outline:none;}
