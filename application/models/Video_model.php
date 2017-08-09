@@ -6,6 +6,7 @@ class Video_model extends CI_Model {
         $this->load->database();
     }
 
+    /*视频 - 视频项*/
     public function get_items($id = FALSE)
     {
         if ($id === FALSE)
@@ -22,6 +23,7 @@ class Video_model extends CI_Model {
         return $query->row_array();
     }
 
+    /*视频 - 相关推荐*/
     public function get_hots()
     {
         $this->db->order_by('hits', 'DESC');

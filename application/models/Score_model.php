@@ -6,6 +6,7 @@ class Score_model extends CI_Model {
         $this->load->database();
     }
 
+    /*成绩查询 - 单次成绩*/
     public function get_items($data)
     {
         if (strstr($data['category'],"|")) {
@@ -34,6 +35,7 @@ class Score_model extends CI_Model {
         return $query->row_array();
     }
 
+    /*成绩查询 - 参考人数*/
     public function get_total($data)
     {
         $this->db->where(array('item' => $data['category']));
@@ -41,9 +43,9 @@ class Score_model extends CI_Model {
         return $query->num_rows();
     }
 
+    /*成绩查询 - 历次成绩*/
     public function get_scores($data)
     {
-
         if (strlen($data['number']) == 18)
         {
             $this->db->where(array('xm' => $data['name'], 'sfzh' => $data['number']));

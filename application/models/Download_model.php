@@ -6,6 +6,7 @@ class Download_model extends CI_Model {
         $this->load->database();
     }
 
+    /*资源下载 - 热门资源*/
     public function get_hots()
     {
         $this->db->order_by('hits', 'DESC');
@@ -14,6 +15,7 @@ class Download_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*资源下载 - 资源列表*/
     public function get_lists($slug = FALSE, $offset = FALSE)
     {
         //$counter = $this->db->count_all('swan_download');
@@ -23,6 +25,7 @@ class Download_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*资源下载 - 分页*/
     public function get_pages()
     {
         $this->load->library('pagination');
@@ -37,6 +40,7 @@ class Download_model extends CI_Model {
         //return $this->pagination->create_links();
     }
 
+    /*资源下载 - 资源项*/
     public function get_item($id = FALSE)
     {
         if ($id === FALSE)

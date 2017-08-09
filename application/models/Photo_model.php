@@ -6,6 +6,7 @@ class Photo_model extends CI_Model {
         $this->load->database();
     }
 
+    /*图片中心 - 大类别*/
     public function get_category()
     {
         $this->db->select('id, category');
@@ -14,6 +15,7 @@ class Photo_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*图片中心 - 小类别*/
     public function get_subcategory()
     {
         $this->db->group_by('subcategory');
@@ -21,6 +23,7 @@ class Photo_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*图片中心 - 图片项*/
     public function get_photos($id = FALSE)
     {
         if ($id === FALSE)
@@ -32,6 +35,7 @@ class Photo_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*图片中心 - 瀑布流*/
     public function get_waterfall($page = FALSE)
     {
         //$page = json_encode($this->input->post('page'));

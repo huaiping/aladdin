@@ -37,6 +37,10 @@ body {padding-top:70px;}
 .widget-links_item {margin-bottom:8px;}
 .widget-links_item a {margin-right:6px; word-break:break-word;}
 .widget-links_item small {display:inline-block; font-size:13px;}
+.badge-danger{background-color:#d9534f;}
+.badge-success{background-color:#5cb85c;}
+.badge-content-danger{background-color:#5bc0de; color:#a7a9aa;}
+.badge-content-success{background-color:#5bc0de; color:#a7a9aa;}
 </style>
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

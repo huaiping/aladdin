@@ -25,7 +25,6 @@ class Score extends CI_Controller {
             'number' => $this->input->post('number')
         );
         $data = $this->security->xss_clean($data);
-
         $data['item'] = $this->score_model->get_items($data);
         $data['scores'] = $this->score_model->get_scores($data);
         $data['total'] = $this->score_model->get_total($data);

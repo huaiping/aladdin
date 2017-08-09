@@ -16,6 +16,7 @@ class News_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*首页 - 校园新闻 新闻中心 - 新闻项*/
     public function get_news($id = FALSE)
     {
         if ($id === FALSE)

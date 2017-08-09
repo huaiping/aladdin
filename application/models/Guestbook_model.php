@@ -6,6 +6,7 @@ class Guestbook_model extends CI_Model {
         $this->load->database();
     }
 
+    /*公众互动 - 留言列表*/
     public function get_messages($slug = FALSE, $offset = FALSE)
     {
         $this->db->order_by('pubtime', 'DESC');
