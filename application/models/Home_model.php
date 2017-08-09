@@ -53,6 +53,16 @@ class Home_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*首页 - 教学教研*/
+    public function get_teaching()
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(12);
+        $query = $this->db->get('swan_news');
+        $query = $this->db->get_where('swan_news', array('category' => '教学教研'));
+        return $query->result_array();
+    }
+
     /*首页 - 友情链接*/
     public function get_friendsites()
     {

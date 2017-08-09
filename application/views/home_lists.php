@@ -70,9 +70,9 @@
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="home">
                         <ul class="tab-links list-unstyled">
-                        <?php for ($i=0; $i<count($latests); $i++): ?>
+                        <?php for ($i=0; $i<count($latest); $i++): ?>
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
-                                <a href="<?php echo site_url('news/view/'.$latests[$i]['id']); ?>"><?php echo $latests[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($latests[$i]['pubtime'],0,10); ?></span>
+                                <a href="<?php echo site_url('news/view/'.$latest[$i]['id']); ?>"><?php echo $latest[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($latest[$i]['pubtime'],0,10); ?></span>
                             </li>
                         <?php endfor ?>
                         </ul>
@@ -154,7 +154,7 @@
                 <?php foreach ($videos as $video): ?>
                     <li class="widget-links_item"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
                 <?php endforeach ?>
-                    <li class="widget-links_item"><a href="#">[视频一中][推荐]“畅想2013”麻城一中元旦联欢晚会（视频）</a></li>
+                    <li class="widget-links_item"><a href="#">[视频一中]“畅想2013”麻城一中元旦联欢晚会（视频）</a></li>
                 </ul>
             </div>
             <!--视频点播 end-->
@@ -221,18 +221,9 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>教学教研<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
-                    <li class="widget-links_item"><a href="#">高一语文数学等学科积极开展课堂教学教研活动</a></li>
+                <?php foreach ($teaching as $teach): ?>
+                    <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$teach['id']); ?>"><?php echo $teach['title']; ?></a></li>
+                <?php endforeach ?>
                 </ul>
             </div>
             <!--教学教研 end-->
