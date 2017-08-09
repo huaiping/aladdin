@@ -71,7 +71,7 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="home">
                         <ul class="tab-links list-unstyled">
                         <?php for ($i=0; $i<count($latests); $i++): ?>
-                            <li class="widget-links_item<?php if ($i>8) { echo ' visible-lg'; } ?>">
+                            <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$latests[$i]['id']); ?>"><?php echo $latests[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($latests[$i]['pubtime'],0,10); ?></span>
                             </li>
                         <?php endfor ?>
