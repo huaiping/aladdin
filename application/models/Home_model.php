@@ -1,9 +1,19 @@
 <?php
-class News_model extends CI_Model {
+class Home_model extends CI_Model {
 
     public function __construct()
     {
         $this->load->database();
+    }
+
+    /*首页 - 校园新闻*/
+    public function get_reports()
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(12);
+        $query = $this->db->get('swan_news');
+        $query = $this->db->get_where('swan_news', array('category' => '校园新闻'));
+        return $query->result_array();
     }
 
     /*首页 - 校园新闻 新闻中心 - 新闻项*/
@@ -25,12 +35,28 @@ class News_model extends CI_Model {
         return $query->row_array();
     }
 
-    /*新闻中心 - 新闻列表*/
-    public function get_newslist()
+    /*首页 - 视频点播*/
+    public function get_video()
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(20);
-        $query = $this->db->get('swan_news');
+        $this->db->limit(10);
+        $query = $this->db->get('swan_video');
+        return $query->result_array();
+    }
+
+    /*首页 - 最新资源*/
+    public function get_download()
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(12);
+        $query = $this->db->get('swan_download');
+        return $query->result_array();
+    }
+
+    /*首页 - 友情链接*/
+    public function get_friendsites()
+    {
+        $query = $this->db->get('swan_links');
         return $query->result_array();
     }
 
