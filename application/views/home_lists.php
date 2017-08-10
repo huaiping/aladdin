@@ -79,38 +79,38 @@
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="teacher">
                         <ul class="tab-links list-unstyled">
-                            <li class="widget-links_item"><a href="#">专栏之二内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之二内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之二内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之二内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之二内容</a></li>
+                        <?php for ($i=0; $i<count($teachers); $i++): ?>
+                            <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
+                                <a href="<?php echo site_url('news/view/'.$teachers[$i]['id']); ?>"><?php echo $teachers[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($teachers[$i]['pubtime'],0,10); ?></span>
+                            </li>
+                        <?php endfor ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="student">
                         <ul class="tab-links list-unstyled">
-                            <li class="widget-links_item"><a href="#">专栏之三内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之三内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之三内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之三内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之三内容</a></li>
+                        <?php for ($i=0; $i<count($students); $i++): ?>
+                            <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
+                                <a href="<?php echo site_url('news/view/'.$students[$i]['id']); ?>"><?php echo $students[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($students[$i]['pubtime'],0,10); ?></span>
+                            </li>
+                        <?php endfor ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="parent">
                         <ul class="tab-links list-unstyled">
-                            <li class="widget-links_item"><a href="#">专栏之四内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之四内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之四内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之四内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之四内容</a></li>
+                        <?php for ($i=0; $i<count($parents); $i++): ?>
+                            <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
+                                <a href="<?php echo site_url('news/view/'.$parents[$i]['id']); ?>"><?php echo $parents[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($parents[$i]['pubtime'],0,10); ?></span>
+                            </li>
+                        <?php endfor ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="notice">
                         <ul class="tab-links list-unstyled">
-                            <li class="widget-links_item"><a href="#">专栏之五内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之五内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之五内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之五内容</a></li>
-                            <li class="widget-links_item"><a href="#">专栏之五内容</a></li>
+                        <?php for ($i=0; $i<count($notices); $i++): ?>
+                            <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
+                                <a href="<?php echo site_url('news/view/'.$notices[$i]['id']); ?>"><?php echo $notices[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($notices[$i]['pubtime'],0,10); ?></span>
+                            </li>
+                        <?php endfor ?>
                         </ul>
                     </div>
                 </div>
