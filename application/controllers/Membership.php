@@ -75,9 +75,9 @@ class Membership extends CI_Controller {
             'name' => $this->input->post('name'),
             'email' => $this->input->post('email'),
             'levels' => '3',
-            'groups' => '贵宾',
+            'groups' => 'guests',
             'pubtime' => $now,
-            'status' => '待审'
+            'status' => 'pending'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->register($data);
@@ -131,12 +131,12 @@ class Membership extends CI_Controller {
         $data = array(
             'title' => $this->input->post('title'),
             'category' => $this->input->post('category'),
-            'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => '待审'
+            'status' => 'pending'
         );
         $data = $this->security->xss_clean($data);
+        $data['content'] = $this->input->post('content');
         $this->membership_model->articlePost($data);
         redirect('membership/plaza');
     }
@@ -195,7 +195,7 @@ class Membership extends CI_Controller {
                 'pubtime' => $now,
                 'sizes' => ceil($this->upload->data('file_size')),
                 'license' => '共享版',
-                'status' => '待审'
+                'status' => 'pending'
             );
             $data = $this->security->xss_clean($data);
             //$data = array('upload_data' => $this->upload->data());
@@ -226,7 +226,7 @@ class Membership extends CI_Controller {
             'content' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => '待审'
+            'status' => 'pending'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->messagePost($data);
@@ -270,7 +270,7 @@ class Membership extends CI_Controller {
                 'description' => $this->input->post('content'),
                 'author' => $this->input->post('username'),
                 'pubtime' => $now,
-                'status' => '待审'
+                'status' => 'pending'
             );
             $data = $this->security->xss_clean($data);
             $this->membership_model->videoPost($data);
@@ -301,7 +301,7 @@ class Membership extends CI_Controller {
             'description' => $this->input->post('content'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
-            'status' => '待审'
+            'status' => 'pending'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->linkPost($data);

@@ -22,8 +22,8 @@
                     <?php foreach ($articles as $myarticle): ?>
                         <li class="widget-links_item">
                             <?php
-                            if ($myarticle['status'] == '待审') {
-                                echo '<span class="badge badge-danger">'.$myarticle['status'].'</span> ';
+                            if ($myarticle['status'] == 'pending') {
+                                echo '<span class="badge badge-danger">待审</span> ';
                             }
                             ?>
                             <a href="#"><?php echo $myarticle['title']; ?></a>
@@ -42,8 +42,8 @@
                     <?php foreach ($albums as $myalbum): ?>
                         <li class="widget-links_item">
                             <?php
-                            if ($myalbum['status'] == '待审') {
-                                echo '<span class="badge badge-danger">'.$myalbum['status'].'</span> ';
+                            if ($myalbum['status'] == 'pending') {
+                                echo '<span class="badge badge-danger">待审</span> ';
                             }
                             ?>
                             <a href="#"><?php echo $myalbum['id']; ?></a>
@@ -62,8 +62,8 @@
                     <?php foreach ($files as $myfile): ?>
                         <li class="widget-links_item">
                             <?php
-                            if ($myfile['status'] == '待审') {
-                                echo '<span class="badge badge-danger">'.$myfile['status'].'</span> ';
+                            if ($myfile['status'] == 'pending') {
+                                echo '<span class="badge badge-danger">待审</span> ';
                             }
                             ?>
                             <a href="#"><?php echo $myfile['title']; ?></a>
@@ -82,8 +82,8 @@
                     <?php foreach ($messages as $mymessage): ?>
                         <li class="widget-links_item">
                             <?php
-                            if ($mymessage['status'] == '待审') {
-                                echo '<span class="badge badge-danger">'.$mymessage['status'].'</span> ';
+                            if ($mymessage['status'] == 'pending') {
+                                echo '<span class="badge badge-danger">待审</span> ';
                             }
                             ?>
                             <a href="#"><?php echo $mymessage['title']; ?></a>
@@ -102,8 +102,8 @@
                     <?php foreach ($videos as $myvideo): ?>
                         <li class="widget-links_item">
                             <?php
-                            if ($myvideo['status'] == '待审') {
-                                echo '<span class="badge badge-danger">'.$myvideo['status'].'</span> ';
+                            if ($myvideo['status'] == 'pending') {
+                                echo '<span class="badge badge-danger">待审</span> ';
                             }
                             ?>
                             <a href="#"><?php echo $myvideo['title']; ?></a>
@@ -122,8 +122,8 @@
                     <?php foreach ($links as $mylink): ?>
                         <li class="widget-links_item">
                             <?php
-                            if ($mylink['status'] == '待审') {
-                                echo '<span class="badge badge-danger">'.$mylink['status'].'</span> ';
+                            if ($mylink['status'] == 'pending') {
+                                echo '<span class="badge badge-danger">待审</span> ';
                             }
                             ?>
                             <a href="#"><?php echo $mylink['title']; ?></a>

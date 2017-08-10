@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 
     public function index()
     {
-        $data['latest'] = $this->home_model->get_news();
+        $data['latest'] = $this->home_model->get_latest();
         $data['teachers'] = $this->home_model->get_teachers();
         $data['students'] = $this->home_model->get_students();
         $data['parents'] = $this->home_model->get_parents();
