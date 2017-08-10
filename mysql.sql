@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `swan_download` (
   `sizes` varchar(10) NOT NULL,
   `license` varchar(24) NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(10) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -43,9 +43,9 @@ CREATE TABLE IF NOT EXISTS `swan_guestbook` (
   `avator` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `reply` varchar(255) NOT NULL DEFAULT '',
-  `modtime` datetime NOT NULL DEFAULT '2017-07-31 10:10:10',
+  `modtime` datetime NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(10) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -55,9 +55,9 @@ CREATE TABLE IF NOT EXISTS `swan_links` (
   `url` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `author` varchar(255) NOT NULL,
-  `pubtime` datetime NOT NULL DEFAULT '2017-07-31 10:10:10',
+  `pubtime` datetime NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(10) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `levels` varchar(1) NOT NULL DEFAULT '',
   `groups` varchar(24) NOT NULL DEFAULT '',
   `pubtime` datetime NOT NULL,
-  `status` varchar(10) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `swan_photo` (
   `subcategory` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(10) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -170,8 +170,8 @@ CREATE TABLE IF NOT EXISTS `swan_video` (
   `url` varchar(255) NOT NULL,
   `author` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL DEFAULT '',
-  `pubtime` datetime NOT NULL DEFAULT '2017-07-31 10:10:10',
+  `pubtime` datetime NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `status` varchar(10) NOT NULL DEFAULT 'queue',
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
