@@ -43,12 +43,6 @@ class Download_model extends CI_Model {
     /*资源下载 - 资源项*/
     public function get_item($id = FALSE)
     {
-        if ($id === FALSE)
-        {
-            $query = $this->db->get('swan_download');
-            return $query->result_array();
-        }
-
         /*计数器*/
         $this->db->where(array('id' => $id));
         $this->db->set('hits','hits + 1',FALSE);

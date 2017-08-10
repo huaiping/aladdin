@@ -6,16 +6,9 @@ class News_model extends CI_Model {
         $this->load->database();
     }
 
-    /*首页 - 校园新闻 新闻中心 - 新闻项*/
+    /*新闻中心 - 新闻项*/
     public function get_news($id = FALSE)
     {
-        if ($id === FALSE)
-        {
-            $this->db->order_by('pubtime', 'DESC');
-            $this->db->limit(10);
-            $query = $this->db->get('swan_news');
-            return $query->result_array();
-        }
         /*计数器*/
         $this->db->where(array('id' => $id));
         $this->db->set('hits','hits + 1',FALSE);

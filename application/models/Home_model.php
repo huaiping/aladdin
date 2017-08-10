@@ -19,9 +19,9 @@ class Home_model extends CI_Model {
     public function get_teachers()
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(12);
+        $this->db->limit(10);
         $query = $this->db->get('swan_news');
-        $query = $this->db->get_where('swan_news', array('category' => 'teachers'));
+        $query = $this->db->get_where('swan_news', array('category' => 'teachers', 'status' => 'passed'));
         return $query->result_array();
     }
 
@@ -29,9 +29,9 @@ class Home_model extends CI_Model {
     public function get_students()
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(12);
+        $this->db->limit(10);
         $query = $this->db->get('swan_news');
-        $query = $this->db->get_where('swan_news', array('category' => 'students'));
+        $query = $this->db->get_where('swan_news', array('category' => 'students', 'status' => 'passed'));
         return $query->result_array();
     }
 
@@ -39,9 +39,9 @@ class Home_model extends CI_Model {
     public function get_parents()
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(12);
+        $this->db->limit(10);
         $query = $this->db->get('swan_news');
-        $query = $this->db->get_where('swan_news', array('category' => 'parents'));
+        $query = $this->db->get_where('swan_news', array('category' => 'parents', 'status' => 'passed'));
         return $query->result_array();
     }
 
@@ -49,7 +49,7 @@ class Home_model extends CI_Model {
     public function get_notices()
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(12);
+        $this->db->limit(10);
         $query = $this->db->get('swan_news');
         $query = $this->db->get_where('swan_news', array('category' => 'notices', 'status' => 'passed'));
         return $query->result_array();
@@ -69,7 +69,7 @@ class Home_model extends CI_Model {
     public function get_video()
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(10);
+        $this->db->limit(12);
         $query = $this->db->get('swan_video');
         return $query->result_array();
     }

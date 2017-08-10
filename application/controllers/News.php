@@ -71,7 +71,7 @@ class News extends CI_Controller {
                 'content' => $this->input->post('content'),
                 'author' => $this->input->post('username'),
                 'pubtime' => $now,
-                'status' => 'queue'
+                'status' => 'pending'
             );
             $data = $this->security->xss_clean($data);
             $data['news_comment'] = $this->news_model->commentPost($data);
@@ -79,7 +79,7 @@ class News extends CI_Controller {
         else
         {
             //$this->session->set_userdata('goto', 'news/view/'.$this->uri->segment(3,1));
-            redirect('membership/login');
+            redirect('membership');
         }
     }
 
