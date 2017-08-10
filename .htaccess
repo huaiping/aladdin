@@ -1,3 +1,4 @@
 RewriteEngine on
-RewriteCond $1 !^(index\.php|avatar|kindeditor|webroot|robots\.txt|favicon\.ico)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /v2/index.php/$1 [L]

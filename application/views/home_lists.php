@@ -154,7 +154,6 @@
                 <?php foreach ($videos as $video): ?>
                     <li class="widget-links_item"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
                 <?php endforeach ?>
-                    <li class="widget-links_item"><a href="#">[视频一中]“畅想2013”麻城一中元旦联欢晚会（视频）</a></li>
                 </ul>
             </div>
             <!--视频点播 end-->
