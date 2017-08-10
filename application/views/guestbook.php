@@ -50,13 +50,6 @@
             <nav>
                 <ul class="pagination" style="margin-top:0; margin-bottom:10px;">
                     <?php echo $guestbook_page; ?>
-                    <!--
-                    <li><a href="index.php?mod=guestbook&amp;act=lists&amp;page=1" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                    <li><a href="index.php?mod=guestbook&amp;act=lists&amp;page=1">1</a></li>
-                    <li><a href="index.php?mod=guestbook&amp;act=lists&amp;page=2">2</a></li>
-                    <li><a href="index.php?mod=guestbook&amp;act=lists&amp;page=3">3</a></li>
-                    <li><a href="index.php?mod=guestbook&amp;act=lists&amp;page=3" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-                    -->
                 </ul>
             </nav>
         </div>

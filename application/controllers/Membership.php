@@ -86,12 +86,12 @@ class Membership extends CI_Controller {
 
     public function plaza()
     {
-        $levels = $this->session->userdata('levels');
-        if ($levels == 1) {
+        $groups = $this->session->userdata('groups');
+        if ($groups == 'moderators') {
             $this->load->view('plaza_header');
 
             $this->load->view('footer');
-        } elseif ($levels == 2) {
+        } elseif ($groups == 'workers') {
             $data['articles'] = $this->membership_model->get_articles();
             $data['albums'] = $this->membership_model->get_albums();
             $data['files'] = $this->membership_model->get_files();
@@ -101,7 +101,7 @@ class Membership extends CI_Controller {
             $this->load->view('plaza_header');
             $this->load->view('plaza', $data);
             $this->load->view('footer');
-        } elseif ($levels == 3) {
+        } elseif ($groups == 'guests') {
             $this->load->view('plaza_header');
             $this->load->view('plaza_message');
             $this->load->view('footer');
@@ -194,7 +194,7 @@ class Membership extends CI_Controller {
                 'author' => $this->input->post('username'),
                 'pubtime' => $now,
                 'sizes' => ceil($this->upload->data('file_size')),
-                'license' => '共享版',
+                'license' => 'shareware',
                 'status' => 'pending'
             );
             $data = $this->security->xss_clean($data);

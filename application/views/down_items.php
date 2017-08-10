@@ -32,10 +32,10 @@
                 <tr>
                     <td class="col-md-5">运行环境：Windows 7+ / Office 2007+</td>
                     <td class="col-md-3 hidden-xs text-center" rowspan="4" style="vertical-align:middle;"><img src="<?php echo base_url('webroot/image/image1.gif'); ?>" alt=""></td>
-                    <td class="col-md-4">文件大小：1314 KB</td>
+                    <td class="col-md-4">文件大小：<?php echo $down_item['sizes']; ?> KB</td>
                 </tr>
                 <tr>
-                    <td>资源等级：★★★</td><td>资源类别：<?php echo $down_item['category']; ?></td>
+                    <td>资源等级：★★★★</td><td>资源类别：<?php echo $down_item['category']; ?></td>
                 </tr>
                 <tr>
                     <td>作者：<?php echo $down_item['author']; ?></td><td>授权方式：<?php echo $down_item['license']; ?></td>
