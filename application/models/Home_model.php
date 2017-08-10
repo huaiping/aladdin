@@ -20,7 +20,6 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(10);
-        $query = $this->db->get('swan_news');
         $query = $this->db->get_where('swan_news', array('category' => 'teachers', 'status' => 'passed'));
         return $query->result_array();
     }
@@ -30,7 +29,6 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(10);
-        $query = $this->db->get('swan_news');
         $query = $this->db->get_where('swan_news', array('category' => 'students', 'status' => 'passed'));
         return $query->result_array();
     }
@@ -40,7 +38,6 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(10);
-        $query = $this->db->get('swan_news');
         $query = $this->db->get_where('swan_news', array('category' => 'parents', 'status' => 'passed'));
         return $query->result_array();
     }
@@ -50,7 +47,6 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(10);
-        $query = $this->db->get('swan_news');
         $query = $this->db->get_where('swan_news', array('category' => 'notices', 'status' => 'passed'));
         return $query->result_array();
     }
@@ -60,7 +56,6 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(12);
-        $query = $this->db->get('swan_news');
         $query = $this->db->get_where('swan_news', array('category' => 'reports'));
         return $query->result_array();
     }
@@ -88,7 +83,6 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(12);
-        $query = $this->db->get('swan_news');
         $query = $this->db->get_where('swan_news', array('category' => 'teaching'));
         return $query->result_array();
     }
