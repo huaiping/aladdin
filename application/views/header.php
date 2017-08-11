@@ -37,7 +37,7 @@ body {padding-top:70px;}
 .widget-box:first-child, .widget-box.no-border {margin-top:0; padding-top:0; border:none;}
 .tab-links {padding-top:15px;}
 .tab-links a, .widget-links a {color:#000; text-decoration:none;}
-.widget-links a:hover, .widget-links a:focus {color:#004229; text-decoration:none;}
+.tab-links a:hover, .tab-links a:focus, .widget-links a:hover, .widget-links a:focus, .media-heading a:hover, .media-heading a:focus {color:#16a085; text-decoration:none;}
 .widget-links a:focus {outline:thin dotted; outline:5px auto -webkit-focus-ring-color; outline-offset:-2px;}
 .widget-links_item {margin-bottom:8px;}
 .widget-links_item a {margin-right:6px; word-break:break-all;}
