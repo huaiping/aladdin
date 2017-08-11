@@ -118,9 +118,8 @@ class Membership extends CI_Controller {
     public function article()
     {
         $privilege = $this->session->userdata('articles');
-        if ($this->is_login() && $privilege == 1)
+        if ($this->is_login() && $privilege == "1")
         {
-            //redirect('membership/plaza');
             $this->load->view('plaza_header');
             $this->load->view('plaza_article');
             $this->load->view('footer');
@@ -151,7 +150,7 @@ class Membership extends CI_Controller {
     public function album()
     {
         $privilege = $this->session->userdata('albums');
-        if ($this->is_login() && $privilege == 1)
+        if ($this->is_login() && $privilege == "1")
         {
             $this->load->view('plaza_header');
             $this->load->view('plaza_album');
@@ -166,7 +165,7 @@ class Membership extends CI_Controller {
     public function files()
     {
         $privilege = $this->session->userdata('files');
-        if ($this->is_login() && $privilege == 1)
+        if ($this->is_login() && $privilege == "1")
         {
             $this->load->view('plaza_header');
             $this->load->view('plaza_files');
@@ -216,7 +215,7 @@ class Membership extends CI_Controller {
     public function message()
     {
         $privilege = $this->session->userdata('messages');
-        if ($this->is_login() && $privilege == 1)
+        if ($this->is_login() && $privilege == "1")
         {
             $this->load->view('plaza_header');
             $this->load->view('plaza_message');
@@ -246,7 +245,7 @@ class Membership extends CI_Controller {
     public function video()
     {
         $privilege = $this->session->userdata('videos');
-        if ($this->is_login() && $privilege == 1)
+        if ($this->is_login() && $privilege == "1")
         {
             $this->load->view('plaza_header');
             $this->load->view('plaza_video');
@@ -292,7 +291,7 @@ class Membership extends CI_Controller {
     public function links()
     {
         $privilege = $this->session->userdata('links');
-        if ($this->is_login() && $privilege == 1)
+        if ($this->is_login() && $privilege == "1")
         {
             $this->load->view('plaza_header');
             $this->load->view('plaza_links');
