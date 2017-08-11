@@ -32,15 +32,16 @@ body {padding-top:70px;}
 .widget-box .widget-box_title {margin:0 0 20px; font-size:16px; font-weight:700; line-height:1.2;}
 .widget-box:first-child, .widget-box.no-border {margin-top:0; padding-top:0; border:none;}
 .widget-links a {color:#000; text-decoration:none;}
-.widget-links a:hover, .widget-links a:focus {color:#004229; text-decoration:none;}
+.widget-links a:hover, .widget-links a:focus {color:#16a085; text-decoration:none;}
 .widget-links a:focus {outline:thin dotted; outline:5px auto -webkit-focus-ring-color; outline-offset:-2px;}
 .widget-links_item {margin-bottom:8px;}
 .widget-links_item a {margin-right:6px; word-break:break-word;}
 .widget-links_item small {display:inline-block; font-size:13px;}
+.ellipsis {white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
 .badge-danger {background-color:#d9534f;}
 .badge-success {background-color:#5cb85c;}
-.badge-warning {background-color:#f0ad4e;}  
-.badge-info {background-color:#5bc0de;} 
+.badge-warning {background-color:#f0ad4e;}
+.badge-info {background-color:#5bc0de;}
 </style>
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

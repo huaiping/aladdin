@@ -23,7 +23,7 @@
                         <li class="widget-links_item">
                             <?php
                             if ($article['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
+                                echo '<span class="badge badge-danger">待审</span>';
                             }
                             ?>
                             <a href="#"><?php echo $article['title']; ?></a>
@@ -43,7 +43,7 @@
                         <li class="widget-links_item">
                             <?php
                             if ($album['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
+                                echo '<span class="badge badge-danger">待审</span>';
                             }
                             ?>
                             <a href="#"><?php echo $album['id']; ?></a>
@@ -63,7 +63,7 @@
                         <li class="widget-links_item">
                             <?php
                             if ($file['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
+                                echo '<span class="badge badge-danger">待审</span>';
                             }
                             ?>
                             <a href="#"><?php echo $file['title']; ?></a>
@@ -83,7 +83,7 @@
                         <li class="widget-links_item">
                             <?php
                             if ($message['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
+                                echo '<span class="badge badge-danger">待审</span>';
                             }
                             ?>
                             <a href="#"><?php echo $message['title']; ?></a>
@@ -103,7 +103,7 @@
                         <li class="widget-links_item">
                             <?php
                             if ($video['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
+                                echo '<span class="badge badge-danger">待审</span>';
                             }
                             ?>
                             <a href="#"><?php echo $video['title']; ?></a>
@@ -123,7 +123,7 @@
                         <li class="widget-links_item">
                             <?php
                             if ($link['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
+                                echo '<span class="badge badge-danger">待审</span>';
                             }
                             ?>
                             <a href="#"><?php echo $link['title']; ?></a>

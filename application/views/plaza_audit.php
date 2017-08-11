@@ -1,6 +1,6 @@
 <section class="container">
     <div class="membership row">
-        <div class="col-md-3 hidden-xs">
+        <div class="col-md-3 hidden-xs hidden-sm">
             <!--左侧用户中心 begin-->
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="javascript:void(0);">用户中心</a></li>
@@ -23,12 +23,13 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审投稿<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($articles as $article): ?>
-                        <li class="widget-links_item">
-                            <span class="badge badge-danger">待审</span>
-                            <a href="#"><?php echo $article['title']; ?></a>
-                            <span class="badge badge-danger pull-right" style="margin-left:15px;">删除</span>
-                            <span class="badge badge-success pull-right" style="margin-left:15px;">通过</span>
-                            <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><span class="badge badge-info pull-right">预览</span></a>
+                        <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
+                            <span class="badge badge-danger">待审</span><a href="#"><?php echo $article['title']; ?></a>
+                        </li>
+                        <li class="col-sm-5 col-md-4 text-right">
+                            <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><span class="badge badge-info">预览</span></a>
+                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
+                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
                     <?php endforeach ?>
                     </ul>
@@ -48,8 +49,13 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审相册<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($albums as $album): ?>
-                        <li class="widget-links_item">
+                        <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('photo/preview'); ?>"><?php echo $album['title']; ?></a>
+                        </li>
+                        <li class="col-sm-5 col-md-4 text-right">
+                            <a href="#"><span class="badge badge-info">预览</span></a>
+                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
+                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
                     <?php endforeach ?>
                     </ul>
@@ -69,8 +75,13 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审文件<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($files as $file): ?>
-                        <li class="widget-links_item">
+                        <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('download/preview/'.$file['id']); ?>"><?php echo $file['title']; ?></a>
+                        </li>
+                        <li class="col-sm-5 col-md-4 text-right">
+                            <a href="#"><span class="badge badge-info">预览</span></a>
+                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
+                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
                     <?php endforeach ?>
                     </ul>
@@ -90,8 +101,13 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审留言<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($messages as $message): ?>
-                        <li class="widget-links_item">
+                        <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('guestbook/preview'); ?>"><?php echo $message['title']; ?></a>
+                        </li>
+                        <li class="col-sm-5 col-md-4 text-right">
+                            <a href="#"><span class="badge badge-info">预览</span></a>
+                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
+                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
                     <?php endforeach ?>
                     </ul>
@@ -111,8 +127,13 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审视频<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($videos as $video): ?>
-                        <li class="widget-links_item">
+                        <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('video/preview/'.$video['id']); ?>"><?php echo $video['title']; ?></a>
+                        </li>
+                        <li class="col-sm-5 col-md-4 text-right">
+                            <a href="#"><span class="badge badge-info">预览</span></a>
+                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
+                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
                     <?php endforeach ?>
                     </ul>
@@ -132,8 +153,13 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审链接<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($links as $link): ?>
-                        <li class="widget-links_item">
+                        <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="#"><?php echo $link['title']; ?></a>
+                        </li>
+                        <li class="col-sm-5 col-md-4 text-right">
+                            <a href="#"><span class="badge badge-info">预览</span></a>
+                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
+                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
                     <?php endforeach ?>
                     </ul>
