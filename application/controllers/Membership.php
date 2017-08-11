@@ -325,6 +325,18 @@ class Membership extends CI_Controller {
         redirect('membership/plaza');
     }
 
+
+    public function audit($action = FALSE, $id = FALSE, $status = FALSE)
+    {
+        $data = array(
+            'action' => $this->input->post('action'),
+            'id' => $this->input->post('id'),
+            'status' => $this->input->post('status')
+        );
+        $data = $this->security->xss_clean($data);
+        print_r($data);
+    }
+
     public function profile()
     {
         if ($this->is_login())

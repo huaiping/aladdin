@@ -28,8 +28,8 @@
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
                             <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><span class="badge badge-info">预览</span></a>
-                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
-                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
+                            <a href="#" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
+                            <a href="#" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
@@ -172,3 +172,16 @@
         </div>
     </div>
 </section>
+
+<script>
+$(document).ready(function(){
+    var get_csrf_token_name = '<?php echo $this->security->get_csrf_token_name() ?>';
+    var cct = '<?php echo $this->security->get_csrf_hash() ?>';
+    $("a.link").on("click",function(){
+        $.post("audit", { "action": 'article', "id":2, "status":'passed', "csrf_test_name":cct }, function (data) {
+            alert(data);
+        });
+        return false;
+    });
+});
+</script>
