@@ -77,25 +77,25 @@
                                 ?>
                                     <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
-                                            <span class="input-group-addon" id="basic-addon1">账号</span>
+                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
                                             <input type="text" class="form-control" id="username" name="username" placeholder="用户名" aria-describedby="basic-addon1" value="" required="required">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
-                                            <span class="input-group-addon" id="basic-addon2">密码</span>
+                                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-lock fa-fw" aria-hidden="true"></i></span>
                                             <input type="password" class="form-control" id="password" name="password" placeholder="密码" aria-describedby="basic-addon2" value="" required="required">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
-                                            <span class="input-group-addon" id="basic-addon3">昵称</span>
+                                            <span class="input-group-addon" id="basic-addon3"><i class="fa fa-leaf fa-fw" aria-hidden="true"></i></span>
                                             <input type="text" class="form-control" id="name" name="name" placeholder="昵称" aria-describedby="basic-addon3" value="" required="required">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
-                                            <span class="input-group-addon" id="basic-addon4">邮箱</span>
+                                            <span class="input-group-addon" id="basic-addon4"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>
                                             <input type="text" class="form-control" id="email" name="email" placeholder="邮箱" aria-describedby="basic-addon4" value="" required="required">
                                         </div>
                                     </div>
