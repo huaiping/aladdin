@@ -14,9 +14,9 @@
         </div>
 
         <div class="col-md-9">
-            <?php
-                if (count($articles) > 1) {
-            ?>
+           <?php
+               if (count($articles) > 1) {
+           ?>
            <div class="col-md-12">
                 <!--投稿 begin-->
                 <div class="widget-box no-border">
@@ -24,7 +24,11 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($articles as $article): ?>
                         <li class="widget-links_item">
-                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><?php echo $article['title']; ?></a>
+                            <span class="badge badge-danger">待审</span>
+                            <a href="#"><?php echo $article['title']; ?></a>
+                            <span class="badge badge-danger pull-right" style="margin-left:15px;">删除</span>
+                            <span class="badge badge-success pull-right" style="margin-left:15px;">通过</span>
+                            <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><span class="badge badge-info pull-right">预览</span></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
