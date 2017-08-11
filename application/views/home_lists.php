@@ -140,7 +140,7 @@
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>校园新闻<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($reports as $report): ?>
-                    <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$report['id']); ?>"><?php echo $report['title']; ?></a></li>
+                    <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$report['id']); ?>"><?php echo $report['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </div>
@@ -152,7 +152,7 @@
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>视频点播<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($videos as $video): ?>
-                    <li class="widget-links_item"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
+                    <li class="widget-links_item ellipsis"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </div>
@@ -209,7 +209,7 @@
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>最新资源<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($downloads as $download): ?>
-                    <li class="widget-links_item">[<?php echo $download['category']; ?>]<a href="<?php echo site_url('download/view/'.$download['id'])?>"><?php echo $download['title']; ?></a></li>
+                    <li class="widget-links_item ellipsis">[<?php echo $download['category']; ?>]<a href="<?php echo site_url('download/view/'.$download['id'])?>"><?php echo $download['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </div>
@@ -221,7 +221,7 @@
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>教学教研<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($teaching as $teach): ?>
-                    <li class="widget-links_item"><a href="<?php echo site_url('news/view/'.$teach['id']); ?>"><?php echo $teach['title']; ?></a></li>
+                    <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$teach['id']); ?>"><?php echo $teach['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </div>
