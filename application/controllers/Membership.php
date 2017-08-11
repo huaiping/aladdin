@@ -130,12 +130,13 @@ class Membership extends CI_Controller {
         }
     }
 
-    public function articlePost($title = FALSE, $category = FALSE, $content = FALSE, $username = FALSE)
+    public function articlePost($title = FALSE, $category = FALSE, $summary = FALSE, $content = FALSE, $username = FALSE)
     {
         $now = date("Y-m-d H:i:s");
         $data = array(
             'title' => $this->input->post('title'),
             'category' => $this->input->post('category'),
+            'summary' => $this->input->post('summary'),
             'author' => $this->input->post('username'),
             'pubtime' => $now,
             'status' => 'pending'

@@ -34,7 +34,7 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><a href="<?php echo site_url('news/view/'.$news[$i+1]['id']); ?>"><?php echo $news[$i+1]['title']; ?></a></h4>
+                        <h4 class="media-heading ellipsis"><a href="<?php echo site_url('news/view/'.$news[$i+1]['id']); ?>"><?php echo $news[$i+1]['title']; ?></a></h4>
                         <p><?php echo $news[$i+1]['pubtime']; ?></p>
                         <p style="height:50px;"><?php echo $news[$i]['summary']; ?></p>
                     </div>
