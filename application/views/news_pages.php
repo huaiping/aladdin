@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-md-12">
             <!--新闻列表 begin-->
             <?php
-                for($i=0; $i<count($news); $i+=2):
+                for($i=0; $i<count($news)-1; $i+=2):
             ?>
             <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body">
@@ -11,7 +11,7 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><a href="<?php echo site_url('news/view/'.$news[$i]['id']); ?>"><?php echo $news[$i]['title']; ?></a></h4>
+                        <h4 class="media-heading ellipsis"><a href="<?php echo site_url('news/view/'.$news[$i]['id']); ?>"><?php echo $news[$i]['title']; ?></a></h4>
                         <p><?php echo $news[$i]['pubtime']; ?></p>
                         <p style="height:50px;"><?php echo $news[$i]['summary']; ?></p>
                     </div>
@@ -24,9 +24,9 @@
                         <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><a href="<?php echo site_url('news/view/'.$news[$i+1]['id']); ?>"><?php echo $news[$i+1]['title']; ?></a></h4>
+                        <h4 class="media-heading ellipsis"><a href="<?php echo site_url('news/view/'.$news[$i+1]['id']); ?>"><?php echo $news[$i+1]['title']; ?></a></h4>
                         <p><?php echo $news[$i+1]['pubtime']; ?></p>
-                        <p style="height:50px;"><?php echo $news[$i]['summary']; ?></p>
+                        <p style="height:50px;"><?php echo $news[$i+1]['summary']; ?></p>
                     </div>
                 </div>
             </div>
@@ -51,9 +51,22 @@
 
             <!-- pagination has path -->
             <p class="pagination">
-                <a class="pagination__next" href="./news/view/11">Next page</a>
+                <a class="pagination__next" href="<?php echo site_url('news/page/2'); ?>">Next page</a>
             </p>
             <!--新闻列表 end-->
         </div>
     </div>
 </section>
+
+<script src="//unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.article-feed').infiniteScroll({
+        path: '.pagination__next',
+        append: '.news',
+        status: '.scroller-status',
+        hideNav: '.pagination',
+        //history: false,
+    });
+});
+</script>

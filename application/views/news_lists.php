@@ -61,7 +61,7 @@
 
             <!-- pagination has path -->
             <p class="pagination">
-                <a class="pagination__next" href="./news/view/3">Next page</a>
+                <a class="pagination__next" href="./news/page/1">Next page</a>
             </p>
             <!--新闻列表 end-->
         </div>
