@@ -85,7 +85,6 @@ class Download extends CI_Controller {
         $this->load->view('footer');
     }
 
-
     public function mirrors()
     {
         redirect('membership');
