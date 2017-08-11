@@ -76,11 +76,18 @@ class Download extends CI_Controller {
 
     public function view($id = FALSE)
     {
+        $this->session->set_userdata('goto', $this->uri->uri_string());
         $id = ($id === FALSE) ? 1 : $id;
         $data['down_hot'] = $this->download_model->get_hots();
         $data['down_item'] = $this->download_model->get_item($id);
         $this->load->view('header');
         $this->load->view('down_items', $data);
         $this->load->view('footer');
+    }
+
+
+    public function mirrors()
+    {
+        redirect('membership');
     }
 }

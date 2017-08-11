@@ -55,7 +55,19 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>下载地址<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                    <li class="widget-links_item">链接：<a href="<?php echo base_url('webroot/download/'.$down_item['url']); ?>" class="btn btn-default" role="button"><span class="glyphicon glyphicon-save"></span>本站下载</a><a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-save"></span>镜像网站下载</a></li>
+                    <li class="widget-links_item">链接：<a href="<?php echo base_url('webroot/download/'.$down_item['url']); ?>" class="btn btn-default" role="button"><span class="glyphicon glyphicon-save"></span>本站下载</a>
+                    <?php
+                        if ($this->session->has_userdata('username')) {
+                    ?>
+                        <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-save"></span>镜像网站下载</a>
+                    <?php
+                        } else {
+                    ?>
+                        <a class="btn btn-success" href="<?php echo site_url('download/mirrors'); ?>" role="button">登录后高速下载</a>
+                    <?php
+                        }
+                    ?>
+                    </li>
                 </ul>
             </div>
 
