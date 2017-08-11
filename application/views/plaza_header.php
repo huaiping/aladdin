@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" />
 <style type="text/css">
 body {padding-top:70px;}
-.membership {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
 .navbar-default .navbar-brand {color:#fff;}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color:#fff;}
@@ -21,6 +20,7 @@ body {padding-top:70px;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color:#337ab7; background-color:#fff;}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color:#00a2ca; background-color:#fff;}
 .footer {background:#337ab7; border-color:#e7e7e7; color:#fff;}
+.membership {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .bs-callout {padding:5px; margin:5px 0; border:1px solid #eee; border-left-width:5px; border-radius:3px;}
 .bs-callout-danger {border-left-color:#ce4844;}
 .bs-callout-danger h4 {color:#ce4844;}
@@ -37,10 +37,10 @@ body {padding-top:70px;}
 .widget-links_item {margin-bottom:8px;}
 .widget-links_item a {margin-right:6px; word-break:break-word;}
 .widget-links_item small {display:inline-block; font-size:13px;}
-.badge-danger{background-color:#d9534f;}
-.badge-success{background-color:#5cb85c;}
-.badge-content-danger{background-color:#5bc0de; color:#a7a9aa;}
-.badge-content-success{background-color:#5bc0de; color:#a7a9aa;}
+.badge-danger {background-color:#d9534f;}
+.badge-success {background-color:#5cb85c;}
+.badge-content-danger {background-color:#5bc0de; color:#a7a9aa;}
+.badge-content-success {background-color:#5bc0de; color:#a7a9aa;}
 </style>
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
