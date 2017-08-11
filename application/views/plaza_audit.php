@@ -14,125 +14,131 @@
         </div>
 
         <div class="col-md-9">
-           <div class="col-md-6">
+            <?php
+                if (count($articles) > 1) {
+            ?>
+           <div class="col-md-12">
                 <!--投稿 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的投稿<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审投稿<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($articles as $article): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($article['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
-                            }
-                            ?>
-                            <a href="#"><?php echo $article['title']; ?></a>
+                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><?php echo $article['title']; ?></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
                 </div>
                 <!--投稿 end-->
             </div>
+            <?php
+                }
+            ?>
 
-            <div class="col-md-6">
+            <?php
+                if (count($albums) > 1) {
+            ?>
+            <div class="col-md-12">
                 <!--相册 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的相册<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审相册<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($albums as $album): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($album['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
-                            }
-                            ?>
-                            <a href="#"><?php echo $album['id']; ?></a>
+                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('photo/preview'); ?>"><?php echo $album['title']; ?></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
                 </div>
                 <!--相册 end-->
             </div>
+            <?php
+                }
+            ?>
 
-            <div class="col-md-6">
+            <?php
+                if (count($files) > 1) {
+            ?>
+            <div class="col-md-12">
                 <!--文件 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的文件<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审文件<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($files as $file): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($file['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
-                            }
-                            ?>
-                            <a href="#"><?php echo $file['title']; ?></a>
+                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('download/preview/'.$file['id']); ?>"><?php echo $file['title']; ?></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
                 </div>
                 <!--文件 end-->
             </div>
+            <?php
+                }
+            ?>
 
-            <div class="col-md-6">
+            <?php
+                if (count($messages) > 1) {
+            ?>
+            <div class="col-md-12">
                 <!--留言 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的留言<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审留言<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($messages as $message): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($message['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
-                            }
-                            ?>
-                            <a href="#"><?php echo $message['title']; ?></a>
+                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('guestbook/preview'); ?>"><?php echo $message['title']; ?></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
                 </div>
                 <!--留言 end-->
             </div>
+            <?php
+                }
+            ?>
 
-            <div class="col-md-6">
+            <?php
+                if (count($videos) > 1) {
+            ?>
+            <div class="col-md-12">
                 <!--视频 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的视频<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审视频<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($videos as $video): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($video['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
-                            }
-                            ?>
-                            <a href="#"><?php echo $video['title']; ?></a>
+                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('video/preview/'.$video['id']); ?>"><?php echo $video['title']; ?></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
                 </div>
                 <!--视频 end-->
             </div>
+            <?php
+                }
+            ?>
 
-            <div class="col-md-6">
+            <?php
+                if (count($links) > 1) {
+            ?>
+            <div class="col-md-12">
                 <!--链接 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的链接<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审链接<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($links as $link): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($link['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span> ';
-                            }
-                            ?>
-                            <a href="#"><?php echo $link['title']; ?></a>
+                            <span class="badge badge-danger">待审</span> <a href="#"><?php echo $link['title']; ?></a>
                         </li>
                     <?php endforeach ?>
                     </ul>
                 </div>
                 <!--链接 end-->
             </div>
+            <?php
+                }
+            ?>
         </div>
     </div>
 </section>

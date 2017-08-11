@@ -93,8 +93,14 @@ class Membership extends CI_Controller {
     {
         $groups = $this->session->userdata('groups');
         if ($groups == 'moderators') {
+            $data['articles'] = $this->membership_model->pending_articles();
+            $data['albums'] = $this->membership_model->pending_albums();
+            $data['files'] = $this->membership_model->pending_files();
+            $data['messages'] = $this->membership_model->pending_messages();
+            $data['videos'] = $this->membership_model->pending_videos();
+            $data['links'] = $this->membership_model->pending_links();
             $this->load->view('plaza_header');
-
+            $this->load->view('plaza_audit', $data);
             $this->load->view('footer');
         } elseif ($groups == 'workers') {
             $data['articles'] = $this->membership_model->get_articles();

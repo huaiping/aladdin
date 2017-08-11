@@ -109,4 +109,58 @@ class Membership_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*用户中心 - 待审投稿*/
+    public function pending_articles()
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_news', array('status' => 'pending'));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 待审相册*/
+    public function pending_albums($username = FALSE)
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_photo', array('status' => 'pending'));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 待审文件*/
+    public function pending_files($username = FALSE)
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_download', array('status' => 'pending'));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 待审留言*/
+    public function pending_messages($username = FALSE)
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_guestbook', array('status' => 'pending'));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 待审视频*/
+    public function pending_videos($username = FALSE)
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_video', array('status' => 'pending'));
+        return $query->result_array();
+    }
+
+    /*用户中心 - 待审链接*/
+    public function pending_links($username = FALSE)
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(6);
+        $query = $this->db->get_where('swan_links', array('status' => 'pending'));
+        return $query->result_array();
+    }
+
 }
