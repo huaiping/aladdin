@@ -67,7 +67,7 @@ class News extends CI_Controller {
         {
             $now = date("Y-m-d H:i:s");
             $data = array(
-                'title' => $this->session->userdata('news_id'),
+                'sid' => $this->session->userdata('news_id'),
                 'content' => $this->input->post('content'),
                 'author' => $this->input->post('username'),
                 'avatar' => 'avatar1.jpg',

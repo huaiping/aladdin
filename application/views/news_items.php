@@ -32,7 +32,7 @@
                 <div class="col-xs-12 col-md-12 panel panel-info" style="margin:30px 0 20px 0; padding:0;">
                     <div class="panel-heading">评论</div>
                     <div class="panel-body" style="margin:0; padding:0;">
-                        <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;"></textarea>
+                        <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;" required="required"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -61,11 +61,11 @@
             <?php foreach ($news_comment as $comments): ?>
             <div class="media">
                 <div class="media-left">
-                    <img class="media-object img-circle" src="<?php echo base_url('webroot/image/avatar1.jpg'); ?>" alt="" style="width:48px; height:48px;">
+                    <img class="media-object img-circle" src="<?php echo base_url('webroot/image/'.$comments['avatar']); ?>" alt="" style="width:48px; height:48px;">
                 </div>
                 <div class="media-body">
                     <h5 class="media-heading"><?php echo $comments['pubtime']; ?></h5>
-                    <?php echo $comments['content']; ?>
+                    <div style="word-break:break-all;"><?php echo $comments['content']; ?></div>
                 </div>
             </div>
             <?php endforeach ?>
