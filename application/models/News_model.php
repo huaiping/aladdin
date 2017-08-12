@@ -35,7 +35,7 @@ class News_model extends CI_Model {
             $query = $this->db->get('swan_comment');
             return $query->result_array();
         }
-        $query = $this->db->get_where('swan_comment', array('title' => $id));
+        $query = $this->db->get_where('swan_comment', array('newsid' => $id));
         return $query->result_array();
     }
 

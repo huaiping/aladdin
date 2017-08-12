@@ -83,6 +83,7 @@ class Membership extends CI_Controller {
             'videos' => '0',
             'links' => '0',
             'pubtime' => $now,
+            'beans' => 20,
             'status' => 'pending'
         );
         $data = $this->security->xss_clean($data);

@@ -10,7 +10,7 @@ CREATE TABLE `ci_sessions` (
 
 CREATE TABLE IF NOT EXISTS `swan_comment` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) NOT NULL,
+  `newsid` varchar(255) NOT NULL,
   `content` varchar(300) NOT NULL,
   `author` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
@@ -73,6 +73,7 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `videos` varchar(1) NOT NULL,
   `links` varchar(1) NOT NULL,
   `pubtime` datetime NOT NULL,
+  `beans` int(10) NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
