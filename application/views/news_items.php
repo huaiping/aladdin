@@ -61,7 +61,7 @@
             <?php foreach ($news_comment as $comments): ?>
             <div class="media">
                 <div class="media-left">
-                    <img class="media-object img-circle" src="<?php echo base_url('webroot/image/'.$comments['avatar']); ?>" alt="" style="width:48px; height:48px;">
+                    <img class="media-object img-circle" src="<?php echo base_url('webroot/avatar/'.$comments['author'].'_48.png'); ?>" alt="">
                 </div>
                 <div class="media-body">
                     <h5 class="media-heading"><?php echo $comments['pubtime']; ?></h5>
