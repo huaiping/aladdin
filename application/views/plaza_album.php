@@ -82,7 +82,7 @@ $(function() {
         resizeType : 1,
         pasteType : 1,
         width : '100%',
-        items : ['preview', '|', 'fullscreen']
+        items : ['source', '|', 'preview', '|', 'fullscreen']
     });
 });
 </script>
