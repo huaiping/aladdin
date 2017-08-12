@@ -13,9 +13,7 @@ CREATE TABLE IF NOT EXISTS `swan_comment` (
   `title` varchar(255) NOT NULL,
   `content` varchar(300) NOT NULL,
   `author` varchar(255) NOT NULL,
-  `category` varchar(24) NOT NULL,
   `pubtime` datetime NOT NULL,
-  `modtime` datetime NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -23,13 +21,14 @@ CREATE TABLE IF NOT EXISTS `swan_comment` (
 CREATE TABLE IF NOT EXISTS `swan_download` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
+  `category` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
   `author` varchar(255) NOT NULL,
-  `category` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `sizes` varchar(10) NOT NULL,
   `license` varchar(24) NOT NULL,
+  `stars` varchar(15) NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
@@ -40,11 +39,9 @@ CREATE TABLE IF NOT EXISTS `swan_guestbook` (
   `title` varchar(255) NOT NULL,
   `content` varchar(3000) NOT NULL,
   `author` varchar(255) NOT NULL,
-  `avator` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `reply` varchar(255) NOT NULL,
   `modtime` datetime NOT NULL,
-  `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -90,7 +87,6 @@ CREATE TABLE IF NOT EXISTS `swan_news` (
   `pubtime` datetime NOT NULL,
   `modtime` datetime NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '0',
-  `tags` varchar(255) NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -137,8 +133,8 @@ CREATE TABLE IF NOT EXISTS `swan_score` (
   `wz` decimal(4,1) unsigned NOT NULL,
   `wzmc` varchar(4) NOT NULL DEFAULT '0',
   `zf` decimal(4,1) NOT NULL,
-  `bm` varchar(2) NOT NULL DEFAULT '0',
-  `jm` varchar(4) NOT NULL DEFAULT '0',
+  `bm` varchar(2) NOT NULL,
+  `jm` varchar(4) NOT NULL,
   `bj` varchar(2) NOT NULL,
   `item` varchar(60) NOT NULL,
   `sfzh` varchar(18) NOT NULL DEFAULT '',
