@@ -66,13 +66,13 @@ body {padding-top:70px;}
         <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right bg-primary">
             <?php
-                /*用户权限：1管理员moderators 2师生workers 3贵宾guests*/
+                /*用户权限：1管理员moderators 2师生staffs 3贵宾guests*/
                 if ($this->session->userdata('groups') == 'moderators') {
             ?>
                 <li><a href="<?php echo site_url('membership/files'); ?>"><span class="glyphicon glyphicon-list-alt"></span> 信息审批</a></li>
                 <li><a href="<?php echo site_url('membership/files'); ?>"><span class="fa fa-users"></span> 用户管理</a></li>
             <?php
-                } elseif ($this->session->userdata('groups') == 'workers') {
+                } elseif ($this->session->userdata('groups') == 'staffs') {
             ?>
                 <li><a href="<?php echo site_url('membership/article'); ?>"><i class="fa fa-file-text"></i> 投稿</a></li>
                 <li><a href="<?php echo site_url('membership/album'); ?>"><i class="fa fa-file-image-o"></i> 相册</a></li>

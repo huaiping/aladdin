@@ -104,7 +104,7 @@ class Membership extends CI_Controller {
             $this->load->view('plaza_header');
             $this->load->view('plaza_audit', $data);
             $this->load->view('footer');
-        } elseif ($groups == 'workers') {
+        } elseif ($groups == 'staffs') {
             $data['articles'] = $this->membership_model->get_articles();
             $data['albums'] = $this->membership_model->get_albums();
             $data['files'] = $this->membership_model->get_files();
