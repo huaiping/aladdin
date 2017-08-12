@@ -26,7 +26,7 @@
                 <div class="panel-body">
                     <div class="col-sm-3 col-md-2">
                         <div class="widget-links_item" style="margin-top:15px;">
-                            <div class="text-center"><img src="<?php echo base_url('webroot/image/avatar1.jpg'); ?>" alt="" class="img-circle"></div>
+                            <div class="text-center"><img src="<?php echo base_url('webroot/image/'.$message[$i]['avatar']); ?>" alt="" class="img-circle"></div>
                             <div class="text-center" style="margin-top:10px;"><?php echo $message[$i]['author']; ?></div>
                         </div>
                     </div>
