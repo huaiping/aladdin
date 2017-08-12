@@ -70,7 +70,7 @@ class News extends CI_Controller {
                 'title' => $this->session->userdata('news_id'),
                 'content' => $this->input->post('content'),
                 'author' => $this->input->post('username'),
-                'avator' => 'avator1.jpg',
+                'avatar' => 'avatar1.jpg',
                 'pubtime' => $now,
                 'status' => 'pending'
             );
