@@ -63,7 +63,7 @@
                     <?php
                         } else {
                     ?>
-                        <a class="btn btn-success" href="<?php echo site_url('download/mirrors'); ?>" role="button">登录后高速下载</a>
+                        <a class="btn btn-success" style="color:#fff;" href="<?php echo site_url('download/mirrors'); ?>" role="button">登录后高速下载</a>
                     <?php
                         }
                     ?>
