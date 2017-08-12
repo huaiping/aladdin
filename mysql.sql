@@ -10,9 +10,10 @@ CREATE TABLE `ci_sessions` (
 
 CREATE TABLE IF NOT EXISTS `swan_comment` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `newsid` varchar(255) NOT NULL,
+  `sid` varchar(255) NOT NULL,
   `content` varchar(300) NOT NULL,
   `author` varchar(255) NOT NULL,
+  `avator` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
@@ -39,6 +40,7 @@ CREATE TABLE IF NOT EXISTS `swan_guestbook` (
   `title` varchar(255) NOT NULL,
   `content` varchar(3000) NOT NULL,
   `author` varchar(255) NOT NULL,
+  `avator` varchar(255) NOT NULL,
   `pubtime` datetime NOT NULL,
   `reply` varchar(255) NOT NULL,
   `modtime` datetime NOT NULL,

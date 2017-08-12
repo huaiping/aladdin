@@ -47,6 +47,7 @@
                         <select class="selectpicker form-control" id="category" name="category">
                             <option value="教案">教案</option>
                             <option value="课件">课件</option>
+                            <option value="试题">试题</option>
                         </select>
                     </div>
                 </div>

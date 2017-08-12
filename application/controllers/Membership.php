@@ -287,6 +287,7 @@ class Membership extends CI_Controller {
                 'title' => trim($this->input->post('title')),
                 'content' => trim($this->input->post('content')),
                 'author' => $this->input->post('username'),
+                'avator' => 'avator1.jpg',
                 'pubtime' => $now,
                 'reply' => '',
                 'modtime' => $now,

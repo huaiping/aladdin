@@ -42,7 +42,7 @@
                         <td class="col-sm-2 col-md-2 widget-links_item hidden-xs"><?php echo substr($down_list[$i]['pubtime'],0,10); ?></td>
                         <td class="col-sm-2 col-md-2 widget-links_item hidden-xs"><?php echo $down_list[$i]['sizes']; ?>KB</td>
                         <td class="col-md-1 widget-links_item hidden-xs hidden-sm"><?php echo $down_list[$i]['license']; ?></td>
-                        <td class="col-sm-1 col-md-1 widget-links_item hidden-xs">★★★★★</td>
+                        <td class="col-sm-1 col-md-1 widget-links_item hidden-xs"><?php echo $down_list[$i]['stars']; ?></td>
                     </tr>
                     <?php endfor ?>
                 </tbody>
