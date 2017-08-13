@@ -4,7 +4,20 @@
             <!--左侧用户中心 begin-->
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="javascript:void(0);">用户中心</a></li>
-                <li class="text-center"><a href="javascript:void(0);"><img src="<?php echo base_url('avatar/avatar.php?char='.$this->session->userdata('name').'&user='.$this->session->userdata('username')); ?>" alt=""></a></li>
+                <li class="text-center"><a href="javascript:void(0);">
+                <?php
+                $php_path = dirname(__FILE__).'/';
+                if (file_exists($php_path.'../../webroot/avatar/'.$this->session->userdata('username').'_150.png')) {
+                ?>
+                    <img src="<?php echo base_url('webroot/avatar/'.$this->session->userdata('username').'_150.png'); ?>" alt="">
+                <?php
+                } else {
+                ?>
+                    <img src="<?php echo base_url('avatar/avatar.php?char='.$this->session->userdata('name').'&user='.$this->session->userdata('username')); ?>" alt="">
+                <?php
+                }
+                ?>
+                </a></li>
                 <li><a href="javascript:void(0);">用户名：<?php echo $this->session->userdata('username'); ?></a></li>
                 <li><a href="javascript:void(0);">用户组：<?php echo $this->session->userdata('groups'); ?></a></li>
                 <li><a href="javascript:void(0);">注册时间：<?php echo substr($this->session->userdata('pubtime'),0,10); ?></a></li>
