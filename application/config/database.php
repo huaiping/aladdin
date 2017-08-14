@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:host=qdm163769633.my3w.com;port=3306;dbname=qdm163769633_db',
-	'hostname' => 'qdm163769633.my3w.com',
-	'username' => 'qdm163769633',
+	'dsn'	=> 'mysql:host=qdm160638220.my3w.com;port=3306;dbname=qdm160638220_db',
+	'hostname' => 'qdm160638220.my3w.com',
+	'username' => 'qdm160638220',
 	'password' => '',
-	'database' => 'qdm163769633_db',
+	'database' => 'qdm160638220_db',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

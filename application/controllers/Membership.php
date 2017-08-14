@@ -74,7 +74,7 @@ class Membership extends CI_Controller {
             'password' => md5(sha1(trim($this->input->post('password')))),
             'name' => trim($this->input->post('name')),
             'email' => trim($this->input->post('email')),
-            'avator' => 'avator1.jpg',
+            'avatar' => 'avatar1.jpg',
             'groups' => 'guests',
             'articles' => '0',
             'albums' => '0',
