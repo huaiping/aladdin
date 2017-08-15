@@ -183,17 +183,36 @@ class Membership extends CI_Controller {
         $privilege = $this->session->userdata('albums');
         if ($this->is_login() && $privilege == "1")
         {
-            $now = date("Y-m-d H:i:s");
-            $data = array(
-                'title' => trim($this->input->post('title')),
-                'content' => trim($this->input->post('content')),
-                'author' => $this->input->post('username'),
-                'pubtime' => $now,
-                'status' => 'pending'
-            );
-            $data = $this->security->xss_clean($data);
-            $this->membership_model->messagePost($data);
-            redirect('membership/plaza');
+            $config['upload_path'] = './webroot/image/';
+            $config['allowed_types'] = 'png|jpg|gif';
+            $config['max_size'] = 10000000;
+            $config['encrypt_name'] = TRUE;
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload())
+            {
+                $error = array('error' => $this->upload->display_errors());
+                $this->load->view('plaza_header');
+                $this->load->view('plaza_album', $error);
+                $this->load->view('footer');
+            }
+            else
+            {
+                $now = date("Y-m-d H:i:s");
+                $data = array(
+                    'title' => trim($this->input->post('title')),
+                    'description' => trim($this->input->post('content')),
+                    'url' => $this->upload->data('file_name'),
+                    'thumbnail' => $this->upload->data('file_name'),
+                    'author' => $this->input->post('username'),
+                    'category' => $this->input->post('subject'),
+                    'subcategory' => $this->input->post('category'),
+                    'pubtime' => $now,
+                    'status' => 'pending'
+                );
+                $data = $this->security->xss_clean($data);
+                $this->membership_model->albumPost($data);
+                redirect('membership/plaza');
+            }
         }
         else
         {
