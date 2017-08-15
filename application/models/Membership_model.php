@@ -25,6 +25,12 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_news', $data);
     }
 
+    /*用户中心 - 相册*/
+    public function albumPost($data)
+    {
+        $this->db->insert('swan_photo', $data);
+    }
+
     /*用户中心 - 文件*/
     public function filesPost($data)
     {

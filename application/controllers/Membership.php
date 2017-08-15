@@ -201,8 +201,8 @@ class Membership extends CI_Controller {
                 $data = array(
                     'title' => trim($this->input->post('title')),
                     'description' => trim($this->input->post('content')),
-                    'url' => $this->upload->data('file_name'),
-                    'thumbnail' => $this->upload->data('file_name'),
+                    'url' => 'webroot/image/'.$this->upload->data('file_name'),
+                    'thumbnail' => 'webroot/image/'.$this->upload->data('file_name'),
                     'author' => $this->input->post('username'),
                     'category' => $this->input->post('subject'),
                     'subcategory' => $this->input->post('category'),
