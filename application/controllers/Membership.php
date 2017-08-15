@@ -177,14 +177,13 @@ class Membership extends CI_Controller {
         }
     }
 
-
     public function albumPost()
     {
         $privilege = $this->session->userdata('albums');
         if ($this->is_login() && $privilege == "1")
         {
             $config['upload_path'] = './webroot/image/';
-            $config['allowed_types'] = 'png|jpg|gif';
+            $config['allowed_types'] = 'gif|jpg|jpeg|png';
             $config['max_size'] = 10000000;
             $config['encrypt_name'] = TRUE;
             $this->load->library('upload', $config);
