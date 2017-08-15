@@ -259,7 +259,7 @@ class Membership extends CI_Controller {
                     'title' => trim($this->input->post('title')),
                     'category' => $this->input->post('subject').$this->input->post('category'),
                     'description' => trim($this->input->post('content')),
-                    'url' => $this->upload->data('file_name'),
+                    'url' => 'webroot/download/'.$this->upload->data('file_name'),
                     'author' => $this->input->post('username'),
                     'pubtime' => $now,
                     'sizes' => ceil($this->upload->data('file_size')),
