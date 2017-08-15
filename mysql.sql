@@ -77,7 +77,8 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `pubtime` datetime NOT NULL,
   `beans` int(10) NOT NULL,
   `status` varchar(8) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_news` (

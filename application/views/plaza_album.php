@@ -47,22 +47,11 @@
                     <label for="subject" class="col-xs-3 col-sm-1 col-md-1 control-label">类别</label>
                     <div class="col-xs-9 col-sm-11 col-md-2">
                         <select class="selectpicker form-control" id="subject" name="subject">
-                            <option value="校园风光">校园风光</option>
-                            <option value="领导视察">领导视察</option>
-                            <option value="第二课堂">第二课堂</option>
-                            <option value="大型活动">大型活动</option>
-                            <option value="毕业留影">毕业留影</option>
-                            <option value="教师风采">教师风采</option>
                         </select>
                     </div>
                     <label for="category" class="col-xs-3 col-sm-1 col-md-1 control-label">相册</label>
                     <div class="col-xs-9 col-sm-11 col-md-2">
                         <select class="selectpicker form-control" id="category" name="category">
-                            <option value="世纪广场">世纪广场</option>
-                            <option value="文明出行">文明出行</option>
-                            <option value="体育科技艺术节">体育科技艺术节</option>
-                            <option value="2015届毕业照">2015届毕业照</option>
-                            <option value="语文组合影">语文组合影</option>
                         </select>
                     </div>
                 </div>
@@ -98,4 +87,29 @@ $(function() {
         items : ['source', '|', 'preview', '|', 'fullscreen']
     });
 });
+</script>
+<script>
+var subjectList = ['校园风光', '领导视察', '第二课堂', '大型活动', '毕业留影', '教师风采'];
+var categoryList = new Array();
+categoryList['校园风光'] = ['世纪广场'];
+categoryList['领导视察'] = ['领导视察'];
+categoryList['第二课堂'] = ['文明出行'];
+categoryList['大型活动'] = ['体育科技艺术节'];
+categoryList['毕业留影'] = ['2015届毕业照','2016届毕业照'];
+categoryList['教师风采'] = ['语文组合影','数学组合影'];
+var subject = document.getElementById('subject');
+var category = document.getElementById('category');
+for (var i = 0; i < subjectList.length; i++) {
+    subject.add(new Option(subjectList[i], subjectList[i]));
+}
+subject.onchange = function() {
+    category.options.length = 0;
+    var index = subject.value;
+    var categories = categoryList[index];
+    for (var i = 0; i < categories.length; i++) {
+        category.add(new Option(categories[i], categories[i]));
+        $('#category').selectpicker('refresh');
+    }
+}
+subject.onchange();
 </script>
