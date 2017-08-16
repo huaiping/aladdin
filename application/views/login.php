@@ -16,7 +16,6 @@
             <!--左侧图片 end-->
 
             <div class="col-xs-12 col-md-4">
-
                 <div role="tabpanel">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
