@@ -546,7 +546,7 @@ window.onload=function(){
 </script>
 <script>
     $(function(){
-        $('#survey').ajaxForm(function() {
+        $('#survey').submit({
             //if ($("#content").val().length < 2) {
             //    alert("评论不能为空");
             //    return false;

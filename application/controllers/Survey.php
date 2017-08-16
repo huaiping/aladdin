@@ -7,6 +7,7 @@ class Survey extends CI_Controller {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form', 'url'));
+        $this->load->model('survey_model');
     }
 
     public function index()
