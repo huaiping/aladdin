@@ -19,6 +19,7 @@ class Home extends CI_Controller {
         $data['notices'] = $this->home_model->get_notices();
         $data['reports'] = $this->home_model->get_reports();
         $data['videos'] = $this->home_model->get_video();
+        $data['slides'] = $this->home_model->get_slides();
         $data['downloads'] = $this->home_model->get_download();
         $data['teaching'] = $this->home_model->get_teaching();
         $data['friendsites'] = $this->home_model->get_friendsites();

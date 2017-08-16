@@ -69,6 +69,15 @@ class Home_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*首页 - 精彩图片展*/
+    public function get_slides()
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit(10);
+        $query = $this->db->get_where('swan_photo', array('status' => 'passed'));
+        return $query->result_array();
+    }
+
     /*首页 - 最新资源*/
     public function get_download()
     {

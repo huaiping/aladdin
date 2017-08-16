@@ -166,16 +166,12 @@
             <div id="slide" class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>精彩图片展<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
+                <?php foreach ($slides as $slide): ?>
+                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
+                <?php endforeach ?>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a></li>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
                 </ul>
             </div>
             <!--滚动图片展示 end-->
