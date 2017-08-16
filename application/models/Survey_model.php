@@ -9,7 +9,7 @@ class Survey_model extends CI_Model {
     /*问卷调查*/
     public function surveyPost($data)
     {
-        $this->db->insert('swan_survey', $data);
+        $this->db->insert_batch('swan_survey', $data);
     }
 
 }

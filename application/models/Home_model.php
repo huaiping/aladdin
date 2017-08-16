@@ -11,7 +11,7 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(10);
-        $query = $this->db->get('swan_news');
+        $query = $this->db->get_where('swan_news', array('status' => 'passed'));
         return $query->result_array();
     }
 
@@ -56,7 +56,7 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(12);
-        $query = $this->db->get_where('swan_news', array('category' => 'reports'));
+        $query = $this->db->get_where('swan_news', array('category' => 'reports', 'status' => 'passed'));
         return $query->result_array();
     }
 
@@ -65,7 +65,7 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(12);
-        $query = $this->db->get('swan_video');
+        $query = $this->db->get_where('swan_video', array('status' => 'passed'));
         return $query->result_array();
     }
 
@@ -83,7 +83,7 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(12);
-        $query = $this->db->get('swan_download');
+        $query = $this->db->get_where('swan_download', array('status' => 'passed'));
         return $query->result_array();
     }
 
@@ -99,7 +99,7 @@ class Home_model extends CI_Model {
     /*首页 - 友情链接*/
     public function get_friendsites()
     {
-        $query = $this->db->get('swan_links');
+        $query = $this->db->get_where('swan_links', array('status' => 'passed'));
         return $query->result_array();
     }
 
