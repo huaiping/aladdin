@@ -28,7 +28,7 @@
 
         <div class="col-md-9">
            <?php
-               if (count($articles) > 1) {
+               if (count($articles) > 0) {
            ?>
            <div class="col-md-12">
                 <!--投稿 begin-->
@@ -54,7 +54,7 @@
             ?>
 
             <?php
-                if (count($albums) > 1) {
+                if (count($albums) > 0) {
             ?>
             <div class="col-md-12">
                 <!--相册 begin-->
@@ -80,7 +80,7 @@
             ?>
 
             <?php
-                if (count($files) > 1) {
+                if (count($files) > 0) {
             ?>
             <div class="col-md-12">
                 <!--文件 begin-->
@@ -106,7 +106,7 @@
             ?>
 
             <?php
-                if (count($messages) > 1) {
+                if (count($messages) > 0) {
             ?>
             <div class="col-md-12">
                 <!--留言 begin-->
@@ -132,7 +132,7 @@
             ?>
 
             <?php
-                if (count($videos) > 1) {
+                if (count($videos) > 0) {
             ?>
             <div class="col-md-12">
                 <!--视频 begin-->
@@ -158,7 +158,7 @@
             ?>
 
             <?php
-                if (count($links) > 1) {
+                if (count($links) > 0) {
             ?>
             <div class="col-md-12">
                 <!--链接 begin-->
