@@ -1,7 +1,20 @@
 <section class="container">
     <?php
+        function current_week($date_of_firstday="2011-2-10"){
+            $year = substr($date_of_firstday,0,4);
+            $month = substr($date_of_firstday,5,1);
+            $day = substr($date_of_firstday,7,2);
+            $time_chuo_of_first_day = mktime(0,0,0,$month,$day,$year);
+            $time_chuo_of_current_day = mktime(0,0,0,date('n'),date('d'),date('Y'));
+            $cha = ($time_chuo_of_current_day-$time_chuo_of_first_day)/60/60/24;
+            $zhou = (int)(($cha)/7 +1);
+            return $zhou;
+        }
+        $sdate = current_week('2017-2-6'); //开学第一周星期一的日期
+
         $attributes = array('class' => 'form-horizontal', 'id' => 'survey');
-        echo form_open('survey/post', $attributes);
+        $hidden = array('name' => $this->session->userdata('name'), 'survey' => $sdate);
+        echo form_open('survey/post', $attributes, $hidden);
     ?>
     <!--<form method="post" id="survey" name="survey" action="#" class="form-horizontal">-->
         <div class="panel panel-info">
