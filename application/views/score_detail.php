@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="alert alert-warning alert-dismissible" role="alert">
-                        <strong><span class="glyphicon glyphicon-thumbs-up"></span> 亲，本次考试中，你成功打败了<?php echo $total-$item['jm']; ?>位同学，继续加油哦！</strong>
+                        <strong><span class="glyphicon glyphicon-thumbs-up"></span> 亲，本次考试中，你打败了<?php echo $total['jm']-$item['jm']; ?>位同学，继续加油哦！</strong>
                     </div>
                 </div>
             </div>

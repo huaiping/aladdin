@@ -148,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `swan_score` (
   `wzmc` varchar(4) NOT NULL DEFAULT '0',
   `zf` decimal(4,1) NOT NULL,
   `bm` varchar(2) NOT NULL,
-  `jm` varchar(4) NOT NULL,
+  `jm` int(4) NOT NULL,
   `bj` varchar(2) NOT NULL,
   `item` varchar(60) NOT NULL,
   `sfzh` varchar(18) NOT NULL DEFAULT '',

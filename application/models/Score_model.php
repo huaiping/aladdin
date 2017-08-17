@@ -9,7 +9,7 @@ class Score_model extends CI_Model {
     /*成绩查询 - 单次成绩*/
     public function get_items($data)
     {
-        if (strstr($data['category'],"|")) {
+        if (strstr($data['category'], "|")) {
             $categories = explode("|", $data['category']);
             $this->db->where_in('item', $categories);
         }
@@ -38,9 +38,17 @@ class Score_model extends CI_Model {
     /*成绩查询 - 参考人数*/
     public function get_total($data)
     {
-        $this->db->where(array('item' => $data['category']));
-        $query = $this->db->get('swan_score');
-        return $query->num_rows();
+        if (strstr($data['category'], "|")) {
+            $categories = explode("|", $data['category']);
+            $this->db->where_in('item', $categories);
+        }
+        else
+        {
+            $this->db->where('item', $data['category']);
+        }
+        $this->db->select_max('jm');
+        $query = $this->db->get_where('swan_score');
+        return $query->row_array();
     }
 
     /*成绩查询 - 历次成绩*/
