@@ -12,10 +12,20 @@ class Exam extends CI_Controller {
 
     public function index()
     {
-        $data['choices'] = $this->exam_model->get_choices();
-        $this->load->view('header');
-        $this->load->view('exam', $data);
-        $this->load->view('footer');
+        if ($this->is_login())
+        {
+            $data['choices'] = $this->exam_model->get_choices();
+            $this->load->view('header');
+            $this->load->view('exam', $data);
+            $this->load->view('footer');
+        }
+        else
+        {
+            $this->session->set_userdata('goto', $this->uri->uri_string());
+            $this->load->view('header');
+            $this->load->view('login');
+            $this->load->view('footer');
+        }
     }
 
     public function is_login()

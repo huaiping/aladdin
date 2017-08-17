@@ -78,7 +78,7 @@
         <div class="col-xs-11 col-md-4">
             <!--成绩查询 begin-->
             <div class="searchBox row">
-                <h2 class="text-center" style="margin-bottom:20px;">成绩查询</h2>
+                <h2 class="col-md-9 col-md-offset-1 text-center" style="margin-bottom:20px;">成绩查询</h2>
                 <?php
                     $attributes = array('class' => 'form-horizontal');
                     echo form_open('score/view', $attributes);
