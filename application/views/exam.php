@@ -10,7 +10,7 @@
     </div>
 
     <div class="exam row">
-        <div class="col-md-9" style="margin-bottom:20px;">
+        <div class="col-md-9" style="margin-bottom:45px;">
             <!--左侧试题区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>试题<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
@@ -38,21 +38,21 @@
                 <ul class="widget-links list-unstyled" style="padding-left:20px;">
                     <?php
                     for ($i=0, $j=0; $i<count($choices); $i++, $j+=4) {
-                        $options = explode("|",$choices[$i]['options']);
+                        $options = explode("|", $choices[$i]['options']);
                     ?>
-                    <li class="col-xs-12 col-md-12 widget-links_item" style="line-height:45px;">
+                    <li class="col-xs-12 col-md-12 widget-links_item radio" style="line-height:45px;">
                         <strong><?php echo '第'.($i+1).'题 '.$choices[$i]['question']; ?></strong>
                     </li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item radio">
                         <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+1; ?>"><?php echo $options[0]; ?></label>
                     </li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item radio">
                         <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+2; ?>"><?php echo $options[1]; ?></label>
                     </li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item radio">
                         <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+3; ?>"><?php echo $options[2]; ?></label>
                     </li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item radio">
                         <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+4; ?>"><?php echo $options[3]; ?></label>
                     </li>
                     <?php
