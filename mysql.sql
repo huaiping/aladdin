@@ -35,6 +35,16 @@ CREATE TABLE IF NOT EXISTS `swan_download` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS `swan_exam` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `question` varchar(255) NOT NULL,
+  `options` varchar(255) NOT NULL,
+  `answer` varchar(255) NOT NULL,
+  `pattern` varchar(24) NOT NULL,
+  `status` varchar(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 CREATE TABLE IF NOT EXISTS `swan_guestbook` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
