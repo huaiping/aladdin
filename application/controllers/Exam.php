@@ -7,12 +7,14 @@ class Exam extends CI_Controller {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form', 'url'));
+        $this->load->model('exam_model');
     }
 
     public function index()
     {
+        $data['choices'] = $this->exam_model->get_choices();
         $this->load->view('header');
-        $this->load->view('exam');
+        $this->load->view('exam', $data);
         $this->load->view('footer');
     }
 

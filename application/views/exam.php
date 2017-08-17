@@ -10,7 +10,7 @@
     </div>
 
     <div class="exam row">
-        <div class="col-md-9">
+        <div class="col-md-9" style="margin-bottom:20px;">
             <!--左侧试题区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>试题<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
@@ -35,8 +35,18 @@
                 <!--题号 begin-->
 
                 <!--试题 begin-->
-                <ul class="widget-links list-unstyled">
-                    test
+                <ul class="widget-links list-unstyled" style="padding-left:30px;">
+                    <?php
+                    for ($i=0; $i<count($choices); $i++) {
+                        $options = explode("|",$choices[$i]['options']);
+                    ?>
+                    <li class="col-md-12 widget-links_item ellipsis" style="height:45px; line-height:45px;"><strong><?php echo ($i+1).$choices[$i]['question']; ?></strong></li>
+                    <li class="col-md-4 pull-left widget-links_item ellipsis"><?php echo $options[0]; ?></li>
+                    <li class="col-md-4 pull-left widget-links_item ellipsis"><?php echo $options[1]; ?></li>
+                    <li class="col-md-4 pull-left widget-links_item ellipsis"><?php echo $options[2]; ?></li>
+                    <?php
+                    }
+                    ?>
                 </ul>
                 <!--试题 end-->
             </div>
