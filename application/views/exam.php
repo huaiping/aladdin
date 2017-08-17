@@ -37,14 +37,24 @@
                 <!--试题 begin-->
                 <ul class="widget-links list-unstyled" style="padding-left:20px;">
                     <?php
-                    for ($i=0; $i<count($choices); $i++) {
+                    for ($i=0, $j=0; $i<count($choices); $i++, $j+=4) {
                         $options = explode("|",$choices[$i]['options']);
                     ?>
-                    <li class="col-xs-12 col-md-12 widget-links_item" style="line-height:45px;"><strong><?php echo '第'.($i+1).'题 '.$choices[$i]['question']; ?></strong></li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item"><input type="radio"><?php echo $options[0]; ?></li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item"><input type="radio"><?php echo $options[1]; ?></li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item"><input type="radio"><?php echo $options[2]; ?></li>
-                    <li class="col-xs-12 col-md-6 pull-left widget-links_item"><input type="radio"><?php echo $options[3]; ?></li>
+                    <li class="col-xs-12 col-md-12 widget-links_item" style="line-height:45px;">
+                        <strong><?php echo '第'.($i+1).'题 '.$choices[$i]['question']; ?></strong>
+                    </li>
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                        <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+1; ?>"><?php echo $options[0]; ?></label>
+                    </li>
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                        <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+2; ?>"><?php echo $options[1]; ?></label>
+                    </li>
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                        <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+3; ?>"><?php echo $options[2]; ?></label>
+                    </li>
+                    <li class="col-xs-12 col-md-6 pull-left widget-links_item">
+                        <label><input type="radio" name="options<?php echo $i+1; ?>" id="option<?php echo $j+4; ?>"><?php echo $options[3]; ?></label>
+                    </li>
                     <?php
                     }
                     ?>
