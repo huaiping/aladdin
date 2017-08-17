@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group">
                     <label for="url" class="col-xs-3 col-sm-1 col-md-1 control-label">网址</label>
-                    <div class="col-xs-9 col-sm-11 col-md-11"><input type="text" class="form-control" id="url" name="url" required="required"></div>
+                    <div class="col-xs-9 col-sm-11 col-md-11"><input type="url" class="form-control" id="url" name="url" required="required"></div>
                 </div>
                 <div class="form-group">
                     <label for="content" class="col-xs-12 col-sm-1 col-md-1 control-label">简介</label>

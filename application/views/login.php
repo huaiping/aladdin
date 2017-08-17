@@ -95,7 +95,7 @@
                                     <div class="form-group">
                                         <div class="input-group col-xs-10 col-sm-8 col-md-8 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
                                             <span class="input-group-addon" id="basic-addon4"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>
-                                            <input type="text" class="form-control" id="email" name="email" placeholder="邮箱" aria-describedby="basic-addon4" value="" required="required">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="邮箱" aria-describedby="basic-addon4" value="" required="required">
                                         </div>
                                     </div>
                                     <div class="form-group">
