@@ -40,10 +40,11 @@
                     for ($i=0; $i<count($choices); $i++) {
                         $options = explode("|",$choices[$i]['options']);
                     ?>
-                    <li class="col-md-12 widget-links_item ellipsis" style="height:45px; line-height:45px;"><strong><?php echo ($i+1).$choices[$i]['question']; ?></strong></li>
-                    <li class="col-md-4 pull-left widget-links_item ellipsis"><?php echo $options[0]; ?></li>
-                    <li class="col-md-4 pull-left widget-links_item ellipsis"><?php echo $options[1]; ?></li>
-                    <li class="col-md-4 pull-left widget-links_item ellipsis"><?php echo $options[2]; ?></li>
+                    <li class="col-md-12 widget-links_item ellipsis" style="height:45px; line-height:45px;"><strong><?php echo '第'.($i+1).'题 '.$choices[$i]['question']; ?></strong></li>
+                    <li class="col-md-6 pull-left widget-links_item ellipsis"><input type="radio"><?php echo $options[0]; ?></li>
+                    <li class="col-md-6 pull-left widget-links_item ellipsis"><input type="radio"><?php echo $options[1]; ?></li>
+                    <li class="col-md-6 pull-left widget-links_item ellipsis"><input type="radio"><?php echo $options[2]; ?></li>
+                    <li class="col-md-6 pull-left widget-links_item ellipsis"><input type="radio"><?php echo $options[3]; ?></li>
                     <?php
                     }
                     ?>
