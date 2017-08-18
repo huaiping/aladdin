@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `swan_comment` (
   `pubtime` datetime NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_download` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `swan_download` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_exam` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `swan_exam` (
   `pattern` varchar(24) NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_guestbook` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `swan_guestbook` (
   `modtime` datetime NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_links` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `swan_links` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_membership` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -84,12 +84,16 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `messages` varchar(1) NOT NULL,
   `videos` varchar(1) NOT NULL,
   `links` varchar(1) NOT NULL,
+  `survey` varchar(1) NOT NULL,
+  `exams` varchar(1) NOT NULL,
+  `salary` varchar(1) NOT NULL,
+  `repairs` varchar(1) NOT NULL,
   `pubtime` datetime NOT NULL,
   `beans` int(10) NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_news` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -103,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `swan_news` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_photo` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -118,43 +122,43 @@ CREATE TABLE IF NOT EXISTS `swan_photo` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_score` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `xh` varchar(18) NOT NULL,
   `xm` varchar(24) NOT NULL,
   `yw` decimal(4,1) unsigned NOT NULL,
-  `ywmc` varchar(4) NOT NULL DEFAULT '0',
+  `ywmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `sx` decimal(4,1) unsigned NOT NULL,
-  `sxmc` varchar(4) NOT NULL DEFAULT '0',
+  `sxmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `yy` decimal(4,1) unsigned NOT NULL,
-  `yymc` varchar(4) NOT NULL DEFAULT '0',
+  `yymc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `wl` decimal(4,1) unsigned NOT NULL,
-  `wlmc` varchar(4) NOT NULL DEFAULT '0',
+  `wlmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `hx` decimal(4,1) unsigned NOT NULL,
-  `hxmc` varchar(4) NOT NULL DEFAULT '0',
+  `hxmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `sw` decimal(4,1) unsigned NOT NULL,
-  `swmc` varchar(4) NOT NULL DEFAULT '0',
+  `swmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `lz` decimal(4,1) unsigned NOT NULL,
-  `lzmc` varchar(4) NOT NULL DEFAULT '0',
+  `lzmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `zz` decimal(4,1) unsigned NOT NULL,
-  `zzmc` varchar(4) NOT NULL DEFAULT '0',
+  `zzmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `ls` decimal(4,1) unsigned NOT NULL,
-  `lsmc` varchar(4) NOT NULL DEFAULT '0',
+  `lsmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `dl` decimal(4,1) unsigned NOT NULL,
-  `dlmc` varchar(4) NOT NULL DEFAULT '0',
+  `dlmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `wz` decimal(4,1) unsigned NOT NULL,
-  `wzmc` varchar(4) NOT NULL DEFAULT '0',
+  `wzmc` smallint(4) unsigned NOT NULL DEFAULT '0',
   `zf` decimal(4,1) NOT NULL,
-  `bm` varchar(2) NOT NULL,
-  `jm` int(4) NOT NULL,
+  `bm` smallint(3) unsigned NOT NULL,
+  `jm` smallint(4) NOT NULL,
   `bj` varchar(2) NOT NULL,
   `item` varchar(60) NOT NULL,
   `sfzh` varchar(18) NOT NULL DEFAULT '',
   `bz` varchar(45) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_survey` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -175,7 +179,7 @@ CREATE TABLE IF NOT EXISTS `swan_survey` (
   `survey` int(4) NOT NULL,
   `memo` varchar(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_video` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -188,4 +192,4 @@ CREATE TABLE IF NOT EXISTS `swan_video` (
   `hits` int(10) NOT NULL DEFAULT '0',
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

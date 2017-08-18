@@ -80,6 +80,10 @@ class Membership extends CI_Controller {
             'messages' => '1',
             'videos' => '0',
             'links' => '0',
+            'survey' => '0',
+            'exams' => '0',
+            'salary' => '0',
+            'repairs' => '0',
             'pubtime' => $now,
             'beans' => 20,
             'status' => 'pending'

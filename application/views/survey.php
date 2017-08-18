@@ -4,9 +4,9 @@
             $year = substr($date_of_firstday,0,4);
             $month = substr($date_of_firstday,5,1);
             $day = substr($date_of_firstday,7,2);
-            $time_chuo_of_first_day = mktime(0,0,0,$month,$day,$year);
-            $time_chuo_of_current_day = mktime(0,0,0,date('n'),date('d'),date('Y'));
-            $cha = ($time_chuo_of_current_day-$time_chuo_of_first_day)/60/60/24;
+            $timestamp_of_first_day = mktime(0,0,0,$month,$day,$year);
+            $timestamp_of_current_day = mktime(0,0,0,date('n'),date('d'),date('Y'));
+            $cha = ($timestamp_of_current_day-$timestamp_of_first_day)/60/60/24;
             $zhou = (int)(($cha)/7 +1);
             return $zhou;
         }

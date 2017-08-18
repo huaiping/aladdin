@@ -65,14 +65,14 @@
         </div>
 
         <div class="col-xs-12 col-md-3">
-            <!--右侧考生信息和倒计时 begin-->
+            <!--右侧考试信息和倒计时 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>考试信息<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     00:40:00
                 </ul>
             </div>
-            <!--右侧考生信息和倒计时 end-->
+            <!--右侧考试信息和倒计时 end-->
         </div>
     </div>
 </section>
