@@ -68,7 +68,7 @@
                     <div style="word-break:break-all;"><?php echo $comments['content']; ?></div>
                 </div>
             </div>
-            <?php endforeach ?>
+            <?php endforeach; ?>
         </div>
 
         <div class="col-md-3 hidden-xs">

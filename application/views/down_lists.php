@@ -14,11 +14,11 @@
             <!--左侧热门资源 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>热门资源<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
-                    <ul class="widget-links list-unstyled">
-                        <?php foreach ($down_hot as $hot): ?>
-                            <li class="widget-links_item ellipsis"><a href="<?php echo site_url('download/view/'.$hot['id']); ?>"><?php echo $hot['title']; ?></a></li>
-                        <?php endforeach ?>
-                    </ul>
+                <ul class="widget-links list-unstyled">
+                    <?php foreach ($down_hot as $hot): ?>
+                        <li class="widget-links_item ellipsis"><a href="<?php echo site_url('download/view/'.$hot['id']); ?>"><?php echo $hot['title']; ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
             <!--左侧热门资源 end-->
         </div>
@@ -44,7 +44,7 @@
                         <td class="col-md-1 widget-links_item hidden-xs hidden-sm"><?php echo $down_list[$i]['license']; ?></td>
                         <td class="col-sm-1 col-md-1 widget-links_item hidden-xs"><?php echo $down_list[$i]['stars']; ?></td>
                     </tr>
-                    <?php endfor ?>
+                    <?php endfor; ?>
                 </tbody>
             </table>
             <!--右侧资源下载列表 end-->

@@ -2,9 +2,7 @@
     <div class="news row">
         <div class="col-xs-12 col-md-12">
             <!--新闻列表 begin-->
-            <?php
-                for($i=0; $i<count($news)-1; $i+=2):
-            ?>
+            <?php for($i=0; $i<count($news)-1; $i+=2): ?>
             <div class="col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body" style="margin-left:-15px; margin-right:-15px;">
                     <div class="media-left hidden-xs">
@@ -30,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <?php endfor ?>
+            <?php endfor; ?>
 
             <div style="clear:both;"></div>
 

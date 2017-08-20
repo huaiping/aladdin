@@ -41,7 +41,7 @@
                             ?>
                             <a href="#"><?php echo $article['title']; ?></a>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--投稿 end-->
@@ -61,7 +61,7 @@
                             ?>
                             <a href="#"><?php echo $album['id']; ?></a>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--相册 end-->
@@ -81,7 +81,7 @@
                             ?>
                             <a href="#"><?php echo $file['title']; ?></a>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--文件 end-->
@@ -101,7 +101,7 @@
                             ?>
                             <a href="#"><?php echo $message['title']; ?></a>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--留言 end-->
@@ -121,7 +121,7 @@
                             ?>
                             <a href="#"><?php echo $video['title']; ?></a>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--视频 end-->
@@ -141,7 +141,7 @@
                             ?>
                             <a href="#"><?php echo $link['title']; ?></a>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--链接 end-->

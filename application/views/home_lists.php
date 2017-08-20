@@ -74,7 +74,7 @@
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$latest[$i]['id']); ?>"><?php echo $latest[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($latest[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor ?>
+                        <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="teacher">
@@ -83,7 +83,7 @@
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$teachers[$i]['id']); ?>"><?php echo $teachers[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($teachers[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor ?>
+                        <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="student">
@@ -92,7 +92,7 @@
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$students[$i]['id']); ?>"><?php echo $students[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($students[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor ?>
+                        <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="parent">
@@ -101,7 +101,7 @@
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$parents[$i]['id']); ?>"><?php echo $parents[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($parents[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor ?>
+                        <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="notice">
@@ -110,7 +110,7 @@
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$notices[$i]['id']); ?>"><?php echo $notices[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($notices[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor ?>
+                        <?php endfor; ?>
                         </ul>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($reports as $report): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$report['id']); ?>"><?php echo $report['title']; ?></a></li>
-                <?php endforeach ?>
+                <?php endforeach; ?>
                 </ul>
             </div>
             <!--校园新闻 end-->
@@ -153,7 +153,7 @@
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($videos as $video): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
-                <?php endforeach ?>
+                <?php endforeach; ?>
                 </ul>
             </div>
             <!--视频点播 end-->
@@ -168,7 +168,7 @@
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($slides as $slide): ?>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
-                <?php endforeach ?>
+                <?php endforeach; ?>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a></li>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a></li>
@@ -206,7 +206,7 @@
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($downloads as $download): ?>
                     <li class="widget-links_item ellipsis">[<?php echo $download['category']; ?>]<a href="<?php echo site_url('download/view/'.$download['id'])?>"><?php echo $download['title']; ?></a></li>
-                <?php endforeach ?>
+                <?php endforeach; ?>
                 </ul>
             </div>
             <!--最新资源 end-->
@@ -218,7 +218,7 @@
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($teaching as $teach): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$teach['id']); ?>"><?php echo $teach['title']; ?></a></li>
-                <?php endforeach ?>
+                <?php endforeach; ?>
                 </ul>
             </div>
             <!--教学教研 end-->
@@ -245,7 +245,7 @@
                     <li class="col-md-2 pull-left" style="height:30px; line-height:30px;">
                         <a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a>
                     </li>
-                <?php endforeach ?>
+                <?php endforeach; ?>
                 </ul>
             </div>
             <!--友情链接 end-->

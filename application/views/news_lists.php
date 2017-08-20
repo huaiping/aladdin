@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <?php endfor ?>
+            <?php endfor; ?>
 
             <div style="clear:both;"></div>
 

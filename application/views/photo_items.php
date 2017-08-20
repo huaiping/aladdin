@@ -21,7 +21,7 @@
                             <img src="<?php echo base_url($photos[$i]['url']); ?>" alt="" style="width:100%;">
                             <div class="carousel-caption"><?php echo $photos[$i]['description']; ?></div>
                         </div>
-                        <?php endfor ?>
+                        <?php endfor; ?>
                     </div>
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">

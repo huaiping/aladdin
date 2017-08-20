@@ -143,7 +143,7 @@
                         <td><?php echo round($score['zf'],1); ?></td><td><?php echo $score['jm']; ?></td>
                     </tr>
                 </table>
-                <?php endforeach ?>
+                <?php endforeach; ?>
                 </div>
             </div>
             <!--历次成绩 end-->
