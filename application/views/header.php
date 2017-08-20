@@ -32,7 +32,7 @@ body {padding-top:70px;}
 .bs-callout-warning h4 {color:#aa6708;}
 .bs-callout-info {border-left-color:#1b809e;}
 .bs-callout-info h4 {color:#1b809e;}
-.widget-box {margin:25px 0; padding-top:25px; border-top:1px solid #eee;}
+.widget-box {margin:20px 0; padding-top:25px; border-top:1px solid #eee;}
 .widget-box .widget-box_title {margin:0 0 20px; font-size:16px; font-weight:700; line-height:1.2;}
 .widget-box:first-child, .widget-box.no-border {margin-top:0; padding-top:0; border:none;}
 .tab-links {padding-top:15px;}
