@@ -11,7 +11,8 @@ class Photo_model extends CI_Model {
     {
         $this->db->select('id, category');
         $this->db->group_by('category');
-        $query = $this->db->get('swan_photo');
+        //$query = $this->db->get('swan_photo');
+        $query = $this->db->get_where('swan_photo', array('status' => 'passed'));
         return $query->result_array();
     }
 
@@ -19,7 +20,8 @@ class Photo_model extends CI_Model {
     public function get_subcategory()
     {
         $this->db->group_by('subcategory');
-        $query = $this->db->get('swan_photo');
+        //$query = $this->db->get('swan_photo');
+        $query = $this->db->get_where('swan_photo', array('status' => 'passed'));
         return $query->result_array();
     }
 
@@ -28,7 +30,8 @@ class Photo_model extends CI_Model {
     {
         if ($id === FALSE)
         {
-            $query = $this->db->get('swan_photo');
+            //$query = $this->db->get('swan_photo');
+            $query = $this->db->get_where('swan_photo', array('status' => 'passed'));
             return $query->result_array();
         }
         $query = $this->db->query("SELECT * FROM swan_photo WHERE subcategory=(select subcategory from swan_photo where id=$id)");
