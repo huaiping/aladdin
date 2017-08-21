@@ -125,7 +125,7 @@
                     <?php foreach ($links as $link): ?>
                         <li class="widget-links_item">
                             <?php if ($link['status'] == 'pending'): ?>
-                                echo '<span class="badge badge-danger">待审</span>';
+                                <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $link['title']; ?></a>
                         </li>
