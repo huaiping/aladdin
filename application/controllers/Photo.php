@@ -27,6 +27,14 @@ class Photo extends CI_Controller {
         $this->load->view('footer');
     }
 
+    public function preview($id = FALSE)
+    {
+        $data['photos'] = $this->photo_model->get_photos($id);
+        $this->load->view('header');
+        $this->load->view('photo_items', $data);
+        $this->load->view('footer');
+    }
+
     public function waterfall($id = FALSE)
     {
         //$data['photos'] = $this->photo_model->get_photos($id);

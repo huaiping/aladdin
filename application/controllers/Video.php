@@ -29,4 +29,14 @@ class Video extends CI_Controller {
         $this->load->view('video', $data);
         $this->load->view('footer');
     }
+
+    public function preview($id = FALSE)
+    {
+        $id = ($id === FALSE) ? 1 : $id;
+        $data['hot'] = $this->video_model->get_hots();
+        $data['item'] = $this->video_model->get_items($id);
+        $this->load->view('header');
+        $this->load->view('video', $data);
+        $this->load->view('footer');
+    }
 }
