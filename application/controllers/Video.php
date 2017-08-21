@@ -36,7 +36,7 @@ class Video extends CI_Controller {
         $data['hot'] = $this->video_model->get_hots();
         $data['item'] = $this->video_model->get_items($id);
         $this->load->view('header');
-        $this->load->view('video', $data);
+        $this->load->view('preview_video', $data);
         $this->load->view('footer');
     }
 }

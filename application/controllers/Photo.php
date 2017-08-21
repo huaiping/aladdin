@@ -31,7 +31,7 @@ class Photo extends CI_Controller {
     {
         $data['photos'] = $this->photo_model->get_photos($id);
         $this->load->view('header');
-        $this->load->view('photo_items', $data);
+        $this->load->view('preview_photo', $data);
         $this->load->view('footer');
     }
 

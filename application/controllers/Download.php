@@ -91,7 +91,7 @@ class Download extends CI_Controller {
         $data['down_hot'] = $this->download_model->get_hots();
         $data['down_item'] = $this->download_model->get_item($id);
         $this->load->view('header');
-        $this->load->view('down_items', $data);
+        $this->load->view('preview_down', $data);
         $this->load->view('footer');
     }
 

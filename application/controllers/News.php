@@ -67,7 +67,7 @@ class News extends CI_Controller {
         $data['news_item'] = $this->news_model->get_news($id);
         $data['news_comment'] = $this->news_model->get_comment($id);
         $this->load->view('header');
-        $this->load->view('news_items', $data);
+        $this->load->view('preview_news', $data);
         $this->load->view('footer');
     }
 
