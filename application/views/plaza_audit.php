@@ -60,9 +60,9 @@
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('photo/preview'); ?>"><?php echo $album['title']; ?></a>
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
-                            <a href="#"><span class="badge badge-info">预览</span></a>
-                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
-                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
+                            <a href="<?php echo site_url('photo/preview/'.$album['id']); ?>"><span class="badge badge-info">预览</span></a>
+                            <a href="#" data-action="photo" data-id="<?php echo $album['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
+                            <a href="#" data-action="photo" data-id="<?php echo $album['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
                     <?php endforeach; ?>
                     </ul>
@@ -82,9 +82,9 @@
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('download/preview/'.$file['id']); ?>"><?php echo $file['title']; ?></a>
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
-                            <a href="#"><span class="badge badge-info">预览</span></a>
-                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
-                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
+                            <a href="<?php echo site_url('download/preview/'.$file['id']); ?>"><span class="badge badge-info">预览</span></a>
+                            <a href="#" data-action="download" data-id="<?php echo $file['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
+                            <a href="#" data-action="download" data-id="<?php echo $file['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
                     <?php endforeach; ?>
                     </ul>
@@ -105,8 +105,8 @@
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
                             <a href="#"><span class="badge badge-info">预览</span></a>
-                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
-                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
+                            <a href="#" data-action="guestbook" data-id="<?php echo $message['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
+                            <a href="#" data-action="guestbook" data-id="<?php echo $message['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
                     <?php endforeach; ?>
                     </ul>
@@ -126,9 +126,9 @@
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('video/preview/'.$video['id']); ?>"><?php echo $video['title']; ?></a>
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
-                            <a href="#"><span class="badge badge-info">预览</span></a>
-                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
-                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
+                            <a href="<?php echo site_url('video/preview/'.$video['id']); ?>"><span class="badge badge-info">预览</span></a>
+                            <a href="#" data-action="video" data-id="<?php echo $video['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
+                            <a href="#" data-action="video" data-id="<?php echo $video['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
                     <?php endforeach; ?>
                     </ul>
@@ -149,8 +149,8 @@
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
                             <a href="#"><span class="badge badge-info">预览</span></a>
-                            <span class="badge badge-success" style="margin-left:10px;">通过</span>
-                            <span class="badge badge-danger" style="margin-left:10px;">删除</span>
+                            <a href="#" data-action="links" data-id="<?php echo $link['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
+                            <a href="#" data-action="links" data-id="<?php echo $link['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
                     <?php endforeach; ?>
                     </ul>
@@ -171,7 +171,7 @@ $(document).ready(function(){
         var id = $(this).attr('data-id');
         var state = $(this).attr('data-status');
         $.post("<?php echo site_url('membership/audit'); ?>", { "action": action, "id":id, "status": state }, function (data) {
-            alert(data);
+            //alert(data);
         });
         window.location.reload();
         return false;
