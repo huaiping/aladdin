@@ -425,7 +425,7 @@ class Membership extends CI_Controller {
             'status' => $this->input->post('status')
         );
         $data = $this->security->xss_clean($data);
-        print_r($data);
+        $data = $this->membership_model->audit($data);
     }
 
     public function profile()

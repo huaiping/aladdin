@@ -55,7 +55,7 @@
                             <?php if ($album['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
-                            <a href="#"><?php echo $album['id']; ?></a>
+                            <a href="#"><?php echo $album['title']; ?></a>
                         </li>
                     <?php endforeach; ?>
                     </ul>

@@ -61,6 +61,16 @@ class News extends CI_Controller {
         $this->load->view('footer');
     }
 
+    public function preview($id = FALSE)
+    {
+        $id = ($id === FALSE) ? 1 : $id;
+        $data['news_item'] = $this->news_model->get_news($id);
+        $data['news_comment'] = $this->news_model->get_comment($id);
+        $this->load->view('header');
+        $this->load->view('news_items', $data);
+        $this->load->view('footer');
+    }
+
     public function comment()
     {
         if ($this->is_login())

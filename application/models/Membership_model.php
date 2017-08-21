@@ -55,6 +55,15 @@ class Membership_model extends CI_Model {
         $this->db->insert('swan_links', $data);
     }
 
+    /*用户中心 - 信息审批*/
+    public function audit($data)
+    {
+        $tablename = 'swan_'.$data['action'];
+        $this->db->where(array('id' => $data['id']));
+        $array = array('status' => $data['status']);
+        $this->db->update($tablename, $array);
+    }
+
     /*用户中心 - 我的投稿*/
     public function get_articles($username = FALSE)
     {

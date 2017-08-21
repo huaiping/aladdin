@@ -27,9 +27,7 @@
         </div>
 
         <div class="col-md-9">
-           <?php
-               if (count($articles) > 0) {
-           ?>
+           <?php if (count($articles) > 0): ?>
            <div class="col-md-12">
                 <!--投稿 begin-->
                 <div class="widget-box no-border">
@@ -41,21 +39,17 @@
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
                             <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><span class="badge badge-info">预览</span></a>
-                            <a href="#" data_action="article" data_id="<?php echo $article['id']; ?>" data_status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
-                            <a href="#" data_action="article" data_id="<?php echo $article['id']; ?>" data_status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
+                            <a href="#" data-action="news" data-id="<?php echo $article['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
+                            <a href="#" data-action="news" data-id="<?php echo $article['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--投稿 end-->
             </div>
-            <?php
-                }
-            ?>
+            <?php endif; ?>
 
-            <?php
-                if (count($albums) > 0) {
-            ?>
+            <?php if (count($albums) > 0): ?>
             <div class="col-md-12">
                 <!--相册 begin-->
                 <div class="widget-box no-border">
@@ -70,18 +64,14 @@
                             <span class="badge badge-success" style="margin-left:10px;">通过</span>
                             <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--相册 end-->
             </div>
-            <?php
-                }
-            ?>
+            <?php endif; ?>
 
-            <?php
-                if (count($files) > 0) {
-            ?>
+            <?php if (count($files) > 0): ?>
             <div class="col-md-12">
                 <!--文件 begin-->
                 <div class="widget-box no-border">
@@ -96,18 +86,14 @@
                             <span class="badge badge-success" style="margin-left:10px;">通过</span>
                             <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--文件 end-->
             </div>
-            <?php
-                }
-            ?>
+            <?php endif; ?>
 
-            <?php
-                if (count($messages) > 0) {
-            ?>
+            <?php if (count($messages) > 0): ?>
             <div class="col-md-12">
                 <!--留言 begin-->
                 <div class="widget-box no-border">
@@ -122,18 +108,14 @@
                             <span class="badge badge-success" style="margin-left:10px;">通过</span>
                             <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--留言 end-->
             </div>
-            <?php
-                }
-            ?>
+            <?php endif; ?>
 
-            <?php
-                if (count($videos) > 0) {
-            ?>
+            <?php if (count($videos) > 0): ?>
             <div class="col-md-12">
                 <!--视频 begin-->
                 <div class="widget-box no-border">
@@ -148,18 +130,14 @@
                             <span class="badge badge-success" style="margin-left:10px;">通过</span>
                             <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--视频 end-->
             </div>
-            <?php
-                }
-            ?>
+            <?php endif; ?>
 
-            <?php
-                if (count($links) > 0) {
-            ?>
+            <?php if (count($links) > 0): ?>
             <div class="col-md-12">
                 <!--链接 begin-->
                 <div class="widget-box no-border">
@@ -174,14 +152,12 @@
                             <span class="badge badge-success" style="margin-left:10px;">通过</span>
                             <span class="badge badge-danger" style="margin-left:10px;">删除</span>
                         </li>
-                    <?php endforeach ?>
+                    <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--链接 end-->
             </div>
-            <?php
-                }
-            ?>
+            <?php endif; ?>
         </div>
     </div>
 </section>
@@ -189,12 +165,12 @@
 <script>
 $(document).ready(function(){
     //var get_csrf_token_name = '<?php echo $this->security->get_csrf_token_name() ?>';
-    var cct = '<?php echo $this->security->get_csrf_hash() ?>';
+    //var cct = '<?php echo $this->security->get_csrf_hash() ?>';
     $("a.link").on("click",function(){
-        var action = $(this).attr('data_action');
-        var id = $(this).attr('data_id');
-        var state = $(this).attr('data_status');
-        $.post("audit", { "action": action, "id":id, "status": state, "csrf_test_name":cct }, function (data) {
+        var action = $(this).attr('data-action');
+        var id = $(this).attr('data-id');
+        var state = $(this).attr('data-status');
+        $.post("<?php echo site_url('membership/audit'); ?>", { "action": action, "id":id, "status": state }, function (data) {
             alert(data);
         });
         window.location.reload();
