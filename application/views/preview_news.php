@@ -17,58 +17,6 @@
                 <div id="article" style="line-height:30px;"><?php echo $news_item['content']; ?></div>
                 <!--新闻 end-->
             </div>
-
-            <?php
-                $username = $this->session->userdata('username');
-                if (!empty($username)) {
-            ?>
-            <?php
-                $attributes = array('class' => 'form-horizontal', 'id' => 'comment');
-                $hidden = array('username' => $this->session->userdata('username'), 'ip' => $this->input->ip_address());
-                echo form_open('news/comment', $attributes, $hidden);
-            ?>
-            <!--<form method="post" id="comments" name="comments" action="#" class="form-horizontal">-->
-                <!--评论 begin-->
-                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:30px 0 20px 0; padding:0;">
-                    <div class="panel-heading">评论</div>
-                    <div class="panel-body" style="margin:0; padding:0;">
-                        <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;" required="required"></textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-success"><i class="fa fa-commenting"></i> 提交评论</button>
-                    </div>
-                </div>
-                <!--评论 end-->
-            </form>
-            <?php
-                } else {
-            ?>
-                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:30px 0 20px 0; padding:0;">
-                    <div class="panel-heading">评论</div>
-                    <div class="panel-body" style="margin:0; padding:0;">
-                        <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;" disabled="disabled"></textarea>
-                    </div>
-                </div>
-                <div class="text-center" style="margin-bottom:20px;">
-                    <a class="btn btn-success" href="<?php echo site_url('news/comment'); ?>" role="button">登录后发表评论</a>
-                </div>
-            <?php
-                }
-            ?>
-
-            <?php foreach ($news_comment as $comments): ?>
-            <div class="media">
-                <div class="media-left">
-                    <img class="media-object img-circle" src="<?php echo base_url('webroot/avatar/'.$comments['author'].'_48.png'); ?>" alt="">
-                </div>
-                <div class="media-body">
-                    <h5 class="media-heading"><?php echo $comments['pubtime']; ?></h5>
-                    <div style="word-break:break-all;"><?php echo $comments['content']; ?></div>
-                </div>
-            </div>
-            <?php endforeach; ?>
         </div>
 
         <div class="col-md-3 hidden-xs">
@@ -111,16 +59,4 @@
 
 <script>
     jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo current_url(); ?>"});
-</script>
-<script>
-    $(function(){
-        $('#comment').ajaxForm(function() {
-            if ($("#content").val().length < 2) {
-                alert("评论不能为空");
-                return false;
-            }
-            alert("评论发表成功，谢谢参与！");
-            $('#comment').clearForm();
-        });
-    });
 </script>

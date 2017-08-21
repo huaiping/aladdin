@@ -80,7 +80,7 @@ blockquote p {font-size:16px;}
     <!--顶部导航栏 begin-->
     <div class="container bg-primary">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
             <span class="sr-only">导航</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -89,7 +89,7 @@ blockquote p {font-size:16px;}
             <a class="navbar-brand" href="<?php echo base_url(); ?>">阿拉丁CMS</a>
         </div>
 
-        <div class="collapse navbar-collapse bg-primary" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse bg-primary" id="bs-navbar-collapse">
             <ul class="nav navbar-nav bg-primary">
                 <li><a href="<?php echo site_url('news'); ?>">新闻中心<span class="sr-only">(current)</span></a></li>
                 <li><a href="<?php echo site_url('photo'); ?>">图片中心</a></li>

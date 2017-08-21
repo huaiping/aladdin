@@ -16,7 +16,7 @@
             <div class="col-xs-12 col-md-11ths panel panel-default pull-left">
                 <div class="media panel-body" style="margin-left:-15px; margin-right:-15px;">
                     <div class="media-left hidden-xs">
-                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/news.png'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h5 class="media-heading ellipsis"><a href="<?php echo site_url('news/view/'.$news[$i]['id']); ?>"><?php echo $news[$i]['title']; ?></a></h5>
@@ -29,7 +29,7 @@
             <div class="col-xs-12 col-md-11ths panel panel-default pull-right">
                 <div class="media panel-body" style="margin-left:-15px; margin-right:-15px;">
                     <div class="media-left hidden-xs">
-                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/image2.jpg'); ?>" alt="">
+                        <img class="media-object img-circle" src="<?php echo base_url('webroot/image/news.png'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <h5 class="media-heading ellipsis"><a href="<?php echo site_url('news/view/'.$news[$i+1]['id']); ?>"><?php echo $news[$i+1]['title']; ?></a></h5>

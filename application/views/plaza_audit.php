@@ -35,7 +35,7 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($articles as $article): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
-                            <span class="badge badge-danger">待审</span><a href="#"><?php echo $article['title']; ?></a>
+                            <span class="badge badge-danger">待审</span><a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><?php echo $article['title']; ?></a>
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
                             <a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><span class="badge badge-info">预览</span></a>
@@ -57,7 +57,7 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($albums as $album): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
-                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('photo/preview'); ?>"><?php echo $album['title']; ?></a>
+                            <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('photo/preview/'.$album['id']); ?>"><?php echo $album['title']; ?></a>
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
                             <a href="<?php echo site_url('photo/preview/'.$album['id']); ?>"><span class="badge badge-info">预览</span></a>
@@ -145,10 +145,10 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($links as $link): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
-                            <span class="badge badge-danger">待审</span> <a href="#"><?php echo $link['title']; ?></a>
+                            <span class="badge badge-danger">待审</span> <?php echo $link['title']; ?><a href="javascript:void(0);" title="<?php echo $link['description']; ?>" style="margin-left:15px;"><?php echo $link['url']; ?></a>
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
-                            <a href="#"><span class="badge badge-info">预览</span></a>
+                            <a href="<?php echo $link['url']; ?>"><span class="badge badge-info">预览</span></a>
                             <a href="#" data-action="links" data-id="<?php echo $link['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="links" data-id="<?php echo $link['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
