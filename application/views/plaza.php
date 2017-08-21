@@ -34,11 +34,9 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($articles as $article): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($article['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span>';
-                            }
-                            ?>
+                            <?php if ($article['status'] == 'pending'): ?>
+                                <span class="badge badge-danger">待审</span>
+                            <?php endif; ?>
                             <a href="#"><?php echo $article['title']; ?></a>
                         </li>
                     <?php endforeach; ?>
@@ -54,11 +52,9 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($albums as $album): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($album['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span>';
-                            }
-                            ?>
+                            <?php if ($album['status'] == 'pending'): ?>
+                                <span class="badge badge-danger">待审</span>
+                            <?php endif; ?>
                             <a href="#"><?php echo $album['id']; ?></a>
                         </li>
                     <?php endforeach; ?>
@@ -74,11 +70,9 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($files as $file): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($file['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span>';
-                            }
-                            ?>
+                            <?php if ($file['status'] == 'pending'): ?>
+                                <span class="badge badge-danger">待审</span>
+                            <?php endif; ?>
                             <a href="#"><?php echo $file['title']; ?></a>
                         </li>
                     <?php endforeach; ?>
@@ -94,11 +88,9 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($messages as $message): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($message['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span>';
-                            }
-                            ?>
+                            <?php if ($message['status'] == 'pending'): ?>
+                                <span class="badge badge-danger">待审</span>
+                            <?php endif; ?>
                             <a href="#"><?php echo $message['title']; ?></a>
                         </li>
                     <?php endforeach; ?>
@@ -114,11 +106,9 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($videos as $video): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($video['status'] == 'pending') {
-                                echo '<span class="badge badge-danger">待审</span>';
-                            }
-                            ?>
+                            <?php if ($video['status'] == 'pending'): ?>
+                                <span class="badge badge-danger">待审</span>
+                            <?php endif; ?>
                             <a href="#"><?php echo $video['title']; ?></a>
                         </li>
                     <?php endforeach; ?>
@@ -134,11 +124,9 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($links as $link): ?>
                         <li class="widget-links_item">
-                            <?php
-                            if ($link['status'] == 'pending') {
+                            <?php if ($link['status'] == 'pending'): ?>
                                 echo '<span class="badge badge-danger">待审</span>';
-                            }
-                            ?>
+                            <?php endif; ?>
                             <a href="#"><?php echo $link['title']; ?></a>
                         </li>
                     <?php endforeach; ?>
