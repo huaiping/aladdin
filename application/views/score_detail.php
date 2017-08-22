@@ -23,64 +23,46 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">英语：<?php echo round($item['yy'],1); ?><br /><br />名次：<?php echo $item['yymc']; ?></button>
                 </div>
-                <?php
-                    if ($item['wlmc'] != "0") {
-                ?>
+                <?php if ($item['wlmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">物理：<?php echo round($item['wl'],1); ?><br /><br />名次：<?php echo $item['wlmc']; ?></button>
                 </div>
-                <?php
-                    }
-                    if ($item['hxmc'] != "0") {
-                ?>
+                <?php endif; ?>
+                <?php if ($item['hxmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">化学：<?php echo round($item['hx'],1); ?><br /><br />名次：<?php echo $item['hxmc']; ?></button>
                 </div>
-                <?php
-                    }
-                    if ($item['swmc'] != "0") {
-                ?>
+                <?php endif; ?>
+                <?php if ($item['swmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">生物：<?php echo round($item['sw'],1); ?><br /><br />名次：<?php echo $item['swmc']; ?></button>
                 </div>
-                <?php
-                    }
-                    if ($item['lzmc'] != "0") {
-                ?>
+                <?php endif; ?>
+                <?php if ($item['lzmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">理综：<?php echo round($item['lz'],1); ?><br /><br />名次：<?php echo $item['lzmc']; ?></button>
                 </div>
-                <?php
-                    }
-                    if ($item['zzmc'] != "0") {
-                ?>
+                <?php endif; ?>
+                <?php if ($item['zzmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">政治：<?php echo round($item['zz'],1); ?><br /><br />名次：<?php echo $item['zzmc']; ?></button>
                 </div>
-                <?php
-                    }
-                    if ($item['lsmc'] != "0") {
-                ?>
+                <?php endif; ?>
+                <?php if ($item['lsmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">历史：<?php echo round($item['ls'],1); ?><br /><br />名次：<?php echo $item['lsmc']; ?></button>
                 </div>
-                <?php
-                    }
-                    if ($item['dlmc'] != "0") {
-                ?>
+                <?php endif; ?>
+                <?php if ($item['dlmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">地理：<?php echo round($item['dl'],1); ?><br /><br />名次：<?php echo $item['dlmc']; ?></button>
                 </div>
-                <?php
-                    }
-                    if ($item['wzmc'] != "0") {
-                ?>
+                <?php endif; ?>
+                <?php if ($item['wzmc'] != 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">文综：<?php echo round($item['wz'],1); ?><br /><br />名次：<?php echo $item['wzmc']; ?></button>
                 </div>
-                <?php
-                    }
-                ?>
+                <?php endif; ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">总分：<?php echo round($item['zf'],1); ?><br /><br />名次：<?php echo $item['jm']; ?></button>
                 </div>
@@ -104,9 +86,7 @@
         </div>
     </div>
 
-    <?php
-        if (strlen($number) == 18) {
-    ?>
+    <?php if (strlen($number) == 18): ?>
     <div class="score row">
         <!--成绩曲线 begin-->
         <div id="charts" class="col-xs-12 col-md-12 hidden-xs" style="margin-top:20px;"></div>
@@ -149,17 +129,14 @@
             <!--历次成绩 end-->
         </div>
     </div>
-    <?php
-        }
-    ?>
+    <?php endif; ?>
 </section>
 
 <script>
     jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo site_url(); ?>/score"});
 </script>
-<?php
-    if (strlen($number) == 18) {
-?>
+
+<?php if (strlen($number) == 18): ?>
 <script>
 $(function () { 
     $('#charts').highcharts({
@@ -205,6 +182,4 @@ $(function () {
     });
 });
 </script>
-<?php
-    }
-?>
+<?php endif; ?>
