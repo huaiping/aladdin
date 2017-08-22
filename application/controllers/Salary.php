@@ -11,9 +11,19 @@ class Salary extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('header');
-        $this->load->view('login');
-        $this->load->view('footer');
+        if ($this->is_login())
+        {
+            $this->load->view('header');
+            $this->load->view('salary');
+            $this->load->view('footer');
+        }
+        else
+        {
+            $this->session->set_userdata('goto', $this->uri->uri_string());
+            $this->load->view('header');
+            $this->load->view('login');
+            $this->load->view('footer');
+        }
     }
 
     public function is_login()
