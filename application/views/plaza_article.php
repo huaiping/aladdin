@@ -90,6 +90,7 @@ $(function() {
         width : '100%',
         allowPreviewEmoticons : false,
         items : ['source', '|', 'preview', 'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright', 'clearhtml', 'quickformat', 'selectall', '|', 'fontsize', 'forecolor', 'bold', 'lineheight', 'removeformat', '|', 'image', 'insertfile', 'table', 'link', 'unlink', '|', 'fullscreen'],
+        cssData : 'body {font-size:14px;}',
         uploadJson : '<?php echo base_url('kindeditor/php/upload_json.php'); ?>'
     });
 });
