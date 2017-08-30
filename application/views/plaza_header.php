@@ -10,7 +10,7 @@
 <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" />
+<link href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
@@ -18,7 +18,6 @@ body {padding-top:70px;}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color:#fff;}
 .navbar-default .navbar-nav > li > a {color:#fff;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color:#337ab7; background-color:#fff;}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color:#00a2ca; background-color:#fff;}
 .footer {background:#337ab7; border-color:#e7e7e7; color:#fff;}
 .membership {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .bs-callout {padding:5px; margin:5px 0; border:1px solid #eee; border-left-width:5px; border-radius:3px;}
@@ -60,7 +59,7 @@ body {padding-top:70px;}
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://www.huaiping.net/v2/">阿拉丁CMS</a>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>">阿拉丁CMS</a>
         </div>
 
         <div class="collapse navbar-collapse bg-primary" id="bs-navbar-collapse">
@@ -87,7 +86,7 @@ body {padding-top:70px;}
             <?php
                 }
             ?>
-                <li><a href="<?php echo site_url('membership/logout'); ?>"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+                <li><a href="<?php echo site_url('membership/logout'); ?>"><span class="fa fa-sign-out"></span> 退出</a></li>
             </ul>
         </div>
     </div>
