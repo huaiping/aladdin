@@ -91,6 +91,7 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `pubtime` datetime NOT NULL,
   `beans` int(10) NOT NULL,
   `status` varchar(8) NOT NULL,
+  `memo` varchar(5) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

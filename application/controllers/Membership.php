@@ -86,7 +86,8 @@ class Membership extends CI_Controller {
             'repairs' => '0',
             'pubtime' => $now,
             'beans' => 20,
-            'status' => 'pending'
+            'status' => 'pending',
+            'memo' => '0'
         );
         $data = $this->security->xss_clean($data);
         $this->membership_model->register($data);
