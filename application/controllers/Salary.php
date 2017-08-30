@@ -13,7 +13,11 @@ class Salary extends CI_Controller {
     {
         if ($this->is_login())
         {
-            $data['salary'] = $this->salary_model->get_salary();
+            $data = array(
+                'bh' => $this->session->userdata('memo')
+                //'xm' => $this->session->userdata('name')
+            );
+            $data['salary'] = $this->salary_model->get_salary($data);
             $this->load->view('header');
             $this->load->view('salary', $data);
             $this->load->view('footer');

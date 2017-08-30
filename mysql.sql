@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `swan_salary` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `bh` varchar(10) NOT NULL,
   `xm` varchar(12) NOT NULL,
-  `gwjt` decimal(4,2) unsigned NOT NULL,
+  `gwgz` decimal(4,2) unsigned NOT NULL,
   `tgjt` decimal(4,2) unsigned NOT NULL,
   `xjgz` decimal(4,2) unsigned NOT NULL,
   `shbz` decimal(4,2) unsigned NOT NULL,

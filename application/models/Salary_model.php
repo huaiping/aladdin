@@ -6,14 +6,11 @@ class Salary_model extends CI_Model {
         $this->load->database();
     }
 
-    public function get_salary($id = FALSE)
+    public function get_salary($data)
     {
-        if ($id === FALSE)
-        {
-            $query = $this->db->get('swan_salary');
-            return $query->result_array();
-        }
-        $query = $this->db->get_where('swan_salary', array('bh' => $id));
+        $this->db->order_by('timestamp', 'DESC');
+        $this->db->limit(1);
+        $query = $this->db->get_where('swan_salary', array('bh' => $data['bh']));
         return $query->row_array();
     }
 
