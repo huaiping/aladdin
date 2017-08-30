@@ -3,7 +3,7 @@ if(isset($_GET['char']) && $_GET['char'] != null ){
     $char = $_GET['char'];
 }
 if(isset($_GET['user']) && $_GET['user'] != null ){
-    $user = $_GET['user'];
+    $user = md5($_GET['user']);
 }
 //$OutputSize = min(512, empty($_GET['size'])?36:intval($_GET['size']));
 $OutputSize = 150;

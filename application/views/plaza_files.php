@@ -7,9 +7,9 @@
                 <li class="text-center"><a href="javascript:void(0);">
                 <?php
                 $php_path = dirname(__FILE__).'/';
-                if (file_exists($php_path.'../../webroot/avatar/'.$this->session->userdata('username').'_150.png')) {
+                if (file_exists($php_path.'../../webroot/avatar/'.md5($this->session->userdata('username')).'_150.png')) {
                 ?>
-                    <img src="<?php echo base_url('webroot/avatar/'.$this->session->userdata('username').'_150.png'); ?>" alt="">
+                    <img src="<?php echo base_url('webroot/avatar/'.md5($this->session->userdata('username')).'_150.png'); ?>" alt="">
                 <?php
                 } else {
                 ?>
