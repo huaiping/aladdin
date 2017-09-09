@@ -71,7 +71,7 @@ blockquote p {font-size:16px;}
 <script src="//cdn.bootcss.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
-<script src="//cdn.bootcss.com/highcharts/5.0.6/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/5.0.14/highcharts.js"></script>
 <script src="//cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>

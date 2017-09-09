@@ -89,7 +89,7 @@
     <?php if (strlen($number) == 18): ?>
     <div class="score row">
         <!--成绩曲线 begin-->
-        <div id="charts" class="col-xs-12 col-md-12 hidden-xs" style="margin-top:20px;"></div>
+        <div id="charts" class="hidden-xs" style="margin-top:20px;"></div>
         <!--成绩曲线 end-->
     </div>
 
