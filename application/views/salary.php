@@ -33,10 +33,10 @@
                     <button type="button" class="btn btn-primary circle">结余津贴<br><br><?php echo $salary['jyjt']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-warning circle">绩效工资<br>百分之70部分<br><br><?php echo $salary['jxgz70']; ?></button>
+                    <button type="button" class="btn btn-warning circle">绩效工资<br>百分之70部分<br><?php echo $salary['jxgz70']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-info circle">绩效工资<br>百分之30部分<br><br><?php echo $salary['jxgz30']; ?></button>
+                    <button type="button" class="btn btn-info circle">绩效工资<br>百分之30部分<br><?php echo $salary['jxgz30']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">卫生费<br><br><?php echo $salary['wsf']; ?></button>
@@ -99,58 +99,58 @@
                     <button type="button" class="btn btn-info circle">直达工资<br><br><?php echo $salary['zdgz']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-danger circle">弹性扣款后<br>实发数<br><br><?php echo $salary['txkkhsfs']; ?></button>
+                    <button type="button" class="btn btn-danger circle">弹性扣款后<br>实发数<br><?php echo $salary['txkkhsfs']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">补发增资<br><br><?php echo $salary['bfzz']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-primary circle">上月奖励<br>绩效工资</button>
+                    <button type="button" class="btn btn-primary circle">上月奖励<br>绩效工资<?php echo $salary['jxgz']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-warning circle">上月评估工资</button>
+                    <button type="button" class="btn btn-warning circle">上月评估工资<br><br><?php echo $salary['sypggz']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-info circle">期末评估</button>
+                    <button type="button" class="btn btn-info circle">期末评估<br><br><?php echo $salary['qmpg']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-danger circle">高考绩效</button>
+                    <button type="button" class="btn btn-danger circle">高考绩效<br><br><?php echo $salary['gkjx']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-success circle">补课费</button>
+                    <button type="button" class="btn btn-success circle">补课费<br><br><?php echo $salary['bkf']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-primary circle">高三定补</button>
+                    <button type="button" class="btn btn-primary circle">高三定补<br><br><?php echo $salary['gsdb']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-warning circle">月考补助</button>
+                    <button type="button" class="btn btn-warning circle">月考补助<br><br><?php echo $salary['ykbz']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-info circle">竞赛奖</button>
+                    <button type="button" class="btn btn-info circle">竞赛奖<br><br><?php echo $salary['jsj']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-danger circle">春季学期<br>文明单位奖</button>
+                    <button type="button" class="btn btn-danger circle">春季学期<br>文明单位奖<br><?php echo $salary['cjxqwmdwj']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-success circle">秋季学期<br>文明单位奖</button>
+                    <button type="button" class="btn btn-success circle">秋季学期<br>文明单位奖<br><?php echo $salary['qjxqwmdwj']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-primary circle">春季学期<br>综治先进奖</button>
+                    <button type="button" class="btn btn-primary circle">春季学期<br>综治先进奖<br><?php echo $salary['cjxqzzxjj']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-warning circle">秋季学期<br>综治先进奖</button>
+                    <button type="button" class="btn btn-warning circle">秋季学期<br>综治先进奖<br><?php echo $salary['qjxqzzxjj']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-info circle">教师补助</button>
+                    <button type="button" class="btn btn-info circle">教师补助<br><br><?php echo $salary['jsbz']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-danger circle">干部津贴</button>
+                    <button type="button" class="btn btn-danger circle">干部津贴<br><br><?php echo $salary['gbjt']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-success circle">兼课干部津贴</button>
+                    <button type="button" class="btn btn-success circle">兼课干部津贴<br><br><?php echo $salary['jkgbjt']; ?></button>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <button type="button" class="btn btn-primary circle">实发数合计</button>
+                    <button type="button" class="btn btn-primary circle">实发数合计<br><br><?php echo $salary['sfshj']; ?></button>
                 </div>
             </div>
             <!--工资详情 end-->
