@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-9">
             <!--工资详情 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>工资详情<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+            <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo substr($salary['timestamp'], 0, 4).'年'.substr($salary['timestamp'], 4, 2).'月'; ?>工资详情<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">岗位工资<br><br><?php echo $salary['gwgz']; ?></button>
                 </div>
