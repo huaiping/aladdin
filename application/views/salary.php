@@ -58,9 +58,11 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">会费<br><br><?php echo $salary['hf']; ?></button>
                 </div>
+                <?php if ($salary['sjgz'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">上交工资<br><br><?php echo $salary['sjgz']; ?></button>
                 </div>
+                <?php endif; ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">住房公积金<br><br><?php echo $salary['zfgjj']; ?></button>
                 </div>
@@ -83,21 +85,29 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">大病医保<br><br><?php echo $salary['dbyb']; ?></button>
                 </div>
+                <?php if ($salary['kx'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">扣息<br><br><?php echo $salary['kx']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['kk'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">扣款<br><br><?php echo $salary['kk']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['kjk'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">扣借款<br><br><?php echo $salary['kjk']; ?></button>
                 </div>
+                <?php endif; ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">扣党费<br><br><?php echo $salary['kdf']; ?></button>
                 </div>
+                <?php if ($salary['hyxf'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">华英学费<br><br><?php echo $salary['hyxf']; ?></button>
                 </div>
+                <?php endif; ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">扣款合计<br><br><?php echo $salary['kkhj']; ?></button>
                 </div>
@@ -119,42 +129,66 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">期末评估<br><br><?php echo $salary['qmpg']; ?></button>
                 </div>
+                <?php if ($salary['gkjx'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">高考绩效<br><br><?php echo $salary['gkjx']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['bkf'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">补课费<br><br><?php echo $salary['bkf']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['gsdb'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">高三定补<br><br><?php echo $salary['gsdb']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['ykbz'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">月考补助<br><br><?php echo $salary['ykbz']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['jsj'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">竞赛奖<br><br><?php echo $salary['jsj']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['cjxqwmdwj'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">春季学期<br>文明单位奖<br><?php echo $salary['cjxqwmdwj']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['qjxqwmdwj'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">秋季学期<br>文明单位奖<br><?php echo $salary['qjxqwmdwj']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['cjxqzzxjj'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">春季学期<br>综治先进奖<br><?php echo $salary['cjxqzzxjj']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['qjxqzzxjj'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">秋季学期<br>综治先进奖<br><?php echo $salary['qjxqzzxjj']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['jsbz'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">教师补助<br><br><?php echo $salary['jsbz']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['gbjt'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">干部津贴<br><br><?php echo $salary['gbjt']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['jkgbjt'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-success circle">兼课干部津贴<br><br><?php echo $salary['jkgbjt']; ?></button>
                 </div>
+                <?php endif; ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">实发数合计<br><br><?php echo $salary['sfshj']; ?></button>
                 </div>
