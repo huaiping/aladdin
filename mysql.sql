@@ -213,7 +213,7 @@ CREATE TABLE IF NOT EXISTS `swan_salary` (
   `gbjt` decimal(4,2) unsigned NOT NULL,
   `jkgbjt` decimal(4,2) unsigned NOT NULL,
   `sfshj` decimal(5,2) unsigned NOT NULL,
-  `timestamp` datetime NOT NULL,
+  `timestamp` int(6) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

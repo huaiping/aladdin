@@ -50,9 +50,11 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">所得税<br><br><?php echo $salary['sds']; ?></button>
                 </div>
+                <?php if ($salary['fz'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">房租<br><br><?php echo $salary['fz']; ?></button>
                 </div>
+                <?php endif; ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">会费<br><br><?php echo $salary['hf']; ?></button>
                 </div>
@@ -62,12 +64,16 @@
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">住房公积金<br><br><?php echo $salary['zfgjj']; ?></button>
                 </div>
+                <?php if ($salary['df'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-warning circle">电费<br><br><?php echo $salary['df']; ?></button>
                 </div>
+                <?php endif; ?>
+                <?php if ($salary['sf'] > 0): ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-info circle">水费<br><br><?php echo $salary['sf']; ?></button>
                 </div>
+                <?php endif; ?>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-danger circle">养老保险<br><br><?php echo $salary['ylbx']; ?></button>
                 </div>
