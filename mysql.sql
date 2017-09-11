@@ -199,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `swan_salary` (
   `bfzz` decimal(4,2) unsigned NOT NULL,
   `syjljxgz` decimal(4,2) unsigned NOT NULL,
   `sypggz` decimal(4,2) unsigned NOT NULL,
-  `qmpggz` decimal(4,2) unsigned NOT NULL,
+  `qmpg` decimal(4,2) unsigned NOT NULL,
   `gkjx` decimal(4,2) unsigned NOT NULL,
   `bukf` decimal(4,2) unsigned NOT NULL,
   `gsdb` decimal(4,2) unsigned NOT NULL,
