@@ -133,12 +133,12 @@
 </section>
 
 <script>
-    jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo site_url(); ?>/score"});
+    jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo site_url('score'); ?>"});
 </script>
 
 <?php if (strlen($number) == 18): ?>
 <script>
-$(function () { 
+$(function(){ 
     $('#charts').highcharts({
         chart: {
             type: 'line'
