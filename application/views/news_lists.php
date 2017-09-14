@@ -78,7 +78,7 @@
 
 <script src="//unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
 <script>
-$(document).ready(function(){
+$(function(){
     $('.article-feed').infiniteScroll({
         path: '.pagination__next',
         append: '.news',

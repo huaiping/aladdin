@@ -254,19 +254,19 @@
 </section>
 
 <script>
-    function AutoScroll(){
-        var _scroll = $("#slide>ul");
-        _scroll.animate({marginLeft:"-150px"},1000,function(){//ul往左边移动150px
-            _scroll.css({marginLeft:0}).find("li:first").appendTo(_scroll);
-        });
-    }
-    $(function(){
-        $("[data-toggle='tooltip']").tooltip();//友情链接鼠标悬停提示
-        var _scrolling=setInterval("AutoScroll()",3000);//精彩图片展轮播
-        $("#slide>ul").hover(function(){
-            clearInterval(_scrolling);
-        },function(){
-            _scrolling=setInterval("AutoScroll()",3000);
-        });
+function AutoScroll(){
+    var _scroll = $("#slide>ul");
+    _scroll.animate({marginLeft:"-150px"},1000,function(){//ul往左边移动150px
+        _scroll.css({marginLeft:0}).find("li:first").appendTo(_scroll);
     });
+}
+$(function(){
+    $("[data-toggle='tooltip']").tooltip();//友情链接鼠标悬停提示
+    var _scrolling=setInterval("AutoScroll()",3000);//精彩图片展轮播
+    $("#slide>ul").hover(function(){
+        clearInterval(_scrolling);
+    },function(){
+        _scrolling=setInterval("AutoScroll()",3000);
+    });
+});
 </script>

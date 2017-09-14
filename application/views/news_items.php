@@ -113,14 +113,14 @@
     jQuery('#qrcode').qrcode({width:200, height:200, text:"<?php echo current_url(); ?>"});
 </script>
 <script>
-    $(function(){
-        $('#comment').ajaxForm(function() {
-            if ($("#content").val().length < 2) {
-                alert("评论不能为空");
-                return false;
-            }
-            alert("评论发表成功，谢谢参与！");
-            $('#comment').clearForm();
-        });
+$(function(){
+    $('#comment').ajaxForm(function() {
+        if ($("#content").val().length < 2) {
+            alert("评论不能为空");
+            return false;
+        }
+        alert("评论发表成功，谢谢参与！");
+        $('#comment').clearForm();
     });
+});
 </script>

@@ -60,7 +60,7 @@
 </section>
 
 <script>
-$(function() {
+$(function(){
     var editor = KindEditor.create('textarea[name="content"]', {
         resizeType : 1,
         pasteType : 1,

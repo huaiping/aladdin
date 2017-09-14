@@ -64,6 +64,7 @@ blockquote p {font-size:16px;}
 .galcolumn .item p {height:40px; padding-top:10px; text-align:center;}
 /* exam */
 .exam-pagination li.disabled a {pointer-events:none; cursor:default;}
+#survey label.error {color:red;}
 /*html {-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -ms-filter:grayscale(100%); -o-filter:grayscale(100%); filter:grayscale(100%); filter:gray;}*/
 </style>
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>

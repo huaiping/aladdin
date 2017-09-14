@@ -51,15 +51,15 @@
 </section>
 
 <script>
-    var videoPlayer = document.getElementById("videoPlayer");
-    document.addEventListener("visibilitychange", function() {//非活动标签暂停播放
-        if (document.hidden) {
-            $("#videoPlayer").animate({volume: 0}, 1000, "linear", function() {
-                videoPlayer.pause();
-            });
-        } else {
-            videoPlayer.play();
-            $("#videoPlayer").animate({volume: 1}, 1000, "linear");
-        }
-    });
+var videoPlayer = document.getElementById("videoPlayer");
+document.addEventListener("visibilitychange", function() {//非活动标签暂停播放
+    if (document.hidden) {
+        $("#videoPlayer").animate({volume: 0}, 1000, "linear", function() {
+            videoPlayer.pause();
+        });
+    } else {
+        videoPlayer.play();
+        $("#videoPlayer").animate({volume: 1}, 1000, "linear");
+    }
+});
 </script>

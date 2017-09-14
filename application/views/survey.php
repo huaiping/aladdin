@@ -557,11 +557,6 @@ window.onload=function(){
     $('.selectpicker').selectpicker();
 };
 </script>
-
-<style type="text/css">
-#survey label.error {color:red;}
-</style>
-
 <script>
 $(function(){
     $.validator.setDefaults({ ignore: ':hidden:not(.selectpicker)' });
