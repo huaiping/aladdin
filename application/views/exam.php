@@ -13,7 +13,7 @@
         <div class="col-md-9" style="margin-bottom:45px;">
             <!--左侧试题区 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>试题<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>试题<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <!--题号 begin-->
                 <nav aria-label="Page navigation" style="margin-top:-20px;">
                     <ul class="pagination pagination-lg exam-pagination">
@@ -67,7 +67,7 @@
         <div class="col-xs-12 col-md-3">
             <!--右侧考试信息和倒计时 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>考试信息<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>考试信息<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     00:40:00
                 </ul>
