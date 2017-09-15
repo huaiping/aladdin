@@ -123,7 +123,7 @@
         <div class="col-md-2ths hidden-xs hidden-sm">
             <!--人生寄语 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>人生寄语<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>人生寄语<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <blockquote>
                     <p class="text-primary">志向决定方向 态度决定高度</p>
                     <p class="text-primary">心灵的强大决定潜能的巨大</p>
@@ -137,7 +137,7 @@
         <div class="col-md-3ths">
             <!--校园新闻 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>校园新闻<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>校园新闻<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($reports as $report): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$report['id']); ?>"><?php echo $report['title']; ?></a></li>
@@ -149,7 +149,7 @@
         <div class="col-md-3ths">
             <!--视频点播 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>视频点播<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>视频点播<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($videos as $video): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
@@ -164,7 +164,7 @@
         <div class="col-md-12 hidden-xs">
             <!--滚动图片展示 begin-->
             <div id="slide" class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>精彩图片展<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>精彩图片展<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($slides as $slide): ?>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
@@ -182,7 +182,7 @@
         <div class="col-md-2ths hidden-xs">
             <!--专题推荐 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>专题推荐<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>专题推荐<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><a href="#">2014年高考成绩</a></li>
                     <li class="widget-links_item"><a href="#">第四届体育科技艺术节</a><li>
@@ -202,7 +202,7 @@
         <div class="col-md-3ths">
             <!--最新资源 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>最新资源<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>最新资源<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($downloads as $download): ?>
                     <li class="widget-links_item ellipsis">[<?php echo $download['category']; ?>]<a href="<?php echo site_url('download/view/'.$download['id'])?>"><?php echo $download['title']; ?></a></li>
@@ -214,7 +214,7 @@
         <div class="col-md-3ths">
             <!--教学教研 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>教学教研<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info"><h4>教学教研<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($teaching as $teach): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$teach['id']); ?>"><?php echo $teach['title']; ?></a></li>
@@ -239,7 +239,7 @@
         <div class="col-md-12 hidden-xs" style="margin-bottom:20px;">
             <!--友情链接 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>友情链接<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger"><h4>友情链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                 <?php foreach ($friendsites as $links): ?>
                     <li class="col-md-2 pull-left" style="height:30px; line-height:30px;">
