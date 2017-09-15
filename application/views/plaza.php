@@ -33,7 +33,7 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的投稿<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($articles as $article): ?>
-                        <li class="widget-links_item">
+                        <li class="widget-links_item ellipsis">
                             <?php if ($article['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
@@ -51,7 +51,7 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的相册<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($albums as $album): ?>
-                        <li class="widget-links_item">
+                        <li class="widget-links_item ellipsis">
                             <?php if ($album['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
@@ -69,7 +69,7 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的文件<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($files as $file): ?>
-                        <li class="widget-links_item">
+                        <li class="widget-links_item ellipsis">
                             <?php if ($file['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
@@ -87,7 +87,7 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的留言<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($messages as $message): ?>
-                        <li class="widget-links_item">
+                        <li class="widget-links_item ellipsis">
                             <?php if ($message['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
@@ -105,7 +105,7 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的视频<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($videos as $video): ?>
-                        <li class="widget-links_item">
+                        <li class="widget-links_item ellipsis">
                             <?php if ($video['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
@@ -123,7 +123,7 @@
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的链接<span class="pull-right glyphicon glyphicon-menu-hamburger" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                     <?php foreach ($links as $link): ?>
-                        <li class="widget-links_item">
+                        <li class="widget-links_item ellipsis">
                             <?php if ($link['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
