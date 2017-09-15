@@ -33,7 +33,7 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审投稿<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($articles as $article): ?>
+                        <?php foreach ($articles as $article): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span><a href="<?php echo site_url('news/preview/'.$article['id']); ?>"><?php echo $article['title']; ?></a>
                         </li>
@@ -42,7 +42,7 @@
                             <a href="#" data-action="news" data-id="<?php echo $article['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="news" data-id="<?php echo $article['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--投稿 end-->
@@ -55,7 +55,7 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审相册<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($albums as $album): ?>
+                        <?php foreach ($albums as $album): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('photo/preview/'.$album['id']); ?>"><?php echo $album['title']; ?></a>
                         </li>
@@ -64,7 +64,7 @@
                             <a href="#" data-action="photo" data-id="<?php echo $album['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="photo" data-id="<?php echo $album['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--相册 end-->
@@ -77,7 +77,7 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审文件<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($files as $file): ?>
+                        <?php foreach ($files as $file): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('download/preview/'.$file['id']); ?>"><?php echo $file['title']; ?></a>
                         </li>
@@ -86,7 +86,7 @@
                             <a href="#" data-action="download" data-id="<?php echo $file['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="download" data-id="<?php echo $file['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--文件 end-->
@@ -99,7 +99,7 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审留言<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($messages as $message): ?>
+                        <?php foreach ($messages as $message): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('guestbook/preview'); ?>"><?php echo $message['title']; ?></a>
                         </li>
@@ -108,7 +108,7 @@
                             <a href="#" data-action="guestbook" data-id="<?php echo $message['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="guestbook" data-id="<?php echo $message['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--留言 end-->
@@ -121,7 +121,7 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审视频<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($videos as $video): ?>
+                        <?php foreach ($videos as $video): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('video/preview/'.$video['id']); ?>"><?php echo $video['title']; ?></a>
                         </li>
@@ -130,7 +130,7 @@
                             <a href="#" data-action="video" data-id="<?php echo $video['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="video" data-id="<?php echo $video['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--视频 end-->
@@ -143,7 +143,7 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>待审链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($links as $link): ?>
+                        <?php foreach ($links as $link): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
                             <span class="badge badge-danger">待审</span> <?php echo $link['title']; ?><a href="javascript:void(0);" title="<?php echo $link['description']; ?>" style="margin-left:15px;"><?php echo $link['url']; ?></a>
                         </li>
@@ -152,7 +152,7 @@
                             <a href="#" data-action="links" data-id="<?php echo $link['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="links" data-id="<?php echo $link['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--链接 end-->
@@ -163,7 +163,7 @@
 </section>
 
 <script>
-$(document).ready(function(){
+$(function(){
     //var get_csrf_token_name = '<?php echo $this->security->get_csrf_token_name() ?>';
     //var cct = '<?php echo $this->security->get_csrf_hash() ?>';
     $("a.link").on("click",function(){

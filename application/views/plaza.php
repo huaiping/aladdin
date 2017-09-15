@@ -32,14 +32,14 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的投稿<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($articles as $article): ?>
+                        <?php foreach ($articles as $article): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($article['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $article['title']; ?></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--投稿 end-->
@@ -50,14 +50,14 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的相册<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($albums as $album): ?>
+                        <?php foreach ($albums as $album): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($album['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $album['title']; ?></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--相册 end-->
@@ -68,14 +68,14 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的文件<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($files as $file): ?>
+                        <?php foreach ($files as $file): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($file['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $file['title']; ?></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--文件 end-->
@@ -86,14 +86,14 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的留言<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($messages as $message): ?>
+                        <?php foreach ($messages as $message): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($message['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $message['title']; ?></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--留言 end-->
@@ -104,14 +104,14 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的视频<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($videos as $video): ?>
+                        <?php foreach ($videos as $video): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($video['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $video['title']; ?></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--视频 end-->
@@ -122,14 +122,14 @@
                 <div class="widget-box no-border">
                     <div class="widget-box_title bs-callout bs-callout-info"><h4>我的链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
-                    <?php foreach ($links as $link): ?>
+                        <?php foreach ($links as $link): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($link['status'] == 'pending'): ?>
                                 <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $link['title']; ?></a>
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!--链接 end-->

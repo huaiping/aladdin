@@ -52,7 +52,7 @@
             <!--分页导航 begin-->
             <nav>
                 <ul class="pager">
-                <?php echo $down_page; ?>
+                    <?php echo $down_page; ?>
                 </ul>
             </nav>
             <!--分页导航 end-->

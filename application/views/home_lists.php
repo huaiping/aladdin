@@ -70,38 +70,38 @@
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="home">
                         <ul class="tab-links list-unstyled">
-                        <?php for ($i=0; $i<count($latest); $i++): ?>
+                            <?php for ($i=0; $i<count($latest); $i++): ?>
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$latest[$i]['id']); ?>"><?php echo $latest[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($latest[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor; ?>
+                            <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="teacher">
                         <ul class="tab-links list-unstyled">
-                        <?php for ($i=0; $i<count($teachers); $i++): ?>
+                            <?php for ($i=0; $i<count($teachers); $i++): ?>
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$teachers[$i]['id']); ?>"><?php echo $teachers[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($teachers[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor; ?>
+                            <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="student">
                         <ul class="tab-links list-unstyled">
-                        <?php for ($i=0; $i<count($students); $i++): ?>
+                            <?php for ($i=0; $i<count($students); $i++): ?>
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$students[$i]['id']); ?>"><?php echo $students[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($students[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor; ?>
+                            <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="parent">
                         <ul class="tab-links list-unstyled">
-                        <?php for ($i=0; $i<count($parents); $i++): ?>
+                            <?php for ($i=0; $i<count($parents); $i++): ?>
                             <li class="widget-links_item<?php if ($i>8) { echo ' hidden-sm'; } ?>">
                                 <a href="<?php echo site_url('news/view/'.$parents[$i]['id']); ?>"><?php echo $parents[$i]['title']; ?></a><span class="pull-right text-danger hidden-xs"><?php echo substr($parents[$i]['pubtime'],0,10); ?></span>
                             </li>
-                        <?php endfor; ?>
+                            <?php endfor; ?>
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="notice">
@@ -139,9 +139,9 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>校园新闻<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                <?php foreach ($reports as $report): ?>
+                    <?php foreach ($reports as $report): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$report['id']); ?>"><?php echo $report['title']; ?></a></li>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <!--校园新闻 end-->
@@ -151,9 +151,9 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>视频点播<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                <?php foreach ($videos as $video): ?>
+                    <?php foreach ($videos as $video): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a></li>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <!--视频点播 end-->
@@ -166,9 +166,9 @@
             <div id="slide" class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>精彩图片展<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                <?php foreach ($slides as $slide): ?>
+                    <?php foreach ($slides as $slide): ?>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a></li>
                     <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a></li>
@@ -204,9 +204,9 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>最新资源<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                <?php foreach ($downloads as $download): ?>
+                    <?php foreach ($downloads as $download): ?>
                     <li class="widget-links_item ellipsis">[<?php echo $download['category']; ?>]<a href="<?php echo site_url('download/view/'.$download['id'])?>"><?php echo $download['title']; ?></a></li>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <!--最新资源 end-->
@@ -216,9 +216,9 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>教学教研<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                <?php foreach ($teaching as $teach): ?>
+                    <?php foreach ($teaching as $teach): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('news/view/'.$teach['id']); ?>"><?php echo $teach['title']; ?></a></li>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <!--教学教研 end-->
@@ -241,11 +241,11 @@
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>友情链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
-                <?php foreach ($friendsites as $links): ?>
+                    <?php foreach ($friendsites as $links): ?>
                     <li class="col-md-2 pull-left" style="height:30px; line-height:30px;">
                         <a href="<?php echo $links['url']; ?>" data-toggle="tooltip" title="<?php echo $links['description']; ?>"><?php echo $links['title']; ?></a>
                     </li>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <!--友情链接 end-->
