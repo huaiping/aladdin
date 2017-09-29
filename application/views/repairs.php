@@ -9,7 +9,7 @@
         <!--顶部通栏 end-->
     </div>
 
-    <div class="exam row">
+    <div class="repairs row">
         <div class="col-md-3" style="margin-bottom:45px;">
             <!--左侧通知区 begin-->
             <div class="widget-box no-border">
