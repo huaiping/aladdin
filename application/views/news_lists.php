@@ -76,7 +76,6 @@
     </div>
 </section>
 
-<script src="//unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
 <script>
 $(function(){
     $('.article-feed').infiniteScroll({
