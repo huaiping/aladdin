@@ -64,7 +64,7 @@
             <!--左侧试题区 end-->
         </div>
 
-        <div class="col-xs-12 col-md-3">
+        <div class="col-md-3">
             <!--右侧考试信息和倒计时 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger"><h4>考试信息<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
