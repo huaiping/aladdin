@@ -7,13 +7,24 @@ class Repairs extends CI_Controller {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form', 'url'));
+        $this->load->model('repairs_model');
     }
 
     public function index()
     {
-        $this->load->view('header');
-        $this->load->view('login');
-        $this->load->view('footer');
+        if ($this->is_login())
+        {
+            $this->load->view('header');
+            $this->load->view('repairs');
+            $this->load->view('footer');
+        }
+        else
+        {
+            $this->session->set_userdata('goto', $this->uri->uri_string());
+            $this->load->view('header');
+            $this->load->view('login');
+            $this->load->view('footer');
+        }
     }
 
     public function is_login()
