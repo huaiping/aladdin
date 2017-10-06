@@ -13,7 +13,9 @@
         <div class="col-md-3" style="margin-bottom:45px;">
             <!--左侧通知区 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>通知<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger">
+                    <h4>通知<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                </div>
                 <!--通知 begin-->
                 <ul class="widget-links list-unstyled">
                 </ul>
@@ -25,7 +27,9 @@
         <div class="col-xs-12 col-md-9">
             <!--右侧报修区 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4>报修<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info">
+                    <h4>报修<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                </div>
                 <ul class="widget-links list-unstyled">
                 </ul>
             </div>

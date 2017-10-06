@@ -12,7 +12,9 @@
     <div class="photos row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-info"><h4><?php echo $photos[0]['category'].'_'.$photos[0]['subcategory']; ?></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-info">
+                    <h4><?php echo $photos[0]['category'].'_'.$photos[0]['subcategory']; ?></h4>
+                </div>
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">

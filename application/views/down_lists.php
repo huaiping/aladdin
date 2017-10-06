@@ -13,7 +13,9 @@
         <div class="col-md-3 hidden-xs hidden-sm">
             <!--左侧热门资源 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>热门资源<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger">
+                    <h4>热门资源<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($down_hot as $hot): ?>
                     <li class="widget-links_item ellipsis"><a href="<?php echo site_url('download/view/'.$hot['id']); ?>"><?php echo $hot['title']; ?></a></li>

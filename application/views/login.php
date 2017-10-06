@@ -51,16 +51,12 @@
                                     </div>
                                 </form>
                             </div>
-                            <?php
-                                if (!empty(validation_errors())) {
-                            ?>
-                                <div class="alert alert-danger alert-dismissible text-center" role="alert">
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <strong><?php echo validation_errors(); ?></strong>
-                                </div>
-                            <?php
-                                }
-                            ?>
+                            <?php if (!empty(validation_errors())): ?>
+                            <div class="alert alert-danger alert-dismissible text-center" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong><?php echo validation_errors(); ?></strong>
+                            </div>
+                            <?php endif; ?>
                             <div class="alert alert-warning text-center" role="alert">
                                 <strong>还没有账号？赶紧注册吧！</strong>
                             </div>
@@ -105,16 +101,12 @@
                                     </div>
                                 </form>
                             </div>
-                            <?php
-                                if (!empty(validation_errors())) {
-                            ?>
-                                <div class="alert alert-danger alert-dismissible text-center" role="alert">
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <strong><?php echo validation_errors(); ?></strong>
-                                </div>
-                            <?php
-                                }
-                            ?>
+                            <?php if (!empty(validation_errors())): ?>
+                            <div class="alert alert-danger alert-dismissible text-center" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong><?php echo validation_errors(); ?></strong>
+                            </div>
+                            <?php endif; ?>
                             <!--用户注册 end-->
                         </div>
                     </div>

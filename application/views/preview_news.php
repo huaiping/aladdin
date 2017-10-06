@@ -22,7 +22,9 @@
         <div class="col-md-3 hidden-xs">
             <!--推荐新闻 begin-->
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>推荐新闻<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger">
+                    <h4>推荐新闻<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><a href="#">2014年高考成绩</a></li>
                     <li class="widget-links_item"><a href="#">第四届体育科技艺术节</a><li>
@@ -40,7 +42,9 @@
             <!--推荐新闻 end-->
 
             <div class="widget-box no-border">
-                <div class="widget-box_title bs-callout bs-callout-danger"><h4>二维码<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                <div class="widget-box_title bs-callout bs-callout-danger">
+                    <h4>二维码<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                </div>
                 <div id="qrcode" class="text-center"></div>
             </div>
         </div>

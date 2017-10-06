@@ -30,7 +30,9 @@
            <div class="col-md-6">
                 <!--投稿 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的投稿<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>我的投稿<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($articles as $article): ?>
                         <li class="widget-links_item ellipsis">
@@ -48,7 +50,9 @@
             <div class="col-md-6">
                 <!--相册 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的相册<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>我的相册<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($albums as $album): ?>
                         <li class="widget-links_item ellipsis">
@@ -66,7 +70,9 @@
             <div class="col-md-6">
                 <!--文件 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的文件<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>我的文件<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($files as $file): ?>
                         <li class="widget-links_item ellipsis">
@@ -84,7 +90,9 @@
             <div class="col-md-6">
                 <!--留言 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的留言<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>我的留言<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($messages as $message): ?>
                         <li class="widget-links_item ellipsis">
@@ -102,7 +110,9 @@
             <div class="col-md-6">
                 <!--视频 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的视频<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>我的视频<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($videos as $video): ?>
                         <li class="widget-links_item ellipsis">
@@ -120,7 +130,9 @@
             <div class="col-md-6">
                 <!--链接 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>我的链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>我的链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($links as $link): ?>
                         <li class="widget-links_item ellipsis">

@@ -31,7 +31,9 @@
            <div class="col-md-12">
                 <!--投稿 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审投稿<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>待审投稿<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($articles as $article): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
@@ -53,7 +55,9 @@
             <div class="col-md-12">
                 <!--相册 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审相册<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>待审相册<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($albums as $album): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
@@ -75,7 +79,9 @@
             <div class="col-md-12">
                 <!--文件 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审文件<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>待审文件<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($files as $file): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
@@ -97,7 +103,9 @@
             <div class="col-md-12">
                 <!--留言 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审留言<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>待审留言<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($messages as $message): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
@@ -119,7 +127,9 @@
             <div class="col-md-12">
                 <!--视频 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审视频<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>待审视频<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($videos as $video): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
@@ -141,7 +151,9 @@
             <div class="col-md-12">
                 <!--链接 begin-->
                 <div class="widget-box no-border">
-                    <div class="widget-box_title bs-callout bs-callout-info"><h4>待审链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
+                    <div class="widget-box_title bs-callout bs-callout-info">
+                        <h4>待审链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    </div>
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($links as $link): ?>
                         <li class="col-sm-7 col-md-8 widget-links_item ellipsis">
