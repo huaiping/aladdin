@@ -62,6 +62,10 @@ blockquote p {font-size:16px;}
 .galcolumn .item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
 .galcolumn .item img {width:100%; height:auto; border-top-left-radius:0.2em; border-top-right-radius:0.2em;}
 .galcolumn .item p {height:40px; padding-top:10px; text-align:center;}
+/* video */
+video::-internal-media-controls-download-button {display:none;}
+video::-webkit-media-controls-enclosure {overflow:hidden;}
+video::-webkit-media-controls-panel {width: calc(100% + 30px);}
 /* exam */
 .exam-pagination li.disabled a {pointer-events:none; cursor:default;}
 #survey label.error {color:red;}

@@ -16,7 +16,7 @@
                 <div class="widget-box_title bs-callout bs-callout-info"><h4>视频：<?php echo $item['title']; ?><span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4></div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><!--仅支持ogg mp4 WebM格式-->
-                        <video id="videoPlayer" controls="controls" poster="<?php echo base_url('webroot/image/poster.png'); ?>" class="col-xs-12 col-sm-12 col-md-12">
+                        <video id="videoPlayer" controls="controls" class="col-xs-12 col-sm-12 col-md-12">
                             <source src="<?php echo base_url($item['url']); ?>" type="video/<?php echo substr($item['url'], strrpos($item['url'], '.')+1); ?>">
                         </video>
                     </li>
@@ -51,6 +51,9 @@
 </section>
 
 <script>
+$('#videoPlayer').bind('contextmenu',function() {
+    return false;
+});
 var videoPlayer = document.getElementById("videoPlayer");
 document.addEventListener("visibilitychange", function() {//非活动标签暂停播放
     if (document.hidden) {
