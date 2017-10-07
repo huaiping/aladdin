@@ -21,9 +21,7 @@ class Repairs extends CI_Controller {
         else
         {
             $this->session->set_userdata('goto', $this->uri->uri_string());
-            $this->load->view('header');
-            $this->load->view('login');
-            $this->load->view('footer');
+            redirect('membership');
         }
     }
 
@@ -44,7 +42,7 @@ class Repairs extends CI_Controller {
         );
         $data = $this->security->xss_clean($data);
         $this->repairs_model->repairsPost($data);
-        //redirect('membership/plaza');
+        redirect('membership/plaza');
     }
 
     public function is_login()

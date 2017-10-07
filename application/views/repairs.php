@@ -88,7 +88,7 @@
                     </div>
                     <div class="form-group">
                         <label for="telephone" class="col-xs-3 col-sm-3 col-md-3 control-label">联系电话</label>
-                        <div class="col-xs-9 col-sm-9 col-md-7"><input type="text" class="form-control" id="telephone" name="telephone" required="required"></div>
+                        <div class="col-xs-9 col-sm-9 col-md-7"><input type="text" class="form-control" id="telephone" name="telephone" maxlength="11" required="required"></div>
                     </div>
                     <div class="form-group">
                         <div class="text-center" style="margin-top:10px; margin-bottom:10px;">

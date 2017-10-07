@@ -22,9 +22,7 @@ class Exam extends CI_Controller {
         else
         {
             $this->session->set_userdata('goto', $this->uri->uri_string());
-            $this->load->view('header');
-            $this->load->view('login');
-            $this->load->view('footer');
+            redirect('membership');
         }
     }
 
