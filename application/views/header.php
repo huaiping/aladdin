@@ -17,6 +17,9 @@ body {padding-top:70px;}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color:#fff;}
 .navbar-default .navbar-nav > li > a {color:#fff;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color:#337ab7; background-color:#fff;}
+.navbar-default .navbar-toggle {border-color:#fff;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color:transparent;}
+.navbar-default .navbar-toggle .icon-bar {background-color:#fff;}
 /*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {color:#00a2ca; background-color:#fff;}*/
 /*.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color:#00a2ca; background-color:#fff;}*/
 /*.navbar-default .navbar-nav > .dropdown > a .caret {border-top-color:#777; border-bottom-color:#777; color:#fff;}*/

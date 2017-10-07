@@ -18,6 +18,9 @@ body {padding-top:70px;}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color:#fff;}
 .navbar-default .navbar-nav > li > a {color:#fff;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color:#337ab7; background-color:#fff;}
+.navbar-default .navbar-toggle {border-color:#fff;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color:transparent;}
+.navbar-default .navbar-toggle .icon-bar {background-color:#fff;}
 .footer {background:#337ab7; border-color:#e7e7e7; color:#fff;}
 .membership {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .bs-callout {padding:5px; margin:5px 0; border:1px solid #eee; border-left-width:5px; border-radius:3px;}
