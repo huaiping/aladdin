@@ -12,20 +12,18 @@ class Repairs extends CI_Controller {
 
     public function index()
     {
-        if ($this->is_login())
-        {
-            $this->load->view('header');
-            $this->load->view('repairs');
-            $this->load->view('footer');
-        }
-        else
-        {
-            //$this->session->set_userdata('goto', $this->uri->uri_string());
-            $data['repairs_list'] = $this->repairs_model->get_lists();
-            $this->load->view('header');
-            $this->load->view('repairs_lists', $data);
-            $this->load->view('footer');
-        }
+        //$this->session->set_userdata('goto', $this->uri->uri_string());
+        $data['repairs_list'] = $this->repairs_model->get_lists();
+        $this->load->view('header');
+        $this->load->view('repairs_lists', $data);
+        $this->load->view('footer');
+    }
+
+    public function report()
+    {
+        $this->load->view('header');
+        $this->load->view('repairs');
+        $this->load->view('footer');
     }
 
     public function post()
@@ -45,7 +43,7 @@ class Repairs extends CI_Controller {
         );
         $data = $this->security->xss_clean($data);
         $this->repairs_model->repairsPost($data);
-        redirect('membership/plaza');
+        redirect('repairs');
     }
 
     public function is_login()

@@ -16,7 +16,7 @@
                 <div class="widget-box_title bs-callout bs-callout-danger">
                     <h4>报修通道<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
-                <p class="text-center"><button type="button" class="btn btn-success btn-lg"><i class="fa fa-wrench"></i> 我要报修</button></p>
+                <p class="text-center"><a class="btn btn-success btn-lg" href="<?php echo site_url('repairs/report'); ?>" role="button"><i class="fa fa-wrench"></i> 我要报修</a></p>
             </div>
 
             <div class="widget-box no-border">
