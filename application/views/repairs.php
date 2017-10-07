@@ -101,3 +101,9 @@
         </div>
     </div>
 </section>
+
+<script>
+window.onload=function(){
+    $('.selectpicker').selectpicker();
+};
+</script>
