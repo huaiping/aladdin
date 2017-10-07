@@ -27,6 +27,26 @@ class Repairs extends CI_Controller {
         }
     }
 
+    public function post()
+    {
+        $now = date("Y-m-d H:i:s");
+        $data = array(
+            'category' => $this->input->post('category'),
+            'department' => $this->input->post('department'),
+            'item' => $this->input->post('item'),
+            'address' => $this->input->post('address'),
+            'details' => $this->input->post('details'),
+            'customer' => $this->input->post('customer'),
+            'telephone' => $this->input->post('telephone'),
+            'pubtime' => $now,
+            'status' => 'pending',
+            'assessment' => ''
+        );
+        $data = $this->security->xss_clean($data);
+        $this->repairs_model->repairsPost($data);
+        //redirect('membership/plaza');
+    }
+
     public function is_login()
     {
         $status = $this->session->userdata('username');

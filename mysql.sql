@@ -133,7 +133,7 @@ CREATE TABLE IF NOT EXISTS `swan_repairs` (
   `address` varchar(255) NOT NULL,
   `details` varchar(255) NOT NULL,
   `customer` varchar(255) NOT NULL,
-  `telephone` int(11) NOT NULL,
+  `telephone` varchar(11) NOT NULL,
   `pubtime` datetime NOT NULL,
   `status` varchar(255) NOT NULL,
   `assessment` varchar(255) NOT NULL,
