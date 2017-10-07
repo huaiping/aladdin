@@ -59,14 +59,14 @@
                         <div class="col-xs-9 col-sm-9 col-md-4">
                             <select class="selectpicker form-control" id="department" name="department">
                                 <option value="0">选择部门</option>
-                                <option value="F5East1">主教学楼五楼东一</option>
-                                <option value="F5East2">主教学楼五楼东二</option>
-                                <option value="F5East3">主教学楼五楼东三</option>
-                                <option value="F5East4">主教学楼五楼东四</option>
-                                <option value="F5East5">主教学楼五楼东五</option>
-                                <option value="F5East6">主教学楼五楼东六</option>
-                                <option value="F5East7">主教学楼五楼东七</option>
-                                <option value="F5East8">主教学楼五楼东八</option>
+                                <option value="主教学楼五楼东一">主教学楼五楼东一</option>
+                                <option value="主教学楼五楼东二">主教学楼五楼东二</option>
+                                <option value="主教学楼五楼东三">主教学楼五楼东三</option>
+                                <option value="主教学楼五楼东四">主教学楼五楼东四</option>
+                                <option value="主教学楼五楼东五">主教学楼五楼东五</option>
+                                <option value="主教学楼五楼东六">主教学楼五楼东六</option>
+                                <option value="主教学楼五楼东七">主教学楼五楼东七</option>
+                                <option value="主教学楼五楼东八">主教学楼五楼东八</option>
                             </select>
                         </div>
                     </div>

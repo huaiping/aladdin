@@ -20,8 +20,11 @@ class Repairs extends CI_Controller {
         }
         else
         {
-            $this->session->set_userdata('goto', $this->uri->uri_string());
-            redirect('membership');
+            //$this->session->set_userdata('goto', $this->uri->uri_string());
+            $data['repairs_list'] = $this->repairs_model->get_lists();
+            $this->load->view('header');
+            $this->load->view('repairs_lists', $data);
+            $this->load->view('footer');
         }
     }
 
