@@ -125,6 +125,20 @@ CREATE TABLE IF NOT EXISTS `swan_photo` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS `swan_repairs` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `category` varchar(255) NOT NULL,
+  `department` varchar(255) NOT NULL,
+  `item` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `details` varchar(255) NOT NULL,
+  `customer` varchar(255) NOT NULL,
+  `telephone` int(11) NOT NULL,
+  `pubtime` datetime NOT NULL,
+  `status` varchar(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE IF NOT EXISTS `swan_score` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `xh` varchar(18) NOT NULL,
