@@ -135,7 +135,8 @@ CREATE TABLE IF NOT EXISTS `swan_repairs` (
   `customer` varchar(255) NOT NULL,
   `telephone` int(11) NOT NULL,
   `pubtime` datetime NOT NULL,
-  `status` varchar(8) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `assessment` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
