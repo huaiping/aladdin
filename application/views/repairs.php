@@ -10,7 +10,7 @@
     </div>
 
     <div class="repairs row">
-        <div class="col-md-3" style="margin-bottom:45px;">
+        <div class="col-md-3 hidden-xs" style="margin-bottom:45px;">
             <!--左侧通知区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
@@ -92,7 +92,7 @@
                     </div>
                     <div class="form-group">
                         <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
-                            <button type="submit" class="btn btn-success"><i class="fa fa-wrench"></i> 报修</button>
+                            <button type="submit" class="btn btn-success"><i class="fa fa-wrench"></i> 提交报修单</button>
                         </div>
                     </div>
                 </form>

@@ -28,7 +28,7 @@ class Video_model extends CI_Model {
     {
         $this->db->order_by('hits', 'DESC');
         $this->db->limit(15);
-        $query = $this->db->get('swan_video');
+        $query = $this->db->get_where('swan_video', array('status' => 'passed'));
         return $query->result_array();
     }
 
