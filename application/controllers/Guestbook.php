@@ -41,6 +41,37 @@ class Guestbook extends CI_Controller {
         $this->load->view('footer');
     }
 
+    public function preview()
+    {
+        $this->load->library('pagination');
+        $config['base_url'] = site_url('/guestbook/page/');
+        $config['total_rows'] = $this->db->count_all('swan_guestbook');
+        $config['per_page'] = 10;
+        $config['use_page_numbers'] = TRUE;
+        $config['display_pages'] = FALSE;
+        $config['first_tag_open'] = '<li>';
+        $config['first_tag_close'] = '</li>';
+        $config['prev_tag_open'] = '<li>';
+        $config['prev_tag_close'] = '</li>';
+        $config['cur_tag_open'] = '<li>';
+        $config['cur_tag_close'] = '</li>';
+        $config['next_tag_open'] = '<li>';
+        $config['next_tag_close'] = '</li>';
+        $config['last_tag_open'] = '<li>';
+        $config['last_tag_close'] = '</li>';
+        $config['first_link'] = '首页';
+        $config['prev_link'] = '上一页';
+        $config['next_link'] = '下一页';
+        $config['last_link'] = '末页';
+        $this->pagination->initialize($config);
+        $data['guestbook_page'] = $this->pagination->create_links();
+
+        $data['message'] = $this->guestbook_model->preview_messages($config['per_page'], 0);
+        $this->load->view('header');
+        $this->load->view('preview_guestbook', $data);
+        $this->load->view('footer');
+    }
+
     public function page($id = FALSE)
     {
         $this->load->library('pagination');

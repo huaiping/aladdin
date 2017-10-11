@@ -267,7 +267,7 @@ class Membership extends CI_Controller {
                     'author' => $this->input->post('username'),
                     'pubtime' => $now,
                     'sizes' => ceil($this->upload->data('file_size')),
-                    'license' => 'shareware',
+                    'license' => 'MIT',
                     'stars' => '★★★★★',
                     'status' => 'pending'
                 );

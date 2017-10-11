@@ -15,4 +15,13 @@ class Guestbook_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*公众互动 - 留言预览*/
+    public function preview_messages($slug = FALSE, $offset = FALSE)
+    {
+        $this->db->order_by('pubtime', 'DESC');
+        $this->db->limit($slug, $offset);
+        $query = $this->db->get_where('swan_guestbook', array('status' => 'pending'));
+        return $query->result_array();
+    }
+
 }

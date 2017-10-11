@@ -19,6 +19,13 @@ class Video_model extends CI_Model {
         $this->db->set('hits','hits + 1',FALSE);
         $this->db->update('swan_video');
 
+        $query = $this->db->get_where('swan_video', array('id' => $id, 'status' => 'passed'));
+        return $query->row_array();
+    }
+
+    /*视频 - 视频预览*/
+    public function preview_item($id = FALSE)
+    {
         $query = $this->db->get_where('swan_video', array('id' => $id));
         return $query->row_array();
     }

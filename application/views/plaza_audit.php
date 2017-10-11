@@ -112,7 +112,7 @@
                             <span class="badge badge-danger">待审</span> <a href="<?php echo site_url('guestbook/preview'); ?>"><?php echo $message['title']; ?></a>
                         </li>
                         <li class="col-sm-5 col-md-4 text-right">
-                            <a href="#"><span class="badge badge-info">预览</span></a>
+                            <a href="<?php echo site_url('guestbook/preview'); ?>"><span class="badge badge-info">预览</span></a>
                             <a href="#" data-action="guestbook" data-id="<?php echo $message['id']; ?>" data-status="passed" class="link"><span class="badge badge-success" style="margin-left:10px;">通过</span></a>
                             <a href="#" data-action="guestbook" data-id="<?php echo $message['id']; ?>" data-status="failed" class="link"><span class="badge badge-danger" style="margin-left:10px;">删除</span></a>
                         </li>
