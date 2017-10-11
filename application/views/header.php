@@ -10,6 +10,7 @@
 <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/fancybox/3.1.25/jquery.fancybox.min.css" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
@@ -55,10 +56,10 @@ blockquote p {font-size:16px;}
 .circle {width:120px; height:120px; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; margin-bottom:20px;}
 .circle, .circle:hover, .circle:focus, .circle:active, .circle:visited {border:none; outline:none;}
 /* custom grids */
-.col-xs-2ths, .col-sm-2ths, .col-md-2ths, .col-lg-2ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-2ths { width: 25%; float: left; } } @media ( min-width : 992px) { .col-md-2ths { width: 25%; float: left; } } @media ( min-width : 1200px) { .col-lg-2ths { width: 25%; float: left; } }
-.col-xs-3ths, .col-sm-3ths, .col-md-3ths, .col-lg-3ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-3ths { width: 37.5%; float: left; } } @media ( min-width : 992px) { .col-md-3ths { width: 37.5%; float: left; } } @media ( min-width : 1200px) { .col-lg-3ths { width: 37.5%; float: left; } }
-.col-xs-9ths, .col-sm-9ths, .col-md-9ths, .col-lg-9ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-9ths { width: 10%; float: left; } } @media ( min-width : 992px) { .col-md-9ths { width: 10%; float: left; } } @media ( min-width : 1200px) { .col-lg-9ths { width: 10%; float: left; } }
-.col-xs-11ths, .col-sm-11ths, .col-md-11ths, .col-lg-11ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media ( min-width : 768px) { .col-sm-11ths { width: 49%; float: left; } } @media ( min-width : 992px) { .col-md-11ths { width: 49%; float: left; } } @media ( min-width : 1200px) { .col-lg-11ths { width: 49%; float: left; } }
+.col-xs-2ths, .col-sm-2ths, .col-md-2ths, .col-lg-2ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media (min-width:768px) {.col-sm-2ths {width:25%; float:left;}} @media (min-width:992px) {.col-md-2ths {width:25%; float:left;}} @media (min-width:1200px) {.col-lg-2ths {width:25%; float:left;}}
+.col-xs-3ths, .col-sm-3ths, .col-md-3ths, .col-lg-3ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media (min-width:768px) {.col-sm-3ths {width:37.5%; float:left;}} @media (min-width:992px) {.col-md-3ths {width:37.5%; float:left;}} @media (min-width:1200px) {.col-lg-3ths {width:37.5%; float:left;}}
+.col-xs-9ths, .col-sm-9ths, .col-md-9ths, .col-lg-9ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media (min-width:768px) {.col-sm-9ths {width:10%; float:left;}} @media (min-width:992px) {.col-md-9ths {width:10%; float:left;}} @media (min-width:1200px) {.col-lg-9ths {width:10%; float:left;}}
+.col-xs-11ths, .col-sm-11ths, .col-md-11ths, .col-lg-11ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media (min-width:768px) {.col-sm-11ths {width:49%; float:left;}} @media (min-width:992px) {.col-md-11ths {width:49%; float:left;}} @media (min-width:1200px) {.col-lg-11ths {width:49%; float:left;}}
 /* waterfall */
 .galcolumn p {padding:5px 0;}
 .galcolumn .item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
@@ -67,7 +68,7 @@ blockquote p {font-size:16px;}
 /* video */
 video::-internal-media-controls-download-button {display:none;}
 video::-webkit-media-controls-enclosure {overflow:hidden;}
-video::-webkit-media-controls-panel {width: calc(100% + 30px);}
+video::-webkit-media-controls-panel {width:calc(100%+30px);}
 /* exam */
 .exam-pagination li.disabled a {pointer-events:none; cursor:default;}
 /* survey */
@@ -82,10 +83,11 @@ video::-webkit-media-controls-panel {width: calc(100% + 30px);}
 <script src="//cdn.bootcss.com/highcharts/5.0.14/highcharts.js"></script>
 <script src="//cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.2/infinite-scroll.pkgd.min.js"></script>
+<script src="//cdn.bootcss.com/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top compensate-for-scrollbar">
     <!--顶部导航栏 begin-->
     <div class="container bg-primary">
         <div class="navbar-header">
@@ -118,7 +120,7 @@ video::-webkit-media-controls-panel {width: calc(100% + 30px);}
                         <li><a href="//www.jiaobaowang.com">校讯通平台</a></li>
                         <li><a href="//www.51taoshi.com">淘师湾</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">test</a></li>
+                        <li><a href="#">图书馆</a></li>
                     </ul>
                 </li>
                 -->

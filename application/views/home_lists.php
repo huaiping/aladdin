@@ -175,11 +175,17 @@
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($slides as $slide): ?>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
+                    <li class="widget-links_item pull-left"><a data-fancybox href="<?php echo base_url($slide['thumbnail']); ?>"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
                     <?php endforeach; ?>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a></li>
-                    <li class="widget-links_item pull-left"><a href="#"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a></li>
+                    <li class="widget-links_item pull-left">
+                        <a data-fancybox href="<?php echo base_url('webroot/image/slide1.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a>
+                    </li>
+                    <li class="widget-links_item pull-left">
+                        <a data-fancybox href="<?php echo base_url('webroot/image/slide2.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a>
+                    </li>
+                    <li class="widget-links_item pull-left">
+                        <a data-fancybox href="<?php echo base_url('webroot/image/slide3.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a>
+                    </li>
                 </ul>
             </div>
             <!--滚动图片展示 end-->
