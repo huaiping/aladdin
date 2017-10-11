@@ -37,13 +37,16 @@
                     <td class="col-md-4">文件大小：<?php echo $down_item['sizes']; ?> KB</td>
                 </tr>
                 <tr>
-                    <td>资源等级：<?php echo $down_item['stars']; ?></td><td>资源类别：<?php echo $down_item['category']; ?></td>
+                    <td>资源等级：<?php echo $down_item['stars']; ?></td>
+                    <td>资源类别：<?php echo $down_item['category']; ?></td>
                 </tr>
                 <tr>
-                    <td>作者：<?php echo $down_item['author']; ?></td><td>授权方式：<?php echo $down_item['license']; ?></td>
+                    <td>作者：<?php echo $down_item['author']; ?></td>
+                    <td>授权方式：<?php echo $down_item['license']; ?></td>
                 </tr>
                 <tr>
-                    <td>下载次数：<?php echo $down_item['hits']; ?></td><td>添加时间：<?php echo $down_item['pubtime']; ?></td>
+                    <td>下载次数：<?php echo $down_item['hits']; ?></td>
+                    <td>发布时间：<?php echo $down_item['pubtime']; ?></td>
                 </tr>
             </table>
 
@@ -61,7 +64,7 @@
                     <h4>下载地址<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
-                    <li class="widget-links_item">链接：<a href="<?php echo base_url($down_item['url']); ?>" class="btn btn-default" role="button"><span class="glyphicon glyphicon-save"></span>本站下载</a></li>
+                    <li class="widget-links_item">链接：<a href="<?php echo base_url($down_item['url']); ?>" class="btn btn-default" role="button"><span class="fa fa-download"></span> 本站下载</a></li>
                 </ul>
             </div>
 
