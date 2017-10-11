@@ -259,6 +259,14 @@ class Membership extends CI_Controller {
             else
             {
                 $now = date("Y-m-d H:i:s");
+                if ($this->upload->data('file_size') > 1024)
+                {
+                    $size = round($this->upload->data('file_size')/1024, 2).' MB';
+                }
+                else
+                {
+                    $size = ceil($this->upload->data('file_size')).' KB';
+                }
                 $data = array(
                     'title' => trim($this->input->post('title')),
                     'category' => $this->input->post('subject').$this->input->post('category'),
@@ -266,7 +274,7 @@ class Membership extends CI_Controller {
                     'url' => 'webroot/download/'.$this->upload->data('file_name'),
                     'author' => $this->input->post('username'),
                     'pubtime' => $now,
-                    'sizes' => ceil($this->upload->data('file_size')),
+                    'sizes' => $size,
                     'license' => 'MIT',
                     'stars' => '★★★★★',
                     'status' => 'pending'
