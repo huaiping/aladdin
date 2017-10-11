@@ -60,6 +60,7 @@ blockquote p {font-size:16px;}
 .col-xs-3ths, .col-sm-3ths, .col-md-3ths, .col-lg-3ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media (min-width:768px) {.col-sm-3ths {width:37.5%; float:left;}} @media (min-width:992px) {.col-md-3ths {width:37.5%; float:left;}} @media (min-width:1200px) {.col-lg-3ths {width:37.5%; float:left;}}
 .col-xs-9ths, .col-sm-9ths, .col-md-9ths, .col-lg-9ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media (min-width:768px) {.col-sm-9ths {width:10%; float:left;}} @media (min-width:992px) {.col-md-9ths {width:10%; float:left;}} @media (min-width:1200px) {.col-lg-9ths {width:10%; float:left;}}
 .col-xs-11ths, .col-sm-11ths, .col-md-11ths, .col-lg-11ths {position:relative; min-height:1px; padding-right:15px; padding-left:15px;} @media (min-width:768px) {.col-sm-11ths {width:49%; float:left;}} @media (min-width:992px) {.col-md-11ths {width:49%; float:left;}} @media (min-width:1200px) {.col-lg-11ths {width:49%; float:left;}}
+@media (max-width:767px) {.form-horizontal .control-label {padding-top:7px;}}
 /* waterfall */
 .galcolumn p {padding:5px 0;}
 .galcolumn .item {background:#fff; border-radius:3px; word-break:break-all; word-wrap:break-word; white-space:pre; white-space:pre-wrap;}
@@ -68,7 +69,7 @@ blockquote p {font-size:16px;}
 /* video */
 video::-internal-media-controls-download-button {display:none;}
 video::-webkit-media-controls-enclosure {overflow:hidden;}
-video::-webkit-media-controls-panel {width:calc(100%+30px);}
+video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 /* exam */
 .exam-pagination li.disabled a {pointer-events:none; cursor:default;}
 /* survey */
