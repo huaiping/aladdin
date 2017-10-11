@@ -11,7 +11,7 @@ class Guestbook_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit($slug, $offset);
-        $query = $this->db->get('swan_guestbook');
+        $query = $this->db->get_where('swan_guestbook', array('status' => 'passed'));
         return $query->result_array();
     }
 

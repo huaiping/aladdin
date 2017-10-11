@@ -21,7 +21,7 @@
             <!--留言 begin-->
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h4 class="panel-title"><span>主题：<?php echo $message[$i]['title']; ?></span><span class="pull-right hidden-xs"><?php echo $message[$i]['pubtime']; ?></span><span class="glyphicon glyphicon-time pull-right hidden-xs" aria-hidden="true"></span></h4>
+                    <h4 class="panel-title"><span>主题：<?php echo $message[$i]['title']; ?></span><span class="pull-right hidden-xs"><?php echo $message[$i]['pubtime']; ?></span><span class="fa fa-clock-o pull-right hidden-xs"></span></h4>
                 </div>
                 <div class="panel-body">
                     <div class="col-sm-3 col-md-2">
