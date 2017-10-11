@@ -44,25 +44,25 @@
                 <table class="table table-striped table-bordered table-hover text-center">
                 <thead>
                     <tr>
-                        <th class="col-xs-2 col-sm-7 col-md-1 widget-links_item text-center">工单号</th>
-                        <th class="col-xs-8 col-sm-2 col-md-2 widget-links_item text-center">报修物品</th>
-                        <th class="col-sm-2 col-md-2 widget-links_item text-center hidden-xs">报修部门</th>
+                        <th class="col-xs-2 col-sm-2 col-md-1 widget-links_item text-center">工单号</th>
+                        <th class="col-xs-8 col-sm-3 col-md-2 widget-links_item text-center">报修物品</th>
+                        <th class="col-sm-3 col-md-2 widget-links_item text-center hidden-xs">报修部门</th>
                         <th class="col-md-1 widget-links_item text-center hidden-xs hidden-sm">报修人员</th>
-                        <th class="col-md-2 widget-links_item text-center hidden-xs hidden-sm">联系电话</th>
-                        <th class="col-sm-1 col-md-2 widget-links_item text-center hidden-xs">报修时间</th>
-                        <th class="col-sm-1 col-md-1 widget-links_item text-center hidden-xs">维修状态</th>
+                        <th class="col-md-2 widget-links_item text-center hidden-xs hidden-sm hidden-md">联系电话</th>
+                        <th class="col-sm-2 col-md-2 widget-links_item text-center hidden-xs">报修时间</th>
+                        <th class="col-sm-2 col-md-1 widget-links_item text-center hidden-xs">维修状态</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php for($i=0; $i<count($repairs_list); $i++): ?>
                     <tr class="widget-links">
-                        <td class="col-xs-2 col-sm-1 col-md-1 widget-links_item"><a href="#"><?php echo $repairs_list[$i]['id']; ?></a></td>
-                        <td class="col-xs-8 col-sm-2 col-md-2 widget-links_item"><?php echo $repairs_list[$i]['item']; ?></td>
-                        <td class="col-sm-2 col-md-2 widget-links_item hidden-xs"><?php echo $repairs_list[$i]['department']; ?></td>
+                        <td class="col-xs-2 col-sm-2 col-md-1 widget-links_item"><a href="#"><?php echo $repairs_list[$i]['id']; ?></a></td>
+                        <td class="col-xs-8 col-sm-3 col-md-2 widget-links_item"><?php echo $repairs_list[$i]['item']; ?></td>
+                        <td class="col-sm-3 col-md-2 widget-links_item hidden-xs"><?php echo $repairs_list[$i]['department']; ?></td>
                         <td class="col-md-1 widget-links_item hidden-xs hidden-sm"><?php echo $repairs_list[$i]['customer']; ?></td>
-                        <td class="col-md-2 widget-links_item hidden-xs hidden-sm"><?php echo $repairs_list[$i]['telephone']; ?></td>
+                        <td class="col-md-2 widget-links_item hidden-xs hidden-sm hidden-md"><?php echo $repairs_list[$i]['telephone']; ?></td>
                         <td class="col-sm-2 col-md-2 widget-links_item hidden-xs"><?php echo substr($repairs_list[$i]['pubtime'],0,10); ?></td>
-                        <td class="col-sm-1 col-md-1 widget-links_item hidden-xs"><?php echo $repairs_list[$i]['status']; ?></td>
+                        <td class="col-sm-2 col-md-1 widget-links_item hidden-xs"><?php echo $repairs_list[$i]['status']; ?></td>
                     </tr>
                     <?php endfor; ?>
                 </tbody>

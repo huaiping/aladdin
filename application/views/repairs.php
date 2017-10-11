@@ -41,7 +41,7 @@
                 ?>
                     <div class="form-group">
                         <label for="category" class="col-xs-3 col-sm-3 col-md-3 control-label">报修种类</label>
-                        <div class="col-xs-9 col-sm-9 col-md-4">
+                        <div class="col-xs-9 col-sm-7 col-md-4">
                             <select class="selectpicker form-control" id="category" name="category">
                                 <option value="0">选择种类</option>
                                 <option value="water">水</option>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="form-group">
                         <label for="department" class="col-xs-3 col-sm-3 col-md-3 control-label">所在部门</label>
-                        <div class="col-xs-9 col-sm-9 col-md-4">
+                        <div class="col-xs-9 col-sm-7 col-md-4">
                             <select class="selectpicker form-control" id="department" name="department">
                                 <option value="0">选择部门</option>
                                 <option value="主教学楼五楼东一">主教学楼五楼东一</option>
@@ -72,23 +72,23 @@
                     </div>
                     <div class="form-group">
                         <label for="item" class="col-xs-3 col-sm-3 col-md-3 control-label">物品名称</label>
-                        <div class="col-xs-9 col-sm-9 col-md-7"><input type="text" class="form-control" id="item" name="item" required="required"></div>
+                        <div class="col-xs-9 col-sm-7 col-md-7"><input type="text" class="form-control" id="item" name="item" placeholder="背投/空调/饮水机/吊扇/门/窗" required="required"></div>
                     </div>
                     <div class="form-group">
                         <label for="address" class="col-xs-3 col-sm-3 col-md-3 control-label">维修地址</label>
-                        <div class="col-xs-9 col-sm-9 col-md-7"><input type="text" class="form-control" id="address" name="address" required="required"></div>
+                        <div class="col-xs-9 col-sm-7 col-md-7"><input type="text" class="form-control" id="address" name="address" required="required"></div>
                     </div>
                     <div class="form-group">
                         <label for="details" class="col-xs-3 col-sm-3 col-md-3 control-label">故障描述</label>
-                        <div class="col-xs-9 col-sm-9 col-md-7"><textarea id="details" name="details" class="form-control col-md-12" rows="5" style="resize:none;" required="required"></textarea></div>
+                        <div class="col-xs-9 col-sm-7 col-md-7"><textarea id="details" name="details" class="form-control col-md-12" rows="5" style="resize:none;" required="required"></textarea></div>
                     </div>
                     <div class="form-group">
                         <label for="customer" class="col-xs-3 col-sm-3 col-md-3 control-label">报修人员</label>
-                        <div class="col-xs-9 col-sm-9 col-md-7"><input type="text" class="form-control" id="customer" name="customer" required="required"></div>
+                        <div class="col-xs-9 col-sm-7 col-md-7"><input type="text" class="form-control" id="customer" name="customer" required="required"></div>
                     </div>
                     <div class="form-group">
                         <label for="telephone" class="col-xs-3 col-sm-3 col-md-3 control-label">联系电话</label>
-                        <div class="col-xs-9 col-sm-9 col-md-7"><input type="text" class="form-control" id="telephone" name="telephone" maxlength="11" required="required"></div>
+                        <div class="col-xs-9 col-sm-7 col-md-7"><input type="text" class="form-control" id="telephone" name="telephone" maxlength="11" required="required"></div>
                     </div>
                     <div class="form-group">
                         <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
