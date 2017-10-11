@@ -55,11 +55,6 @@ class Download_model extends CI_Model {
     /*资源下载 - 资源预览*/
     public function preview_item($id = FALSE)
     {
-        /*计数器*/
-        $this->db->where(array('id' => $id));
-        $this->db->set('hits','hits + 1',FALSE);
-        $this->db->update('swan_download');
-
         $query = $this->db->get_where('swan_download', array('id' => $id));
         return $query->row_array();
     }
