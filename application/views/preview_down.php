@@ -32,7 +32,7 @@
             <!--右侧资源详情 begin-->
             <table class="table table-bordered">
                 <tr>
-                    <td class="col-md-5">运行环境：Windows 7+ / Office 2013+</td>
+                    <td class="col-md-5">运行环境：Windows 7+ / Office 2010+</td>
                     <td class="col-md-3 hidden-xs text-center" rowspan="4" style="vertical-align:middle;"><img src="<?php echo base_url('webroot/image/image1.gif'); ?>" alt=""></td>
                     <td class="col-md-4">文件大小：<?php echo $down_item['sizes']; ?></td>
                 </tr>
