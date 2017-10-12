@@ -37,7 +37,7 @@
                         <?php foreach ($articles as $article): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($article['status'] == 'pending'): ?>
-                                <span class="badge badge-danger">待审</span>
+                            <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $article['title']; ?></a>
                         </li>
@@ -57,7 +57,7 @@
                         <?php foreach ($albums as $album): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($album['status'] == 'pending'): ?>
-                                <span class="badge badge-danger">待审</span>
+                            <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $album['title']; ?></a>
                         </li>
@@ -77,7 +77,7 @@
                         <?php foreach ($files as $file): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($file['status'] == 'pending'): ?>
-                                <span class="badge badge-danger">待审</span>
+                            <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $file['title']; ?></a>
                         </li>
@@ -97,7 +97,7 @@
                         <?php foreach ($messages as $message): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($message['status'] == 'pending'): ?>
-                                <span class="badge badge-danger">待审</span>
+                            <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $message['title']; ?></a>
                         </li>
@@ -117,7 +117,7 @@
                         <?php foreach ($videos as $video): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($video['status'] == 'pending'): ?>
-                                <span class="badge badge-danger">待审</span>
+                            <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $video['title']; ?></a>
                         </li>
@@ -137,7 +137,7 @@
                         <?php foreach ($links as $link): ?>
                         <li class="widget-links_item ellipsis">
                             <?php if ($link['status'] == 'pending'): ?>
-                                <span class="badge badge-danger">待审</span>
+                            <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
                             <a href="#"><?php echo $link['title']; ?></a>
                         </li>
