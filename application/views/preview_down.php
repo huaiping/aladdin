@@ -58,7 +58,7 @@
                     <li class="widget-links_item"><?php echo $down_item['description']; ?></li>
                 </ul>
                 <div class="alert alert-warning" role="alert">
-                    <strong>本资源采用 知识共享 署名-非商业性使用-相同方式共享 3.0许可协议（Creative Commons License）授权。</strong>
+                    <strong>本资源采用 <i class="fa fa-creative-commons"></i>知识共享 署名-非商业性使用3.0中国大陆(CC BY-NC 3.0 CN)许可协议授权。</strong>
                 </div>
             </div>
 

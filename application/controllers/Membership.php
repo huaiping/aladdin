@@ -275,7 +275,7 @@ class Membership extends CI_Controller {
                     'author' => $this->input->post('username'),
                     'pubtime' => $now,
                     'sizes' => $size,
-                    'license' => 'MIT',
+                    'license' => 'CC BY-NC',
                     'stars' => '★★★★★',
                     'status' => 'pending'
                 );
