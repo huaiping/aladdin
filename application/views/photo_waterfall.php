@@ -13,16 +13,16 @@
         <div class="content container">
             <div id="device" class="gridalicious row">
                 <div class="galcolumn">
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt="" /><p>瀑布流特效1</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt="" /><p>瀑布流特效2</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" alt="" /><p>瀑布流特效3</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" alt="" /><p>瀑布流特效4</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt="" /><p>瀑布流特效1</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt="" /><p>瀑布流特效2</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" alt="" /><p>瀑布流特效3</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" alt="" /><p>瀑布流特效4</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt="" /><p>瀑布流特效1</p></div>
-                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt="" /><p>瀑布流特效2</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt=""><p>瀑布流特效1</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt=""><p>瀑布流特效2</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" alt=""><p>瀑布流特效3</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" alt=""><p>瀑布流特效4</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt=""><p>瀑布流特效1</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt=""><p>瀑布流特效2</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo3.jpg'); ?>" alt=""><p>瀑布流特效3</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo4.jpg'); ?>" alt=""><p>瀑布流特效4</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo1.jpg'); ?>" alt=""><p>瀑布流特效1</p></div>
+                    <div class="item"><img src="<?php echo base_url('webroot/image/photo2.jpg'); ?>" alt=""><p>瀑布流特效2</p></div>
                 </div>
             </div>
         </div>

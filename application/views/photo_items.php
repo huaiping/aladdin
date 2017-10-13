@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4><?php echo $photos[0]['category'].'_'.$photos[0]['subcategory']; ?></h4>
+                    <h4><?php echo $photos[0]['category'].'_'.$photos[0]['subcategory']; ?><span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
