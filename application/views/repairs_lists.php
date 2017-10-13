@@ -63,11 +63,11 @@
                         <td class="col-md-2 widget-links_item hidden-xs hidden-sm hidden-md"><?php echo $repairs_list[$i]['telephone']; ?></td>
                         <td class="col-sm-2 col-md-2 widget-links_item hidden-xs"><?php echo substr($repairs_list[$i]['pubtime'],0,10); ?></td>
                         <?php if ($repairs_list[$i]['status'] == 'prepairing'): ?>
-                        <td class="col-sm-2 col-md-1 widget-links_item hidden-xs">维修中</td>
+                        <td class="col-sm-2 col-md-1 widget-links_item text-info hidden-xs">维修中</td>
                         <?php elseif ($repairs_list[$i]['status'] == 'finished'): ?>
-                        <td class="col-sm-2 col-md-1 widget-links_item hidden-xs">已维修</td>
+                        <td class="col-sm-2 col-md-1 widget-links_item text-success hidden-xs">已维修</td>
                         <?php else: ?>
-                        <td class="col-sm-2 col-md-1 widget-links_item hidden-xs">未维修</td>
+                        <td class="col-sm-2 col-md-1 widget-links_item text-danger hidden-xs">未维修</td>
                         <?php endif; ?>
                     </tr>
                     <?php endfor; ?>
