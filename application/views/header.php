@@ -46,6 +46,8 @@ body {padding-top:70px;}
 .widget-links_item a {margin-right:6px; word-break:break-all;}
 .widget-links_item small {display:inline-block; font-size:13px;}
 .ellipsis {white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.news .media-left img {border:5px solid #eee;}
+.news .media-left img:hover {border:5px solid #dfe8f4;}
 .guestbook .widget-links_item img {-webkit-transition:0.4s ease-in; -moz-transition:0.4s ease-in; -o-transition:0.4s ease-in; -ms-transition:0.4s ease-in; transition:0.4s ease-in;}
 .guestbook .widget-links_item:hover img {-webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); transform:rotate(360deg);}
 blockquote p {font-size:16px;}
