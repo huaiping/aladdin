@@ -83,7 +83,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 <script src="//cdn.bootcss.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
-<script src="//cdn.bootcss.com/highcharts/5.0.14/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/6.0.1/highcharts.js"></script>
 <script src="//cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.2/infinite-scroll.pkgd.min.js"></script>
 <script src="//cdn.bootcss.com/fancybox/3.1.25/jquery.fancybox.min.js"></script>
@@ -123,7 +123,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
                         <li><a href="//www.jiaobaowang.com">校讯通平台</a></li>
                         <li><a href="//www.51taoshi.com">淘师湾</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">图书馆</a></li>
+                        <li><a href="#">电子图书馆</a></li>
                     </ul>
                 </li>
                 -->
