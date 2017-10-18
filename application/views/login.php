@@ -27,7 +27,7 @@
                         <div role="tabpanel" class="tab-pane fade in active" id="login">
                             <!--用户登录 begin-->
                             <div class="loginBox row">
-                                <h3 class="text-center" style="margin-bottom:20px;">用户登录</h2>
+                                <h3 class="text-center" style="margin-bottom:20px;">用户登录</h3>
                                 <?php
                                     $attributes = array('class' => 'form-horizontal');
                                     echo form_open('membership/login', $attributes);
@@ -65,7 +65,7 @@
                         <div role="tabpanel" class="tab-pane" id="register">
                             <!--用户注册 begin-->
                             <div class="registerBox row">
-                                <h3 class="text-center" style="margin-bottom:20px;">用户注册</h2>
+                                <h3 class="text-center" style="margin-bottom:20px;">用户注册</h3>
                                 <?php
                                     $attributes = array('class' => 'form-horizontal');
                                     echo form_open('membership/register', $attributes);
