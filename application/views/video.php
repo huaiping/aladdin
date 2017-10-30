@@ -18,7 +18,7 @@
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><!--仅支持ogg mp4 WebM格式-->
-                        <video id="videoPlayer" controls="controls" class="video-js vjs-fluid col-xs-12 col-sm-12 col-md-12" data-setup="{}">
+                        <video id="videoPlayer" controls="controls" class="video-js vjs-fluid vjs-big-play-centered col-xs-12 col-sm-12 col-md-12" data-setup="{}">
                             <source src="<?php echo base_url($item['url']); ?>" type="video/<?php echo substr($item['url'], strrpos($item['url'], '.')+1); ?>">
                         </video>
                     </li>
