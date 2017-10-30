@@ -18,7 +18,7 @@
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><!--仅支持ogg mp4 WebM格式-->
-                        <video id="videoPlayer" controls="controls" class="col-xs-12 col-sm-12 col-md-12">
+                        <video id="videoPlayer" controls="controls" class="video-js vjs-fluid col-xs-12 col-sm-12 col-md-12" data-setup="{}">
                             <source src="<?php echo base_url($item['url']); ?>" type="video/<?php echo substr($item['url'], strrpos($item['url'], '.')+1); ?>">
                         </video>
                     </li>
@@ -27,7 +27,7 @@
             <!--视频播放 end-->
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 hidden-xs">
             <!--右侧相关推荐 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
@@ -43,7 +43,25 @@
         </div>
     </div>
 
-    <div class="banner row" style="margin-top:20px;">
+    <div class="video row" style="margin-top:20px;">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <!-- 微课 begin -->
+            <div class="widget-box no-border">
+                <div class="widget-box_title bs-callout bs-callout-info">
+                    <h4>优秀微课作品<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="col-xs-12 col-sm-12 col-md-12" src="<?php echo base_url('webroot/image/poster.jpeg'); ?>"></img>
+                    <div class="caption">
+                        <h5 class="text-center" style="line-height:35px;">test</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- 微课 end -->
+        </div>
+    </div>
+
+    <div class="banner row">
         <!--底部通栏 begin-->
         <div class="col-md-12">
             <div class="widget-box no-border">
@@ -57,16 +75,5 @@
 <script>
 $('#videoPlayer').bind('contextmenu',function() {
     return false;
-});
-var videoPlayer = document.getElementById("videoPlayer");
-document.addEventListener("visibilitychange", function() {//非活动标签暂停播放
-    if (document.hidden) {
-        $("#videoPlayer").animate({volume: 0}, 1000, "linear", function() {
-            videoPlayer.pause();
-        });
-    } else {
-        videoPlayer.play();
-        $("#videoPlayer").animate({volume: 1}, 1000, "linear");
-    }
 });
 </script>
