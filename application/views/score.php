@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-8">
             <!--网站通知 begin-->
             <div class="alert alert-warning" role="alert">
-                <strong><span class="glyphicon glyphicon-fire"></span> 温馨提示：即将更新各年级10月月考成绩，敬请关注！</strong>
+                <strong><span class="glyphicon glyphicon-fire"></span> 温馨提示：即将更新各年级期中考试成绩，敬请关注！</strong>
             </div>
             <!--网站通知 end-->
 
@@ -86,9 +86,11 @@
                     <div class="form-group">
                         <div class="col-xs-11 col-sm-10 col-md-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
                             <select class="selectpicker form-control" id="category" name="category">
-                                <option value="1">2016年秋高一期末调研考试</option>
-                                <option value="2|3">2016年秋高二期末考试</option>
-                                <option value="4|5">2016年秋高三期末武汉联考</option>
+                                <option value="1|2">2017年春高二3月月考</option>
+                                <option value="3|4">2017年春高二期中考试</option>
+                                <option value="5|6">2017年春高二5月月考</option>
+                                <option value="11|12">2017年秋高二10月联考</option>
+                                <option value="13|14" selected="selected">2017年秋高三10月百校联考</option>
                             </select>
                         </div>
                     </div>
