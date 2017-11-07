@@ -92,7 +92,7 @@ class Home_model extends CI_Model {
     {
         $this->db->order_by('pubtime', 'DESC');
         $this->db->limit(12);
-        $query = $this->db->get_where('swan_news', array('category' => 'teaching'));
+        $query = $this->db->get_where('swan_news', array('category' => 'teaching', 'status' => 'passed'));
         return $query->result_array();
     }
 

@@ -51,7 +51,7 @@
                     <h4>优秀微课作品<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div class="col-sm-6 col-md-3">
-                    <img class="col-xs-12 col-sm-12 col-md-12" src="<?php echo base_url('webroot/image/poster.jpeg'); ?>"></img>
+                    <img class="col-xs-12 col-sm-12 col-md-12" src="<?php echo base_url('webroot/image/weike.png'); ?>"></img>
                     <div class="caption">
                         <h5 class="text-center" style="line-height:35px;">test</h5>
                     </div>
