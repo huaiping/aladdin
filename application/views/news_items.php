@@ -18,6 +18,12 @@
                 <!--新闻 end-->
             </div>
 
+            <div class="col-xs-12 col-md-12" style="margin-top:10px; padding:0;">
+                <div class="alert alert-warning" role="alert">
+                    <strong>本文采用 <i class="fa fa-creative-commons"></i>知识共享 署名-非商业性使用-相同方式共享 3.0中国大陆(CC BY-NC-SA 3.0 CN)许可协议授权。</strong>
+                </div>
+            </div>
+
             <?php
                 $username = $this->session->userdata('username');
                 if (!empty($username)) {
@@ -29,7 +35,7 @@
             ?>
             <!--<form method="post" id="comments" name="comments" action="#" class="form-horizontal">-->
                 <!--评论 begin-->
-                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:30px 0 20px 0; padding:0;">
+                <div class="col-xs-12 col-md-12 panel panel-info" style="padding:0;">
                     <div class="panel-heading">评论</div>
                     <div class="panel-body" style="margin:0; padding:0;">
                         <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;" required="required"></textarea>
@@ -45,7 +51,7 @@
             <?php
                 } else {
             ?>
-                <div class="col-xs-12 col-md-12 panel panel-info" style="margin:30px 0 20px 0; padding:0;">
+                <div class="col-xs-12 col-md-12 panel panel-info" style="padding:0;">
                     <div class="panel-heading">评论</div>
                     <div class="panel-body" style="margin:0; padding:0;">
                         <textarea id="content" name="content" class="form-control" rows="5" style="resize:none;" disabled="disabled"></textarea>
