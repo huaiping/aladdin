@@ -36,10 +36,14 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($articles as $article): ?>
                         <li class="widget-links_item ellipsis">
-                            <?php if ($article['status'] == 'pending'): ?>
+                            <?php if ($article['status'] == 'passed'): ?>
+                            <a href="<?php echo site_url('news/view/'.$article['id']); ?>"><?php echo $article['title']; ?></a>
+                            <?php elseif ($article['status'] == 'pending'): ?>
                             <span class="badge badge-danger">待审</span>
+                            <a href="javascript:void(0);"><?php echo $article['title']; ?></a>
+                            <?php else: ?>
+                            <span style="text-decoration:line-through;"><?php echo $article['title']; ?></span>
                             <?php endif; ?>
-                            <a href="#"><?php echo $article['title']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
@@ -56,10 +60,14 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($albums as $album): ?>
                         <li class="widget-links_item ellipsis">
-                            <?php if ($album['status'] == 'pending'): ?>
+                            <?php if ($album['status'] == 'passed'): ?>
+                            <a href="<?php echo site_url('/photo/view/'.$album['id']); ?>"><?php echo $album['title']; ?></a>
+                            <?php elseif ($album['status'] == 'pending'): ?>
                             <span class="badge badge-danger">待审</span>
+                            <a href="javascript:void(0);"><?php echo $album['title']; ?></a>
+                            <?php else: ?>
+                            <span style="text-decoration:line-through;"><?php echo $album['title']; ?></span>
                             <?php endif; ?>
-                            <a href="#"><?php echo $album['title']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
@@ -76,10 +84,14 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($files as $file): ?>
                         <li class="widget-links_item ellipsis">
-                            <?php if ($file['status'] == 'pending'): ?>
+                            <?php if ($file['status'] == 'passed'): ?>
+                            <a href="<?php echo site_url('/download/view/'.$file['id']); ?>"><?php echo $file['title']; ?></a>
+                            <?php elseif ($file['status'] == 'pending'): ?>
                             <span class="badge badge-danger">待审</span>
+                            <a href="javascript:void(0);"><?php echo $file['title']; ?></a>
+                            <?php else: ?>
+                            <span style="text-decoration:line-through;"><?php echo $file['title']; ?></span>
                             <?php endif; ?>
-                            <a href="#"><?php echo $file['title']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
@@ -99,7 +111,7 @@
                             <?php if ($message['status'] == 'pending'): ?>
                             <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
-                            <a href="#"><?php echo $message['title']; ?></a>
+                            <a href="javascript:void(0);"><?php echo $message['title']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
@@ -116,10 +128,14 @@
                     <ul class="widget-links list-unstyled" style="min-height:160px;">
                         <?php foreach ($videos as $video): ?>
                         <li class="widget-links_item ellipsis">
-                            <?php if ($video['status'] == 'pending'): ?>
+                            <?php if ($video['status'] == 'passed'): ?>
+                            <a href="<?php echo site_url('video/view/'.$video['id']); ?>"><?php echo $video['title']; ?></a>
+                            <?php elseif ($video['status'] == 'pending'): ?>
                             <span class="badge badge-danger">待审</span>
+                            <a href="javascript:void(0);"><?php echo $video['title']; ?></a>
+                            <?php else: ?>
+                            <span style="text-decoration:line-through;"><?php echo $video['title']; ?></span>
                             <?php endif; ?>
-                            <a href="#"><?php echo $video['title']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
@@ -139,7 +155,7 @@
                             <?php if ($link['status'] == 'pending'): ?>
                             <span class="badge badge-danger">待审</span>
                             <?php endif; ?>
-                            <a href="#"><?php echo $link['title']; ?></a>
+                            <a href="javascript:void(0);"><?php echo $link['title']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>

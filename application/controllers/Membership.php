@@ -372,7 +372,7 @@ class Membership extends CI_Controller {
                     'description' => trim($this->input->post('content')),
                     'url' => '/webroot/video/'.$this->upload->data('file_name'),
                     'author' => $this->input->post('username'),
-                    'category' => '1',
+                    'category' => $this->input->post('category'),
                     'pubtime' => $now,
                     'status' => 'pending'
                 );
