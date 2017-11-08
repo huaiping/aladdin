@@ -44,29 +44,36 @@
                         <div class="col-xs-9 col-sm-7 col-md-4">
                             <select class="selectpicker form-control" id="category" name="category">
                                 <option value="0">选择种类</option>
-                                <option value="water">水</option>
+                                <option value="broadcast">听力广播</option>
+                                <option value="computer">办公电脑类</option>
+                                <option value="tv">教室多媒体设备</option>
+                                <option value="network">校园网络故障</option>
+                                <option value="pipes">水管</option>
                                 <option value="electricity">电</option>
                                 <option value="metal">五金</option>
                                 <option value="wood">木工</option>
                                 <option value="building">土建</option>
-                                <option value="tv">教室背投类</option>
+                                <option value="plexiglass">铝合金窗户玻璃</option>
+                                <option value="glass">木窗户玻璃</option>
+                                <option value="water">饮水机</option>
+                                <option value="conditioner">空调</option>
                                 <option value="others">其它</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="department" class="col-xs-3 col-sm-3 col-md-3 control-label">所在部门</label>
+                        <label for="department" class="col-xs-3 col-sm-3 col-md-3 control-label">所在区域</label>
                         <div class="col-xs-9 col-sm-7 col-md-4">
                             <select class="selectpicker form-control" id="department" name="department">
-                                <option value="0">选择部门</option>
-                                <option value="主教学楼五楼东一">主教学楼五楼东一</option>
-                                <option value="主教学楼五楼东二">主教学楼五楼东二</option>
-                                <option value="主教学楼五楼东三">主教学楼五楼东三</option>
-                                <option value="主教学楼五楼东四">主教学楼五楼东四</option>
-                                <option value="主教学楼五楼东五">主教学楼五楼东五</option>
-                                <option value="主教学楼五楼东六">主教学楼五楼东六</option>
-                                <option value="主教学楼五楼东七">主教学楼五楼东七</option>
-                                <option value="主教学楼五楼东八">主教学楼五楼东八</option>
+                                <option value="0">选择区域</option>
+                                <option value="高一年级">高一年级（主教学楼）</option>
+                                <option value="高二年级">高二年级（华英楼）</option>
+                                <option value="高三年级">高三年级（主教学楼）</option>
+                                <option value="行政楼">行政楼</option>
+                                <option value="体育馆">体育馆（综合馆）</option>
+                                <option value="科技楼">科技楼</option>
+                                <option value="艺术楼">艺术楼</option>
+                                <option value="其它">其它</option>
                             </select>
                         </div>
                     </div>
@@ -75,8 +82,8 @@
                         <div class="col-xs-9 col-sm-7 col-md-7"><input type="text" class="form-control" id="item" name="item" placeholder="背投/空调/饮水机/吊扇/门/窗" required="required"></div>
                     </div>
                     <div class="form-group">
-                        <label for="address" class="col-xs-3 col-sm-3 col-md-3 control-label">维修地址</label>
-                        <div class="col-xs-9 col-sm-7 col-md-7"><input type="text" class="form-control" id="address" name="address" required="required"></div>
+                        <label for="address" class="col-xs-3 col-sm-3 col-md-3 control-label">维修地点</label>
+                        <div class="col-xs-9 col-sm-7 col-md-7"><input type="text" class="form-control" id="address" name="address" placeholder="主教学楼五楼东一" required="required"></div>
                     </div>
                     <div class="form-group">
                         <label for="details" class="col-xs-3 col-sm-3 col-md-3 control-label">故障描述</label>

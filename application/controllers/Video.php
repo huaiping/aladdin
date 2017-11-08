@@ -15,6 +15,7 @@ class Video extends CI_Controller {
         $id = ($id === FALSE) ? 1 : $id;
         $data['hot'] = $this->video_model->get_hots();
         $data['item'] = $this->video_model->get_items($id);
+        $data['lectures'] = $this->video_model->get_lectures();
         $this->load->view('header');
         $this->load->view('video', $data);
         $this->load->view('footer');
@@ -25,6 +26,7 @@ class Video extends CI_Controller {
         $id = ($id === FALSE) ? 1 : $id;
         $data['hot'] = $this->video_model->get_hots();
         $data['item'] = $this->video_model->get_items($id);
+        $data['lectures'] = $this->video_model->get_lectures();
         $this->load->view('header');
         $this->load->view('video', $data);
         $this->load->view('footer');

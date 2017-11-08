@@ -39,4 +39,13 @@ class Video_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*视频 - 微课列表*/
+    public function get_lectures()
+    {
+        $this->db->order_by('hits', 'DESC');
+        $this->db->limit(15);
+        $query = $this->db->get_where('swan_video', array('category' => 'lecture', 'status' => 'passed'));
+        return $query->result_array();
+    }
+
 }

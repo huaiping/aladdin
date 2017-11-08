@@ -50,12 +50,14 @@
                 <div class="widget-box_title bs-callout bs-callout-info">
                     <h4>优秀微课作品<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
+                <?php for($i=0; $i<count($lectures); $i++): ?>
                 <div class="col-sm-6 col-md-3">
-                    <img class="col-xs-12 col-sm-12 col-md-12" src="<?php echo base_url('webroot/image/weike.png'); ?>"></img>
+                    <a href="<?php echo site_url('video/view/'.$lectures[$i]['id']); ?>"><img class="col-xs-12 col-sm-12 col-md-12" src="<?php echo base_url('webroot/image/weike.png'); ?>" alt=""></img></a>
                     <div class="caption">
-                        <h5 class="text-center" style="line-height:35px;">test</h5>
+                        <h5 class="text-center" style="line-height:35px;"><?php echo $lectures[$i]['title']; ?></h5>
                     </div>
                 </div>
+                <?php endfor; ?>
             </div>
             <!-- 微课 end -->
         </div>
