@@ -10,7 +10,7 @@
 <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/fancybox/3.1.25/jquery.fancybox.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/fancybox/3.2.1/jquery.fancybox.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/video.js/6.4.0/video-js.min.css" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
@@ -87,7 +87,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 <script src="//cdn.bootcss.com/highcharts/6.0.2/highcharts.js"></script>
 <script src="//cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.2/infinite-scroll.pkgd.min.js"></script>
-<script src="//cdn.bootcss.com/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+<script src="//cdn.bootcss.com/fancybox/3.2.1/jquery.fancybox.min.js"></script>
 <script src="//cdn.bootcss.com/video.js/6.4.0/video.min.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>

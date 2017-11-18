@@ -175,16 +175,16 @@
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($slides as $slide): ?>
-                    <li class="widget-links_item pull-left"><a data-fancybox href="<?php echo base_url($slide['thumbnail']); ?>"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
+                    <li class="widget-links_item pull-left"><a class="fancybox" href="<?php echo base_url($slide['thumbnail']); ?>"><img src="<?php echo base_url($slide['thumbnail']); ?>" alt="" width="150"></a></li>
                     <?php endforeach; ?>
                     <li class="widget-links_item pull-left">
-                        <a data-fancybox href="<?php echo base_url('webroot/image/slide1.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a>
+                        <a class="fancybox" href="<?php echo base_url('webroot/image/slide1.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide1.jpg'); ?>" alt="" width="150"></a>
                     </li>
                     <li class="widget-links_item pull-left">
-                        <a data-fancybox href="<?php echo base_url('webroot/image/slide2.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a>
+                        <a class="fancybox" href="<?php echo base_url('webroot/image/slide2.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide2.jpg'); ?>" alt="" width="150"></a>
                     </li>
                     <li class="widget-links_item pull-left">
-                        <a data-fancybox href="<?php echo base_url('webroot/image/slide3.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a>
+                        <a class="fancybox" href="<?php echo base_url('webroot/image/slide3.jpg'); ?>"><img src="<?php echo base_url('webroot/image/slide3.jpg'); ?>" alt="" width="150"></a>
                     </li>
                 </ul>
             </div>
@@ -282,6 +282,10 @@ function AutoScroll(){
         _scroll.css({marginLeft:0}).find("li:first").appendTo(_scroll);
     });
 }
+$(".fancybox").fancybox({
+    protect: true,
+    buttons : ['close']
+});
 $(function(){
     $("[data-toggle='tooltip']").tooltip();//友情链接鼠标悬停提示
     var _scrolling=setInterval("AutoScroll()",3000);//精彩图片展轮播
