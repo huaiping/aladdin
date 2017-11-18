@@ -4,7 +4,7 @@
     <div class="container bg-primary">
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-md-10">
-                <div style="line-height:30px; margin-top:10px;">Copyright &copy; 2015-2017 ♂古月Sir@阿拉丁CMS</div>
+                <div style="line-height:30px; margin-top:10px;">Copyright &copy; 2015-2017 ♂古月Sir@麻城市第一中学</div>
                 <div style="line-height:30px;">地址：湖北省麻城市建设西路31号 ┋ 邮编：438300</div>
                 <div style="line-height:30px; margin-bottom:10px;">
                     <div class="pull-left" style="margin-right:20px;">
