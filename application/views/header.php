@@ -88,7 +88,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 <script src="//cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.2/infinite-scroll.pkgd.min.js"></script>
 <script src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-<script src="//cdn.bootcss.com/video.js/6.5.0/video.min.js"></script>
+<script src="//cdn.bootcss.com/video.js/6.5.1/video.min.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>
 <body>
