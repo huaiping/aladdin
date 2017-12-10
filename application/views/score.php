@@ -91,8 +91,9 @@
                                 <option value="3|4">2017年春高二期中考试</option>
                                 <option value="5|6">2017年春高二5月月考</option>
                                 <option value="11|12">2017年秋高二10月联考</option>
-                                <option value="16|17" selected="selected">2017年秋高二期中联考</option>
+                                <option value="16|17">2017年秋高二期中联考</option>
                                 <option value="13|14">2017年秋高三10月百校联考</option>
+                                <option value="18|19" selected="selected">2017年秋高三12月联考</option>
                             </select>
                         </div>
                     </div>
