@@ -11,7 +11,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/video.js/6.5.0/video-js.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/video.js/6.5.1/video-js.min.css" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
