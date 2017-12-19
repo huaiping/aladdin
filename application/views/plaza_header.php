@@ -72,6 +72,7 @@ body {padding-top:70px;}
                 if ($this->session->userdata('groups') == 'moderators') {
             ?>
                 <li><a href="<?php echo site_url('membership'); ?>"><span class="glyphicon glyphicon-list-alt"></span> 信息审批</a></li>
+                <li><a href="<?php echo site_url('membership/survey'); ?>"><span class="fa fa-pie-chart"></span> 问卷调查</a></li>
                 <li><a href="<?php echo site_url('membership'); ?>"><span class="fa fa-users"></span> 用户管理</a></li>
             <?php
                 } elseif ($this->session->userdata('groups') == 'staffs') {

@@ -437,6 +437,21 @@ class Membership extends CI_Controller {
         $data = $this->membership_model->audit($data);
     }
 
+    public function survey()
+    {
+        $privilege = $this->session->userdata('survey');
+        if ($this->is_login() && $privilege == "1")
+        {
+            $this->load->view('plaza_header');
+            $this->load->view('plaza_survey');
+            $this->load->view('footer');
+        }
+        else
+        {
+            redirect('membership');
+        }
+    }
+
     public function profile()
     {
         if ($this->is_login())
