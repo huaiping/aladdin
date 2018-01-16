@@ -90,9 +90,10 @@
                                 <option value="20">2017年秋高一12月月考</option>
                                 <option value="11|12">2017年秋高二10月联考</option>
                                 <option value="16|17">2017年秋高二期中联考</option>
-                                <option value="21|22" selected="selected">2017年秋高二12月月考</option>
+                                <option value="21|22">2017年秋高二12月月考</option>
                                 <option value="13|14">2017年秋高三10月百校联考</option>
                                 <option value="18|19">2017年秋高三12月联考</option>
+                                <option value="23|24" selected="selected">2017年秋高三黄冈期末调考</option>
                             </select>
                         </div>
                     </div>
