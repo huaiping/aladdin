@@ -84,7 +84,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 <script src="//cdn.bootcss.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
-<script src="//cdn.bootcss.com/highcharts/6.0.6/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/6.0.7/highcharts.js"></script>
 <script src="//cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.3/infinite-scroll.pkgd.min.js"></script>
 <script src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js"></script>
