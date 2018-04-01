@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-8">
             <!--网站通知 begin-->
             <div class="alert alert-warning" role="alert">
-                <strong><span class="glyphicon glyphicon-fire"></span> 温馨提示：即将更新2018年春季学期各年级3月月考成绩，敬请关注！</strong>
+                <strong><span class="glyphicon glyphicon-fire"></span> 温馨提示：即将更新2018年春季学期各年级期中考试成绩，敬请关注！</strong>
             </div>
             <!--网站通知 end-->
 
@@ -94,11 +94,12 @@
                                 <option value="16|17">2017年秋高二期中联考</option>
                                 <option value="21|22">2017年秋高二12月月考</option>
                                 <option value="27|28">2017年秋高二期末考试</option>
+                                <option value="35|36" selected="selected">2018年春高二3月月考</option>
                                 <option value="13|14">2017年秋高三10月百校联考</option>
                                 <option value="18|19">2017年秋高三12月联考</option>
                                 <option value="23|24">2017年秋高三黄冈期末调考</option>
                                 <option value="29|30">2018年春高三武汉2月联考</option>
-                                <option value="31|32" selected="selected">2018年春高三黄冈3月调考</option>
+                                <option value="31|32">2018年春高三黄冈3月调考</option>
                             </select>
                         </div>
                     </div>
