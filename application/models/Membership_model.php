@@ -127,9 +127,12 @@ class Membership_model extends CI_Model {
     /*用户中心 - 问卷调查结果*/
     public function get_surveys()
     {
+        $this->db->select_max('survey');
+        $query = $this->db->get('swan_survey');
+        $row = $query->row_array();
+        $survey = $row['survey'];
         $this->db->order_by('timestamp', 'DESC');
-        $this->db->group_by("survey");
-        $query = $this->db->get_where('swan_survey');
+        $query = $this->db->get_where('swan_survey', array('survey' => $survey));
         return $query->result_array();
     }
 
