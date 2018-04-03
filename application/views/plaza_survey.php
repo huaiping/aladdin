@@ -21,7 +21,7 @@
                     <tr>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <td><?php echo $surveys[0]['yw']; ?></td>
                         <td></td>
                         <td></td>
                         <td></td>

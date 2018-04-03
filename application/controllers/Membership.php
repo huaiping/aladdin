@@ -442,8 +442,9 @@ class Membership extends CI_Controller {
         $privilege = $this->session->userdata('survey');
         if ($this->is_login() && $privilege == "1")
         {
+            $data['surveys'] = $this->membership_model->get_surveys();
             $this->load->view('plaza_header');
-            $this->load->view('plaza_survey');
+            $this->load->view('plaza_survey', $data);
             $this->load->view('footer');
         }
         else

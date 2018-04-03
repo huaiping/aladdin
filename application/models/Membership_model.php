@@ -124,6 +124,15 @@ class Membership_model extends CI_Model {
         return $query->result_array();
     }
 
+    /*用户中心 - 问卷调查结果*/
+    public function get_surveys()
+    {
+        $this->db->order_by('timestamp', 'DESC');
+        $this->db->group_by("survey");
+        $query = $this->db->get_where('swan_survey');
+        return $query->result_array();
+    }
+
     /*用户中心 - 待审投稿*/
     public function pending_articles()
     {
