@@ -9,7 +9,7 @@
 <title>阿拉丁CMS</title>
 <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/bootstrap-select/1.13.0/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/bootstrap-select/1.13.1/css/bootstrap-select.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/video.js/6.9.0/video-js.min.css" rel="stylesheet">
 <style type="text/css">
@@ -81,7 +81,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 </style>
 <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap-select/1.13.0/js/bootstrap-select.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
 <script src="//cdn.bootcss.com/highcharts/6.0.7/highcharts.js"></script>
