@@ -35,7 +35,7 @@
                 </div>
 
                 <?php
-                    $attributes = array('class' => 'form-horizontal', 'autocomplete' => 'off');
+                    $attributes = array('class' => 'form-horizontal', 'id' => 'repairs', 'autocomplete' => 'off');
                     $hidden = array('username' => $this->session->userdata('username'), 'ip' => $this->input->ip_address());
                     echo form_open('repairs/post', $attributes, $hidden);
                 ?>
@@ -109,8 +109,18 @@
     </div>
 </section>
 
+<style>
+input.error {border:1px dotted red;}
+</style>
 <script>
 window.onload=function(){
     $('.selectpicker').selectpicker();
 };
+</script>
+<script>
+$().ready(function() {
+    $("#repairs").validate({
+        errorPlacement: function(error, element) {}
+    });
+});
 </script>
