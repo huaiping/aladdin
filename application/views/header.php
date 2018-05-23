@@ -11,7 +11,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.13.1/css/bootstrap-select.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/video.js/6.9.0/video-js.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/video.js/7.0.0/video-js.min.css" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
@@ -88,7 +88,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 <script src="//cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.4/infinite-scroll.pkgd.min.js"></script>
 <script src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-<script src="//cdn.bootcss.com/video.js/6.9.0/video.min.js"></script>
+<script src="//cdn.bootcss.com/video.js/7.0.0/video.min.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>
 <body>
@@ -118,17 +118,17 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
                 <li class="hidden-sm hidden-md"><a href="<?php echo site_url('exam'); ?>">在线考试</a></li>
                 <li class="hidden-sm"><a href="<?php echo site_url('salary'); ?>">工资查询</a></li>
                 <li class="hidden-sm"><a href="<?php echo site_url('repairs'); ?>">网上报修</a></li>
-                <!--
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="//www.jiaobaowang.com">校讯通平台</a></li>
-                        <li><a href="//www.51taoshi.com">淘师湾</a></li>
+                        <li><a href="http://www.jiaobaowang.com">校讯通平台</a></li>
+                        <li><a href="http://www.51taoshi.com">淘师湾</a></li>
+                        <!--
                         <li role="separator" class="divider"></li>
                         <li><a href="#">电子图书馆</a></li>
+                        -->
                     </ul>
                 </li>
-                -->
             </ul>
         </div>
     </div>
