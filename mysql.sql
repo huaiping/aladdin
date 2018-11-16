@@ -88,6 +88,7 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `exams` varchar(1) NOT NULL,
   `salary` varchar(1) NOT NULL,
   `repairs` varchar(1) NOT NULL,
+  `courses` varchar(1) NOT NULL,
   `pubtime` datetime NOT NULL,
   `beans` int(10) NOT NULL,
   `status` varchar(8) NOT NULL,
