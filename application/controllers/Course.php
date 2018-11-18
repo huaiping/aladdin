@@ -32,6 +32,7 @@ class Course extends CI_Controller {
             $now = date("Y-m-d H:i:s");
             $data = array(
                 array(
+                    'xh' => $this->input->post('xh'),
                     'xm' => $this->input->post('name'),
                     'wl' => $this->input->post('wl'),
                     'hx' => $this->input->post('hx'),
