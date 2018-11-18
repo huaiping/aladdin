@@ -37,7 +37,7 @@ class Course extends CI_Controller {
                 )
             );
             $data = $this->security->xss_clean($data);
-            $this->courses_model->coursePost($data);
+            $this->course_model->coursePost($data);
             redirect('membership/plaza');
         }
         else
