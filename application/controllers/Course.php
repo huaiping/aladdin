@@ -45,12 +45,19 @@ class Course extends CI_Controller {
             );
             $data = $this->security->xss_clean($data);
             $this->course_model->coursePost($data);
-            //redirect('membership/plaza');
+            redirect('course/success');
         }
         else
         {
             redirect('membership');
         }
+    }
+
+    public function success()
+    {
+        $this->load->view('header');
+        $this->load->view('success');
+        $this->load->view('footer');
     }
 
     public function is_login()
