@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Survey extends CI_Controller {
+class Courses extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
@@ -44,7 +44,6 @@ class Survey extends CI_Controller {
         {
             redirect('membership');
         }
-        //$data['results'] = $this->survey_model->surveyPost();
     }
 
     public function is_login()
