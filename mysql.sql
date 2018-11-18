@@ -21,9 +21,18 @@ CREATE TABLE IF NOT EXISTS `swan_comment` (
 
 CREATE TABLE IF NOT EXISTS `swan_course` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `sid` varchar(255) NOT NULL,
-  `content` varchar(300) NOT NULL,
-  `pubtime` datetime NOT NULL,
+  `xh` varchar(10) NOT NULL,
+  `xm` varchar(12) NOT NULL,
+  `wl` varchar(3) NOT NULL,
+  `hx` varchar(3) NOT NULL,
+  `sw` varchar(3) NOT NULL,
+  `zz` varchar(3) NOT NULL,
+  `ls` varchar(3) NOT NULL,
+  `dl` varchar(3) NOT NULL,
+  `courses` varchar(30) NOT NULL,
+  `timestamp` datetime NOT NULL,
+  `bj` int(4) NOT NULL,
+  `memo` varchar(6) NOT NULL,
   `status` varchar(8) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -97,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `swan_membership` (
   `exams` varchar(1) NOT NULL,
   `salary` varchar(1) NOT NULL,
   `repairs` varchar(1) NOT NULL,
-  `courses` varchar(1) NOT NULL,
+  `course` varchar(1) NOT NULL,
   `pubtime` datetime NOT NULL,
   `beans` int(10) NOT NULL,
   `status` varchar(8) NOT NULL,
