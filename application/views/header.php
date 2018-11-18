@@ -114,13 +114,15 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
                 <li><a href="<?php echo site_url('video'); ?>">视频</a></li>
                 <li><a href="<?php echo site_url('membership'); ?>">用户中心</a></li>
                 <li><a href="<?php echo site_url('score'); ?>">成绩查询</a></li>
-                <li class="hidden-sm hidden-md"><a href="<?php echo site_url('survey'); ?>">问卷调查</a></li>
-                <li class="hidden-sm hidden-md"><a href="<?php echo site_url('exam'); ?>">在线考试</a></li>
-                <li class="hidden-sm"><a href="<?php echo site_url('salary'); ?>">工资查询</a></li>
                 <li class="hidden-sm"><a href="<?php echo site_url('repairs'); ?>">网上报修</a></li>
+                <li><a href="<?php echo site_url('course'); ?>">选课报名</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="<?php echo site_url('exam'); ?>">在线考试</a></li>
+                        <li><a href="<?php echo site_url('survey'); ?>">问卷调查</a></li>
+                        <li><a href="<?php echo site_url('salary'); ?>">工资查询</a></li>
+                        <li role="separator" class="divider"></li>
                         <li><a href="http://www.jiaobaowang.com">校讯通平台</a></li>
                         <li><a href="http://www.51taoshi.com">淘师湾</a></li>
                         <!--
