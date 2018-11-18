@@ -34,7 +34,8 @@ CREATE TABLE IF NOT EXISTS `swan_course` (
   `bj` int(4) NOT NULL,
   `memo` varchar(6) NOT NULL,
   `status` varchar(8) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `xh` (`xh`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `swan_download` (
