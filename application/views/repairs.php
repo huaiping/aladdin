@@ -66,8 +66,8 @@
                         <div class="col-xs-9 col-sm-7 col-md-4">
                             <select class="selectpicker form-control" id="department" name="department">
                                 <option value="0">选择区域</option>
-                                <option value="高一年级">高一年级（主教学楼）</option>
-                                <option value="高二年级">高二年级（华英楼）</option>
+                                <option value="高一年级">高一年级（华英楼）</option>
+                                <option value="高二年级">高二年级（主教学楼）</option>
                                 <option value="高三年级">高三年级（主教学楼）</option>
                                 <option value="行政楼">行政楼</option>
                                 <option value="体育馆">体育馆（综合馆）</option>
