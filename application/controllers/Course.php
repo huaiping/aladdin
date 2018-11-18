@@ -40,7 +40,8 @@ class Course extends CI_Controller {
                 'ls' => $this->input->post('ls'),
                 'dl' => $this->input->post('dl'),
                 'courses' => $this->input->post('wl').$this->input->post('hx').$this->input->post('sw').$this->input->post('zz').$this->input->post('ls').$this->input->post('dl'),
-                'timestamp' => $now
+                'timestamp' => $now,
+                'memo' => 'T'
             );
             $data = $this->security->xss_clean($data);
             $this->course_model->coursePost($data);
