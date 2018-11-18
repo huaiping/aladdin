@@ -1,27 +1,27 @@
 <section class="container">
     <?php
         $attributes = array('class' => 'form-horizontal', 'id' => 'course');
-        $hidden = array('xh' => $this->session->userdata('username'), 'name' => $this->session->userdata('name'));
+        $hidden = array('xh' => $this->session->userdata('username'), 'xm' => $this->session->userdata('name'));
         echo form_open('course/post', $attributes, $hidden);
     ?>
     <!--<form method="post" id="courses" name="courses" action="#" class="form-horizontal">-->
         <div class="checkbox">
-            <label><input name="course" type="checkbox" value="">物理</label>
+            <label><input name="wl" type="checkbox" value="0">物理</label>
         </div>
         <div class="checkbox">
-            <label><input name="course" type="checkbox" value="">化学</label>
+            <label><input name="hx" type="checkbox" value="0">化学</label>
         </div>
         <div class="checkbox">
-            <label><input name="course" type="checkbox" value="">生物</label>
+            <label><input name="sw" type="checkbox" value="0">生物</label>
         </div>
         <div class="checkbox">
-            <label><input name="course" type="checkbox" value="">政治</label>
+            <label><input name="zz" type="checkbox" value="0">政治</label>
         </div>
         <div class="checkbox">
-            <label><input name="course" type="checkbox" value="">历史</label>
+            <label><input name="ls" type="checkbox" value="0">历史</label>
         </div>
         <div class="checkbox">
-            <label><input name="course" type="checkbox" value="">地理</label>
+            <label><input name="dl" type="checkbox" value="0">地理</label>
         </div>
         <div class="form-group">
             <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
@@ -33,10 +33,10 @@
 
 <script>
 $(".btn").click(function(){
-    if ($('input[name="course"]:checked').length < 3) {
+    if ($('input:checkbox:checked').length < 3) {
         //$(this).attr("checked","");
         alert("选课科目少于3个");
-    } else if ($('input[name="course"]:checked').length > 3) {
+    } else if ($('input:checkbox:checked').length > 3) {
         //$(this).attr("checked","");
         alert("选课科目大于3个");
     }
