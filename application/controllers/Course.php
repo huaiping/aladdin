@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Courses extends CI_Controller {
+class Course extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form', 'url'));
-        $this->load->model('courses_model');
+        $this->load->model('course_model');
     }
 
     public function index()
@@ -15,7 +15,7 @@ class Courses extends CI_Controller {
         if ($this->is_login())
         {
             $this->load->view('header');
-            $this->load->view('courses');
+            $this->load->view('course');
             $this->load->view('footer');
         }
         else
@@ -37,7 +37,7 @@ class Courses extends CI_Controller {
                 )
             );
             $data = $this->security->xss_clean($data);
-            $this->courses_model->coursesPost($data);
+            $this->courses_model->coursePost($data);
             redirect('membership/plaza');
         }
         else

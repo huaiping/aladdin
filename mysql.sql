@@ -19,6 +19,15 @@ CREATE TABLE IF NOT EXISTS `swan_comment` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS `swan_course` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `sid` varchar(255) NOT NULL,
+  `content` varchar(300) NOT NULL,
+  `pubtime` datetime NOT NULL,
+  `status` varchar(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE IF NOT EXISTS `swan_download` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,

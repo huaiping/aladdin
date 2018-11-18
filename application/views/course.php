@@ -1,8 +1,8 @@
 <section class="container">
     <?php
-        $attributes = array('class' => 'form-horizontal', 'id' => 'courses');
+        $attributes = array('class' => 'form-horizontal', 'id' => 'course');
         $hidden = array('name' => $this->session->userdata('name'));
-        echo form_open('courses/post', $attributes, $hidden);
+        echo form_open('course/post', $attributes, $hidden);
     ?>
     <!--<form method="post" id="courses" name="courses" action="#" class="form-horizontal">-->
         <div class="panel panel-info"></div>
