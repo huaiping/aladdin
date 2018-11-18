@@ -14,8 +14,9 @@ class Course extends CI_Controller {
     {
         if ($this->is_login())
         {
+            $data['numbers'] = $this->db->count_all('swan_course');
             $this->load->view('header');
-            $this->load->view('course');
+            $this->load->view('course', $data);
             $this->load->view('footer');
         }
         else
