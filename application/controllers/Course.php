@@ -33,12 +33,19 @@ class Course extends CI_Controller {
             $data = array(
                 array(
                     'xm' => $this->input->post('name'),
+                    'wl' => $this->input->post('wl'),
+                    'hx' => $this->input->post('hx'),
+                    'sw' => $this->input->post('sw'),
+                    'zz' => $this->input->post('zz'),
+                    'ls' => $this->input->post('ls'),
+                    'dl' => $this->input->post('dl'),
+                    'courses' => $this->input->post('wl').$this->input->post('hx').$this->input->post('sw').$this->input->post('zz').$this->input->post('ls').$this->input->post('dl'),
                     'timestamp' => $now
                 )
             );
             $data = $this->security->xss_clean($data);
             $this->course_model->coursePost($data);
-            redirect('membership/plaza');
+            //redirect('membership/plaza');
         }
         else
         {
