@@ -11,7 +11,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.2.4/video-js.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" rel="stylesheet">
 <style type="text/css">
 body {padding-top:70px;}
 .navbar-default {background-color:#337ab7; border-color:#e7e7e7;}
@@ -88,7 +88,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.5/infinite-scroll.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.2.4/video.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>
 <body>
