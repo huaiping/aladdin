@@ -68,8 +68,8 @@ class Membership extends CI_Controller {
     {
         $now = date("Y-m-d H:i:s");
         $data = array(
-            'username' => trim($this->input->post('username')),
-            'password' => md5(sha1(trim($this->input->post('password')))),
+            'username' => trim($this->input->post('new_name')),
+            'password' => md5(sha1(trim($this->input->post('new_pass')))),
             'name' => trim($this->input->post('name')),
             'email' => trim($this->input->post('email')),
             'avatar' => 'avatar1.jpg',
