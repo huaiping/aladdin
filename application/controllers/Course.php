@@ -12,11 +12,18 @@ class Course extends CI_Controller {
 
     public function index()
     {
+        $this->load->view('header');
+        $this->load->view('course');
+        $this->load->view('footer');
+    }
+
+    public function signup()
+    {
         if ($this->is_login())
         {
             $data['numbers'] = $this->db->count_all('swan_course');
             $this->load->view('header');
-            $this->load->view('course', $data);
+            $this->load->view('course_signup', $data);
             $this->load->view('footer');
         }
         else
@@ -46,6 +53,7 @@ class Course extends CI_Controller {
             );
             $data = $this->security->xss_clean($data);
             $this->course_model->coursePost($data);
+            $this->session->sess_destroy();
             redirect('course/success');
         }
         else
