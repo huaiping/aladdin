@@ -2,7 +2,7 @@
     <div class="notice row">
         <div class="col-md-12">
             <div class="alert alert-warning alert-dismissible" role="alert">
-                <strong><span class="glyphicon glyphicon-fire"></span> 当前已有 <?php echo $numbers; ?> 人成功提交报名信息，截止日期2018年11月30日！</strong>
+                <strong><span class="glyphicon glyphicon-fire"></span> 当前已有 <?php echo $numbers; ?> 人成功提交报名信息，截止日期2018年12月15日！</strong>
             </div>
         </div>
     </div>
@@ -62,7 +62,11 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
+                    <?php if ($status == 'enabled'): ?>
                         <button type="submit" class="btn btn-success">提交报名</button>
+                    <?php else: ?>
+                        <button type="submit" class="btn btn-success" disabled="disabled">提交报名</button>
+                    <?php endif; ?>
                     </div>
                 </div>
             </form>

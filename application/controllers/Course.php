@@ -21,6 +21,10 @@ class Course extends CI_Controller {
     {
         if ($this->is_login())
         {
+            $xh = $this->session->userdata('username');
+            $xm = $this->session->userdata('name');
+            $result = $this->course_model->get_status($xh, $xm);
+            $data['status'] = empty($result) ? 'enabled' : 'disabled';
             $data['numbers'] = $this->db->count_all('swan_course');
             $this->load->view('header');
             $this->load->view('course_signup', $data);
