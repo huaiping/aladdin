@@ -68,8 +68,10 @@ class Course extends CI_Controller {
 
     public function success()
     {
+        $data['statistics'] = $this->course_model->get_statistics();
+        $data['subjects'] = $this->course_model->get_subjects();
         $this->load->view('header');
-        $this->load->view('success');
+        $this->load->view('success', $data);
         $this->load->view('footer');
     }
 

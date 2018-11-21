@@ -19,23 +19,58 @@
     </div>
 
     <div class="repairs row">
-        <div class="col-xs-12 col-md-12">
+        <div class="col-xs-12 col-md-6">
             <div class="panel panel-info">
-                <!-- Default panel contents -->
-                <div class="panel-heading">报名数据统计</div>
-                <!-- Table -->
+                <div class="panel-heading">选课报名数据统计</div>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th></th><th></th><th></th>
+                            <th>序号</th><th>科目</th><th>人数</th>
                         </tr>
                     </thead>
                     <tbody>
+                    <?php for ($i=0; $i<count($statistics); $i++): ?>
                         <tr>
-                            <th></th><td></td><td></td>
+                            <th><?php echo $i+1; ?></th><td><?php echo $statistics[$i]['courses']; ?></td><td><?php echo $statistics[$i]['numbers']; ?></td>
+                        </tr>
+                    <?php endfor; ?>
                     </tbody>
                 </table>
             </div>
         </div>
+
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">单科报名数据统计</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>序号</th><th>科目</th><th>人数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th><td>物理</td><td></td>
+                        </tr>
+                        <tr>
+                            <th>2</th><td>化学</td><td></td>
+                        </tr>
+                        <tr>
+                            <th>3</th><td>生物</td><td></td>
+                        </tr>
+                        <tr>
+                            <th>4</th><td>政治</td><td></td>
+                        </tr>
+                        <tr>
+                            <th>5</th><td>历史</td><td></td>
+                        </tr>
+                        <tr>
+                            <th>6</th><td>地理</td><td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 </section>
