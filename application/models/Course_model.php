@@ -30,7 +30,7 @@ class Course_model extends CI_Model {
     public function get_subjects()
     {
         $query = $this->db->query("select sum(case when wl <> '' then 1 else 0 end) as wl, sum(case when hx <> '' then 1 else 0 end) as hx, sum(case when sw <> '' then 1 else 0 end) as sw, sum(case when zz <> '' then 1 else 0 end) as zz, sum(case when ls <> '' then 1 else 0 end) as ls, sum(case when dl <> '' then 1 else 0 end) as dl from swan_course");
-        return $query->result_array();
+        return $query->row_array();
     }
 
 }

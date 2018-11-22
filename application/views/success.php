@@ -50,22 +50,22 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th>1</th><td>物理</td><td><?php echo $subjects[0]['wl']; ?></td>
+                            <th>1</th><td>物理</td><td><?php echo $subjects['wl']; ?></td>
                         </tr>
                         <tr>
-                            <th>2</th><td>化学</td><td><?php echo $subjects[0]['hx']; ?></td>
+                            <th>2</th><td>化学</td><td><?php echo $subjects['hx']; ?></td>
                         </tr>
                         <tr>
-                            <th>3</th><td>生物</td><td><?php echo $subjects[0]['sw']; ?></td>
+                            <th>3</th><td>生物</td><td><?php echo $subjects['sw']; ?></td>
                         </tr>
                         <tr>
-                            <th>4</th><td>政治</td><td><?php echo $subjects[0]['zz']; ?></td>
+                            <th>4</th><td>政治</td><td><?php echo $subjects['zz']; ?></td>
                         </tr>
                         <tr>
-                            <th>5</th><td>历史</td><td><?php echo $subjects[0]['ls']; ?></td>
+                            <th>5</th><td>历史</td><td><?php echo $subjects['ls']; ?></td>
                         </tr>
                         <tr>
-                            <th>6</th><td>地理</td><td><?php echo $subjects[0]['dl']; ?></td>
+                            <th>6</th><td>地理</td><td><?php echo $subjects['dl']; ?></td>
                         </tr>
                     </tbody>
                 </table>
