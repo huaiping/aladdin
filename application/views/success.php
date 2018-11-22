@@ -50,22 +50,22 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th>1</th><td>物理</td><td></td>
+                            <th>1</th><td>物理</td><td><?php echo $subjects[0]['wl']; ?></td>
                         </tr>
                         <tr>
-                            <th>2</th><td>化学</td><td></td>
+                            <th>2</th><td>化学</td><td><?php echo $subjects[0]['hx']; ?></td>
                         </tr>
                         <tr>
-                            <th>3</th><td>生物</td><td></td>
+                            <th>3</th><td>生物</td><td><?php echo $subjects[0]['sw']; ?></td>
                         </tr>
                         <tr>
-                            <th>4</th><td>政治</td><td></td>
+                            <th>4</th><td>政治</td><td><?php echo $subjects[0]['zz']; ?></td>
                         </tr>
                         <tr>
-                            <th>5</th><td>历史</td><td></td>
+                            <th>5</th><td>历史</td><td><?php echo $subjects[0]['ls']; ?></td>
                         </tr>
                         <tr>
-                            <th>6</th><td>地理</td><td></td>
+                            <th>6</th><td>地理</td><td><?php echo $subjects[0]['dl']; ?></td>
                         </tr>
                     </tbody>
                 </table>

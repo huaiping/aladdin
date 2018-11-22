@@ -23,18 +23,13 @@ class Course_model extends CI_Model {
     public function get_statistics()
     {
         $query = $this->db->query("select count(id) as numbers, courses from swan_course group by courses");
-        $hx = $this->db->query("select count(id) as hx from swan_course group by hx");
-        $sw = $this->db->query("select count(id) as sw from swan_course group by sw");
-        $zz = $this->db->query("select count(id) as zz from swan_course group by zz");
-        $ls = $this->db->query("select count(id) as ls from swan_course group by ls");
-        $dl = $this->db->query("select count(id) as dl from swan_course group by dl");
         return $query->result_array();
     }
 
     /*选课报名 - 单科统计*/
     public function get_subjects()
     {
-        $query = $this->db->query("select count(wl) as wl, count(hx) as hx, count(sw) as sw, count(zz) as zz, count(ls) as ls, count(dl) as dl from swan_course");
+        $query = $this->db->query("select sum(case when wl IS NOT NULL then 1 else 0 end) as wl, sum(case when hx IS NOT NULL then 1 else 0 end) as hx, sum(case when sw IS NOT NULL then 1 else 0 end) as sw, sum(case when zz IS NOT NULL then 1 else 0 end) as zz, sum(case when ls IS NOT NULL then 1 else 0 end) as ls, sum(case when dl IS NOT NULL then 1 else 0 end) as dl from swan_course");
         return $query->result_array();
     }
 
