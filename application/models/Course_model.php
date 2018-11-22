@@ -29,7 +29,7 @@ class Course_model extends CI_Model {
     /*选课报名 - 单科统计*/
     public function get_subjects()
     {
-        $query = $this->db->query("select sum(case when wl IS NOT NULL then 1 else 0 end) as wl, sum(case when hx IS NOT NULL then 1 else 0 end) as hx, sum(case when sw IS NOT NULL then 1 else 0 end) as sw, sum(case when zz IS NOT NULL then 1 else 0 end) as zz, sum(case when ls IS NOT NULL then 1 else 0 end) as ls, sum(case when dl IS NOT NULL then 1 else 0 end) as dl from swan_course");
+        $query = $this->db->query("select sum(case when wl <> '' then 1 else 0 end) as wl, sum(case when hx <> '' then 1 else 0 end) as hx, sum(case when sw <> '' then 1 else 0 end) as sw, sum(case when zz <> '' then 1 else 0 end) as zz, sum(case when ls <> '' then 1 else 0 end) as ls, sum(case when dl <> '' then 1 else 0 end) as dl from swan_course");
         return $query->result_array();
     }
 
