@@ -46,7 +46,7 @@
         </div>
 
         <div class="col-xs-12 col-md-9 pull-right">
-            <!-- begin-->
+            <!--化学 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
                     <h4>高中与大学学科对应表：化学<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
@@ -57,11 +57,11 @@
                     <p class="text-center"><img src="http://cdn.huaiping.net/huaxue.jpg" style="max-width:100%;"></p>
                 </ul>
             </div>
-            <!-- end-->
+            <!--化学 end-->
         </div>
 
         <div class="col-xs-12 col-md-9 pull-right">
-            <!-- begin-->
+            <!--生物 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
                     <h4>高中与大学学科对应表：生物<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
@@ -72,11 +72,11 @@
                     <p class="text-center"><img src="http://cdn.huaiping.net/shengwu.jpg" style="max-width:100%;"></p>
                 </ul>
             </div>
-            <!-- end-->
+            <!--生物 end-->
         </div>
 
         <div class="col-xs-12 col-md-9 pull-right">
-            <!-- begin-->
+            <!--政治 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
                     <h4>高中与大学学科对应表：政治<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
@@ -87,11 +87,11 @@
                     <p class="text-center"><img src="http://cdn.huaiping.net/zhengzhi.jpg" style="max-width:100%;"></p>
                 </ul>
             </div>
-            <!-- end-->
+            <!--政治 end-->
         </div>
 
         <div class="col-xs-12 col-md-9 pull-right">
-            <!-- begin-->
+            <!--历史 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
                     <h4>高中与大学学科对应表：历史<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
@@ -101,11 +101,11 @@
                     <p class="text-center"><img src="http://cdn.huaiping.net/lishi.jpg" style="max-width:100%;"></p>
                 </ul>
             </div>
-            <!-- end-->
+            <!--历史 end-->
         </div>
 
         <div class="col-xs-12 col-md-9 pull-right">
-            <!-- begin-->
+            <!--地理 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
                     <h4>高中与大学学科对应表：地理<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
@@ -117,7 +117,7 @@
                     <p class="text-center"><img src="http://cdn.huaiping.net/dili.jpg" style="max-width:100%;"></p>
                 </ul>
             </div>
-            <!-- end-->
+            <!--地理 end-->
         </div>
     </div>
 </section>
