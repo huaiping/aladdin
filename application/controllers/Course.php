@@ -12,8 +12,11 @@ class Course extends CI_Controller {
 
     public function index()
     {
+        $now = date("Y-m-d H:i:s");
+        $deadline = "2018-12-16 00:00:00";
+        $data['status'] = (strtotime($now) < strtotime($deadline)) ? 'enabled' : 'disabled';
         $this->load->view('header');
-        $this->load->view('course');
+        $this->load->view('course', $data);
         $this->load->view('footer');
     }
 
