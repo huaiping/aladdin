@@ -13,7 +13,9 @@
         <div class="col-xs-12 col-md-12">
             <div class="jumbotron">
                 <h1 class="text-center">数据已成功提交！</h1>
-                <p class="text-center" style="margin-top:50px;"><a class="btn btn-primary btn-lg" href="../membership/logout" role="button">点击这里退出登录</a></p>
+                <p class="text-center" style="margin-top:50px;">
+                    <a class="btn btn-primary btn-lg" href="../membership/logout" role="button">点击这里退出登录</a>
+                </p>
             </div>
         </div>
     </div>
@@ -31,7 +33,9 @@
                     <tbody>
                     <?php for ($i=0; $i<count($statistics); $i++): ?>
                         <tr>
-                            <th><?php echo $i+1; ?></th><td><?php echo $statistics[$i]['courses']; ?></td><td><?php echo $statistics[$i]['numbers']; ?></td>
+                            <th><?php echo $i+1; ?></th>
+                            <td><?php echo $statistics[$i]['courses']; ?></td>
+                            <td><?php echo $statistics[$i]['numbers']; ?></td>
                         </tr>
                     <?php endfor; ?>
                     </tbody>
