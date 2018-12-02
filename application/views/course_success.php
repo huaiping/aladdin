@@ -23,7 +23,7 @@
     <div class="repairs row">
         <div class="col-xs-12 col-md-6">
             <div class="panel panel-info">
-                <div class="panel-heading">选课报名数据统计</div>
+                <div class="panel-heading">选科报名综合数据统计</div>
                 <table class="table">
                     <thead>
                         <tr>
@@ -45,7 +45,7 @@
 
         <div class="col-xs-12 col-md-6">
             <div class="panel panel-info">
-                <div class="panel-heading">单科报名数据统计</div>
+                <div class="panel-heading">选科报名单科数据统计</div>
                 <table class="table">
                     <thead>
                         <tr>

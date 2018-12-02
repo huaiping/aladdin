@@ -16,17 +16,18 @@
                 <div class="widget-box_title bs-callout bs-callout-danger">
                     <h4>报名通道<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
-                <p>登录后方可开始选课，帐号是6位数字的学号，密码是姓名的完整拼音。如登录失败，请尝试姓名中多音字的其它读音。选课报名信息成功提交后无法修改。</p>
+                <p>登录后方可开始选科，帐号是6位数字的学号，密码是姓名的完整拼音(全部小写，不加空格)。如登录失败，请尝试姓名中多音字的其它读音。选科报名信息成功提交后无法修改。</p>
+                <p>截止日期：12月15日</p>
                 <p class="text-center">
                 <?php if ($status == 'enabled'): ?>
-                    <a class="btn btn-success btn-lg" href="<?php echo site_url('course/signup'); ?>" role="button"><i class="fa fa-gg"></i> 选课报名</a>
+                    <a class="btn btn-success btn-lg" href="<?php echo site_url('course/signup'); ?>" role="button"><i class="fa fa-gg"></i> 选科模拟报名</a>
                 <?php else: ?>
-                    <button class="btn btn-success btn-lg" disabled="disabled"><i class="fa fa-gg"></i> 选课报名</button>
+                    <button class="btn btn-success btn-lg" disabled="disabled"><i class="fa fa-gg"></i> 报名已截止</button>
                 <?php endif; ?>
                 </p>
             </div>
 
-            <div class="widget-box no-border">
+            <div class="widget-box no-border hidden-xs">
                 <div class="widget-box_title bs-callout bs-callout-danger">
                     <h4>二维码<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
                 </div>

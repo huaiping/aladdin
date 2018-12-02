@@ -2,13 +2,13 @@
     <div class="notice row">
         <div class="col-md-12">
             <div class="alert alert-warning alert-dismissible" role="alert">
-                <strong><span class="glyphicon glyphicon-fire"></span> 当前已有 <?php echo $numbers; ?> 人成功提交报名信息，截止日期2018年12月15日！</strong>
+                <strong><span class="glyphicon glyphicon-fire"></span> 当前已有 <?php echo $numbers; ?> 人成功提交高考选科模拟报名信息！</strong>
             </div>
         </div>
     </div>
 
     <div class="row">
-        <h1 class="text-center" style="margin-top:0; margin-bottom:20px;">高一选课组班预报名</h1>
+        <h1 class="text-center" style="margin-top:0; margin-bottom:20px;">高一选科组班预报名</h1>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
                 <div class="caption">
@@ -65,7 +65,7 @@
                     <?php if ($status == 'enabled'): ?>
                         <button type="submit" class="btn btn-success">提交报名</button>
                     <?php else: ?>
-                        <button type="submit" class="btn btn-success" disabled="disabled">提交报名</button>
+                        <button type="submit" class="btn btn-success" disabled="disabled">已提交</button>
                     <?php endif; ?>
                     </div>
                 </div>
@@ -84,10 +84,10 @@ $('input').iCheck({
 <script>
 $(".btn").click(function(){
     if ($('input:checkbox:checked').length < 3) {
-        alert("选课科目不能少于3个");
+        alert("选科科目不能少于3个");
         return false;
     } else if ($('input:checkbox:checked').length > 3) {
-        alert("选课科目不能大于3个");
+        alert("选科科目不能多于3个");
         return false;
     }
 });

@@ -110,15 +110,15 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
         <div class="collapse navbar-collapse bg-primary" id="bs-navbar-collapse">
             <ul class="nav navbar-nav bg-primary">
                 <li><a href="<?php echo site_url('news'); ?>">新闻中心<span class="sr-only">(current)</span></a></li>
-                <li><a href="<?php echo site_url('photo'); ?>">图片中心</a></li>
-                <li><a href="<?php echo site_url('download'); ?>">资源下载</a></li>
-                <li><a href="<?php echo site_url('guestbook'); ?>">公众互动</a></li>
-                <li><a href="<?php echo site_url('video'); ?>">视频</a></li>
                 <li><a href="<?php echo site_url('membership'); ?>">用户中心</a></li>
-                <li><a href="<?php echo site_url('score'); ?>">成绩查询</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="<?php echo site_url('photo'); ?>">图片中心</a></li>
+                        <li><a href="<?php echo site_url('download'); ?>">资源下载</a></li>
+                        <li><a href="<?php echo site_url('guestbook'); ?>">公众互动</a></li>
+                        <li><a href="<?php echo site_url('video'); ?>">视频</a></li>
+                        <li><a href="<?php echo site_url('score'); ?>">成绩查询</a></li>
                         <li><a href="<?php echo site_url('repairs'); ?>">网上报修</a></li>
                         <li><a href="<?php echo site_url('survey'); ?>">问卷调查</a></li>
                         <li><a href="<?php echo site_url('exam'); ?>">在线考试</a></li>
@@ -132,7 +132,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
                         -->
                     </ul>
                 </li>
-                <li><a href="<?php echo site_url('course'); ?>">选课报名</a></li>
+                <li><a href="<?php echo site_url('course'); ?>">选科报名</a></li>
                 <li><a href="<?php echo site_url('membership/logout'); ?>">退出登录</a></li>
             </ul>
         </div>
