@@ -29,7 +29,7 @@ body {padding-top:70px;}
 /*.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {border-top-color:#333; border-bottom-color:#333;}*/
 /*.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {border-top-color:#555; border-bottom-color:#555;}*/
 .footer {background:#337ab7; border-color:#e7e7e7; color:#fff;}
-.banner, .news, .photos, .download, .guestbook, .video, .membership, .score, .survey, .exam, .salary, .repairs {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
+.banner, .news, .photos, .download, .guestbook, .video, .membership, .score, .survey, .exam, .salary, .repairs, .course {font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
 .bs-callout {padding:5px; margin:5px 0; border:1px solid #eee; border-left-width:5px; border-radius:3px;}
 .bs-callout-danger {border-left-color:#ce4844;}
 .bs-callout-danger h4 {color:#ce4844;}

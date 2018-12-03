@@ -9,7 +9,7 @@
         <!--顶部通栏 end-->
     </div>
 
-    <div class="repairs row">
+    <div class="course row">
         <div class="col-xs-12 col-md-12">
             <div class="jumbotron">
                 <h1 class="text-center">数据已成功提交！</h1>
@@ -20,8 +20,9 @@
         </div>
     </div>
 
-    <div class="repairs row">
+    <div class="course row">
         <div class="col-xs-12 col-md-6">
+            <!--综合数据统计 begin-->
             <div class="panel panel-info">
                 <div class="panel-heading">选科报名综合数据统计</div>
                 <table class="table">
@@ -41,9 +42,11 @@
                     </tbody>
                 </table>
             </div>
+            <!--综合数据统计 end-->
         </div>
 
         <div class="col-xs-12 col-md-6">
+            <!--单科数据统计 begin-->
             <div class="panel panel-info">
                 <div class="panel-heading">选科报名单科数据统计</div>
                 <table class="table">
@@ -74,6 +77,7 @@
                     </tbody>
                 </table>
             </div>
+            <!--单科数据统计 end-->
         </div>
     </div>
 </section>
