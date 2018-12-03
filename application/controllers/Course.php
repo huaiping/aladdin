@@ -60,7 +60,7 @@ class Course extends CI_Controller {
             );
             $data = $this->security->xss_clean($data);
             $this->course_model->coursePost($data);
-            $this->session->sess_destroy();
+            //$this->session->sess_destroy();
             redirect('course/success');
         }
         else
@@ -71,6 +71,7 @@ class Course extends CI_Controller {
 
     public function success()
     {
+        $data['status'] = $this->session->userdata('username');
         $data['statistics'] = $this->course_model->get_statistics();
         $data['subjects'] = $this->course_model->get_subjects();
         $this->load->view('header');
