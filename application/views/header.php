@@ -132,7 +132,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
                         -->
                     </ul>
                 </li>
-                <li><a href="<?php echo site_url('course'); ?>">选科报名</a></li>
+                <li><a href="<?php echo site_url('course'); ?>">选课报名</a></li>
                 <li><a href="<?php echo site_url('membership/logout'); ?>">退出登录</a></li>
             </ul>
         </div>

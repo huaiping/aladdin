@@ -23,10 +23,14 @@
     <?php endif; ?>
 
     <div class="course row">
+        <div id="charts" class="hidden-xs" style="margin-top:20px; margin-bottom:20px;"></div>
+    </div>
+
+    <div class="course row">
         <div class="col-xs-12 col-md-6">
             <!--综合数据统计 begin-->
             <div class="panel panel-info">
-                <div class="panel-heading">选科报名综合数据统计</div>
+                <div class="panel-heading">综合数据统计</div>
                 <table class="table">
                     <thead>
                         <tr>
@@ -50,7 +54,7 @@
         <div class="col-xs-12 col-md-6">
             <!--单科数据统计 begin-->
             <div class="panel panel-info">
-                <div class="panel-heading">选科报名单科数据统计</div>
+                <div class="panel-heading">单科数据统计</div>
                 <table class="table">
                     <thead>
                         <tr>
@@ -83,3 +87,42 @@
         </div>
     </div>
 </section>
+
+<script>
+var chart = Highcharts.chart('charts', {
+    chart: {
+        type: 'column'
+    },
+    credits: {
+            enabled: false
+        },
+    title: {
+        text: '选课报名数据统计图(测试中)'
+    },
+    xAxis: {
+        categories: ['1班', '2班', '3班', '4班', '5班']
+    },
+    yAxis: {
+        allowDecimals: false,
+        min: 0,
+        title: {
+            text: '人数'
+        }
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal'
+        }
+    },
+    series: [{
+        name: '科目1',
+        data: [5, 3, 4, 7, 2]
+    }, {
+        name: '科目2',
+        data: [2, 2, 3, 2, 1]
+    }, {
+        name: '科目3',
+        data: [3, 4, 4, 2, 5]
+    }]
+});
+</script>
