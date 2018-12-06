@@ -19,6 +19,13 @@ class Course_model extends CI_Model {
         return $query->row_array();
     }
 
+    /*选课报名 - 选课组合数*/
+    public function get_numbers()
+    {
+        $query = $this->db->query("select count(distinct(courses)) as numbers from swan_course");
+        return $query->row_array();
+    }
+
     /*选课报名 - 选课统计表*/
     public function get_charts()
     {

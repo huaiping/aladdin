@@ -95,9 +95,9 @@ var chart = Highcharts.chart('charts', {
     },
     credits: {
             enabled: false
-        },
+    },
     title: {
-        text: '选课报名数据统计图(测试中)'
+        text: '选课报名班级数据分布图'
     },
     xAxis: {
         categories: ['1班', '2班', '3班', '4班', '5班', '6班', '7班', '8班', '9班', '10班', '11班', '12班', '13班', '14班', '15班', '16班', '17班', '18班', '19班']
@@ -114,32 +114,32 @@ var chart = Highcharts.chart('charts', {
             stacking: 'normal'
         }
     },
-    series: [{
-        name: '<?php echo $charts[0]['courses']; ?>',
-        data: [
+    series: [
+        <?php
+            $numbers = $courses['numbers'];//选课组合数
+            $classes = 19;                 //班级数
+            for ($n=0; $n<$numbers-1; $n++) {
+                echo "{\n";
+                echo "name: '".$charts[$n]['courses']."',";
+                echo "data: [";
+                for($i=1; $i<$classes; $i++){
+                    echo $charts[$n]['c'.$i].',';
+                }
+                echo $charts[$n]['c'.$classes];
+                echo "]},";
+            }
+        ?>
+        {
+            name: '<?php echo $charts[$numbers-1]['courses']; ?>',
+            data: [
             <?php
-                for($i=0; $i<count($charts)-1; $i++):
-                    echo $charts[$i]['c1'].',';
+                for($i=1; $i<$classes; $i++):
+                    echo $charts[$numbers-1]['c'.$i].',';
                 endfor;
-                echo $charts[$i]['c1'];
+                echo $charts[$numbers-1]['c'.$classes];
             ?>
-        ]
-    }, {
-        name: '<?php echo $charts[8]['courses']; ?>',
-        data: [
-            <?php
-                for($i=1; $i<19; $i++):
-                    echo $charts[8]['c'.$i].',';
-                endfor;
-                echo $charts[8]['c19'];
-            ?>
-        ]
-
-
-
-    }, {
-        name: '科目3',
-        data: [11, 12, 13, 14, 15,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
-    }]
+            ]
+        }
+    ]
 });
 </script>
