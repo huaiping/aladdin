@@ -100,7 +100,7 @@ var chart = Highcharts.chart('charts', {
         text: '选课报名数据统计图(测试中)'
     },
     xAxis: {
-        categories: ['1班', '2班', '3班', '4班', '5班']
+        categories: ['1班', '2班', '3班', '4班', '5班', '6班', '7班', '8班', '9班', '10班', '11班', '12班', '13班', '14班', '15班', '16班', '17班', '18班', '19班']
     },
     yAxis: {
         allowDecimals: false,
@@ -115,14 +115,31 @@ var chart = Highcharts.chart('charts', {
         }
     },
     series: [{
-        name: '科目1',
-        data: [5, 3, 4, 7, 2]
+        name: '<?php echo $charts[0]['courses']; ?>',
+        data: [
+            <?php
+                for($i=0; $i<count($charts)-1; $i++):
+                    echo $charts[$i]['c1'].',';
+                endfor;
+                echo $charts[$i]['c1'];
+            ?>
+        ]
     }, {
-        name: '科目2',
-        data: [2, 2, 3, 2, 1]
+        name: '<?php echo $charts[8]['courses']; ?>',
+        data: [
+            <?php
+                for($i=1; $i<19; $i++):
+                    echo $charts[8]['c'.$i].',';
+                endfor;
+                echo $charts[8]['c19'];
+            ?>
+        ]
+
+
+
     }, {
         name: '科目3',
-        data: [3, 4, 4, 2, 5]
+        data: [11, 12, 13, 14, 15,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
     }]
 });
 </script>

@@ -72,6 +72,7 @@ class Course extends CI_Controller {
     public function success()
     {
         $data['status'] = $this->session->userdata('username');
+        $data['charts'] = $this->course_model->get_charts();
         $data['statistics'] = $this->course_model->get_statistics();
         $data['subjects'] = $this->course_model->get_subjects();
         $this->load->view('header');

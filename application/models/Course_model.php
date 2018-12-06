@@ -19,6 +19,34 @@ class Course_model extends CI_Model {
         return $query->row_array();
     }
 
+    /*选课报名 - 选课统计表*/
+    public function get_charts()
+    {
+        $sql = "SELECT a.courses,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1801%') c1,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1802%') c2,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1803%') c3,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1804%') c4,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1805%') c5,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1806%') c6,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1807%') c7,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1808%') c8,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1809%') c9,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1810%') c10,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1811%') c11,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1812%') c12,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1813%') c13,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1814%') c14,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1815%') c15,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1816%') c16,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1817%') c17,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1818%') c18,
+            (SELECT COUNT(id) FROM swan_course WHERE courses=a.courses AND xh LIKE '1819%') c19
+        FROM swan_course a GROUP BY a.courses";
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
+
     /*选课报名 - 数据统计*/
     public function get_statistics()
     {
