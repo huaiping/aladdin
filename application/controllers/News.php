@@ -12,7 +12,7 @@ class News extends CI_Controller {
 
     public function index()
     {
-        $data['news'] = $this->news_model->get_newslist();
+        $data['news'] = $this->news_model->get_newslist(20,0);
         $this->load->view('header');
         $this->load->view('news_lists', $data);
         $this->load->view('footer');
@@ -42,7 +42,7 @@ class News extends CI_Controller {
         $this->pagination->initialize($config);
         $data['news_page'] = $this->pagination->create_links();
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 1;
-        $offset = ($page-1) * $config['per_page'];
+        $offset = $page * $config['per_page'];
         $data['news'] = $this->news_model->get_newslist($config['per_page'], $offset);
         $this->load->view('header');
         $this->load->view('news_pages', $data);

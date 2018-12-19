@@ -19,10 +19,10 @@ class News_model extends CI_Model {
     }
 
     /*新闻中心 - 新闻列表*/
-    public function get_newslist()
+    public function get_newslist($slug = FALSE, $offset = FALSE)
     {
         $this->db->order_by('pubtime', 'DESC');
-        $this->db->limit(20);
+        $this->db->limit($slug, $offset);
         $query = $this->db->get('swan_news');
         return $query->result_array();
     }
