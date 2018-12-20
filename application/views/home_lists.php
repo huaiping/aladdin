@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="alert alert-warning alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong><span class="glyphicon glyphicon-fire"></span> 网站通知：本站正在开发和测试中，如果无法正常访问，请稍后再试。给您带来的不便，敬请谅解！</strong>
+                <strong><span class="fa fa-hashtag"></span> 网站通知：本站正在开发和测试中，如果无法正常访问，请稍后再试。给您带来的不便，敬请谅解！</strong>
             </div>
         </div>
         <!--网站通知 end-->

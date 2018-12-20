@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-8">
             <!--网站通知 begin-->
             <div class="alert alert-warning" role="alert">
-                <strong><span class="glyphicon glyphicon-fire"></span> 温馨提示：即将更新2018年春季学期各年级期中考试成绩，敬请关注！</strong>
+                <strong><span class="fa fa-hashtag"></span> 温馨提示：即将更新2018年春季学期各年级期中考试成绩，敬请关注！</strong>
             </div>
             <!--网站通知 end-->
 

@@ -18,7 +18,7 @@ class News extends CI_Controller {
         $this->load->view('footer');
     }
 
-    public function page($id = FALSE)
+    public function page($page = FALSE)
     {
         $this->load->library('pagination');
         $config['base_url'] = site_url('/news/page/');
@@ -44,6 +44,8 @@ class News extends CI_Controller {
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 1;
         $offset = $page * $config['per_page'];
         $data['news'] = $this->news_model->get_newslist($config['per_page'], $offset);
+        $data['max_page'] = ceil($config['total_rows']/$config['per_page']);
+        $data['current_page'] = $page + 1;
         $this->load->view('header');
         $this->load->view('news_pages', $data);
         $this->load->view('footer');

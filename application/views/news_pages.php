@@ -49,7 +49,7 @@
 
             <!-- pagination has path -->
             <p class="pagination">
-                <a class="pagination__next" href="<?php echo site_url('news/page/2'); ?>">Next page</a>
+                <a class="pagination__next" href="<?php echo site_url('news/page/'.$current_page); ?>">Next page</a>
             </p>
             <!--新闻列表 end-->
         </div>
