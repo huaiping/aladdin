@@ -20,31 +20,12 @@ class News extends CI_Controller {
 
     public function page($page = FALSE)
     {
-        $this->load->library('pagination');
-        $config['base_url'] = site_url('/news/page/');
-        $config['total_rows'] = $this->db->count_all('swan_news');
-        $config['per_page'] = 20;
-        $config['uri_segment'] = 3;
-        $config['use_page_numbers'] = TRUE;
-        $config['display_pages'] = FALSE;
-        $config['first_tag_open'] = '<li>';
-        $config['first_tag_close'] = '</li>';
-        $config['prev_tag_open'] = '<li>';
-        $config['prev_tag_close'] = '</li>';
-        $config['next_tag_open'] = '<li>';
-        $config['next_tag_close'] = '</li>';
-        $config['last_tag_open'] = '<li>';
-        $config['last_tag_close'] = '</li>';
-        $config['first_link'] = '首页';
-        $config['prev_link'] = '上一页';
-        $config['next_link'] = '下一页';
-        $config['last_link'] = '末页';
-        $this->pagination->initialize($config);
-        $data['news_page'] = $this->pagination->create_links();
+        $total = $this->db->count_all('swan_news');
+        $per_page = 20;
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 1;
-        $offset = $page * $config['per_page'];
-        $data['news'] = $this->news_model->get_newslist($config['per_page'], $offset);
-        $data['max_page'] = ceil($config['total_rows']/$config['per_page']);
+        $offset = $page * $per_page;
+        $data['news'] = $this->news_model->get_newslist($per_page, $offset);
+        $data['max_page'] = ceil($total/$per_page);
         $data['current_page'] = $page + 1;
         $this->load->view('header');
         $this->load->view('news_pages', $data);
