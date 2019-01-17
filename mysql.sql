@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS  `ci_sessions`;
+DROP TABLE IF EXISTS  `ci_sessions`;
 CREATE TABLE `ci_sessions` (
   `id` varchar(40) NOT NULL,
   `ip_address` varchar(45) NOT NULL,
