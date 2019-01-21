@@ -11,7 +11,11 @@ services:
   - mysql
 before_install:
   - mysql -e 'CREATE DATABASE qdm160638220_db;'
+  - composer install
 script:
-  - phpunit tests/OutputTest
+  - mkdir -p build/logs
+  - phpunit --coverage-clover build/logs/clover.xml
+after_script:
+  - travis_retry php vendor/bin/php-coveralls -v
 notifications:
   email: false
