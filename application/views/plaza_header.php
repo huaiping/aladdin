@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
-<link href="//cdn.bootcss.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/bootstrap-select/1.13.5/css/bootstrap-select.min.css" rel="stylesheet">
 <link href="<?php echo base_url('kindeditor/themes/default/default.css'); ?>" rel="stylesheet">
@@ -46,7 +46,7 @@ body {padding-top:70px;}
 .badge-info {background-color:#5bc0de;}
 </style>
 <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap-select/1.13.5/js/bootstrap-select.min.js"></script>
 <script src="<?php echo base_url('kindeditor/kindeditor-min.js'); ?>"></script>
 <script src="<?php echo base_url('kindeditor/lang/zh_CN.js'); ?>"></script>

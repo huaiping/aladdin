@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
-<link rel="stylesheet" href="//cdn.bootcss.com/twitter-bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap-select/1.13.5/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.min.css">
@@ -81,7 +81,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 /*html {-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -ms-filter:grayscale(100%); -o-filter:grayscale(100%); filter:grayscale(100%); filter:gray;}*/
 </style>
 <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/twitter-bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap-select/1.13.5/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
