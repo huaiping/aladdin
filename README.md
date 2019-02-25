@@ -10,7 +10,7 @@ MySQL 5.5+ [https://www.mysql.com](https://www.mysql.com)
 HTML 5 + CodeIgniter 3.1.10 + Bootstrap 3.4.1
 
 ### Demo
-[https://www.huaiping.net](https://huaiping.net/v2/)
+[https://huaiping.net](https://huaiping.net/v2/)
 
 ### License
 Licensed under the [MIT License](https://github.com/huaiping/aladdin/blob/master/LICENSE).
