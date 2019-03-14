@@ -20,7 +20,7 @@
 
             <div class="col-xs-12 col-md-12" style="margin-top:10px; padding:0;">
                 <div class="alert alert-warning" role="alert">
-                    <strong>本文采用 <i class="fa fa-creative-commons"></i>知识共享 署名-非商业性使用-相同方式共享 3.0中国大陆(CC BY-NC-SA 3.0 CN)许可协议授权。</strong>
+                    <strong>本文采用 <i class="fab fa-creative-commons"></i>知识共享 署名-非商业性使用-相同方式共享 3.0中国大陆(CC BY-NC-SA 3.0 CN)许可协议授权。</strong>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center">
-                        <button type="submit" class="btn btn-success"><i class="fa fa-commenting"></i> 提交评论</button>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-comment-dots"></i> 提交评论</button>
                     </div>
                 </div>
                 <!--评论 end-->
@@ -81,7 +81,7 @@
             <!--推荐新闻 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>推荐新闻<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>推荐新闻<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><a href="#">2014年高考成绩</a></li>
@@ -101,7 +101,7 @@
 
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>二维码<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>二维码<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div id="qrcode" class="text-center"></div>
             </div>

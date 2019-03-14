@@ -14,7 +14,7 @@
             <!--单次成绩 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4><?php echo $item['bz']; ?><span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4><?php echo $item['bz']; ?><span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">语文：<?php echo round($item['yw'],1); ?><br /><br />名次：<?php echo $item['ywmc']; ?></button>
@@ -81,7 +81,7 @@
             <!--二维码 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>二维码<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>二维码<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div id="qrcode" class="text-center"></div>
                 <div class="text-center">手机扫一扫，成绩早知道</div>
@@ -102,7 +102,7 @@
             <!--历次成绩 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>高中阶段历次考试成绩<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>高中阶段历次考试成绩<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div class="col-md-12 hidden-xs">
                 <?php foreach ($scores as $score): ?>

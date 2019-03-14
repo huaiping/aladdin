@@ -14,7 +14,7 @@
             <!--左侧通知区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>网站通知<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>网站通知<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <!--通知 begin-->
                 <ul class="widget-links list-unstyled" style="margin-left:15px; margin-right:15px;">
@@ -31,7 +31,7 @@
             <!--右侧报修区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>物品报修<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>物品报修<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
 
                 <?php
@@ -99,7 +99,7 @@
                     </div>
                     <div class="form-group">
                         <div class="text-center" style="margin-top:10px; margin-bottom:10px;">
-                            <button type="submit" class="btn btn-success"><i class="fa fa-wrench"></i> 提交报修单</button>
+                            <button type="submit" class="btn btn-success"><i class="fas fa-wrench"></i> 提交报修单</button>
                         </div>
                     </div>
                 </form>

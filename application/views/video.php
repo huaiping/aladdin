@@ -14,7 +14,7 @@
             <!--视频播放 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>视频：<?php echo $item['title']; ?><span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>视频：<?php echo $item['title']; ?><span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><!--仅支持ogg mp4 WebM格式-->
@@ -31,7 +31,7 @@
             <!--右侧相关推荐 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>相关推荐<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>相关推荐<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php for($i=0; $i<count($hot); $i++): ?>
@@ -48,7 +48,7 @@
             <!-- 微课 begin -->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>优秀微课作品<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>优秀微课作品<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <?php foreach ($lectures as $lecture): ?>
                 <div class="col-xs-12 col-sm-6 col-md-3 text-center">

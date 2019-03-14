@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="alert alert-warning alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong><span class="fa fa-hashtag"></span> 网站通知：本站正在开发和测试中，如果无法正常访问，请稍后再试。给您带来的不便，敬请谅解！</strong>
+                <strong><span class="fas fa-hashtag"></span> 网站通知：本站正在开发和测试中，如果无法正常访问，请稍后再试。给您带来的不便，敬请谅解！</strong>
             </div>
         </div>
         <!--网站通知 end-->
@@ -124,7 +124,7 @@
             <!--人生寄语 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>人生寄语<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>人生寄语<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <blockquote>
                     <p class="text-primary">志向决定方向 态度决定高度</p>
@@ -140,7 +140,7 @@
             <!--校园新闻 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>校园新闻<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>校园新闻<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($reports as $report): ?>
@@ -154,7 +154,7 @@
             <!--视频点播 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>视频点播<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>视频点播<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($videos as $video): ?>
@@ -171,7 +171,7 @@
             <!--滚动图片展示 begin-->
             <div id="slide" class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>精彩图片展<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>精彩图片展<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($slides as $slide): ?>
@@ -197,7 +197,7 @@
             <!--专题推荐 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>专题推荐<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>专题推荐<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><a href="#">2014年高考成绩</a></li>
@@ -219,7 +219,7 @@
             <!--最新资源 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>最新资源<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>最新资源<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($downloads as $download): ?>
@@ -233,7 +233,7 @@
             <!--教学教研 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>教学教研<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>教学教研<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($teaching as $teach): ?>
@@ -260,7 +260,7 @@
             <!--友情链接 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>友情链接<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>友情链接<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($friendsites as $links): ?>

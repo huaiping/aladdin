@@ -14,7 +14,7 @@
             <!--左侧通知区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>报名通道<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>报名通道<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <p>登录后方可开始选课，帐号是6位数字的学号，密码是姓名的完整拼音(全部小写，不加空格)。如登录失败，请尝试姓名中多音字的其它读音。选课报名信息成功提交后无法修改。</p>
                 <p>截止日期：12月15日</p>
@@ -22,14 +22,14 @@
                 <?php if ($status == 'enabled'): ?>
                     <a class="btn btn-success btn-lg" href="<?php echo site_url('course/signup'); ?>" role="button"><i class="fa fa-gg"></i> 模拟选课报名</a>
                 <?php else: ?>
-                    <button class="btn btn-success btn-lg" disabled="disabled"><i class="fa fa-gg"></i> 报名已截止</button>
+                    <button class="btn btn-success btn-lg" disabled="disabled"><i class="fab fa-gg"></i> 报名已截止</button>
                 <?php endif; ?>
                 </p>
             </div>
 
             <div class="widget-box no-border hidden-xs">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>二维码<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>二维码<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div id="qrcode" class="text-center"></div>
             </div>
@@ -40,7 +40,7 @@
             <!--物理 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>高中与大学学科对应表：物理<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>高中与大学学科对应表：物理<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item" style="text-indent:2em;">物理学是一门基础自然科学，它所研究的是：物质的基本结构、最普遍的相互作用、最一般的运动规律以及所使用的实验手段和思维方法。</li>
@@ -56,7 +56,7 @@
             <!--化学 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>高中与大学学科对应表：化学<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>高中与大学学科对应表：化学<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item" style="text-indent:2em;">化学是在原子、分子水平上研究物质的组成、结构、性质及其应用的一门基础自然科学。其特征是研究分子和创造分子。迅猛发展的化学已成为生命科学、材料科学、环境科学、能源科学、信息科学等领域的重要基础。</li>
@@ -71,7 +71,7 @@
             <!--生物 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>高中与大学学科对应表：生物<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>高中与大学学科对应表：生物<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item" style="text-indent:2em;">生物科学是自然科学中的基础学科之一，是研究生物现象和生命活动规律的一门科学。它是农、林、牧、副、渔、医药卫生、环境保护及其他有关应用科学的基础。</li>
@@ -86,7 +86,7 @@
             <!--政治 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>高中与大学学科对应表：政治<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>高中与大学学科对应表：政治<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item" style="text-indent:2em;">思想政治课教学要着眼于当代社会发展和高中学生成长的需要，增强思想政治教育的时代感、针对性、时效性和主动性，强调对知识、能力、态度的有机整合。</li>
@@ -101,7 +101,7 @@
             <!--历史 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>高中与大学学科对应表：历史<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>高中与大学学科对应表：历史<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item" style="text-indent:2em;">历史学习使学生学会从不同角度认识历史发展中全局与局部、历史与现实、中国与世界的内在联系；培养学生从不同视角发现、分析和解决问题的能力，提高人文素养，形成正确的世界观、人生观和价值观。让学生更好地发现自己的兴趣，从而学会学习、学会独立、学会生存。</li>
@@ -115,7 +115,7 @@
             <!--地理 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>高中与大学学科对应表：地理<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>高中与大学学科对应表：地理<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item" style="text-indent:2em;">地理学是研究地理环境以及人类活动与地理环境相互关系的科学。它具有两个显著的特点：</li>

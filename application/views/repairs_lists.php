@@ -14,14 +14,14 @@
             <!--左侧通知区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>报修通道<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>报修通道<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
-                <p class="text-center"><a class="btn btn-success btn-lg" href="<?php echo site_url('repairs/report'); ?>" role="button"><i class="fa fa-wrench"></i> 我要报修</a></p>
+                <p class="text-center"><a class="btn btn-success btn-lg" href="<?php echo site_url('repairs/report'); ?>" role="button"><i class="fas fa-wrench"></i> 我要报修</a></p>
             </div>
 
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>网站通知<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>网站通知<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <!--通知 begin-->
                 <ul class="widget-links list-unstyled" style="margin-left:15px; margin-right:15px;">
@@ -38,7 +38,7 @@
             <!--右侧工单列表 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>报修列表<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>报修列表<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
 
                 <table class="table table-striped table-bordered table-hover text-center">

@@ -13,7 +13,7 @@
         <div class="col-xs-12 col-md-8">
             <!--网站通知 begin-->
             <div class="alert alert-warning" role="alert">
-                <strong><span class="fa fa-hashtag"></span> 温馨提示：即将更新2018年春季学期各年级期中考试成绩，敬请关注！</strong>
+                <strong><span class="fas fa-hashtag"></span> 温馨提示：即将更新2018年春季学期各年级期中考试成绩，敬请关注！</strong>
             </div>
             <!--网站通知 end-->
 
@@ -21,7 +21,7 @@
                 <!--使用指南 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
-                        <i class="fa fa-cube fa-4x media-object"></i>
+                        <i class="fas fa-cube fa-4x media-object"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading" style="margin-bottom:10px;">使用指南</h4>
@@ -35,7 +35,7 @@
                 <!--温馨提示 begin-->
                 <div class="media" style="margin-top:20px;">
                     <div class="media-left">
-                        <i class="fa fa-bell fa-4x media-object"></i>
+                        <i class="fas fa-bell fa-4x media-object"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading" style="margin-bottom:10px;">温馨提示</h4>
@@ -49,7 +49,7 @@
                 <!--历次成绩 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
-                        <i class="fa fa-empire fa-4x media-object"></i>
+                        <i class="fab fa-empire fa-4x media-object"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">历次成绩</h4>
@@ -64,7 +64,7 @@
                 <!--成绩曲线 begin-->
                 <div class="media" style="margin-top:40px; margin-bottom:40px;">
                     <div class="media-left">
-                        <i class="fa fa-rebel fa-4x media-object"></i>
+                        <i class="fab fa-rebel fa-4x media-object"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">成绩曲线</h4>

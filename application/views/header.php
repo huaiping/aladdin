@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
 <link rel="stylesheet" href="//cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap-select/1.13.5/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/video.js/7.5.0/video-js.min.css">

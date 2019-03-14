@@ -18,7 +18,7 @@
             <!-- 图片缩略图 begin -->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4><?php echo $category[$m]['category']; ?><a href="<?php echo site_url('photo/waterfall'); ?>"><span class="pull-right fa fa-camera" style="padding-right:10px;"></span></a></h4>
+                    <h4><?php echo $category[$m]['category']; ?><a href="<?php echo site_url('photo/waterfall'); ?>"><span class="pull-right fas fa-camera" style="padding-right:10px;"></span></a></h4>
                 </div>
                 <?php
                     for($i=0; $i<count($subcategory); $i++) {

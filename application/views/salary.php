@@ -14,7 +14,7 @@
             <!--工资详情 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4><?php echo substr($salary['timestamp'], 0, 4).'年'.substr($salary['timestamp'], 4, 2).'月'; ?>工资详情<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4><?php echo substr($salary['timestamp'], 0, 4).'年'.substr($salary['timestamp'], 4, 2).'月'; ?>工资详情<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
                     <button type="button" class="btn btn-primary circle">岗位工资<br><br><?php echo $salary['gwgz']; ?></button>
@@ -215,7 +215,7 @@
         <div class="col-md-3 hidden-xs hidden-sm">
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>近12个月工资<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>近12个月工资<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <div class="text-center">
                 <?php foreach ($lists as $item): ?>

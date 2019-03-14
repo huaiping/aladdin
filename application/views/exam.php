@@ -14,7 +14,7 @@
             <!--左侧试题区 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>试题<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>试题<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <!--题号 begin-->
                 <nav aria-label="Page navigation" style="margin-top:-20px;">
@@ -70,7 +70,7 @@
             <!--右侧考试信息和倒计时 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>考试信息<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>考试信息<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     00:40:00

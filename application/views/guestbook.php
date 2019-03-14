@@ -11,7 +11,7 @@
 
     <div class="guestbook row">
         <div class="col-md-12" style="margin-bottom:20px;">
-            <a href="<?php echo site_url('guestbook/message'); ?>" class="btn btn-success" role="button"><i class="fa fa-commenting"></i> 签写新的留言</a>
+            <a href="<?php echo site_url('guestbook/message'); ?>" class="btn btn-success" role="button"><i class="fas fa-comment-dots"></i> 签写新的留言</a>
         </div>
     </div>
 
@@ -21,7 +21,7 @@
             <!--留言 begin-->
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h4 class="panel-title"><span>主题：<?php echo $message[$i]['title']; ?></span><span class="pull-right hidden-xs"><?php echo $message[$i]['pubtime']; ?></span><span class="fa fa-clock-o pull-right hidden-xs"></span></h4>
+                    <h4 class="panel-title"><span>主题：<?php echo $message[$i]['title']; ?></span><span class="pull-right hidden-xs"><?php echo $message[$i]['pubtime']; ?></span><span class="far fa-clock pull-right hidden-xs"></span></h4>
                 </div>
                 <div class="panel-body">
                     <div class="col-sm-3 col-md-2">

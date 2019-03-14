@@ -14,7 +14,7 @@
             <!--左侧热门资源 begin-->
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-danger">
-                    <h4>热门资源<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>热门资源<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <?php foreach ($down_hot as $hot): ?>
@@ -28,7 +28,7 @@
         <div class="col-xs-12 col-md-9">
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4><?php echo $down_item['title']; ?><span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4><?php echo $down_item['title']; ?><span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
             </div>
             <!--右侧资源详情 begin-->
@@ -54,24 +54,24 @@
 
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>资源简介<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>资源简介<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item"><?php echo $down_item['description']; ?></li>
                 </ul>
                 <div class="alert alert-warning" role="alert">
-                    <strong>本资源采用 <i class="fa fa-creative-commons"></i>知识共享 署名-非商业性使用3.0中国大陆(CC BY-NC 3.0 CN)许可协议授权。</strong>
+                    <strong>本资源采用 <i class="fab fa-creative-commons"></i>知识共享 署名-非商业性使用3.0中国大陆(CC BY-NC 3.0 CN)许可协议授权。</strong>
                 </div>
             </div>
 
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>下载地址<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>下载地址<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
-                    <li class="widget-links_item">链接：<a href="<?php echo base_url($down_item['url']); ?>" class="btn btn-default" role="button"><span class="fa fa-download"></span> 本站下载</a>
+                    <li class="widget-links_item">链接：<a href="<?php echo base_url($down_item['url']); ?>" class="btn btn-default" role="button"><span class="fas fa-download"></span> 本站下载</a>
                         <?php if ($this->session->has_userdata('username')): ?>
-                        <a href="#" class="btn btn-default" role="button"><span class="fa fa-cloud-download"></span> 镜像网站下载</a>
+                        <a href="#" class="btn btn-default" role="button"><span class="fas fa-cloud-download-alt"></span> 镜像网站下载</a>
                         <?php else: ?>
                         <a class="btn btn-success" style="color:#fff;" href="<?php echo site_url('download/mirrors'); ?>" role="button">登录后高速下载</a>
                         <?php endif; ?>
@@ -81,7 +81,7 @@
 
             <div class="widget-box no-border">
                 <div class="widget-box_title bs-callout bs-callout-info">
-                    <h4>下载说明<span class="pull-right fa fa-bars" style="padding-right:10px;"></span></h4>
+                    <h4>下载说明<span class="pull-right fas fa-bars" style="padding-right:10px;"></span></h4>
                 </div>
                 <ul class="widget-links list-unstyled">
                     <li class="widget-links_item">如果您发现该资源不能下载，请及时给我们留言，谢谢！</li>
