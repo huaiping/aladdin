@@ -20,7 +20,7 @@
                 <p>截止日期：12月15日</p>
                 <p class="text-center">
                 <?php if ($status == 'enabled'): ?>
-                    <a class="btn btn-success btn-lg" href="<?php echo site_url('course/signup'); ?>" role="button"><i class="fa fa-gg"></i> 模拟选课报名</a>
+                    <a class="btn btn-success btn-lg" href="<?php echo site_url('course/signup'); ?>" role="button"><i class="fab fa-gg"></i> 模拟选课报名</a>
                 <?php else: ?>
                     <button class="btn btn-success btn-lg" disabled="disabled"><i class="fab fa-gg"></i> 报名已截止</button>
                 <?php endif; ?>

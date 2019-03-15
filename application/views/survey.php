@@ -10,7 +10,7 @@
             $zhou = (int)(($cha)/7 +1);
             return $zhou;
         }
-        $sdate = current_week('2018-8-27'); //开学第一周星期一的日期
+        $sdate = current_week('2019-2-11'); //开学第一周星期一的日期
 
         $attributes = array('class' => 'form-horizontal', 'id' => 'survey');
         $hidden = array('name' => $this->session->userdata('name'), 'survey' => $sdate);
