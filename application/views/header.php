@@ -8,10 +8,10 @@
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
 <link rel="stylesheet" href="//cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css">
-<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap-select/1.13.8/css/bootstrap-select.min.css">
-<link rel="stylesheet" href="//cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.min.css">
-<link rel="stylesheet" href="//cdn.bootcss.com/video.js/7.5.0/video-js.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/5.8.1/css/all.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap-select/1.13.9/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/video.js/7.5.4/video-js.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/iCheck/1.0.2/skins/minimal/blue.css">
 <style>
 body {padding-top:70px;}
@@ -80,16 +80,16 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 #survey label.error {color:red;}
 /*html {-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -ms-filter:grayscale(100%); -o-filter:grayscale(100%); filter:grayscale(100%); filter:gray;}*/
 </style>
-<script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap-select/1.13.8/js/bootstrap-select.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap-select/1.13.9/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
-<script src="//cdn.bootcss.com/highcharts/7.0.3/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/7.1.1/highcharts.js"></script>
 <script src="//cdn.bootcss.com/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.5/infinite-scroll.pkgd.min.js"></script>
-<script src="//cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.min.js"></script>
-<script src="//cdn.bootcss.com/video.js/7.5.0/video.min.js"></script>
+<script src="//cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="//cdn.bootcss.com/video.js/7.5.4/video.min.js"></script>
 <script src="//cdn.bootcss.com/iCheck/1.0.2/icheck.min.js"></script>
 <script src="<?php echo base_url('webroot/jquery.grid-a-licious.min.js'); ?>"></script>
 </head>
