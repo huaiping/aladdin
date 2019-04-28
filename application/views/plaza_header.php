@@ -45,7 +45,7 @@ body {padding-top:70px;}
 .badge-warning {background-color:#f0ad4e;}
 .badge-info {background-color:#5bc0de;}
 </style>
-<script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap-select/1.13.10/js/bootstrap-select.min.js"></script>
 <script src="<?php echo base_url('kindeditor/kindeditor-min.js'); ?>"></script>
