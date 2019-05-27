@@ -80,7 +80,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 #survey label.error {color:red;}
 /*html {-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -ms-filter:grayscale(100%); -o-filter:grayscale(100%); filter:grayscale(100%); filter:gray;}*/
 </style>
-<script src="//cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap-select/1.13.10/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
