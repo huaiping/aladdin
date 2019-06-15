@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>">
 <title>阿拉丁CMS</title>
 <link rel="stylesheet" href="//cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/5.8.1/css/all.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/5.8.2/css/all.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap-select/1.13.10/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/video.js/7.5.4/video-js.min.css">
@@ -85,7 +85,7 @@ video::-webkit-media-controls-panel {width:calc(100% + 30px);}
 <script src="//cdn.bootcss.com/bootstrap-select/1.13.10/js/bootstrap-select.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
-<script src="//cdn.bootcss.com/highcharts/7.1.1/highcharts.js"></script>
+<script src="//cdn.bootcss.com/highcharts/7.1.2/highcharts.js"></script>
 <script src="//cdn.bootcss.com/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 <script src="//cdn.bootcss.com/jquery-infinitescroll/3.0.6/infinite-scroll.pkgd.min.js"></script>
 <script src="//cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
