@@ -11,7 +11,7 @@
                         <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42118102000158" style="color:#fff; text-decoration:none;"><img src="<?php echo base_url('webroot/image/beian.png'); ?>" style="vertical-align:-5px;" alt=""><span>鄂公网安备 42118102000158号</span></a>
                     </div>
                     <div class="pull-left" style="margin-bottom:10px;">
-                        <a href="http://www.miibeian.gov.cn" style="color:#fff; text-decoration:none;"><span>鄂ICP备15002830号</span></a>
+                        <a href="http://beian.miit.gov.cn" style="color:#fff; text-decoration:none;"><span>鄂ICP备15002830号</span></a>
                         <span style="margin-left:15px;">Powered by 阿拉丁CMS</span>
                     </div>
                 </div>
